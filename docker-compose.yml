@@ -32,7 +32,7 @@ services:
       SPRING_DATASOURCE_NAME: nl-portal
       SPRING_DATASOURCE_USERNAME: nlportal
       SPRING_DATASOURCE_PASSWORD: password
-      SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_ISSUER_URI: http://localhost:8080/auth/realms/nlportal
+      SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_ISSUER_URI: http://host.docker.internal:8080/auth/realms/nlportal
     platform: linux/amd64
     networks:
       - backend
@@ -63,7 +63,6 @@ services:
       KC_DB_PASSWORD: keycloak
       KC_FEATURES: token-exchange,admin-fine-grained-authz
       KC_HTTP_RELATIVE_PATH: /auth
-      KEYCLOAK_FRONTEND_URL: http://localhost:8080/auth
     depends_on:
       - portal-keycloak-database
     command: "start-dev --import-realm"
