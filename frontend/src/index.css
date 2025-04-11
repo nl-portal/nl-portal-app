@@ -1,0 +1,27 @@
+#root,
+.utrecht-document {
+  height: 100%;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+.denhaag-page-header > div {
+  border-bottom: 2px solid var(--rijkshuisstijl-hemelblauw);
+  box-shadow: 0 2px 6px 0 var(--rijkshuisstijl-grijs-3);
+
+  > button {
+    background-color: var(--rijkshuisstijl-wit);
+  }
+}
