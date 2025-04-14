@@ -28,7 +28,7 @@ necessary ZGW components required to demo NL Portal functionality.
 
 The NL Portal application will be accessible at http://localhost:3000 and can be interacted with the following demo user:
 * Username: `burger`
-* Passowrd: `burger`
+* Password: `burger`
 
 **NB! The startup of all the ZGW components can take multiple minutes depending on how powerful your computer is.**
 
@@ -62,6 +62,6 @@ Follow these steps after doing your modifications to the sources by running the 
 
 The NL Portal application will be accessible at http://localhost:3000 and can be interacted with the following demo user:
 * Username: `burger`
-* Passowrd: `burger`
+* Password: `burger`
 
 **NB! The startup of all the ZGW components can take multiple minutes depending on how powerful your computer is.**
