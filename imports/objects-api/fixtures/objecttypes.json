@@ -1,0 +1,38 @@
+[
+    {
+        "model": "core.objecttype",
+        "pk": 1,
+        "fields": {
+            "service": 1,
+            "uuid": "4b5f4fba-0746-11ed-b939-0242ac120002",
+            "_name": "FormIO"
+        }
+    },
+    {
+        "model": "core.objecttype",
+        "pk": 2,
+        "fields": {
+            "service": 1,
+            "uuid": "3e852115-277a-4570-873a-9a64be3aeb34",
+            "_name": "Taak"
+        }
+    },
+    {
+        "model": "core.objecttype",
+        "pk": 3,
+        "fields": {
+            "service": 1,
+            "uuid": "b4a617af-6969-45e8-9afd-d51e170716d5",
+            "_name": "Externe Klanttaak 1.1.1"
+        }
+    },
+    {
+        "model": "core.objecttype",
+        "pk": 4,
+        "fields": {
+            "service": 1,
+            "uuid": "78731088-430f-49fd-9a4c-80ddd42ded28",
+            "_name": "Bericht"
+        }
+    }
+]

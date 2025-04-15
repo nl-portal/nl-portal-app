@@ -1,0 +1,47 @@
+{
+  "name": "nl-portal-app",
+  "version": "1.5.1",
+  "author": "Ritense",
+  "packageManager": "pnpm@10.8.0",
+  "license": "EUPL-1.2",
+  "type": "module",
+  "engines": {
+    "node": "20"
+  },
+  "scripts": {
+    "dev": "vite --port 3000 --mode development",
+    "build": "tsc && vite build",
+    "preinstall": "npx only-allow pnpm",
+    "preview": "vite preview --port 3000",
+    "generate-pwa-assets": "pwa-asset-generator ./src/assets/pwa-logo.svg ./public/pwa --favicon --mstile --opaque  false --maskable true --index  index.html --manifest ./public/manifest.json --path-override '../pwa'",
+    "clean": "rimraf dist",
+    "test": "vitest run",
+    "test:watch": "vitest --watch"
+  },
+  "dependencies": {
+    "@apollo/client": "3.10.4",
+    "@gemeente-denhaag/design-tokens-components": "2.1.1",
+    "@gemeente-denhaag/icons": "1.0.0",
+    "@gemeente-denhaag/link": "2.0.0",
+    "@gemeente-denhaag/typography": "2.0.0",
+    "@nl-portal/nl-portal-api": "1.5.1",
+    "@nl-portal/nl-portal-authentication": "1.5.1",
+    "@nl-portal/nl-portal-localization": "1.5.1",
+    "@nl-portal/nl-portal-user-interface": "1.5.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "pwa-asset-generator": "^6.3.1",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.3.5",
+    "vitest": "^2.0.4",
+    "wait-on": "^7.2.0"
+  }
+}

@@ -1,0 +1,43 @@
+name: Validate Build
+on:
+  pull_request:
+    branches:
+      - "main"
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
+  cancel-in-progress: true
+env:
+  javaVersion: "21"
+  nodeVersion: "20.x"
+jobs:
+  build-be:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: "./backend"
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up JDK ${{ env.javaVersion }}
+        uses: actions/setup-java@v4
+        with:
+          java-version: "${{ env.javaVersion }}"
+          distribution: "temurin"
+      - name: Set up gradle
+        uses: gradle/actions/setup-gradle@v3
+      - name: Build with Gradle
+        run: ./gradlew build
+  build-fe:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: "./frontend"
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js ${{ env.nodeVersion }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.nodeVersion }}
+      - name: Install
+        run: npm install -g pnpm && pnpm install
+      - name: Build
+        run: pnpm build
