@@ -63,7 +63,6 @@ services:
 
     nl-portal-app-backend-remote:
         image: ghcr.io/nl-portal/nl-portal-app-backend:latest
-        platform: linux/amd64
         profiles:
             - remote
         container_name: nl-portal-app-backend
@@ -72,7 +71,6 @@ services:
 
     nl-portal-app-frontend-remote:
         image: ghcr.io/nl-portal/nl-portal-app-frontend:latest
-        platform: linux/amd64
         profiles:
             - remote
         container_name: nl-portal-app-frontend

@@ -2,7 +2,7 @@
   "name": "nl-portal-app",
   "version": "1.5.1",
   "author": "Ritense",
-  "packageManager": "pnpm@10.8.0",
+  "packageManager": "pnpm@10.10.0",
   "license": "EUPL-1.2",
   "type": "module",
   "engines": {
