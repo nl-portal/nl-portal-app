@@ -14,8 +14,8 @@ jobs:
     prepare-variables:
         runs-on: ubuntu-latest
         outputs:
-            backend-tag: ${{ steps.detect-scope.outputs.SCOPE == 'SNAPSHOT' && steps.generate-snapshot-version.outputs.VERSION || steps.get-project-versions.outputs.BACKEND_VERSION }}
-            frontend-tag: ${{ steps.detect-scope.outputs.SCOPE == 'SNAPSHOT' && steps.generate-snapshot-version.outputs.VERSION || steps.get-project-versions.outputs.FRONTEND_VERSION }}
+            backend-tag: ${{ steps.detect-scope.outputs.SCOPE == 'SNAPSHOT' && steps.generate-snapshot-version.outputs.SNAPSHOT_VERSION || steps.get-project-versions.outputs.BACKEND_VERSION }}
+            frontend-tag: ${{ steps.detect-scope.outputs.SCOPE == 'SNAPSHOT' && steps.generate-snapshot-version.outputs.SNAPSHOT_VERSION || steps.get-project-versions.outputs.FRONTEND_VERSION }}
         steps:
             -   name: Detect scope
                 id: detect-scope
@@ -36,7 +36,7 @@ jobs:
                     branch=${GITHUB_REF##*/}
                     sha=${GITHUB_SHA::8}
                     ts=$(date +'%Y%m%d%H%M')
-                    echo "SNAPSHOT_TAG=${branch}-${ts}-${sha}" >> "$GITHUB_OUTPUT"
+                    echo "SNAPSHOT_VERSION=${branch}-${ts}-${sha}" >> "$GITHUB_OUTPUT"
     build-be:
         runs-on: ubuntu-latest
         defaults:
