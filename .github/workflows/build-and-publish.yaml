@@ -14,12 +14,13 @@ jobs:
     prepare-variables:
         runs-on: ubuntu-latest
         outputs:
+            scope: ${{ steps.detect-scope.outputs.SCOPE }}
             backend-tag: ${{ steps.detect-scope.outputs.SCOPE == 'SNAPSHOT' && steps.generate-snapshot-version.outputs.SNAPSHOT_VERSION || steps.get-project-versions.outputs.BACKEND_VERSION }}
             frontend-tag: ${{ steps.detect-scope.outputs.SCOPE == 'SNAPSHOT' && steps.generate-snapshot-version.outputs.SNAPSHOT_VERSION || steps.get-project-versions.outputs.FRONTEND_VERSION }}
         steps:
             -   name: Detect scope
                 id: detect-scope
-                run: echo "SCOPE=$(if ${{ github.ref_name == 'main' }} ; then echo "SNAPSHOT" ; elif ${{ startsWith(github.ref-name, 'release/') }} ; then echo "RELEASE" ; else echo "UNKNOWN" ; fi)" >> $GITHUB_OUTPUT
+                run: echo "SCOPE=$(if ${{ github.ref_name == 'main' }} ; then echo "SNAPSHOT" ; elif ${{ startsWith(github.ref_name, 'release/') }} ; then echo "RELEASE" ; else echo "UNKNOWN" ; fi)" >> $GITHUB_OUTPUT
             -   name: Log scope
                 run: echo "::notice::Using scope - \"${{ steps.detect-scope.outputs.SCOPE }}\"."
             -   name: Checkout
@@ -44,6 +45,7 @@ jobs:
                 working-directory: "backend"
         needs:
             - prepare-variables
+        if: ${{ needs.prepare-variables.outputs.scope != 'UNKNOWN' }}
         steps:
             -   uses: actions/checkout@v4
             -   name: Set up JDK ${{ env.JAVA_VERSION }}
@@ -70,6 +72,7 @@ jobs:
                 working-directory: "frontend"
         needs:
             - prepare-variables
+        if: ${{ needs.prepare-variables.outputs.scope != 'UNKNOWN' }}
         steps:
             -   uses: actions/checkout@v4
             -   name: Set up Node.js ${{ env.NODE_VERSION }}
@@ -93,6 +96,7 @@ jobs:
         needs:
             - prepare-variables
             - build-be
+        if: ${{ needs.prepare-variables.outputs.scope != 'UNKNOWN' }}
         permissions:
             contents: read
             packages: write
@@ -165,6 +169,7 @@ jobs:
         needs:
             - prepare-variables
             - build-fe
+        if: ${{ needs.prepare-variables.outputs.scope != 'UNKNOWN' }}
         permissions:
             contents: read
             packages: write
