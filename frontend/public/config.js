@@ -7,3 +7,4 @@ window.REST_URI='http://localhost:8080/api';
 window.SHOW_INHABITANT_AMOUNT='true';
 window.MESSAGE_COUNT_POLLING_INTERVAL=10000;
 window.ADDRESS_RESEARCH_URL='https://www.google.com';
+window.CASES_PARTIAL_SEARCH='true';

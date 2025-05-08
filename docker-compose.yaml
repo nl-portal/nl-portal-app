@@ -88,7 +88,7 @@ services:
             POSTGRES_PASSWORD: keycloak
 
     nl-portal-app-openzaak:
-        image: openzaak/open-zaak:1.12.4
+        image: openzaak/open-zaak:1.18.0
         container_name: nl-portal-app-openzaak
         platform: linux/amd64
         profiles:
