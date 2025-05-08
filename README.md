@@ -16,8 +16,10 @@ Follow one of the following guides to start up the application:
 The following software has to be installed to be able to use this application:
 * Docker Desktop
 
+#### Steps
+
 Running the latest public docker images can be done via your favourite IDE by running the `docker-compose` file with
-the `remote` profile or by running the following command in your terminal:
+the `remote` and `zgw` profiles or by running the following command in your terminal:
 
 ```shell
 docker compose --profile remote --profile zgw up -d
@@ -32,6 +34,15 @@ The NL Portal application will be accessible at http://localhost:3000 and can be
 
 **NB! The startup of all the ZGW components can take multiple minutes depending on how powerful your computer is.**
 
+#### Connecting to your own services
+
+The provided app and compose file is configured to work alongside the provided ZGW components and microservices.
+You can run the NL Portal App against your own existing microservices/authentication/database by uncommenting and 
+changing the relevant environment variables in the following files:
+
+* [nl-portal-app-backend environment variables](imports/backend.env)
+* [nl-portal-app-frontend environment variables](imports/frontend.env)
+
 ### Building and running your own apps
 
 #### Requirements
@@ -40,6 +51,8 @@ The following software has to be installed to be able to use this application:
 * Docker Desktop
 * JDK 21
 * NodeJS 20
+
+#### Steps
 
 The Docker Compose file also provides an option to build your own app images and run them should you make changes to the
 Backend and/or Frontend app e.g. changing the colors and logo in the Frontend app or customizing features.
