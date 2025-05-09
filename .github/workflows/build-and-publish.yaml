@@ -31,7 +31,7 @@ jobs:
                     echo "BACKEND_VERSION=$(grep "version" backend/gradle.properties | sed 's/^.*=//')" >> $GITHUB_OUTPUT
                     echo "FRONTEND_VERSION=$(grep "version" frontend/package.json | grep -Po '\d+\.\d+\.\d+')" >> $GITHUB_OUTPUT
             -   name: Generate SNAPSHOT Tag
-                id: generate-snapshot-tag
+                id: generate-snapshot-version
                 if: ${{ steps.detect-scope.outputs.SCOPE == 'SNAPSHOT' }}
                 run: |
                     branch=${GITHUB_REF##*/}
