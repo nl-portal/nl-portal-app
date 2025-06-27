@@ -392,7 +392,7 @@
                         "bankrekeningNummersSpecifiekePeriode": null
                     }
                 },
-                "zaak": "http://localhost:8001/zaken/api/v1/zaken/703af290-abe0-418c-b9c3-10a65e662788",
+                "zaak": "http://localhost:8001/zaken/api/v1/zaken/d7e5f5c8-da39-49d9-902a-be143988d3b8",
                 "title": "Aanleveren informatie",
                 "status": "open",
                 "formulier": {
@@ -442,7 +442,7 @@
                 },
                 "koppeling": {
                     "registratie": "zaak",
-                    "value": "703af290-abe0-418c-b9c3-10a65e662788"
+                    "value": "d7e5f5c8-da39-49d9-902a-be143988d3b8"
                 },
                 "ogonebetaling": {
                     "bedrag": 147.43,
@@ -485,7 +485,7 @@
                 },
                 "koppeling": {
                     "registratie": "zaak",
-                    "value": "703af290-abe0-418c-b9c3-10a65e662788"
+                    "value": "d7e5f5c8-da39-49d9-902a-be143988d3b8"
                 },
                 "url": {
                     "uri": "https://google.com"
@@ -617,7 +617,7 @@
                 },
                 "koppeling": {
                     "registratie": "zaak",
-                    "value": "703af290-abe0-418c-b9c3-10a65e662788"
+                    "value": "d7e5f5c8-da39-49d9-902a-be143988d3b8"
                 },
                 "url": {
                     "uri": "https://wetten.overheid.nl/"

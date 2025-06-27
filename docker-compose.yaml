@@ -113,6 +113,7 @@ services:
             - CELERY_RESULT_BACKEND=redis://nl-portal-app-redis:6379/0
             - DJANGO_SUPERUSER_PASSWORD=admin
             - SENDFILE_BACKEND=django_sendfile.backends.simple
+            - DISABLE_2FA=true
         depends_on:
             - nl-portal-app-openzaak-database
             - nl-portal-app-redis
@@ -239,6 +240,7 @@ services:
             - DEBUG=true
             - TWO_FACTOR_FORCE_OTP_ADMIN=False # this is not available yet in this version
             - TWO_FACTOR_PATCH_ADMIN=False
+            - DISABLE_2FA=true
         depends_on:
             - nl-portal-app-objecten-api-database
 
@@ -288,6 +290,7 @@ services:
             - DEBUG=true
             - TWO_FACTOR_FORCE_OTP_ADMIN=False # this is not available yet in this version
             - TWO_FACTOR_PATCH_ADMIN=False
+            - DISABLE_2FA=true
         depends_on:
             - nl-portal-app-objecttypen-api-database
 
@@ -353,6 +356,7 @@ services:
             - CELERY_RESULT_BACKEND=redis://nl-portal-app-redis-open-notificaties:6379/0
             - CELERY_LOGLEVEL=DEBUG
             - CELERY_WORKER_CONCURRENCY=${CELERY_WORKER_CONCURRENCY:-4}
+            - DISABLE_2FA=true
 
     nl-portal-app-open-notificaties-celery:
         image: openzaak/open-notificaties:1.4.3
