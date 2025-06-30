@@ -16,6 +16,6 @@ do
             break
         else
             echo "Open Zaak is not running yet"
-            sleep 5
+            sleep 10
     fi
 done

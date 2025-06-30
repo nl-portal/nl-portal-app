@@ -1,8 +1,10 @@
 #!/bin/bash
 
 # The pg_dump will extract the data only from the specified tables, if you need more tables you can add them here.
+# NB! Set the correct database port before running
+PG_PORT=5432
 
-pg_dump --inserts --data-only --host localhost --port 8091 --username openzaak openzaak \
+pg_dump --inserts --data-only --host localhost --port $PG_PORT --username openzaak openzaak \
 -t accounts_user \
 -t catalogi_catalogus \
 -t authorizations_applicatie \
