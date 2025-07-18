@@ -29,7 +29,7 @@ jobs:
             -   name: Get version from project
                 id: get-project-versions
                 run: |
-                    echo "BACKEND_VERSION=$(grep "version" backend/gradle.properties | sed 's/^.*=//' | grep -Po '\d+\.\d+\.\d+)" >> $GITHUB_OUTPUT
+                    echo "BACKEND_VERSION=$(grep "version" backend/gradle.properties | sed 's/^.*=//' | grep -Po '\d+\.\d+\.\d+')" >> $GITHUB_OUTPUT
                     echo "FRONTEND_VERSION=$(grep "version" frontend/package.json | grep -Po '\d+\.\d+\.\d+')" >> $GITHUB_OUTPUT
             -   name: Generate SNAPSHOT/RC Tag
                 id: generate-snapshot-rc-version
