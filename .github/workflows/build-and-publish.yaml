@@ -35,8 +35,8 @@ jobs:
                 id: generate-snapshot-rc-version
                 if: ${{ steps.detect-scope.outputs.SCOPE == 'SNAPSHOT' || steps.detect-scope.outputs.SCOPE == 'RC' }}
                 run: |
-                    be-version=${{ steps.get-project-versions.outputs.BACKEND_VERSION }}
-                    fe-version=${{ steps.get-project-versions.outputs.FRONTEND_VERSION }}
+                    be-version="${{ steps.get-project-versions.outputs.BACKEND_VERSION }}"
+                    fe-version="${{ steps.get-project-versions.outputs.FRONTEND_VERSION }}"
                     branch=${GITHUB_REF##*/}
                     sha=${GITHUB_SHA::8}
                     ts=$(date +'%Y%m%d%H%M')
