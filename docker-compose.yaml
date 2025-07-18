@@ -17,6 +17,7 @@ services:
             - "8013:8013" # OpenKlant
             - "8014:8014" # OpenKlant 2
             - "5010:5010" # Haalcentraal BRP
+            - "5011:5011" # Haalcentraal Bewoning
 
     nl-portal-app-backend-local:
         container_name: nl-portal-app-backend
@@ -65,11 +66,9 @@ services:
         container_name: nl-portal-app-keycloak
         depends_on:
             - nl-portal-app-keycloak-database
-        image: quay.io/keycloak/keycloak:24.0.1
+        image: quay.io/keycloak/keycloak:26.3
         network_mode: "service:localhost"
         environment:
-            KEYCLOAK_ADMIN: admin
-            KEYCLOAK_ADMIN_PASSWORD: admin
             KC_DB: postgres
             KC_DB_URL: jdbc:postgresql://nl-portal-app-keycloak-database/keycloak
             KC_DB_USERNAME: keycloak
@@ -395,6 +394,17 @@ services:
         environment:
             - ASPNETCORE_ENVIRONMENT=Release
             - ASPNETCORE_URLS=http://+:5010
+
+    nl-portal-app-haalcentraal-bewoningen:
+        container_name: nl-portal-app-haalcentraal-bewoningen
+        profiles:
+            - zgw
+            - haalcentraal
+        image: ghcr.io/brp-api/haal-centraal-bewoning-bevragen-mock:2.0.1
+        network_mode: "service:localhost"
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Release
+            - ASPNETCORE_URLS=http://+:5011
 
 volumes:
     nl-portal-app-database-data:
