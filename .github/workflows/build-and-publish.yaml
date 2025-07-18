@@ -35,13 +35,13 @@ jobs:
                 id: generate-snapshot-rc-version
                 if: ${{ steps.detect-scope.outputs.SCOPE == 'SNAPSHOT' || steps.detect-scope.outputs.SCOPE == 'RC' }}
                 run: |
-                    be-version=${{ steps.get-project-versions.outputs.BACKEND_VERSION }}
-                    fe-version=${{ steps.get-project-versions.outputs.FRONTEND_VERSION }}
+                    be_version=${{ steps.get-project-versions.outputs.BACKEND_VERSION }}
+                    fe_version=${{ steps.get-project-versions.outputs.FRONTEND_VERSION }}
                     branch=${GITHUB_REF##*/}
                     sha=${GITHUB_SHA::8}
                     ts=$(date +'%Y%m%d%H%M')
-                    echo "BACKEND_SNAPSHOT_VERSION=${{ steps.detect-scope.outputs.SCOPE == 'RC' && '${be-version}-${ts}-RC' || '${branch}-${ts}-${sha}-SHAPSHOT' }}" >> "$GITHUB_OUTPUT"
-                    echo "FRONTEND_SNAPSHOT_VERSION=${{ steps.detect-scope.outputs.SCOPE == 'RC' && '${fe-version}-${ts}-RC' || '${branch}-${ts}-${sha}-SHAPSHOT' }}" >> "$GITHUB_OUTPUT"                
+                    echo "BACKEND_SNAPSHOT_VERSION=${{ steps.detect-scope.outputs.SCOPE == 'RC' && '${be_version}-${ts}-RC' || '${branch}-${ts}-${sha}-SHAPSHOT' }}" >> "$GITHUB_OUTPUT"
+                    echo "FRONTEND_SNAPSHOT_VERSION=${{ steps.detect-scope.outputs.SCOPE == 'RC' && '${fe_version}-${ts}-RC' || '${branch}-${ts}-${sha}-SHAPSHOT' }}" >> "$GITHUB_OUTPUT"                
 
     build-be:
         runs-on: ubuntu-latest
