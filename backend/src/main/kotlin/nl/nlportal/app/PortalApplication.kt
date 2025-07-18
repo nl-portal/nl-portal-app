@@ -1,13 +1,11 @@
-package nl.nlportal
+package nl.nlportal.app
 
 import io.github.oshai.kotlinlogging.KotlinLogging
-import java.net.InetAddress
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.core.env.Environment
-import org.springframework.scheduling.annotation.EnableScheduling
+import java.net.InetAddress
 
-@EnableScheduling
 @SpringBootApplication
 class PortalApplication
 

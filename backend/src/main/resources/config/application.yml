@@ -1,0 +1,64 @@
+server:
+    port: 8080
+
+management:
+    endpoint:
+        health:
+            access: read_only
+            probes:
+                enabled: true
+        restart:
+            access: unrestricted
+    endpoints:
+        access:
+            default: none
+        web:
+            exposure:
+                include: health, restart
+
+spring:
+    application:
+        name: nl-portal-app
+    security:
+        oauth2:
+            resourceserver:
+                jwt:
+                    jwk-set-uri: ${JWKS_URI}
+    liquibase:
+        enabled: false
+    datasource:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: org.postgresql.Driver
+        url: ${DATABASE_URL}
+        name: nl-portal-app
+        username: ${DATABASE_USERNAME}
+        password: ${DATABASE_PASSWORD}
+    jpa:
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+graphql:
+    packages:
+        - "nl.nlportal"
+
+logging:
+    level:
+        root: ${LOGLEVEL:INFO}
+
+nl-portal:
+    authentication:
+        keycloak:
+            resource: ${KEYCLOAK_CLIENT_ID}
+            audience: ${KEYCLOAK_AUDIENCE}
+            credentials:
+                secret: ${KEYCLOAK_TOKEN_EXCHANGE_SECRET}
+        machtingsdienst:
+            resource-url: # classpath:example-machtigingsdiensten.json
+    security:
+        cors:
+            -   path: "/**"
+                config:
+                    allowedHeaders: "*"
+                    allowedOrigins: "*"
+                    allowedMethods: "*"
+        endpoints:
+            unsecured: /api/public/**
