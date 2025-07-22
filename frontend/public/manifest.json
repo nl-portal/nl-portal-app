@@ -1,6 +1,6 @@
 {
-  "short_name": "MijnDenHaag",
-  "name": "MijnDenHaag",
+  "short_name": "NL Portal",
+  "name": "NL Portal",
   "icons": [
     {
       "src": "../pwa/manifest-icon-192.maskable.png",

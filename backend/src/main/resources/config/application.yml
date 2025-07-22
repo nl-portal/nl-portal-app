@@ -8,7 +8,7 @@ management:
             probes:
                 enabled: true
         restart:
-            access: unrestricted
+            access: none
     endpoints:
         access:
             default: none
