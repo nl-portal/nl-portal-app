@@ -22,11 +22,11 @@ VALUES
     (101, '', '', '', '', '', '', '', '', '', '', '042ed68f-9428-41b8-a8b7-f2bfb1e6bc3d', '22222', '', 'organisatie', true, 'nld', true, null, null, 1, '', '', '', '', 1, '', '', '', '');
 
 INSERT INTO public.klantinteracties_partijidentificator (id, uuid, andere_partij_identificator, partij_identificator_code_objecttype, partij_identificator_code_soort_object_id, partij_identificator_object_id, partij_identificator_code_register, partij_id, sub_identificator_van_id)
-VALUES (200, 'fc707204-faf6-4911-9af8-55174808bb94', '', 'natuurlijk_persoon', 'bsn', '569312863', 'brp', 100, null),
+VALUES (200, 'fc707204-faf6-4911-9af8-55174808bb94', '', 'natuurlijk_persoon', 'bsn', '999993847', 'brp', 100, null),
        (201, 'b945acd0-7d92-4277-b765-b445b47e5c40', '', 'niet_natuurlijk_persoon', 'kvk_nummer', '14127293', 'kvk_nummer', 101, null);
 
 INSERT INTO public.klantinteracties_persoon (id, contactnaam_voorletters, contactnaam_voornaam, contactnaam_voorvoegsel_achternaam, contactnaam_achternaam, partij_id)
-VALUES(900, 'V','Vincent', 'van', 'Beek', 100);
+VALUES(900, 'M','Merel', '', 'Kooyman', 100);
 
 INSERT INTO public.klantinteracties_organisatie (id, naam, partij_id)
 VALUES(901, 'Ritense', 101);

@@ -38,13 +38,17 @@
   --denhaag-color-blue-1: var(--rijkshuisstijl-donkerblauw);
   --denhaag-color-blue-2: var(--rijkshuisstijl-donkerblauw);
   --denhaag-color-blue-3: var(--rijkshuisstijl-donkerblauw);
-  --denhaag-card-case-title-color: var(--rijkshuisstijl-wit);
-  --denhaag-card-case-color: var(--rijkshuisstijl-wit);
-  --denhaag-card-case-primary-background-color: var(--rijkshuisstijl-donkerblauw);
-  --denhaag-card-case-secondary-background-color: var(--rijkshuisstijl-donkerblauw);
-  --denhaag-card-arrow-color: var(--rijkshuisstijl-donkerblauw);
-  --denhaag-card-case-arrow-color: var(--rijkshuisstijl-wit);
-  --denhaag-card-case-arrow-active-color: var(--rijkshuisstijl-wit);
+  --denhaag-case-card-title-color: var(--rijkshuisstijl-grijs-1);
+  --denhaag-case-card-color: var(--rijkshuisstijl-wit);
+  --denhaag-case-card-primary-background-color: var(--rijkshuisstijl-donkerblauw);
+  --denhaag-case-card-secondary-background-color: var(--rijkshuisstijl-donkerblauw);
+  --denhaag-case-card-context-color: var(--rijkshuisstijl-grijs-2);
+  --denhaag-case-card-action-color: var(--rijkshuisstijl-grijs-1);
+  --denhaag-case-card-action-active-color: var(--rijkshuisstijl-grijs-2);
+
+  --denhaag-page-index-background-color: var(--rijkshuisstijl-grijs-1);
+  --denhaag-alert-success-background-color: var(--rijkshuisstijl-grijs-1);
+
   --utrecht-heading-color: var(--rijkshuisstijl-donkerblauw);
   --utrecht-document-color: #404b4f;
   --utrecht-badge-counter-color: var(--rijkshuisstijl-grijs-1);

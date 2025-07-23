@@ -42,11 +42,11 @@ dependencies {
     implementation("nl.nl-portal:objectenapi:$backendLibrariesVersion")
     implementation("nl.nl-portal:openklant:$backendLibrariesVersion")
     implementation("nl.nl-portal:zaken-api:$backendLibrariesVersion")
-    implementation("nl.nl-portal:payment:$backendLibrariesVersion")
     implementation("nl.nl-portal:payment-direct:$backendLibrariesVersion")
-    implementation("nl.nl-portal:haalcentraal-all:$backendLibrariesVersion")
+    implementation("nl.nl-portal:haalcentraal2:$backendLibrariesVersion")
 
     implementation("nl.nl-portal:berichten:$backendLibrariesVersion")
+    implementation("nl.nl-portal:form:$backendLibrariesVersion")
     implementation("nl.nl-portal:taak:$backendLibrariesVersion")
     implementation("nl.nl-portal:besluiten:$backendLibrariesVersion")
     implementation("nl.nl-portal:product:$backendLibrariesVersion")

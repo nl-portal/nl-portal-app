@@ -20,8 +20,8 @@ SET row_security = off;
 -- Data for Name: accounts_user; Type: TABLE DATA; Schema: public; Owner: openzaak
 --
 
-INSERT INTO public.accounts_user VALUES (2, 'pbkdf2_sha256$150000$5dnJUqLDsmX0$EEbO4AGZqyp88ZCTu+7W2uGRLkdidlL4HkXWc8ZfZV8=', NULL, true, 'demo', 'Valtimo', 'Demo', 'demo@valtimo.nl', true, true, '2024-11-04 14:45:51.796139+00');
 INSERT INTO public.accounts_user VALUES (1, 'pbkdf2_sha256$600000$VAQ2BQYnO1v8M1D1wYT1tC$OcaxqS3ZFKktkVXt8mTPWPYQsXTRYnRqc/wNfI3fFEs=', '2025-06-27 11:49:43.367729+00', true, 'admin', '', '', 'admin@admin.org', true, true, '2025-06-27 11:45:49.29041+00');
+INSERT INTO public.accounts_user VALUES (2, 'pbkdf2_sha256$150000$5dnJUqLDsmX0$EEbO4AGZqyp88ZCTu+7W2uGRLkdidlL4HkXWc8ZfZV8=', NULL, true, 'demo', 'Valtimo', 'Demo', 'demo@valtimo.nl', true, true, '2024-11-04 14:45:51.796139+00');
 
 
 --
@@ -145,8 +145,7 @@ INSERT INTO public.zaken_zaakidentificatie VALUES (11, 'ZAAK-2025-0000000001', '
 -- Data for Name: zgw_consumers_service; Type: TABLE DATA; Schema: public; Owner: openzaak
 --
 
-INSERT INTO public.zgw_consumers_service VALUES (1, 'Authorization API service', 'ac', 'https://autorisaties-api.vng.cloud/api/v1', '', '', 'zgw', '', '', '', '', '', '', '', NULL, NULL, 'eaa02c89-b66b-4066-9d5c-01ef12fc2f4c', 10, '', 'authorization-api-service');
-INSERT INTO public.zgw_consumers_service VALUES (2, 'VNG Selectielijst', 'orc', 'https://selectielijst.openzaak.nl/api/v1/', '', '', 'no_auth', '', '', 'https://selectielijst.openzaak.nl/api/v1/schema/openapi.yaml', '', '', '', '', NULL, NULL, '55754299-7395-42d2-9602-1c32bbe646b2', 10, '', '');
+INSERT INTO public.zgw_consumers_service VALUES (3, 'open-notificaties', 'nrc', 'https://localhost:8012/api/v1/', 'openzaak', 'openzaak', 'zgw', '', '', 'http://localhost:8012/api/v1/schema/openapi.yaml', '', 'openzaak', 'Open Zaak', '', NULL, NULL, '78f456d8-7d4a-4c06-bf1c-2b242508a926', 10, '', 'httpslocalhost8012apiv1');
 
 
 --
@@ -167,7 +166,7 @@ INSERT INTO public.zaken_rol VALUES (11, 'c0770464-640c-4bf0-a49a-1ac280f86f3d',
 -- Data for Name: zaken_natuurlijkpersoon; Type: TABLE DATA; Schema: public; Owner: openzaak
 --
 
-INSERT INTO public.zaken_natuurlijkpersoon VALUES (10, '569312863', '', '', '', '', '', '', '', '', 11, NULL, NULL);
+INSERT INTO public.zaken_natuurlijkpersoon VALUES (10, '999993847', '', '', '', '', '', '', '', '', 11, NULL, NULL);
 
 
 --
@@ -272,7 +271,7 @@ SELECT pg_catalog.setval('public.zaken_zaakidentificatie_id_seq', 11, true);
 -- Name: zgw_consumers_service_id_seq; Type: SEQUENCE SET; Schema: public; Owner: openzaak
 --
 
-SELECT pg_catalog.setval('public.zgw_consumers_service_id_seq', 2, true);
+SELECT pg_catalog.setval('public.zgw_consumers_service_id_seq', 3, true);
 
 
 --

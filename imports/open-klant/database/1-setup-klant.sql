@@ -21,8 +21,8 @@ INSERT INTO authorizations_applicatie (uuid, client_ids, label, heeft_alle_autor
 INSERT INTO vng_api_common_jwtsecret (identifier, secret) VALUES ('valtimo_client', 'e09b8bc5-5831-4618-ab28-41411304309d');
 
 INSERT INTO klanten_klant(id, uuid, bronorganisatie, klantnummer, bedrijfsnaam, website_url, voornaam, voorvoegsel_achternaam, achternaam, functie, telefoonnummer, emailadres, subject, subject_type, aanmaakkanaal, geverifieerd)
-VALUES (1111, '5d479908-fbb7-49c2-98c9-9afecf8de79a', '051845623', '123', 'Ritense B.V.', 'https://peters-website.nl', 'Jan', '', 'Jansen', 'Developer', '0600000000', 'burger@example.com', 'http://example.com', 'natuurlijk_persoon', 'test', true);
+VALUES (1111, '5d479908-fbb7-49c2-98c9-9afecf8de79a', '051845623', '123', 'Ritense B.V.', 'https://peters-website.nl', 'Merel', '', 'Kooyman', 'Developer', '0600000000', 'burger@example.com', 'http://example.com', 'natuurlijk_persoon', 'test', true);
 INSERT INTO klanten_klantadres(id, huisnummer, huisletter, huisnummertoevoeging, postcode, woonplaats_naam, straatnaam, landcode, klant_id)
 VALUES (2222, 1, 'A', '5', '1111 AA', 'Amsterdam', 'Pettenflet', 'NL', 1111);
 INSERT INTO klanten_natuurlijkpersoon(id, inp_bsn, anp_identificatie, inp_a_nummer, geslachtsnaam, voorvoegsel_geslachtsnaam, voorletters, voornamen, geslachtsaanduiding, geboortedatum, klant_id)
-VALUES (3333, '569312863', 'anp_identificatie', 'inp_a_num', 'Jansen', '', 'J', 'Jan', 'M', '1-1-1870', 1111);
+VALUES (3333, '999993847', 'anp_identificatie', 'inp_a_num', 'Kooyman', '', 'M', 'Merel', 'V', '10-4-1982', 1111);
