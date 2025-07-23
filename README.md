@@ -8,10 +8,10 @@ It also contains a Docker Compose file for starting up a pre-configured NL Porta
 ## Running the application
 
 Follow one of the following guides to start up the application:
-* [Run the latest prebuilt app](#pulling-and-running-latest-prebuilt-apps)
+* [Run the prebuilt app](#pulling-and-running-the-prebuilt-apps)
 * [Build and run your own app](#building-and-running-your-own-apps) 
 
-### Pulling and running latest prebuilt apps
+### Pulling and running the prebuilt apps
 
 #### Requirements
 
@@ -27,7 +27,7 @@ the `remote` and `zgw` profiles or by running the following command in your term
 docker compose --profile remote --profile zgw up -d
 ```
 
-This will pull the latest public release of the NL Portal backend and frontend apps alongside all the
+This will pull the current release of the NL Portal backend and frontend apps alongside all the
 necessary ZGW components required to demo NL Portal functionality.
 
 The NL Portal application will be accessible at http://localhost:3000 and can be interacted with the following demo user:
