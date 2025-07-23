@@ -20,7 +20,7 @@ SET row_security = off;
 -- Data for Name: accounts_user; Type: TABLE DATA; Schema: public; Owner: openzaak
 --
 
-INSERT INTO public.accounts_user VALUES (1, 'pbkdf2_sha256$600000$VAQ2BQYnO1v8M1D1wYT1tC$OcaxqS3ZFKktkVXt8mTPWPYQsXTRYnRqc/wNfI3fFEs=', '2025-06-27 11:49:43.367729+00', true, 'admin', '', '', 'admin@admin.org', true, true, '2025-06-27 11:45:49.29041+00');
+INSERT INTO public.accounts_user VALUES (1, 'pbkdf2_sha256$600000$Fwtea2oYymGHoHEr4OSfBg$zG+ihtgGRJaKLY45fF1zxR76jejumh0c/mMFrS8iEEA=', '2025-07-23 17:21:48.300491+00', true, 'admin', '', '', 'admin@admin.org', true, true, '2025-07-23 17:20:09.317107+00');
 INSERT INTO public.accounts_user VALUES (2, 'pbkdf2_sha256$150000$5dnJUqLDsmX0$EEbO4AGZqyp88ZCTu+7W2uGRLkdidlL4HkXWc8ZfZV8=', NULL, true, 'demo', 'Valtimo', 'Demo', 'demo@valtimo.nl', true, true, '2024-11-04 14:45:51.796139+00');
 
 
@@ -149,6 +149,13 @@ INSERT INTO public.zgw_consumers_service VALUES (3, 'open-notificaties', 'nrc', 
 
 
 --
+-- Data for Name: notifications_api_common_notificationsconfig; Type: TABLE DATA; Schema: public; Owner: openzaak
+--
+
+UPDATE public.notifications_api_common_notificationsconfig SET notifications_api_service_id = 3 WHERE id = 1;
+
+
+--
 -- Data for Name: zaken_zaak; Type: TABLE DATA; Schema: public; Owner: openzaak
 --
 
@@ -237,6 +244,13 @@ SELECT pg_catalog.setval('public.catalogi_zaaktype_id_seq', 1, false);
 --
 
 SELECT pg_catalog.setval('public.catalogi_zaaktypeinformatieobjecttype_id_seq', 1, false);
+
+
+--
+-- Name: notifications_api_common_notificationsconfig_id_seq; Type: SEQUENCE SET; Schema: public; Owner: openzaak
+--
+
+SELECT pg_catalog.setval('public.notifications_api_common_notificationsconfig_id_seq', 1, true);
 
 
 --
