@@ -1,6 +1,6 @@
 {
   "name": "nl-portal-app",
-  "version": "1.6.0-next-minor-202505191024-38dc833d-SNAPSHOT",
+  "version": "1.6.1",
   "author": "Ritense",
   "packageManager": "pnpm@10.10.0",
   "license": "EUPL-1.2",
@@ -24,10 +24,10 @@
     "@gemeente-denhaag/icons": "1.0.0",
     "@gemeente-denhaag/link": "2.0.0",
     "@gemeente-denhaag/typography": "2.0.0",
-    "@nl-portal/nl-portal-api": "1.6.0-next-minor-202505191024-38dc833d-SNAPSHOT",
-    "@nl-portal/nl-portal-authentication": "1.6.0-next-minor-202505191024-38dc833d-SNAPSHOT",
-    "@nl-portal/nl-portal-localization": "1.6.0-next-minor-202505191024-38dc833d-SNAPSHOT",
-    "@nl-portal/nl-portal-user-interface": "1.6.0-next-minor-202505191024-38dc833d-SNAPSHOT",
+    "@nl-portal/nl-portal-api": "1.6.1",
+    "@nl-portal/nl-portal-authentication": "1.6.1",
+    "@nl-portal/nl-portal-localization": "1.6.1",
+    "@nl-portal/nl-portal-user-interface": "1.6.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.27.0"
