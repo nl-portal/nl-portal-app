@@ -1,5 +1,7 @@
 <img alt="NL Portal Logo" src=".github/readme/images/nl-portal-logo.svg">
 
+![Version 1.6.0](https://img.shields.io/badge/Version-1.6.0-blue)  
+
 This repository contains reference implementations for the NL Portal Backend and Frontend Apps.
 It also contains a Docker Compose file for starting up a pre-configured NL Portal Demo without having to write any code.
 
