@@ -1,6 +1,6 @@
 <img alt="NL Portal Logo" src=".github/readme/images/nl-portal-logo.svg">
 
-![Version 1.6.0](https://img.shields.io/badge/Version-1.6.0-blue)  
+![Version 2.0.1](https://img.shields.io/badge/Version-2.0.1-blue)  
 
 This repository contains reference implementations for the NL Portal Backend and Frontend Apps.
 It also contains a Docker Compose file for starting up a pre-configured NL Portal Demo without having to write any code.
@@ -24,7 +24,7 @@ Running the latest public docker images can be done via your favourite IDE by ru
 the `remote` and `zgw` profiles or by running the following command in your terminal:
 
 ```shell
-docker compose --profile remote --profile zgw --profile haalcentraal up -d
+docker compose --profile remote --profile zgw up -d
 ```
 
 This will pull the latest public release of the NL Portal backend and frontend apps alongside all the
@@ -72,7 +72,7 @@ Follow these steps after doing your modifications to the sources by running the 
    ```
 1. Build and compose the app images with docker
    ```shell
-   docker compose --profile local --profile zgw --profile haalcentraal up -d --build
+   docker compose --profile local --profile zgw up -d --build
    ```
 
 The NL Portal application will be accessible at http://localhost:3000 and can be interacted with the following demo user:
