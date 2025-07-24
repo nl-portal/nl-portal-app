@@ -8,10 +8,10 @@ It also contains a Docker Compose file for starting up a pre-configured NL Porta
 ## Running the application
 
 Follow one of the following guides to start up the application:
-* [Run the latest prebuilt app](#pulling-and-running-latest-prebuilt-apps)
+* [Run the prebuilt app](#pulling-and-running-the-prebuilt-apps)
 * [Build and run your own app](#building-and-running-your-own-apps) 
 
-### Pulling and running latest prebuilt apps
+### Pulling and running the prebuilt apps
 
 #### Requirements
 
@@ -20,7 +20,7 @@ The following software has to be installed to be able to use this application:
 
 #### Steps
 
-Running the latest public docker images can be done via your favourite IDE by running the `docker-compose` file with
+Running the prebuilt docker images can be done via your favourite IDE by running the `docker-compose` file with
 the `remote` and `zgw` profiles or by running the following command in your terminal:
 
 ```shell
