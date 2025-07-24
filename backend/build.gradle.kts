@@ -9,7 +9,6 @@ plugins {
     kotlin("plugin.spring")
     id("org.springframework.boot")
     id("io.spring.dependency-management")
-    id("com.github.jk1.dependency-license-report")
 }
 
 java {
@@ -29,34 +28,39 @@ kotlin {
 repositories {
     mavenCentral()
     maven(URI("https://oss.sonatype.org/content/repositories/releases"))
-    maven(URI("https://s01.oss.sonatype.org/content/groups/staging/"))
-    maven(URI("https://s01.oss.sonatype.org/content/repositories/snapshots/"))
+    maven(URI("https://central.sonatype.com/repository/maven-snapshots/"))
 }
 
 dependencies {
-    implementation("nl.nl-portal:case:$backendLibrariesVersion")
     implementation("nl.nl-portal:core:$backendLibrariesVersion")
+    implementation("nl.nl-portal:case:$backendLibrariesVersion")
+    implementation("nl.nl-portal:common-ground-authentication:$backendLibrariesVersion")
     implementation("nl.nl-portal:graphql:$backendLibrariesVersion")
 
-    implementation("nl.nl-portal:zaken-api:$backendLibrariesVersion")
-    implementation("nl.nl-portal:documenten-api:$backendLibrariesVersion")
     implementation("nl.nl-portal:catalogi-api:$backendLibrariesVersion")
+    implementation("nl.nl-portal:documenten-api:$backendLibrariesVersion")
     implementation("nl.nl-portal:objectenapi:$backendLibrariesVersion")
+    implementation("nl.nl-portal:openklant:$backendLibrariesVersion")
+    implementation("nl.nl-portal:zaken-api:$backendLibrariesVersion")
+    implementation("nl.nl-portal:payment-direct:$backendLibrariesVersion")
+    implementation("nl.nl-portal:haalcentraal2:$backendLibrariesVersion")
 
     implementation("nl.nl-portal:berichten:$backendLibrariesVersion")
-    implementation("nl.nl-portal:besluiten:$backendLibrariesVersion")
     implementation("nl.nl-portal:form:$backendLibrariesVersion")
-    implementation("nl.nl-portal:haalcentraal-all:$backendLibrariesVersion")
-    implementation("nl.nl-portal:klant:$backendLibrariesVersion")
-    implementation("nl.nl-portal:klant-generiek:$backendLibrariesVersion")
-    implementation("nl.nl-portal:klantcontactmomenten:$backendLibrariesVersion")
-    implementation("nl.nl-portal:payment:$backendLibrariesVersion")
-    implementation("nl.nl-portal:product:$backendLibrariesVersion")
     implementation("nl.nl-portal:taak:$backendLibrariesVersion")
+    implementation("nl.nl-portal:besluiten:$backendLibrariesVersion")
+    implementation("nl.nl-portal:product:$backendLibrariesVersion")
 
     implementation("org.springframework.boot:spring-boot-starter")
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("io.github.oshai:kotlin-logging:$kotlinLoggingVersion")
     implementation("org.postgresql:postgresql")
+
+    // CVE-2024-7254
+    implementation("com.google.protobuf:protobuf-kotlin:4.31.1")
+
+    // CVE-2025-48924
+    implementation("org.apache.commons:commons-lang3:3.18.0")
 }
 
 tasks.bootRun {
@@ -70,6 +74,6 @@ tasks.bootRun {
             "KEYCLOAK_CLIENT_ID" to "gzac-portal-m2m",
             "KEYCLOAK_AUDIENCE" to "gzac-portal-token-exchange",
             "KEYCLOAK_TOKEN_EXCHANGE_SECRET" to "ookVRUAxmEWMcosfcGR5nxeoUC4Rgwbc",
-        )
+        ),
     )
 }

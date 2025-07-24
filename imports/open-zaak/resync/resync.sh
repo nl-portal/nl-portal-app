@@ -20,6 +20,7 @@ pg_dump --inserts --data-only --host localhost --port $PG_PORT --username openza
 -t zaken_zaakidentificatie \
 -t zaken_zaak \
 -t zaken_rol \
+-t notifications_api_common_notificationsconfig \
 -t zaken_natuurlijkpersoon > ../database/1-setup-zaaktype.sql
 
 
