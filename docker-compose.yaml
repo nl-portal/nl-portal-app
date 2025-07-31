@@ -47,7 +47,7 @@ services:
             - nl-portal-app-database-data:/var/lib/postgres # persist data even if container shuts down
 
     nl-portal-app-backend-remote:
-        image: ghcr.io/nl-portal/nl-portal-app-backend:2.0.1
+        image: ghcr.io/nl-portal/nl-portal-app-backend:latest
         profiles:
             - remote
         container_name: nl-portal-app-backend
@@ -55,7 +55,7 @@ services:
         env_file: "imports/backend.env"
 
     nl-portal-app-frontend-remote:
-        image: ghcr.io/nl-portal/nl-portal-app-frontend:2.0.0
+        image: ghcr.io/nl-portal/nl-portal-app-frontend:latest
         profiles:
             - remote
         container_name: nl-portal-app-frontend
