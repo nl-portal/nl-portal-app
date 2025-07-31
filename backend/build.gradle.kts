@@ -71,8 +71,8 @@ tasks.bootRun {
             "DATABASE_USERNAME" to "nlportal",
             "DATABASE_PASSWORD" to "password",
             "JWKS_URI" to "http://localhost:8082/auth/realms/nlportal/protocol/openid-connect/certs",
-            "KEYCLOAK_CLIENT_ID" to "gzac-portal-m2m",
-            "KEYCLOAK_AUDIENCE" to "gzac-portal-token-exchange",
+            "KEYCLOAK_CLIENT_ID" to "nl-portal-m2m",
+            "KEYCLOAK_AUDIENCE" to "nl-portal-token-exchange",
             "KEYCLOAK_TOKEN_EXCHANGE_SECRET" to "ookVRUAxmEWMcosfcGR5nxeoUC4Rgwbc",
         ),
     )
