@@ -32,7 +32,7 @@ for the app and will be composed by default.
 All of the above services are set up to expose their ports via the helper server `localhost`. This service defines the
 external port mapping.
 
-**NB! The profiles `remote` and `local` can not be run at the same.** 
+**NB! The profiles `remote` and `local` can not be run at the same time due to conflicting port mapping.** 
 
 ## Running the application
 
