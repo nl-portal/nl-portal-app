@@ -1,55 +1,81 @@
 <img alt="NL Portal Logo" src=".github/readme/images/nl-portal-logo.svg">
 
-![Version 2.0.1](https://img.shields.io/badge/Version-2.0.1-blue)  
+![Version 2.0.1](https://img.shields.io/badge/Version-2.0.1-blue)
 
 This repository contains reference implementations for the NL Portal Backend and Frontend Apps.
 It also contains a Docker Compose file for starting up a pre-configured NL Portal Demo without having to write any code.
 
+#### Compose file structure
+
+The compose file is build up out of multiple sets of containers (profiles) that together enable certain functionality
+e.g. the `haalcentraal` profile contains services for haalcentraal-brp and haalcentraal-bewoning so you can choose to
+not compose those if you don't require them. If a service is missing a profile, that means it's a core requirement
+for the app and will be composed by default.
+
+| Service                          | Port  | Profile      |
+|----------------------------------|-------|--------------|
+| Pre-built NL Portal App Backend  | 8080  | remote       |
+| Pre-built NL Portal App Frontend | 3000  | remote       |
+| DIY NL Portal App Backend        | 8080  | local        |
+| DIY NL Portal App Frontend       | 3000  | local        |
+| NL Portal Database               | 54321 | -            |
+| Keycloak                         | 8082  | -            |
+| Open Zaak                        | 8001  | zgw          |
+| Objecten API                     | 8010  | zgw          |
+| Objecttypen API                  | 8011  | zgw          |
+| Open Notificaties                | 8012  | zgw          |
+| OpenKlant                        | 8013  | zgw          |
+| OpenKlant 2                      | 8014  | zgw          |
+| Haalcentraal BRP                 | 5010  | haalcentraal |
+| Haalcentraal Bewoning            | 5011  | haalcentraal |
+
+All of the above services are set up to expose their ports via the helper server `localhost`. This service defines the
+external port mapping.
+
+**NB! The profiles `remote` and `local` can not be run at the same time due to conflicting port mapping.** 
+
 ## Running the application
 
 Follow one of the following guides to start up the application:
-* [Run the latest prebuilt app](#pulling-and-running-latest-prebuilt-apps)
-* [Build and run your own app](#building-and-running-your-own-apps) 
 
-### Pulling and running latest prebuilt apps
+* [Run the prebuilt app](#pulling-and-running-the-prebuilt-apps)
+* [Build and run your own app](#building-and-running-your-own-apps)
+* [Running from source](#running-from-source)
+
+### Pulling and running the prebuilt apps
 
 #### Requirements
 
 The following software has to be installed to be able to use this application:
+
 * Docker Desktop
 
 #### Steps
 
-Running the latest public docker images can be done via your favourite IDE by running the `docker-compose` file with
+Running the prebuilt docker images can be done via your favourite IDE by running the `docker-compose` file with
 the `remote` and `zgw` profiles or by running the following command in your terminal:
 
 ```shell
-docker compose --profile remote --profile zgw up -d
+docker compose --profile remote --profile zgw --profile haalcentraal up -d
 ```
 
 This will pull the latest public release of the NL Portal backend and frontend apps alongside all the
 necessary ZGW components required to demo NL Portal functionality.
 
-The NL Portal application will be accessible at http://localhost:3000 and can be interacted with the following demo user:
+The NL Portal application will be accessible at http://localhost:3000 and can be interacted with the following demo
+user:
+
 * Username: `burger`
 * Password: `burger`
 
 **NB! The startup of all the ZGW components can take multiple minutes depending on how powerful your computer is.**
-
-#### Connecting to your own services
-
-The provided app and compose file is configured to work alongside the provided ZGW components and microservices.
-You can run the NL Portal App against your own existing microservices/authentication/database by uncommenting and 
-changing the relevant environment variables in the following files:
-
-* [nl-portal-app-backend environment variables](imports/backend.env)
-* [nl-portal-app-frontend environment variables](imports/frontend.env)
 
 ### Building and running your own apps
 
 #### Requirements
 
 The following software has to be installed to be able to use this application:
+
 * Docker Desktop
 * JDK 21
 * NodeJS 20
@@ -59,7 +85,8 @@ The following software has to be installed to be able to use this application:
 The Docker Compose file also provides an option to build your own app images and run them should you make changes to the
 Backend and/or Frontend app e.g. changing the colors and logo in the Frontend app or customizing features.
 
-Follow these steps after doing your modifications to the sources by running the commands in your terminal or command-line:
+Follow these steps after doing your modifications to the sources by running the commands in your terminal or
+command-line:
 
 1. Build the backend app
    ```shell
@@ -72,11 +99,39 @@ Follow these steps after doing your modifications to the sources by running the 
    ```
 1. Build and compose the app images with docker
    ```shell
-   docker compose --profile local --profile zgw up -d --build
+   docker compose --profile local --profile zgw --profile haalcentraal up -d --build
    ```
 
-The NL Portal application will be accessible at http://localhost:3000 and can be interacted with the following demo user:
+The NL Portal application will be accessible at http://localhost:3000 and can be interacted with the following demo
+user:
+
 * Username: `burger`
 * Password: `burger`
 
 **NB! The startup of all the ZGW components can take multiple minutes depending on how powerful your computer is.**
+
+### Running from source
+
+Both the backend and frontend apps can also be run from source, giving a much faster and easier development cycle.
+Starting up the gradle bootrun and/or vite dev app as is will fail due to a conflict in port mapping with the 
+`localhost` service, thus a manual intervention is required:
+* in the [docker-compose.yaml](docker-compose.yaml) file, make sure the app port mappings are commented out under the 
+`localhost` service:
+  ```yaml
+  #          - "8080:8080" # NL Portal Backend port
+  #          - "8000:8000" # NL Portal Backend debug port
+  #          - "3000:8081" # NL Portal Frontend port
+  ```
+
+After doing that you can proceed to compose up the services required for you and 
+run both apps from sources using your favourite IDE with the gradle `bootRun` task for the backend and the `pnpm -C frontend dev` 
+command for the frontend via the shell/terminal.
+
+## Connecting to your own services
+
+The provided app and compose file is configured to work alongside the provided ZGW components and microservices.
+You can run the NL Portal App against your own existing microservices/authentication/database by uncommenting and
+changing the relevant environment variables in the following files:
+
+* [nl-portal-app-backend environment variables](imports/backend.env)
+* [nl-portal-app-frontend environment variables](imports/frontend.env)

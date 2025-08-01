@@ -387,7 +387,6 @@ services:
     nl-portal-app-haalcentraal-personen:
         container_name: nl-portal-app-haalcentraal-personen
         profiles:
-            - zgw
             - haalcentraal
         image: ghcr.io/brp-api/personen-mock:2.2.1
         network_mode: "service:localhost"
@@ -398,7 +397,6 @@ services:
     nl-portal-app-haalcentraal-bewoningen:
         container_name: nl-portal-app-haalcentraal-bewoningen
         profiles:
-            - zgw
             - haalcentraal
         image: ghcr.io/brp-api/haal-centraal-bewoning-bevragen-mock:2.0.1
         network_mode: "service:localhost"

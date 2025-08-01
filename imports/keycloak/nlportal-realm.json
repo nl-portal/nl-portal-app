@@ -276,7 +276,7 @@
         "containerId" : "7f7a2b1c-7797-48d9-bdef-29a5adb12934",
         "attributes" : { }
       } ],
-      "gzac-portal-m2m" : [ {
+      "nl-portal-m2m" : [ {
         "id" : "4eb7759e-8a5a-417d-ac26-ce42fdc1b215",
         "name" : "uma_protection",
         "composite" : false,
@@ -287,7 +287,7 @@
       "security-admin-console" : [ ],
       "admin-cli" : [ ],
       "account-console" : [ ],
-      "gzac-portal" : [ ],
+      "nl-portal" : [ ],
       "broker" : [ {
         "id" : "538062cf-18c3-4043-8404-afad22a459bd",
         "name" : "read-token",
@@ -527,7 +527,7 @@
         "containerId" : "e7b08428-89ab-4f9d-adc4-c3ddefb63b5b",
         "attributes" : { }
       } ],
-      "gzac-portal-token-exchange" : [ {
+      "nl-portal-token-exchange" : [ {
         "id" : "32e6d85e-2e53-4983-a8be-180669685c61",
         "name" : "uma_protection",
         "composite" : false,
@@ -647,12 +647,12 @@
     "groups" : [ ]
   }, {
     "id" : "ce9ef160-39c4-4fe5-9c64-3fb212d487e3",
-    "username" : "service-account-gzac-portal-m2m",
+    "username" : "service-account-nl-portal-m2m",
     "emailVerified" : false,
     "createdTimestamp" : 1739197373657,
     "enabled" : true,
     "totp" : false,
-    "serviceAccountClientId" : "gzac-portal-m2m",
+    "serviceAccountClientId" : "nl-portal-m2m",
     "credentials" : [ ],
     "disableableCredentialTypes" : [ ],
     "requiredActions" : [ ],
@@ -814,7 +814,7 @@
     "optionalClientScopes" : [ "address", "phone", "offline_access", "microprofile-jwt" ]
   }, {
     "id" : "e5184f97-954b-46d8-ac06-5d6adf55cd1d",
-    "clientId" : "gzac-portal",
+    "clientId" : "nl-portal",
     "name" : "",
     "description" : "",
     "rootUrl" : "http://localhost:3000",
@@ -868,7 +868,7 @@
     "optionalClientScopes" : [ "address", "phone", "offline_access", "microprofile-jwt" ]
   }, {
     "id" : "ed615590-6bdb-4836-b994-ac82713ed537",
-    "clientId" : "gzac-portal-m2m",
+    "clientId" : "nl-portal-m2m",
     "name" : "",
     "description" : "",
     "rootUrl" : "",
@@ -953,7 +953,7 @@
     "optionalClientScopes" : [ "address", "phone", "offline_access", "microprofile-jwt" ]
   }, {
     "id" : "8f4f58ef-60d3-488f-9070-d34c01805a41",
-    "clientId" : "gzac-portal-token-exchange",
+    "clientId" : "nl-portal-token-exchange",
     "name" : "",
     "description" : "",
     "rootUrl" : "",
@@ -1155,13 +1155,13 @@
       } ],
       "policies" : [ {
         "id" : "2170a3f9-34ec-4ded-8c6b-63282459fbc8",
-        "name" : "gzac-portal-m2m",
+        "name" : "nl-portal-m2m",
         "description" : "",
         "type" : "client",
         "logic" : "POSITIVE",
         "decisionStrategy" : "UNANIMOUS",
         "config" : {
-          "clients" : "[\"gzac-portal-m2m\"]"
+          "clients" : "[\"nl-portal-m2m\"]"
         }
       }, {
         "id" : "8f4ab403-9161-4287-81e6-8edc3c9bac54",
@@ -1233,7 +1233,7 @@
         "config" : {
           "resources" : "[\"client.resource.8f4f58ef-60d3-488f-9070-d34c01805a41\"]",
           "scopes" : "[\"token-exchange\"]",
-          "applyPolicies" : "[\"gzac-portal-m2m\"]"
+          "applyPolicies" : "[\"nl-portal-m2m\"]"
         }
       } ],
       "scopes" : [ {
