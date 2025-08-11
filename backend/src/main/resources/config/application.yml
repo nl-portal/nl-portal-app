@@ -63,6 +63,3 @@ nl-portal:
                     allowedMethods: "*"
         endpoints:
             unsecured: /api/public/**
-    config:
-        zakenapi:
-            enabled: true
