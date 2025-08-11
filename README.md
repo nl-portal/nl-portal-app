@@ -12,27 +12,31 @@ e.g. the `haalcentraal` profile contains services for haalcentraal-brp and haalc
 not compose those if you don't require them. If a service is missing a profile, that means it's a core requirement
 for the app and will be composed by default.
 
-| Service                          | Port  | Profile      |
-|----------------------------------|-------|--------------|
-| Pre-built NL Portal App Backend  | 8080  | remote       |
-| Pre-built NL Portal App Frontend | 3000  | remote       |
-| DIY NL Portal App Backend        | 8080  | local        |
-| DIY NL Portal App Frontend       | 3000  | local        |
-| NL Portal Database               | 54321 | -            |
-| Keycloak                         | 8082  | -            |
-| Open Zaak                        | 8001  | zgw          |
-| Objecten API                     | 8010  | zgw          |
-| Objecttypen API                  | 8011  | zgw          |
-| Open Notificaties                | 8012  | zgw          |
-| OpenKlant                        | 8013  | zgw          |
-| OpenKlant 2                      | 8014  | zgw          |
-| Haalcentraal BRP                 | 5010  | haalcentraal |
-| Haalcentraal Bewoning            | 5011  | haalcentraal |
+| Service                                | Port  | Profile      |
+|----------------------------------------|-------|--------------|
+| Pre-built NL Portal App Backend        | 8080  | remote       |
+| Pre-built NL Portal App Frontend       | 3000  | remote       |
+| DIY NL Portal App Backend              | 8080  | local        |
+| DIY NL Portal App Frontend             | 3000  | local        |
+| NL Portal Database                     | 54321 | -            |
+| NL Portal Configuration Panel Router   | 3001  | config       |
+| NL Portal Configuration Panel Backend  | 8090  | config       |
+| NL Portal Configuration Panel Frontend | 8091  | config       |
+| NL Portal Configuration Panel Database | 54322 | config       |
+| Keycloak                               | 8082  | -            |
+| Open Zaak                              | 8001  | zgw          |
+| Objecten API                           | 8010  | zgw          |
+| Objecttypen API                        | 8011  | zgw          |
+| Open Notificaties                      | 8012  | zgw          |
+| OpenKlant                              | 8013  | zgw          |
+| OpenKlant 2                            | 8014  | zgw          |
+| Haalcentraal BRP                       | 5010  | haalcentraal |
+| Haalcentraal Bewoning                  | 5011  | haalcentraal |
 
 All of the above services are set up to expose their ports via the helper server `localhost`. This service defines the
 external port mapping.
 
-**NB! The profiles `remote` and `local` can not be run at the same time due to conflicting port mapping.** 
+**NB! The profiles `remote` and `local` can not be run at the same time due to conflicting port mapping.**
 
 ## Running the application
 
@@ -113,21 +117,25 @@ user:
 ### Running from source
 
 Both the backend and frontend apps can also be run from source, giving a much faster and easier development cycle.
-Starting up the gradle bootrun and/or vite dev app as is will fail due to a conflict in port mapping with the 
+Starting up the gradle bootrun and/or vite dev app as is will fail due to a conflict in port mapping with the
 `localhost` service, thus a manual intervention is required:
-* in the [docker-compose.yaml](docker-compose.yaml) file, make sure the app port mappings are commented out under the 
-`localhost` service:
+
+* in the [docker-compose.yaml](docker-compose.yaml) file, make sure the app port mappings are commented out under the
+  `localhost` service:
   ```yaml
   #          - "8080:8080" # NL Portal Backend port
   #          - "8000:8000" # NL Portal Backend debug port
   #          - "3000:8081" # NL Portal Frontend port
   ```
 
-After doing that you can proceed to compose up the services required for you and 
-run both apps from sources using your favourite IDE with the gradle `bootRun` task for the backend and the `pnpm -C frontend dev` 
+After doing that you can proceed to compose up the services required for you and
+run both apps from sources using your favourite IDE with the gradle `bootRun` task for the backend and the
+`pnpm -C frontend dev`
 command for the frontend via the shell/terminal.
 
 ## Connecting to your own services
+
+### Via envinronemnt varibales
 
 The provided app and compose file is configured to work alongside the provided ZGW components and microservices.
 You can run the NL Portal App against your own existing microservices/authentication/database by uncommenting and
@@ -135,3 +143,15 @@ changing the relevant environment variables in the following files:
 
 * [nl-portal-app-backend environment variables](imports/backend.env)
 * [nl-portal-app-frontend environment variables](imports/frontend.env)
+
+### Via the Configuration Panel
+
+The demo compose application also provides the option to run and use the NL Portal Configuration Panel for configuring
+the NL Portal App images at runtime. This can probe really useful if you want to use your own ZGW stack, but don't want
+to configure everything via environment variables.
+
+To make use of the Configuration Panel, either add the `config` profile to any of the above-mentioned compose commands
+or run the following command in your terminal separately:
+```shell
+docker compose --profile config up -d
+```

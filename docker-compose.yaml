@@ -423,7 +423,7 @@ services:
 
     nl-portal-app-configuration-panel-backend:
         container_name: nl-portal-app-configuration-panel-backend
-        image: nl-portal-configuration-panel-configuration-panel-backend-local:latest  # ghcr.io/nl-portal/configuration-panel-backend
+        image: ghcr.io/nl-portal/configuration-panel-backend
         profiles:
             - config
         depends_on:
@@ -437,7 +437,7 @@ services:
         container_name: nl-portal-app-configuration-panel-frontend
         profiles:
             - config
-        image: nl-portal-configuration-panel-configuration-panel-frontend-local:latest # ghcr.io/nl-portal/configuration-panel-frontend
+        image: ghcr.io/nl-portal/configuration-panel-frontend
         depends_on:
             - nl-portal-app-configuration-panel-backend
             - nl-portal-app-keycloak
