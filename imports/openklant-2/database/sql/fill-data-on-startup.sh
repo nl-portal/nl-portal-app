@@ -7,6 +7,7 @@ do
     if [ "t" = "${initiated}" ]
         then
             echo "Database is initialized. Running database setup scripts"
+            sleep 10
             for file in /docker-entrypoint-initdb.d/sql/*.sql
             do
                 echo "Running $file"
