@@ -25,7 +25,7 @@ services:
             - local
         build: backend/
         network_mode: "service:localhost"
-        env_file: "imports/backend.env"
+        env_file: imports/backend.env
 
     nl-portal-app-frontend-local:
         profiles:
@@ -33,7 +33,7 @@ services:
         container_name: nl-portal-app-frontend
         build: frontend/
         network_mode: "service:localhost"
-        env_file: "imports/frontend.env"
+        env_file: imports/frontend.env
 
     nl-portal-app-database:
         container_name: nl-portal-app-database
@@ -52,7 +52,7 @@ services:
             - remote
         container_name: nl-portal-app-backend
         network_mode: "service:localhost"
-        env_file: "imports/backend.env"
+        env_file: imports/backend.env
 
     nl-portal-app-frontend-remote:
         image: ghcr.io/nl-portal/nl-portal-app-frontend:latest
@@ -60,7 +60,7 @@ services:
             - remote
         container_name: nl-portal-app-frontend
         network_mode: "service:localhost"
-        env_file: "imports/frontend.env"
+        env_file: imports/frontend.env
 
     nl-portal-app-keycloak:
         container_name: nl-portal-app-keycloak
@@ -171,7 +171,7 @@ services:
             - ./imports/open-klant:/docker-entrypoint-initdb.d
 
     nl-portal-app-openklant-2:
-        image: maykinmedia/open-klant:2.10.0
+        image: maykinmedia/open-klant:2.11.1
         container_name: nl-portal-app-openklant-2
         profiles:
             - zgw
@@ -212,6 +212,8 @@ services:
             - POSTGRES_USER=openklant
             - POSTGRES_PASSWORD=openklant
             - POSTGRES_DB=openklant
+        #        ports:
+        #            - "5432:5432"
         volumes:
             - ./imports/openklant-2/database:/docker-entrypoint-initdb.d/
 
@@ -404,6 +406,58 @@ services:
             - ASPNETCORE_ENVIRONMENT=Release
             - ASPNETCORE_URLS=http://+:5011
 
+    nl-portal-app-configuration-panel-router:
+        container_name: nl-portal-app-configuration-panel-router
+        image: nginx:stable-alpine-slim
+        profiles:
+            - local
+            - remote
+        ports:
+            - "3001:8080"
+        volumes:
+            - "./imports/configuration-panel/router/conf.d/:/etc/nginx/conf.d/"
+            - "./imports/configuration-panel/router/templates/:/etc/nginx/templates/"
+        environment:
+            CONFIG_PANEL_BACKEND_HOST: http://host.docker.internal:8090
+            CONFIG_PANEL_FRONTEND_HOST: http://host.docker.internal:8091
+
+    nl-portal-app-configuration-panel-backend:
+        container_name: nl-portal-app-configuration-panel-backend
+        image: ghcr.io/nl-portal/configuration-panel-backend
+        profiles:
+            - config
+        depends_on:
+            - nl-portal-app-configuration-panel-database
+            - nl-portal-app-keycloak
+        ports:
+            - "8090:8080"
+        env_file: imports/configuration-panel/env/backend.env
+
+    nl-portal-app-configuration-panel-frontend:
+        container_name: nl-portal-app-configuration-panel-frontend
+        profiles:
+            - config
+        image: ghcr.io/nl-portal/configuration-panel-frontend
+        depends_on:
+            - nl-portal-app-configuration-panel-backend
+            - nl-portal-app-keycloak
+        ports:
+            - "8091:8080"
+        env_file: imports/configuration-panel/env/frontend.env
+
+    nl-portal-app-configuration-panel-database:
+        container_name: nl-portal-app-configuration-panel-database
+        image: postgres:15
+        profiles:
+            - config
+        environment:
+            POSTGRES_USER: config
+            POSTGRES_PASSWORD: password
+            POSTGRES_DB: nl-portal-config
+        volumes:
+            - nl-portal-app-configuration-panel-database-data:/var/lib/postgres # persist data even if container shuts down
+
 volumes:
     nl-portal-app-database-data:
+    nl-portal-app-configuration-panel-database-data:
     nl-portal-app-openzaak-private-media:

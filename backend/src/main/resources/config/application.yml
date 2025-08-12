@@ -43,14 +43,15 @@ graphql:
 logging:
     level:
         root: ${LOGLEVEL:INFO}
+        liquibase: WARN
 
 nl-portal:
     authentication:
         keycloak:
             resource: ${KEYCLOAK_CLIENT_ID}
-            audience: ${KEYCLOAK_AUDIENCE}
+            audience: ${KEYCLOAK_TOKEN_EXCHANGE_AUDIENCE:${KEYCLOAK_AUDIENCE}}
             credentials:
-                secret: ${KEYCLOAK_TOKEN_EXCHANGE_SECRET}
+                secret: ${KEYCLOAK_CLIENT_SECRET:${KEYCLOAK_TOKEN_EXCHANGE_SECRET}}
         machtingsdienst:
             resource-url: # classpath:example-machtigingsdiensten.json
     security:
@@ -62,100 +63,3 @@ nl-portal:
                     allowedMethods: "*"
         endpoints:
             unsecured: /api/public/**
-    config:
-        besluitenapi:
-            enabled: true
-            properties:
-                url: http://localhost:8001
-                clientId: valtimo_client
-                secret: e09b8bc5-5831-4618-ab28-41411304309d
-        catalogiapi:
-            enabled: true
-            properties:
-                url: http://localhost:8001
-                clientId: valtimo_client
-                secret: e09b8bc5-5831-4618-ab28-41411304309d
-                rsin: "051845623"
-                documentTypeUrl: http://localhost:8001/catalogi/api/v1/informatieobjecttypen/efc332f2-be3b-4bad-9e3c-49a6219c92ad
-        documentenapis:
-            enabled: true
-            properties:
-                default-document-api: openzaak
-                configurations:
-                    openzaak:
-                        url: http://localhost:8001/documenten/api/v1
-                        clientId: valtimo_client
-                        secret: e09b8bc5-5831-4618-ab28-41411304309d
-                        rsin: "051845623"
-                        documentTypeUrl: http://localhost:8001/catalogi/api/v1/informatieobjecttypen/efc332f2-be3b-4bad-9e3c-49a6219c92ad
-                    dummydoc:
-                        url: http://localhost:8002/documenten/api/v1
-                        clientId: docdoc
-                        secret: e09b8bc5-5831-4618-ab28-41411304309d
-        zakenapi:
-            enabled: true
-            properties:
-                url: http://localhost:8001
-                clientId: valtimo_client
-                secret: e09b8bc5-5831-4618-ab28-41411304309d
-                zaak-documenten:
-                    vertrouwelijkheidsaanduiding-whitelist:
-                        - openbaar
-                        - beperkt_openbaar
-                        - intern
-                        - zaakvertrouwelijk
-                        - vertrouwelijk
-                        - confidentieel
-                        - geheim
-                        - zeer_geheim
-                    status-whitelist:
-                        - ter_vaststelling
-                        - in_bewerking
-                        - definitief
-                        - gearchiveerd
-        objectenapi:
-            enabled: true
-            properties:
-                url: http://localhost:8010
-                token: 182c13e2209161852c53cef53a879f7a2f923430
-        openklant2:
-            enabled: true
-            properties:
-                klantinteracties-api-url: http://localhost:8014/klantinteracties/api/v1
-                contactgegevens-api-url: http://localhost:8014/contactgegevens/api/v1
-                token: ac045222c9e7cde8120b48735560f9b920bb58cd
-        openklant:
-            enabled: true
-            properties:
-                url: http://localhost:8013
-                clientId: valtimo_client
-                secret: e09b8bc5-5831-4618-ab28-41411304309d
-        haalcentraal2:
-            enabled: true
-            properties:
-                brp-api-url: http://localhost:5010/haalcentraal/api/brp/
-                bewoning-api-url: http://localhost:5011/haalcentraal/api/bewoning/
-        taak:
-            enabled: true
-            properties:
-                typeUrl: http://localhost:8011/api/v1/objecttypes/3e852115-277a-4570-873a-9a64be3aeb34
-                type-url-v2: http://localhost:8011/api/v1/objecttypes/b4a617af-6969-45e8-9afd-d51e170716d5
-        berichten:
-            enabled: true
-            properties:
-                bericht-object-type-url: http://localhost:8011/api/v1/objecttypes/78731088-430f-49fd-9a4c-80ddd42ded28
-        dmn:
-            enabled: true
-            properties:
-                url: http://localhost:8010
-        prefill:
-            enabled: true
-            properties:
-                typeUrl: http://host.docker.internal:8011/api/v1/objecttypes/3e852115-277a-4570-873a-9a64be3aeb37
-        product:
-            enabled: true
-            properties:
-                product-type-url: http://localhost:8011/api/v1/objecttypes/972e92ce-b964-4ca8-ad4d-ddc43dd7b244
-                product-instantie-type-url: http://localhost:8011/api/v1/objecttypes/3e852115-277a-4570-873a-9a64be3aeb34
-                product-details-type-url: http://localhost:8011/api/v1/objecttypes/3e852115-277a-4570-873a-9a64be3aeb36
-                product-verbruiks-object-type-url: http://localhost:8011/api/v1/objecttypes/3e852115-277a-4570-873a-9a64be3aeb37

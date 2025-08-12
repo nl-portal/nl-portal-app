@@ -1,0 +1,27 @@
+server {
+    listen       8080;
+    server_name  configuration-panel-router;
+
+    location ~ /api {
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $remote_addr;
+        proxy_set_header X-Forwarded-Proto $scheme;
+
+        resolver 127.0.0.11 valid=10s;
+        resolver_timeout 5s;
+
+        set $backend ${CONFIG_PANEL_BACKEND_HOST};
+
+        proxy_pass $backend;
+    }
+
+    location ~ / {
+        resolver 127.0.0.11 valid=10s;
+        resolver_timeout 5s;
+
+        set $frontend ${CONFIG_PANEL_FRONTEND_HOST};
+
+        proxy_pass $frontend;
+    }
+}
