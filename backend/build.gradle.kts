@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21
 import java.net.URI
 
-val backendLibrariesVersion = version
+val backendLibrariesVersion by project.properties
 val kotlinLoggingVersion by project.properties
 
 plugins {
