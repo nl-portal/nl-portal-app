@@ -22,14 +22,13 @@
   --rijkshuisstijl-lichtblauw: #8fcae7;
   --rijkshuisstijl-grijs: #fbfbfb;
   --rijkshuisstijl-donkergrijs: #383838;
-  --rijkshuisstijl-grijs-1: #f3f3f3;
+  --rijkshuisstijl-grijs-1: #f3f3f3; /* tertiary color*/
   --rijkshuisstijl-grijs-2: #e6e6e6;
   --rijkshuisstijl-grijs-3: #cccccc;
   --rijkshuisstijl-grijs-4: #b4b4b4;
   --rijkshuisstijl-grijs-5: #999999;
   --rijkshuisstijl-grijs-6: #696969;
   --rijkshuisstijl-grijs-7: #535353;
-
 
   --denhaag-color-green-1: var(--rijkshuisstijl-donkerblauw);
   --denhaag-color-green-2: var(--rijkshuisstijl-donkerblauw);
