@@ -410,8 +410,7 @@ services:
         container_name: nl-portal-app-configuration-panel-router
         image: nginx:stable-alpine-slim
         profiles:
-            - local
-            - remote
+            - config
         ports:
             - "3001:8080"
         volumes:

@@ -16,7 +16,6 @@ body {
   height: 100%;
 }
 
-
 .denhaag-page-header > div {
   border-bottom: 2px solid var(--rijkshuisstijl-hemelblauw);
   box-shadow: 0 2px 6px 0 var(--rijkshuisstijl-grijs-3);
@@ -24,4 +23,8 @@ body {
   > button {
     background-color: var(--rijkshuisstijl-wit);
   }
+}
+
+.nl-link.denhaag-logo {
+  width: var(--denhaag-side-navigation-min-width);
 }

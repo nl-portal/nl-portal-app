@@ -1,13 +1,6 @@
-import { NavigationItem } from "@nl-portal/nl-portal-user-interface";
-import {
-  ArchiveIcon,
-  CheckCircleIcon,
-  DocumentIcon,
-  GridIcon,
-  InboxIcon,
-  UserIcon,
-} from "@gemeente-denhaag/icons";
-import { paths } from "./paths";
+import {NavigationItem} from "@nl-portal/nl-portal-user-interface";
+import {ArchiveIcon, CheckCircleIcon, GridIcon, InboxIcon, UserIcon,} from "@gemeente-denhaag/icons";
+import {paths} from "./paths";
 
 export const menuItems: NavigationItem[][] = [
   [
@@ -33,13 +26,6 @@ export const menuItems: NavigationItem[][] = [
       titleTranslationKey: "cases",
       path: paths.cases,
       icon: <ArchiveIcon />,
-    },
-  ],
-  [
-    {
-      titleTranslationKey: "sample",
-      path: paths.themeOverview("sample"),
-      icon: <DocumentIcon />,
     },
   ],
   [

@@ -5,6 +5,8 @@ import hooksPlugin from "eslint-plugin-react-hooks";
 import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
 import typescriptParser from "@typescript-eslint/parser";
 import typescriptPlugin from "@typescript-eslint/eslint-plugin";
+import prettierPlugin from "eslint-plugin-prettier";
+import prettierConfig from "eslint-config-prettier";
 
 const reactRule = {
   "react/react-in-jsx-scope": "off",
@@ -38,6 +40,7 @@ export default [
       react: reactPlugin,
       "react-hooks": hooksPlugin,
       "jsx-a11y": jsxA11yPlugin,
+      prettier: prettierPlugin,
     },
     settings: {
       react: {
@@ -49,6 +52,7 @@ export default [
       ...reactPlugin.configs.recommended.rules,
       ...hooksPlugin.configs.recommended.rules,
       ...reactRule,
+      ...prettierConfig.rules,
     },
   },
   {
@@ -59,6 +63,7 @@ export default [
       react: reactPlugin,
       "react-hooks": hooksPlugin,
       "jsx-a11y": jsxA11yPlugin,
+      prettier: prettierPlugin,
     },
     languageOptions: {
       parser: typescriptParser,
@@ -74,6 +79,7 @@ export default [
       ...hooksPlugin.configs.recommended.rules,
       ...typescriptPlugin.configs.recommended.rules,
       ...reactRule,
+      ...prettierConfig.rules,
     },
   },
 ];
