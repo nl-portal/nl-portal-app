@@ -6,7 +6,8 @@
   "license": "EUPL-1.2",
   "type": "module",
   "engines": {
-    "node": "20"
+    "node": "20",
+    "pnpm": "^10"
   },
   "scripts": {
     "dev": "vite --port 3000 --mode development",
@@ -16,7 +17,7 @@
     "generate-pwa-assets": "pwa-asset-generator ./src/assets/pwa-logo.svg ./public/pwa --favicon --mstile --opaque  false --maskable true --index  index.html --manifest ./public/manifest.json --path-override '../pwa'",
     "clean": "rimraf dist",
     "lint": "eslint .",
-    "test": "vitest run",
+    "test": "vitest run --passWithNoTests",
     "test:watch": "vitest --watch"
   },
   "dependencies": {
@@ -47,10 +48,10 @@
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.2.0",
     "globals": "^16.0.0",
-    "pwa-asset-generator": "^6.4.0",
+    "pwa-asset-generator": "^8.1.1",
     "rimraf": "^6.0.1",
     "typescript": "^5.8.3",
     "vite": "^7.1.7",
-    "vitest": "^2.1.9"
+    "vitest": "^3.2.4"
   }
 }
