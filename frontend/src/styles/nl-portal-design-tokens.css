@@ -22,7 +22,7 @@
   --rijkshuisstijl-lichtblauw: #8fcae7;
   --rijkshuisstijl-grijs: #fbfbfb;
   --rijkshuisstijl-donkergrijs: #383838;
-  --rijkshuisstijl-grijs-1: #f3f3f3;
+  --rijkshuisstijl-grijs-1: #f3f3f3; /* tertiary color*/
   --rijkshuisstijl-grijs-2: #e6e6e6;
   --rijkshuisstijl-grijs-3: #cccccc;
   --rijkshuisstijl-grijs-4: #b4b4b4;
@@ -30,18 +30,20 @@
   --rijkshuisstijl-grijs-6: #696969;
   --rijkshuisstijl-grijs-7: #535353;
 
+  --nl-portal-color-primary: var(--rijkshuisstijl-donkerblauw);
 
-  --denhaag-color-green-1: var(--rijkshuisstijl-donkerblauw);
-  --denhaag-color-green-2: var(--rijkshuisstijl-donkerblauw);
-  --denhaag-color-green-3: var(--rijkshuisstijl-donkerblauw);
-  --denhaag-color-green-4: var(--rijkshuisstijl-donkerblauw);
-  --denhaag-color-blue-1: var(--rijkshuisstijl-donkerblauw);
-  --denhaag-color-blue-2: var(--rijkshuisstijl-donkerblauw);
-  --denhaag-color-blue-3: var(--rijkshuisstijl-donkerblauw);
+  --denhaag-color-green-1: var(--nl-portal-color-primary);
+  --denhaag-color-green-2: var(--nl-portal-color-primary);
+  --denhaag-color-green-3: var(--nl-portal-color-primary);
+  --denhaag-color-green-4: color-mix(in srgb, var(--nl-portal-color-primary), black 20%);
+  --denhaag-color-blue-1: var(--nl-portal-color-primary);
+  --denhaag-color-blue-2: var(--nl-portal-color-primary);
+  --denhaag-color-blue-3: var(--nl-portal-color-primary);
+  --denhaag-color-ocher-3: var(--rijkshuisstijl-wit);
   --denhaag-case-card-title-color: var(--rijkshuisstijl-grijs-1);
   --denhaag-case-card-color: var(--rijkshuisstijl-wit);
-  --denhaag-case-card-primary-background-color: var(--rijkshuisstijl-donkerblauw);
-  --denhaag-case-card-secondary-background-color: var(--rijkshuisstijl-donkerblauw);
+  --denhaag-case-card-primary-background-color: var(--nl-portal-color-primary);
+  --denhaag-case-card-secondary-background-color: var(--nl-portal-color-primary);
   --denhaag-case-card-context-color: var(--rijkshuisstijl-grijs-2);
   --denhaag-case-card-action-color: var(--rijkshuisstijl-grijs-1);
   --denhaag-case-card-action-active-color: var(--rijkshuisstijl-grijs-2);
@@ -49,17 +51,17 @@
   --denhaag-page-index-background-color: var(--rijkshuisstijl-grijs-1);
   --denhaag-alert-success-background-color: var(--rijkshuisstijl-grijs-1);
 
-  --utrecht-heading-color: var(--rijkshuisstijl-donkerblauw);
+  --utrecht-heading-color: var(--nl-portal-color-primary);
   --utrecht-document-color: #404b4f;
   --utrecht-badge-counter-color: var(--rijkshuisstijl-grijs-1);
-  --utrecht-feedback-neutral-fill-background-color: var(--rijkshuisstijl-donkerblauw);
+  --utrecht-feedback-neutral-fill-background-color: var(--nl-portal-color-primary);
   --utrecht-feedback-neutral-fill-color: var(--rijkshuisstijl-wit);
 
-  --utrecht-heading-2-color: var(--rijkshuisstijl-donkerblauw);
+  --utrecht-heading-2-color: var(--nl-portal-color-primary);
   --utrecht-heading-4-color: var(--rijkshuisstijl-wit);
-  --nlportal-heading-5-color: var(--rijkshuisstijl-donkerblauw);
+  --nlportal-heading-5-color: var(--nl-portal-color-primary);
   --nlportal-heading-color: var(--rijkshuisstijl-zwart);
-  --nlportal-heading-3-color: var(--rijkshuisstijl-donkerblauw);
+  --nlportal-heading-3-color: var(--nl-portal-color-primary);
 
   --nlportal-space-block-5xl: var(--denhaag-space-block-5xl);
   --nlportal-space-block-4xl: var(--denhaag-space-block-4xl);
@@ -95,7 +97,7 @@
   --nlportal-header-background-color: var(--denhaag-color-white);
   --nlportal-header-bar-height: 14px;
   --nlportal-header-bar-height-tablet: 54px;
-  --nlportal-header-bar-background-color: var(--rijkshuisstijl-donkerblauw);
+  --nlportal-header-bar-background-color: var(--nl-portal-color-primary);
   --nlportal-header-border-width: 1px;
   --nlportal-header-border-style: solid;
   --nlportal-header-border-color: var(--denhaag-color-grey-1);
@@ -128,7 +130,7 @@
   --nlportal-meta-icon-line-height: 1.5rem;
   --nlportal-meta-icon-font-weight-bold: 700;
   --nlportal-meta-icon-size: 2rem;
-  --nlportal-meta-icon-color: var(--rijkshuisstijl-donkerblauw);
+  --nlportal-meta-icon-color: var(--nl-portal-color-primary);
   --nlportal-meta-icon-border-color: var(--denhaag-color-grey-2);
   --nlportal-status-history-border-color: var(--denhaag-color-grey-2);
   --nlportal-status-history-border-radius: 2px;
@@ -165,4 +167,5 @@
   --denhaag-menu-button-line-height: var(
           --denhaag-typography-scale-xl-font-size
   );
+  --nl-number-badge-color: var(--rijkshuisstijl-wit);
 }

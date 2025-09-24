@@ -2,8 +2,7 @@ import { Messages, DEFAULT_LOCALES } from "@nl-portal/nl-portal-localization";
 
 export const EN_GB_MESSAGES: Messages = {
   [DEFAULT_LOCALES.ENGLISH]: {
-    "app.appName": "MijnDenHaag",
-    "pageTitles.sample": "Theme sample",
+    "app.appName": "MijnOmgeving",
     "case.bezwaar-behandelen.title": "Notice of objection",
     "case.bezwaar-behandelen.status.intake-afgerond": "Intake completed",
     "case.bezwaar-behandelen.status.indieningsvereisten-getoetst":
@@ -14,27 +13,11 @@ export const EN_GB_MESSAGES: Messages = {
       "Decision drafted",
     "case.bezwaar-behandelen.status.besluit-vastgesteld": "Decision adopted",
     "case.bezwaar-behandelen.status.zaak-afgerond": "Case closed",
-    "case.B0756.title": "Notice of objection",
-    "case.B0756.status.voorstel-voor-besluitvorming-opgesteld":
-      "Drafted proposal for decision",
-    "case.B0756.status.besluitvorming-afgerond": "Decision completed",
-    "case.B0756.status.onderzoek-afgerond": "Research completed",
-    "case.B0756.status.afgehandeld": "Concluded",
-    "case.B0756.status.in-behandeling-genomen": "Under consideration",
-    "case.B0756.status.geaccepteerd": "Accepted",
-    "case.B0756.status.geregistreerd": "Registered",
-    "case.test-id.title": "Test case",
-    "case.test-id.status.aangemaakt": "Created",
     "footerColumns.theHague": "The Hague",
     "footerColumns.disclaimers": "Disclaimers",
     "footerLinks.goToTheHague": "Go to denhaag.nl",
     "footerLinks.accessibility": "Accessibility declaration",
     "footerLinks.dataProtection": "Data Protection Declaration",
     "footerLinks.proclaimer": "Proclaimer",
-    "theme.sample.listTitle": "Sample contracts",
-    "theme.sample.listAdres": "Address",
-    "theme.sample.listContractnummer": "Contract number",
-    "theme.sample.listViewAll": "View all sample contracts ({total})",
-    "theme.sample.listPageHeader": "Sample contracts",
   },
 };

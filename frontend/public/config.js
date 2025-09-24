@@ -17,3 +17,4 @@ window.CHANGE_REGISTERED_GENDER_URL='https://nl-portal.nl';
 window.ADDRESS_RESEARCH_MORE_INFO_URL='https://nl-portal.nl';
 window.REQUEST_FOR_CHANGE_BRP_INFO_URL='https://nl-portal.nl';
 window.REQUEST_CONFIDENTIALITY_OF_DATA_URL='https://nl-portal.nl';
+window.USE_THEME_API='true';

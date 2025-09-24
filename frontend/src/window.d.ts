@@ -25,5 +25,6 @@ export declare global {
     MESSAGE_COUNT_POLLING_INTERVAL: number;
     CASES_PARTIAL_SEARCH: boolean;
     OPEN_KLANT_VERSION: string;
+    USE_THEME_API: string;
   }
 }

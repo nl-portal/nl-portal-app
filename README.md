@@ -1,6 +1,6 @@
 <img alt="NL Portal Logo" src=".github/readme/images/nl-portal-logo.svg">
 
-![Version 2.0.1](https://img.shields.io/badge/Version-2.0.1-blue)
+![Version 2.1.0](https://img.shields.io/badge/Version-2.1.0-blue)
 
 This repository contains reference implementations for the NL Portal Backend and Frontend Apps.
 It also contains a Docker Compose file for starting up a pre-configured NL Portal Demo without having to write any code.
@@ -152,6 +152,9 @@ to configure everything via environment variables.
 
 To make use of the Configuration Panel, either add the `config` profile to any of the above-mentioned compose commands
 or run the following command in your terminal separately:
+
 ```shell
 docker compose --profile config up -d
 ```
+
+The configuration panel will be accessible at http://localhost:3001 with the user:password `admin:admin`
