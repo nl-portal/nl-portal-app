@@ -1,5 +1,7 @@
+/// <reference types="vitest" />
 import {defineConfig} from "vite";
 import react from "@vitejs/plugin-react";
+import path from "node:path";
 
 export default defineConfig({
     build: {
@@ -22,4 +24,15 @@ export default defineConfig({
     plugins: [
         react(),
     ],
+    test: {
+        css: true,
+        environment: "jsdom",
+        globals: true,
+    },
+    resolve: {
+        alias: {
+            '@apollo/client': path.resolve('node_modules/@apollo/client/index.js'),
+        },
+    },
+    ssr: {noExternal: true},
 });
