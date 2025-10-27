@@ -10,7 +10,7 @@ env:
     DOCKER_IMAGE_NAME: nl-portal-app
     GITHUB_NAMESPACE: nl-portal
     JAVA_VERSION: "21"
-    NODE_VERSION: "20.x"
+    NODE_VERSION: "22.x"
 jobs:
     prepare-variables:
         runs-on: ubuntu-latest
