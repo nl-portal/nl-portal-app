@@ -15,7 +15,7 @@
     "preinstall": "npx only-allow pnpm",
     "preview": "vite preview --port 3000",
     "generate-pwa-assets": "pwa-asset-generator ./src/assets/pwa-logo.svg ./public/pwa --favicon --mstile --opaque  false --maskable true --index  index.html --manifest ./public/manifest.json --path-override '../pwa'",
-    "clean": "rimraf dist",
+    "clean": "rimraf build",
     "lint": "eslint .",
     "test": "vitest run --passWithNoTests",
     "test:watch": "vitest --watch"
