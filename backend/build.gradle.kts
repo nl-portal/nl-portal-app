@@ -66,10 +66,11 @@ dependencies {
 }
 
 tasks.bootRun {
-    val developmentEnv = mapOf(
-        "LOGLEVEL" to "DEBUG",
-        "DATABASE_URL" to "jdbc:postgresql://localhost:54321/nl-portal",
-    )
+    val developmentEnv =
+        mapOf(
+            "LOGLEVEL" to "DEBUG",
+            "DATABASE_URL" to "jdbc:postgresql://localhost:54321/nl-portal",
+        )
 
     environment.putAll(
         project
@@ -80,8 +81,7 @@ tasks.bootRun {
             ?.associate { line ->
                 val entry = line.split("=", limit = 2)
                 entry.first() to entry.last()
-            }
-            ?.plus(developmentEnv)
-            ?: developmentEnv
+            }?.plus(developmentEnv)
+            ?: developmentEnv,
     )
 }
