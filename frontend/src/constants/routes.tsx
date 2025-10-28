@@ -13,19 +13,12 @@ import {
 import {OidcCallbackPage} from "@nl-portal/nl-portal-authentication";
 import {paths} from "./paths";
 import {config} from "./config";
-import {Navigate, RouteObject as ReactRouteObject} from "react-router";
+import {Navigate} from "react-router";
 
-export type RouteObject = ReactRouteObject & {
-    handle: {
-        label: string;
-    };
-    children?: RouteObject[];
-};
-
-export const routes: RouteObject[] = [
-  {
+export const routes = [
+    {
         path: paths.overview,
-    handle: {label: "breadcrumb.overview"},
+        handle: {label: "breadcrumb.overview"},
         element: <OverviewPage showIntro/>,
     },
     {

@@ -56,9 +56,9 @@ nl-portal:
     authentication:
         keycloak:
             resource: ${KEYCLOAK_CLIENT_ID}
-            audience: ${KEYCLOAK_TOKEN_EXCHANGE_AUDIENCE:${KEYCLOAK_AUDIENCE}}
+            audience: ${KEYCLOAK_TOKEN_EXCHANGE_AUDIENCE}
             credentials:
-                secret: ${KEYCLOAK_CLIENT_SECRET:${KEYCLOAK_TOKEN_EXCHANGE_SECRET}}
+                secret: ${KEYCLOAK_CLIENT_SECRET}
         machtingsdienst:
             resource-url: # classpath:example-machtigingsdiensten.json
     security:
