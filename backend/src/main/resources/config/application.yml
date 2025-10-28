@@ -7,14 +7,16 @@ management:
             access: read_only
             probes:
                 enabled: true
+        refresh:
+            access: unrestricted
         restart:
-            access: none
+            access: unrestricted
     endpoints:
         access:
             default: none
         web:
             exposure:
-                include: health, restart
+                include: health, refresh, restart
 
 spring:
     application:
@@ -35,6 +37,11 @@ spring:
         password: ${DATABASE_PASSWORD}
     jpa:
         database-platform: org.hibernate.dialect.PostgreSQLDialect
+    graphql:
+        graphiql:
+            enabled: true
+        schema:
+            locations: classpath*:graphql/**/
 
 graphql:
     packages:

@@ -34,7 +34,6 @@ repositories {
 
 dependencies {
     implementation("nl.nl-portal:core:$backendLibrariesVersion")
-    implementation("nl.nl-portal:case:$backendLibrariesVersion")
     implementation("nl.nl-portal:common-ground-authentication:$backendLibrariesVersion")
     implementation("nl.nl-portal:graphql:$backendLibrariesVersion")
 
@@ -51,6 +50,7 @@ dependencies {
     implementation("nl.nl-portal:taak:$backendLibrariesVersion")
     implementation("nl.nl-portal:besluiten:$backendLibrariesVersion")
     implementation("nl.nl-portal:product:$backendLibrariesVersion")
+    implementation("nl.nl-portal:openproduct:$backendLibrariesVersion")
 
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
