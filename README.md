@@ -1,6 +1,6 @@
 <img alt="NL Portal Logo" src=".github/readme/images/nl-portal-logo.svg">
 
-![Version 2.1.0](https://img.shields.io/badge/Version-2.1.0-blue)
+![Version 3.0.0.RC](https://img.shields.io/badge/Version-3.0.0.RC-blue)
 
 This repository contains reference implementations for the NL Portal Backend and Frontend Apps.
 It also contains a Docker Compose file for starting up a pre-configured NL Portal Demo without having to write any code.
@@ -81,27 +81,15 @@ user:
 The following software has to be installed to be able to use this application:
 
 * Docker Desktop
-* JDK 21
-* NodeJS 20
 
 #### Steps
 
 The Docker Compose file also provides an option to build your own app images and run them should you make changes to the
 Backend and/or Frontend app e.g. changing the colors and logo in the Frontend app or customizing features.
 
-Follow these steps after doing your modifications to the sources by running the commands in your terminal or
+Follow these steps after doing your modifications to the sources by running the command in your terminal or
 command-line:
 
-1. Build the backend app
-   ```shell
-   cd backend
-   ./gradlew bootJar
-   ```
-1. Build the frontend app
-   ```shell
-   npm i -g pnpm && pnpm -C frontend i && pnpm -C frontend build
-   ```
-1. Build and compose the app images with docker
    ```shell
    docker compose --profile local --profile zgw --profile haalcentraal up -d --build
    ```
