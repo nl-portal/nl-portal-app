@@ -66,11 +66,12 @@ docker compose --profile remote --profile zgw --profile haalcentraal up -d
 This will pull the latest public release of the NL Portal backend and frontend apps alongside all the
 necessary ZGW components required to demo NL Portal functionality.
 
-The NL Portal application will be accessible at http://localhost:3000 and can be interacted with the following demo
-user:
+The NL Portal application will be accessible at http://localhost:3000 with one of the following users:
 
-* Username: `burger`
-* Password: `burger`
+| username | password | identifier (bsn/kvk) |
+|----------|----------|----------------------|
+| burger   | burger   | 999993847            |
+| bedrijf  | bedrijf  | 14127293             |
 
 **NB! The startup of all the ZGW components can take multiple minutes depending on how powerful your computer is.**
 
@@ -94,11 +95,12 @@ command-line:
    docker compose --profile local --profile zgw --profile haalcentraal up -d --build
    ```
 
-The NL Portal application will be accessible at http://localhost:3000 and can be interacted with the following demo
-user:
+The NL Portal application will be accessible at http://localhost:3000 with one of the following users:
 
-* Username: `burger`
-* Password: `burger`
+| username | password | identifier (bsn/kvk) |
+|----------|----------|----------------------|
+| burger   | burger   | 999993847            |
+| bedrijf  | bedrijf  | 14127293             |
 
 **NB! The startup of all the ZGW components can take multiple minutes depending on how powerful your computer is.**
 
