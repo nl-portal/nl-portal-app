@@ -14,7 +14,7 @@ do
             DJANGO_SUPERUSER_PASSWORD=admin python /app/src/manage.py createsuperuser --username=admin --email=admin@example.com --noinput
             echo "Loading fixtures:"
             sleep 2
-            python /app/src/manage.py loaddata configuration catalogi zaken
+            python /app/src/manage.py loaddata configuration catalogi documenten zaken
             break
         else
             echo "Database is not ready. Retrying in 10 seconds."

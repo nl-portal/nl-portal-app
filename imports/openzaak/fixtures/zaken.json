@@ -498,5 +498,26 @@
             "kvk_nummer": "",
             "vestigings_nummer": ""
         }
+    },
+    {
+        "model": "zaken.zaakinformatieobject",
+        "pk": 1,
+        "fields": {
+            "_etag": "99ddea03add34338118d39088aa863f6",
+            "uuid": "12df8f9f-df40-442e-9685-34e6043e4912",
+            "zaak": 2,
+            "_informatieobject_base_url": null,
+            "_informatieobject_relative_url": null,
+            "_informatieobject_url": null,
+            "_informatieobject": 1,
+            "informatieobject": "",
+            "aard_relatie": "hoort_bij",
+            "titel": "Notities",
+            "beschrijving": "Notities van de behandelaar",
+            "registratiedatum": "2025-10-29T17:15:01.575Z",
+            "_objectinformatieobject_url": "",
+            "vernietigingsdatum": "2025-10-29T17:14:59Z",
+            "status": null
+        }
     }
 ]

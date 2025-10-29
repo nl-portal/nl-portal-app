@@ -584,7 +584,7 @@
     },
     {
         "model": "catalogi.informatieobjecttype",
-        "pk": 3,
+        "pk": 1,
         "fields": {
             "_etag": "31c7b87d0e40df9d83e0b01211611788",
             "datum_begin_geldigheid": "2021-01-01",
@@ -605,12 +605,12 @@
     },
     {
         "model": "catalogi.zaaktypeinformatieobjecttype",
-        "pk": 3,
+        "pk": 1,
         "fields": {
             "_etag": "90c37817913a954658acf911c16c899c",
             "uuid": "d4f7d366-767f-43b3-989f-06a0d4ca3be2",
             "zaaktype": 1,
-            "informatieobjecttype": 3,
+            "informatieobjecttype": 1,
             "volgnummer": 1,
             "richting": "inkomend",
             "statustype": null
