@@ -1,0 +1,846 @@
+[
+    {
+        "model": "catalogi.catalogus",
+        "pk": 1,
+        "fields": {
+            "_etag": "4fadbe5640aeb5065d19629180b3642a",
+            "naam": "NL Portal",
+            "uuid": "f173c374-33bc-4df4-883b-41e8ba8ff282",
+            "domein": "NLP",
+            "rsin": "100000009",
+            "contactpersoon_beheer_naam": "NL Portal",
+            "contactpersoon_beheer_telefoonnummer": "",
+            "contactpersoon_beheer_emailadres": "",
+            "versie": "",
+            "begindatum_versie": null
+        }
+    },
+    {
+        "model": "catalogi.eigenschapspecificatie",
+        "pk": 1,
+        "fields": {
+            "groep": "tekst",
+            "formaat": "tekst",
+            "lengte": "100",
+            "kardinaliteit": "1",
+            "waardenverzameling": "[]"
+        }
+    },
+    {
+        "model": "catalogi.eigenschapspecificatie",
+        "pk": 2,
+        "fields": {
+            "groep": "tekst",
+            "formaat": "tekst",
+            "lengte": "100",
+            "kardinaliteit": "1",
+            "waardenverzameling": "[]"
+        }
+    },
+    {
+        "model": "catalogi.eigenschapspecificatie",
+        "pk": 3,
+        "fields": {
+            "groep": "tekst",
+            "formaat": "tekst",
+            "lengte": "100",
+            "kardinaliteit": "1",
+            "waardenverzameling": "[]"
+        }
+    },
+    {
+        "model": "catalogi.eigenschapspecificatie",
+        "pk": 4,
+        "fields": {
+            "groep": "tekst",
+            "formaat": "tekst",
+            "lengte": "100",
+            "kardinaliteit": "1",
+            "waardenverzameling": "[]"
+        }
+    },
+    {
+        "model": "catalogi.eigenschapspecificatie",
+        "pk": 5,
+        "fields": {
+            "groep": "tekst",
+            "formaat": "tekst",
+            "lengte": "100",
+            "kardinaliteit": "1",
+            "waardenverzameling": "[]"
+        }
+    },
+    {
+        "model": "catalogi.eigenschapspecificatie",
+        "pk": 6,
+        "fields": {
+            "groep": "tekst",
+            "formaat": "tekst",
+            "lengte": "100",
+            "kardinaliteit": "1",
+            "waardenverzameling": "[]"
+        }
+    },
+    {
+        "model": "catalogi.eigenschapspecificatie",
+        "pk": 7,
+        "fields": {
+            "groep": "tekst",
+            "formaat": "tekst",
+            "lengte": "100",
+            "kardinaliteit": "1",
+            "waardenverzameling": "[]"
+        }
+    },
+    {
+        "model": "catalogi.eigenschapspecificatie",
+        "pk": 8,
+        "fields": {
+            "groep": "tekst",
+            "formaat": "tekst",
+            "lengte": "100",
+            "kardinaliteit": "1",
+            "waardenverzameling": "[]"
+        }
+    },
+    {
+        "model": "catalogi.eigenschapspecificatie",
+        "pk": 9,
+        "fields": {
+            "groep": "tekst",
+            "formaat": "tekst",
+            "lengte": "100",
+            "kardinaliteit": "1",
+            "waardenverzameling": "[]"
+        }
+    },
+    {
+        "model": "catalogi.eigenschapspecificatie",
+        "pk": 10,
+        "fields": {
+            "groep": "tekst",
+            "formaat": "tekst",
+            "lengte": "100",
+            "kardinaliteit": "1",
+            "waardenverzameling": "[]"
+        }
+    },
+    {
+        "model": "catalogi.eigenschapspecificatie",
+        "pk": 11,
+        "fields": {
+            "groep": "tekst",
+            "formaat": "tekst",
+            "lengte": "100",
+            "kardinaliteit": "1",
+            "waardenverzameling": "[]"
+        }
+    },
+    {
+        "model": "catalogi.eigenschapspecificatie",
+        "pk": 12,
+        "fields": {
+            "groep": "tekst",
+            "formaat": "tekst",
+            "lengte": "100",
+            "kardinaliteit": "1",
+            "waardenverzameling": "[]"
+        }
+    },
+    {
+        "model": "catalogi.eigenschapspecificatie",
+        "pk": 13,
+        "fields": {
+            "groep": "tekst",
+            "formaat": "tekst",
+            "lengte": "100",
+            "kardinaliteit": "1",
+            "waardenverzameling": "[]"
+        }
+    },
+    {
+        "model": "catalogi.eigenschapspecificatie",
+        "pk": 14,
+        "fields": {
+            "groep": "tekst",
+            "formaat": "tekst",
+            "lengte": "100",
+            "kardinaliteit": "1",
+            "waardenverzameling": "[]"
+        }
+    },
+    {
+        "model": "catalogi.eigenschapspecificatie",
+        "pk": 15,
+        "fields": {
+            "groep": "tekst",
+            "formaat": "tekst",
+            "lengte": "100",
+            "kardinaliteit": "1",
+            "waardenverzameling": "[]"
+        }
+    },
+    {
+        "model": "catalogi.eigenschapspecificatie",
+        "pk": 16,
+        "fields": {
+            "groep": "tekst",
+            "formaat": "tekst",
+            "lengte": "100",
+            "kardinaliteit": "1",
+            "waardenverzameling": "[]"
+        }
+    },
+    {
+        "model": "catalogi.eigenschapspecificatie",
+        "pk": 17,
+        "fields": {
+            "groep": "tekst",
+            "formaat": "tekst",
+            "lengte": "100",
+            "kardinaliteit": "1",
+            "waardenverzameling": "[]"
+        }
+    },
+    {
+        "model": "catalogi.eigenschapspecificatie",
+        "pk": 18,
+        "fields": {
+            "groep": "tekst",
+            "formaat": "tekst",
+            "lengte": "100",
+            "kardinaliteit": "1",
+            "waardenverzameling": "[]"
+        }
+    },
+    {
+        "model": "catalogi.eigenschapspecificatie",
+        "pk": 19,
+        "fields": {
+            "groep": "tekst",
+            "formaat": "tekst",
+            "lengte": "100",
+            "kardinaliteit": "1",
+            "waardenverzameling": "[]"
+        }
+    },
+    {
+        "model": "catalogi.eigenschapspecificatie",
+        "pk": 20,
+        "fields": {
+            "groep": "tekst",
+            "formaat": "tekst",
+            "lengte": "100",
+            "kardinaliteit": "1",
+            "waardenverzameling": "[]"
+        }
+    },
+    {
+        "model": "catalogi.eigenschapspecificatie",
+        "pk": 21,
+        "fields": {
+            "groep": "tekst",
+            "formaat": "tekst",
+            "lengte": "100",
+            "kardinaliteit": "1",
+            "waardenverzameling": "[]"
+        }
+    },
+    {
+        "model": "catalogi.eigenschap",
+        "pk": 1,
+        "fields": {
+            "_etag": "b644be6e838bb448cb3cfb14718aedf5",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "c2e316eb-3854-48f3-94bd-84dceac87a81",
+            "eigenschapnaam": "voornaam",
+            "definitie": "voornaam",
+            "specificatie_van_eigenschap": 1,
+            "toelichting": "",
+            "zaaktype": 1,
+            "statustype": null
+        }
+    },
+    {
+        "model": "catalogi.eigenschap",
+        "pk": 2,
+        "fields": {
+            "_etag": "fdadcbf14d046d7fa1b3d42515cc880f",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "12806470-75e9-4067-9eee-061942d7bb2c",
+            "eigenschapnaam": "achternaam",
+            "definitie": "achternaam",
+            "specificatie_van_eigenschap": 2,
+            "toelichting": "",
+            "zaaktype": 1,
+            "statustype": null
+        }
+    },
+    {
+        "model": "catalogi.eigenschap",
+        "pk": 3,
+        "fields": {
+            "_etag": "85cad87af75eca76d7990319953cb2ff",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "e60f1fdf-d601-469d-8a4b-b735c4b3e228",
+            "eigenschapnaam": "bsn",
+            "definitie": "bsn",
+            "specificatie_van_eigenschap": 3,
+            "toelichting": "",
+            "zaaktype": 1,
+            "statustype": null
+        }
+    },
+    {
+        "model": "catalogi.eigenschap",
+        "pk": 4,
+        "fields": {
+            "_etag": "54397241a506dd64e358c8fa17a0317d",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "30cf5aee-54ee-44b9-87a4-0205902be91b",
+            "eigenschapnaam": "bezwaar",
+            "definitie": "bezwaar",
+            "specificatie_van_eigenschap": 4,
+            "toelichting": "",
+            "zaaktype": 1,
+            "statustype": null
+        }
+    },
+    {
+        "model": "catalogi.eigenschap",
+        "pk": 5,
+        "fields": {
+            "_etag": "ea00f22031f25a236516a8cf64dfe4ca",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "9942b522-4a76-488c-a087-721ed23b5c12",
+            "eigenschapnaam": "straatnaam",
+            "definitie": "straatnaam",
+            "specificatie_van_eigenschap": 5,
+            "toelichting": "",
+            "zaaktype": 1,
+            "statustype": null
+        }
+    },
+    {
+        "model": "catalogi.eigenschap",
+        "pk": 6,
+        "fields": {
+            "_etag": "21aa7833e4839815124ae78d4b2856d8",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "2dc83d34-16ec-4f2d-8286-e186749f9bce",
+            "eigenschapnaam": "huisnummer",
+            "definitie": "huisnummer",
+            "specificatie_van_eigenschap": 6,
+            "toelichting": "",
+            "zaaktype": 1,
+            "statustype": null
+        }
+    },
+    {
+        "model": "catalogi.eigenschap",
+        "pk": 7,
+        "fields": {
+            "_etag": "d8a0531c533815f197d09a77a72cefa3",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "e68b7874-b601-4fca-aea5-54467e8d2cbd",
+            "eigenschapnaam": "toevoeging",
+            "definitie": "toevoeging",
+            "specificatie_van_eigenschap": 7,
+            "toelichting": "",
+            "zaaktype": 1,
+            "statustype": null
+        }
+    },
+    {
+        "model": "catalogi.eigenschap",
+        "pk": 8,
+        "fields": {
+            "_etag": "d0ab913fc6e02c68c63f4f59899f76ca",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "b89a26d9-3d1f-42fb-ad56-9fd579e5da78",
+            "eigenschapnaam": "postcode",
+            "definitie": "postcode",
+            "specificatie_van_eigenschap": 8,
+            "toelichting": "",
+            "zaaktype": 1,
+            "statustype": null
+        }
+    },
+    {
+        "model": "catalogi.eigenschap",
+        "pk": 9,
+        "fields": {
+            "_etag": "e45b5f6514a1beda43524fd18dd1d801",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "beaee831-7b64-4d56-8b06-454785c60f35",
+            "eigenschapnaam": "plaats",
+            "definitie": "plaats",
+            "specificatie_van_eigenschap": 9,
+            "toelichting": "",
+            "zaaktype": 1,
+            "statustype": null
+        }
+    },
+    {
+        "model": "catalogi.eigenschap",
+        "pk": 10,
+        "fields": {
+            "_etag": "6f273d1792909f7609bb2501aa75eeb5",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "69a4e0c4-4be6-4519-a0ff-7781cdacdbfb",
+            "eigenschapnaam": "telefoonnummer",
+            "definitie": "telefoonnummer",
+            "specificatie_van_eigenschap": 10,
+            "toelichting": "",
+            "zaaktype": 1,
+            "statustype": null
+        }
+    },
+    {
+        "model": "catalogi.eigenschap",
+        "pk": 11,
+        "fields": {
+            "_etag": "b3e657674bdd356bd87acfbe76dcb9f1",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "e12e1391-295b-4759-90a3-eb3a26ecc825",
+            "eigenschapnaam": "e-mailadres",
+            "definitie": "e-mailadres",
+            "specificatie_van_eigenschap": 11,
+            "toelichting": "",
+            "zaaktype": 1,
+            "statustype": null
+        }
+    },
+    {
+        "model": "catalogi.eigenschap",
+        "pk": 12,
+        "fields": {
+            "_etag": "94b4d49773c75ac95af169a0835725aa",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "fa92a62d-ec9d-4953-aa6e-8aa30dbba9a3",
+            "eigenschapnaam": "zaaknummer",
+            "definitie": "zaaknummer",
+            "specificatie_van_eigenschap": 12,
+            "toelichting": "",
+            "zaaktype": 1,
+            "statustype": null
+        }
+    },
+    {
+        "model": "catalogi.eigenschap",
+        "pk": 13,
+        "fields": {
+            "_etag": "14ebd7539edf45d6a2f83073bd959975",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "d82c156a-4ab8-4cf5-8df4-b64da50d79e7",
+            "eigenschapnaam": "datumBesluit",
+            "definitie": "datumBesluit",
+            "specificatie_van_eigenschap": 13,
+            "toelichting": "",
+            "zaaktype": 1,
+            "statustype": null
+        }
+    },
+    {
+        "model": "catalogi.eigenschap",
+        "pk": 14,
+        "fields": {
+            "_etag": "21dfa92ff3af4458dc2eaf7008974c2b",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "ac79a658-3c3e-4d29-8d63-17c3c8cb7c12",
+            "eigenschapnaam": "besluit",
+            "definitie": "besluit",
+            "specificatie_van_eigenschap": 14,
+            "toelichting": "",
+            "zaaktype": 1,
+            "statustype": null
+        }
+    },
+    {
+        "model": "catalogi.eigenschap",
+        "pk": 15,
+        "fields": {
+            "_etag": "83a7946c83c61012cfe8c58ea2548fce",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "eaa51fbb-c4b8-48fe-ab03-e22595048e00",
+            "eigenschapnaam": "communicatie",
+            "definitie": "communicatie",
+            "specificatie_van_eigenschap": 15,
+            "toelichting": "",
+            "zaaktype": 1,
+            "statustype": null
+        }
+    },
+    {
+        "model": "catalogi.eigenschap",
+        "pk": 16,
+        "fields": {
+            "_etag": "f49259d53308cf1127fd66d9ed341bf3",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "c46e1d7c-40a4-4552-b5e8-1ef92a5a1f6c",
+            "eigenschapnaam": "beslissingBezwaar",
+            "definitie": "beslissingBezwaar",
+            "specificatie_van_eigenschap": 16,
+            "toelichting": "",
+            "zaaktype": 1,
+            "statustype": null
+        }
+    },
+    {
+        "model": "catalogi.eigenschap",
+        "pk": 17,
+        "fields": {
+            "_etag": "227b5f821335c11a76fa6540bf424e94",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "f67c743d-7c4e-4eb5-aff3-49d07b77aea3",
+            "eigenschapnaam": "naamBehandelaar",
+            "definitie": "naamBehandelaar",
+            "specificatie_van_eigenschap": 17,
+            "toelichting": "",
+            "zaaktype": 1,
+            "statustype": null
+        }
+    },
+    {
+        "model": "catalogi.eigenschap",
+        "pk": 18,
+        "fields": {
+            "_etag": "04de47d5f702e5e1f3130d36c183af98",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "40d9c304-f419-4cab-b5d0-232df7a43f65",
+            "eigenschapnaam": "e-mailBehandelaar",
+            "definitie": "e-mailBehandelaar",
+            "specificatie_van_eigenschap": 18,
+            "toelichting": "",
+            "zaaktype": 1,
+            "statustype": null
+        }
+    },
+    {
+        "model": "catalogi.eigenschap",
+        "pk": 19,
+        "fields": {
+            "_etag": "01c8598b25ba6ac4f865b078e6e8dc82",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "d169e458-be8a-4f9f-b5a5-3336094e6220",
+            "eigenschapnaam": "aanvraagAanvulInfo",
+            "definitie": "aanvraagAanvulInfo",
+            "specificatie_van_eigenschap": 19,
+            "toelichting": "",
+            "zaaktype": 1,
+            "statustype": null
+        }
+    },
+    {
+        "model": "catalogi.eigenschap",
+        "pk": 20,
+        "fields": {
+            "_etag": "31a164d7aefb491a91dd0201f2351efb",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "e30425ee-387f-40ec-a26a-992b19013251",
+            "eigenschapnaam": "aanvullendeInfo",
+            "definitie": "aanvullendeInfo",
+            "specificatie_van_eigenschap": 20,
+            "toelichting": "",
+            "zaaktype": 1,
+            "statustype": null
+        }
+    },
+    {
+        "model": "catalogi.eigenschap",
+        "pk": 21,
+        "fields": {
+            "_etag": "466886f159396fb920e4fb7bfed51b0f",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "d62a19c6-8a23-4b07-b130-2fa392c1f6e6",
+            "eigenschapnaam": "naamBeslisser",
+            "definitie": "naamBeslisser",
+            "specificatie_van_eigenschap": 21,
+            "toelichting": "",
+            "zaaktype": 1,
+            "statustype": null
+        }
+    },
+    {
+        "model": "catalogi.informatieobjecttype",
+        "pk": 3,
+        "fields": {
+            "_etag": "31c7b87d0e40df9d83e0b01211611788",
+            "datum_begin_geldigheid": "2021-01-01",
+            "datum_einde_geldigheid": null,
+            "concept": false,
+            "uuid": "36e40d95-e411-4884-b08f-e5864ec8167f",
+            "omschrijving": "Bijlage",
+            "informatieobjectcategorie": "onbekend",
+            "trefwoord": "[]",
+            "vertrouwelijkheidaanduiding": "zaakvertrouwelijk",
+            "omschrijving_generiek_informatieobjecttype": "",
+            "omschrijving_generiek_definitie": "",
+            "omschrijving_generiek_herkomst": "",
+            "omschrijving_generiek_hierarchie": "",
+            "omschrijving_generiek_opmerking": "",
+            "catalogus": 1
+        }
+    },
+    {
+        "model": "catalogi.zaaktypeinformatieobjecttype",
+        "pk": 3,
+        "fields": {
+            "_etag": "90c37817913a954658acf911c16c899c",
+            "uuid": "d4f7d366-767f-43b3-989f-06a0d4ca3be2",
+            "zaaktype": 1,
+            "informatieobjecttype": 3,
+            "volgnummer": 1,
+            "richting": "inkomend",
+            "statustype": null
+        }
+    },
+    {
+        "model": "catalogi.resultaattype",
+        "pk": 1,
+        "fields": {
+            "_etag": "0d6453c4ac830330be2f20f330b83409",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "ba58ae07-a5a1-44f4-890a-4b97caa7a32c",
+            "zaaktype": 1,
+            "omschrijving": "Afgehandeld",
+            "resultaattypeomschrijving": "https://selectielijst.openzaak.nl/api/v1/resultaattypeomschrijvingen/7cb315fb-4f7b-4a43-aca1-e4522e4c73b3",
+            "omschrijving_generiek": "Afgehandeld",
+            "selectielijstklasse": "https://selectielijst.openzaak.nl/api/v1/resultaten/cc5ae4e3-a9e6-4386-bcee-46be4986a829",
+            "archiefnominatie": "vernietigen",
+            "archiefactietermijn": "P10Y",
+            "brondatum_archiefprocedure_afleidingswijze": "afgehandeld",
+            "brondatum_archiefprocedure_datumkenmerk": "",
+            "brondatum_archiefprocedure_einddatum_bekend": false,
+            "brondatum_archiefprocedure_objecttype": "",
+            "brondatum_archiefprocedure_registratie": "",
+            "brondatum_archiefprocedure_procestermijn": "P0D",
+            "toelichting": "toelichting",
+            "procesobjectaard": "",
+            "indicatie_specifiek": false,
+            "procestermijn": null,
+            "informatieobjecttypen": [],
+            "besluittypen": [],
+            "zaakobjecttypen": []
+        }
+    },
+    {
+        "model": "catalogi.roltype",
+        "pk": 1,
+        "fields": {
+            "_etag": "7fdb3751c51152379fbbbbceae036d96",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "66d685fd-ed2f-45ee-ad42-835ac877cef2",
+            "omschrijving": "Aanvrager",
+            "omschrijving_generiek": "initiator",
+            "zaaktype": 1
+        }
+    },
+    {
+        "model": "catalogi.roltype",
+        "pk": 2,
+        "fields": {
+            "_etag": "7fdb3751c51152379fbbbbceae07h2d6",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "5179493c-e9e6-483a-8d8c-5f64130623eb",
+            "omschrijving": "Behandelaar",
+            "omschrijving_generiek": "behandelaar",
+            "zaaktype": 1
+        }
+    },
+    {
+        "model": "catalogi.statustype",
+        "pk": 1,
+        "fields": {
+            "_etag": "af8e783719daa3a86ff9607f69112d94",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "4336fa38-9d19-4fe2-92c1-23bb70001276",
+            "zaaktype": 1,
+            "statustype_omschrijving": "Intake afgerond",
+            "statustype_omschrijving_generiek": "Intake afgerond",
+            "statustypevolgnummer": 1,
+            "doorlooptijd": null,
+            "informeren": true,
+            "statustekst": "Geachte heer/mevrouw, Op %ZAAK. Registratiedatum% heeft u een bezwaar ingediend. Uw bezwaar is bij ons in behandeling genomen onder zaaknummer %ZAAK. Zaakidentificatie%. Wij vragen u dit zaaknummer te gebruiken in geval van correspondentie over dit bezwaar cq. deze zaak.  U wordt per e-mail op de hoogte gehouden van de status van de behandeling van uw bezwaar.",
+            "toelichting": "Initiële status van de zaak waarbij het bezwaarschrift ontvangen is en naar aanleiding daarvan de zaak aangemaakt en de behandelaar bepaald is. De indiener is een ontvangstbevestiging van zijn (of haar) bezwaar gezonden."
+        }
+    },
+    {
+        "model": "catalogi.statustype",
+        "pk": 2,
+        "fields": {
+            "_etag": "ae7f7549ae25371339346b69079527d9",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "26f9b376-1c22-4e28-a3df-b856302d18b6",
+            "zaaktype": 1,
+            "statustype_omschrijving": "Indieningsvereisten getoetst",
+            "statustype_omschrijving_generiek": "Indieningsvereisten getoetst",
+            "statustypevolgnummer": 2,
+            "doorlooptijd": null,
+            "informeren": true,
+            "statustekst": "Geachte heer/mevrouw, Op %ZAAK.Registratiedatum% heeft u een bezwaar ingediend. Uw bezwaar is bij ons in behandeling onder zaaknummer %ZAAK.Zaakidentificatie% en is compleet bevonden. Dit houdt in dat wij uw bezwaar gaan beoordelen.  U wordt per e-mail op de hoogte gehouden van de status van de behandeling van uw bezwaar.",
+            "toelichting": "Het ingediende bezwaar is getoetst op de indieningsvereisten. De uitkomst van deze toets wordt vastgelegd in de eigenschap Uitslag toetsing. Indien er niet aan de indieningseisen wordt voldaan, dan wordt het bezwaar niet-ontvankelijk verklaard en kunnen de volgende vier statussen worden overgeslagen."
+        }
+    },
+    {
+        "model": "catalogi.statustype",
+        "pk": 3,
+        "fields": {
+            "_etag": "99e4a4eb8c701145c7b4fef7a85fd03a",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "16389c2c-9c20-48e2-8893-964d75e5d9f4",
+            "zaaktype": 1,
+            "statustype_omschrijving": "Bezwaar beoordeeld",
+            "statustype_omschrijving_generiek": "Bezwaar beoordeeld",
+            "statustypevolgnummer": 3,
+            "doorlooptijd": null,
+            "informeren": true,
+            "statustekst": "Geachte heer/mevrouw, Op %ZAAK.Registratiedatum% heeft u een bezwaar ingediend. Uw bezwaar is bij ons in behandeling onder zaaknummer %ZAAK.Zaakidentificatie%. Wij hebben uw bezwaar beoordeeld en gaan nu de hoorzitting voorbereiden.  U wordt per e-mail op de hoogte gehouden van de status van de behandeling van uw bezwaar.",
+            "toelichting": "Het ingediende bezwaar is inhoudelijk beoordeeld. Indien gegrond dan is, indien mogelijk, het besluit herroepen of aangepast. Indien niet gegrond dan heeft, indien van toepassing, mediation plaatsgevonden. Indien het besluit als gegrond is beoordeeld of indien mediation heeft geleid tot overeenstemming, dan wordt de volgende status overgeslagen. In het andere geval wordt een statusmelding verzonden."
+        }
+    },
+    {
+        "model": "catalogi.statustype",
+        "pk": 4,
+        "fields": {
+            "_etag": "4e2726ad6dd4dc9837c596f68625d700",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "0cc304e7-9243-4584-8a3f-3a59e738dc4c",
+            "zaaktype": 1,
+            "statustype_omschrijving": "Hoorzitting gehouden",
+            "statustype_omschrijving_generiek": "Hoorzitting gehouden",
+            "statustypevolgnummer": 4,
+            "doorlooptijd": null,
+            "informeren": false,
+            "statustekst": "",
+            "toelichting": "Er is een verweerschrift opgesteld en verstuurd, een pleitnota is opgesteld en er heeft een hoorzitting plaatsgevonden. De bezwarencommissie heeft een advies uitgebracht."
+        }
+    },
+    {
+        "model": "catalogi.statustype",
+        "pk": 5,
+        "fields": {
+            "_etag": "cb9a7b1d2fdcb1aa7772071f94c73a51",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "59c1e59f-580b-461f-83ee-12caac9f43a4",
+            "zaaktype": 1,
+            "statustype_omschrijving": "Concept-besluit opgesteld",
+            "statustype_omschrijving_generiek": "Concept-besluit opgesteld",
+            "statustypevolgnummer": 5,
+            "doorlooptijd": null,
+            "informeren": false,
+            "statustekst": "",
+            "toelichting": "Het conceptbesluit voor de beslisser is opgesteld, indien van toepassing op basis van het advies van de bezwarencommissie."
+        }
+    },
+    {
+        "model": "catalogi.statustype",
+        "pk": 6,
+        "fields": {
+            "_etag": "87459daca58df480543183d52a1662d7",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "1d288145-2a8a-4985-ad1e-94dcddefaca5",
+            "zaaktype": 1,
+            "statustype_omschrijving": "Besluit vastgesteld",
+            "statustype_omschrijving_generiek": "Besluit vastgesteld",
+            "statustypevolgnummer": 6,
+            "doorlooptijd": null,
+            "informeren": true,
+            "statustekst": "Geachte heer/mevrouw, Op %ZAAK.Registratiedatum% hebben wij heeft u een bezwaar ingediend. Uw bezwaar is bij ons in behandeling onder zaaknummer %ZAAK.Zaakidentificatie%.  De gemeente heeft een besluit genomen over uw bezwaar onder besluitnummer %BESLUIT. Besluitidentificatie%.  Het besluit van de gemeente is:  %BESLUIT.Toelichting%  Het schriftelijke besluit op uw bezwaar inclusief motivatie wordt zo spoedig mogelijk per post naar u toegestuurd.",
+            "toelichting": "De uitspraak op het bezwaar is vastgesteld door de beslisser."
+        }
+    },
+    {
+        "model": "catalogi.statustype",
+        "pk": 7,
+        "fields": {
+            "_etag": "a771eb3fe6e871f1ea725838d2548fa5",
+            "datum_begin_geldigheid": null,
+            "datum_einde_geldigheid": null,
+            "uuid": "4b55f90b-d654-497e-bc70-0ea621228c90",
+            "zaaktype": 1,
+            "statustype_omschrijving": "Zaak afgerond",
+            "statustype_omschrijving_generiek": "Zaak afgerond",
+            "statustypevolgnummer": 7,
+            "doorlooptijd": null,
+            "informeren": true,
+            "statustekst": "Geachte heer/mevrouw, Op %ZAAK. Registratiedatum% heeft u een bezwaar ingediend. Uw bezwaar is bij ons in behandeling onder zaaknummer %ZAAK.Zaakidentificatie%. Onlangs bent u al op de hoogte gesteld van het besluit. Met deze e-mail willen wij u mededelen dat het besluit per post naar u is toegestuurd en dat wij de zaak hebben afgesloten.",
+            "toelichting": "Het besluit is schriftelijk kenbaar gemaakt aan de indiener van het bezwaar. De zaak is gearchiveerd en afgehandeld."
+        }
+    },
+    {
+        "model": "catalogi.zaaktype",
+        "pk": 1,
+        "fields": {
+            "_etag": "ec651900eefc7f50c50aa40812956407",
+            "datum_begin_geldigheid": "2021-01-01",
+            "datum_einde_geldigheid": null,
+            "concept": false,
+            "uuid": "5ffc767c-8a7e-45e1-ad06-37ddc7e9074d",
+            "identificatie": "bezwaar-behandelen",
+            "zaaktype_omschrijving": "Bezwaar behandelen",
+            "zaaktype_omschrijving_generiek": "Bezwaar behandelen",
+            "vertrouwelijkheidaanduiding": "zaakvertrouwelijk",
+            "doel": "Een uitspraak doen op een ingekomen bezwaar tegen een eerder genomen besluit.",
+            "aanleiding": "Er is een bezwaarschrift ontvangen tegen een besluit dat genomen is door de gemeente.",
+            "toelichting": "Conform de Algemene Wet Bestuursrecht (AWB) heeft een natuurlijk of niet-natuurlijk persoon de mogelijkheid om bezwaar te maken tegen een genomen besluit van de gemeente, bijvoorbeeld het niet verlenen van een vergunning.",
+            "indicatie_intern_of_extern": "extern",
+            "handeling_initiator": "Indienen",
+            "onderwerp": "Bezwaar",
+            "handeling_behandelaar": "Behandelen",
+            "doorlooptijd_behandeling": "P84D",
+            "servicenorm_behandeling": null,
+            "opschorting_en_aanhouding_mogelijk": false,
+            "verlenging_mogelijk": true,
+            "verlengingstermijn": "P42D",
+            "trefwoorden": "[\"bezwaar\", \"bezwaarschrift\"]",
+            "publicatie_indicatie": false,
+            "publicatietekst": "",
+            "verantwoordingsrelatie": "[]",
+            "versiedatum": "2021-01-01",
+            "verantwoordelijke": "002564440",
+            "producten_of_diensten": "[\"https://github.com/valtimo-platform/valtimo-platform\"]",
+            "selectielijst_procestype": "https://selectielijst.openzaak.nl/api/v1/procestypen/e1b73b12-b2f6-4c4e-8929-94f84dd2a57d",
+            "selectielijst_procestype_jaar": 2017,
+            "referentieproces_naam": "Bezwaar behandelen",
+            "referentieproces_link": "http://www.gemmaonline.nl/index.php/Referentieproces_bezwaar_behandelen",
+            "broncatalogus_url": "",
+            "broncatalogus_domein": "",
+            "broncatalogus_rsin": "",
+            "bronzaaktype_url": "",
+            "bronzaaktype_identificatie": "",
+            "bronzaaktype_omschrijving": "",
+            "catalogus": 1,
+            "deelzaaktypen": []
+        }
+    }]

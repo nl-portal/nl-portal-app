@@ -12,26 +12,26 @@ e.g. the `haalcentraal` profile contains services for haalcentraal-brp and haalc
 not compose those if you don't require them. If a service is missing a profile, that means it's a core requirement
 for the app and will be composed by default.
 
-| Service                                | Port  | Profile      |
-|----------------------------------------|-------|--------------|
-| Pre-built NL Portal App Backend        | 8080  | remote       |
-| Pre-built NL Portal App Frontend       | 3000  | remote       |
-| DIY NL Portal App Backend              | 8080  | local        |
-| DIY NL Portal App Frontend             | 3000  | local        |
-| NL Portal Database                     | 54321 | -            |
-| NL Portal Configuration Panel Router   | 3001  | config       |
-| NL Portal Configuration Panel Backend  | 8090  | config       |
-| NL Portal Configuration Panel Frontend | 8091  | config       |
-| NL Portal Configuration Panel Database | 54322 | config       |
-| Keycloak                               | 8082  | -            |
-| Open Zaak                              | 8001  | zgw          |
-| Objecten API                           | 8010  | zgw          |
-| Objecttypen API                        | 8011  | zgw          |
-| Open Notificaties                      | 8012  | zgw          |
-| OpenKlant                              | 8013  | zgw          |
-| OpenKlant 2                            | 8014  | zgw          |
-| Haalcentraal BRP                       | 5010  | haalcentraal |
-| Haalcentraal Bewoning                  | 5011  | haalcentraal |
+| Service                                | Port  | Profile          |
+|----------------------------------------|-------|------------------|
+| Pre-built NL Portal App Backend        | 8080  | remote           |
+| Pre-built NL Portal App Frontend       | 3000  | remote           |
+| DIY NL Portal App Backend              | 8080  | local            |
+| DIY NL Portal App Frontend             | 3000  | local            |
+| NL Portal Database                     | 54321 | -                |
+| NL Portal Configuration Panel Router   | 3001  | config           |
+| NL Portal Configuration Panel Backend  | 8090  | config           |
+| NL Portal Configuration Panel Frontend | 8091  | config           |
+| NL Portal Configuration Panel Database | 54322 | config           |
+| Keycloak                               | 8082  | -                |
+| Open Zaak                              | 8001  | zgw, openzaak    |
+| Objecten API                           | 8010  | zgw, objecten    |
+| Objecttypen API                        | 8011  | zgw, objecten    |
+| Open Notificaties                      | 8012  | zgw, objecten    |
+| OpenKlant 2                            | 8014  | zgw, openklant   |
+| OpenProduct                            | 8015  | zgw, openproduct |
+| Haalcentraal BRP                       | 5010  | haalcentraal     |
+| Haalcentraal Bewoning                  | 5011  | haalcentraal     |
 
 All of the above services are set up to expose their ports via the helper server `localhost`. This service defines the
 external port mapping.

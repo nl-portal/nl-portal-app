@@ -1,11 +1,11 @@
 #!/bin/bash
 
-echo ">>>>  NL Portal init script: Objects API <<<<"
+echo ">>>>  NL Portal init script: Open Zaak <<<<"
 sleep 2
 while true
 do
     # Checking whether last table is created
-    initiated=$(pg_isready -h $DB_HOST -q && psql postgresql://objects:objects@$DB_HOST -t -A -c "SELECT EXISTS (SELECT table_name FROM information_schema.tables WHERE table_name = 'zgw_consumers_service');" || "false")
+    initiated=$(pg_isready -h $DB_HOST -q && psql postgresql://$DB_USER:$DB_PASSWORD@$DB_HOST -t -A -c "SELECT EXISTS (SELECT table_name FROM information_schema.tables WHERE table_name = 'zaken_substatus');" || "false")
     if [ "t" = "${initiated}" ]
         then
             echo "Database ready."
@@ -14,7 +14,7 @@ do
             DJANGO_SUPERUSER_PASSWORD=admin python /app/src/manage.py createsuperuser --username=admin --email=admin@example.com --noinput
             echo "Loading fixtures:"
             sleep 2
-            python /app/src/manage.py loaddata configuration objecttypes objects
+            python /app/src/manage.py loaddata configuration catalogi zaken
             break
         else
             echo "Database is not ready. Retrying in 10 seconds."
