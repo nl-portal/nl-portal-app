@@ -1,11 +1,12 @@
-FROM node:22-alpine as build
+FROM node:22-alpine AS build
+
 COPY . .
 RUN npm i -g pnpm
 ENV CI=true
 RUN pnpm i
 RUN pnpm build
 
-FROM nginx:stable-alpine-slim as image
+FROM nginx:stable-alpine-slim AS image
 
 RUN rm /etc/nginx/conf.d/default.conf
 
