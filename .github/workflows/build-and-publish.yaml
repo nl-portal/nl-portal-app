@@ -41,66 +41,14 @@ jobs:
                     sha=${GITHUB_SHA::8}
                     ts=$(date +'%Y%m%d%H%M')
                     echo "BACKEND_SNAPSHOT_VERSION=${{ steps.detect-scope.outputs.SCOPE == 'RC' && '${be_version}-${ts}-RC' || '${branch}-${ts}-${sha}-SNAPSHOT' }}" >> "$GITHUB_OUTPUT"
-                    echo "FRONTEND_SNAPSHOT_VERSION=${{ steps.detect-scope.outputs.SCOPE == 'RC' && '${fe_version}-${ts}-RC' || '${branch}-${ts}-${sha}-SNAPSHOT' }}" >> "$GITHUB_OUTPUT"                
-
-    build-be:
+                    echo "FRONTEND_SNAPSHOT_VERSION=${{ steps.detect-scope.outputs.SCOPE == 'RC' && '${fe_version}-${ts}-RC' || '${branch}-${ts}-${sha}-SNAPSHOT' }}" >> "$GITHUB_OUTPUT"
+    publish-be:
         runs-on: ubuntu-latest
         defaults:
             run:
                 working-directory: "backend"
         needs:
             - prepare-variables
-        if: ${{ needs.prepare-variables.outputs.scope != 'UNKNOWN' }}
-        steps:
-            -   uses: actions/checkout@v4
-            -   name: Set up JDK ${{ env.JAVA_VERSION }}
-                uses: actions/setup-java@v4
-                with:
-                    java-version: "${{ env.JAVA_VERSION }}"
-                    distribution: "temurin"
-            -   name: Set up gradle
-                uses: gradle/actions/setup-gradle@v4
-            -   name: Build with Gradle
-                run: ./gradlew build
-            -   name: Prepare dist folder
-                run: mkdir deployment | mv build/ Dockerfile deployment/
-            -   name: Archive dist folder
-                uses: actions/upload-artifact@v4
-                with:
-                    name: nl-portal-app-backend-dist
-                    path: backend/deployment/
-                    retention-days: 1
-    build-fe:
-        runs-on: ubuntu-latest
-        defaults:
-            run:
-                working-directory: "frontend"
-        needs:
-            - prepare-variables
-        if: ${{ needs.prepare-variables.outputs.scope != 'UNKNOWN' }}
-        steps:
-            -   uses: actions/checkout@v4
-            -   name: Set up Node.js ${{ env.NODE_VERSION }}
-                uses: actions/setup-node@v4
-                with:
-                    node-version: ${{ env.NODE_VERSION }}
-            -   name: Install
-                run: npm install -g pnpm && pnpm install
-            -   name: Build
-                run: pnpm build
-            -   name: Prepare dist folder
-                run: mkdir deployment | mv build/ conf/ entrypoint.sh Dockerfile deployment/
-            -   name: Archive dist folder
-                uses: actions/upload-artifact@v4
-                with:
-                    name: nl-portal-app-frontend-dist
-                    path: frontend/deployment/
-                    retention-days: 1
-    publish-be:
-        runs-on: ubuntu-latest
-        needs:
-            - prepare-variables
-            - build-be
         if: ${{ needs.prepare-variables.outputs.scope != 'UNKNOWN' }}
         permissions:
             contents: read
@@ -109,8 +57,6 @@ jobs:
         steps:
             -   name: Checkout code
                 uses: actions/checkout@v4
-                with:
-                    fetch-depth: 1
 
             -   name: Install Cosign
                 uses: sigstore/cosign-installer@v3.5.0
@@ -120,11 +66,6 @@ jobs:
 
             -   name: Set up Docker Buildx
                 uses: docker/setup-buildx-action@v3
-
-            -   name: Download dist artifact
-                uses: actions/download-artifact@v4
-                with:
-                    name: nl-portal-app-backend-dist
 
             -   name: 'Login to github packages'
                 uses: docker/login-action@v1
@@ -150,7 +91,7 @@ jobs:
                 with:
                     file: Dockerfile
                     platforms: linux/arm64, linux/amd64
-                    context: .
+                    context: ./backend
                     push: true
                     tags: ${{ steps.docker_meta.outputs.tags }}
                     labels: ${{ steps.docker_meta.outputs.labels }}
@@ -174,15 +115,20 @@ jobs:
                        --certificate-oidc-issuer https://token.actions.githubusercontent.com | jq
     publish-fe:
         runs-on: ubuntu-latest
+        defaults:
+            run:
+                working-directory: "frontend"
         needs:
             - prepare-variables
-            - build-fe
         if: ${{ needs.prepare-variables.outputs.scope != 'UNKNOWN' }}
         permissions:
             contents: read
             packages: write
             id-token: write
         steps:
+            -   name: Checkout code
+                uses: actions/checkout@v4
+
             -   name: Install Cosign
                 uses: sigstore/cosign-installer@v3.5.0
 
@@ -191,14 +137,6 @@ jobs:
 
             -   name: Set up Docker Buildx
                 uses: docker/setup-buildx-action@v3
-
-            -   name: Download dist artifact
-                uses: actions/download-artifact@v4
-                with:
-                    name: nl-portal-app-frontend-dist
-
-            -   name: Display structure of downloaded files
-                run: pwd && ls -R
 
             -   name: 'Login to github packages'
                 uses: docker/login-action@v1
@@ -224,7 +162,7 @@ jobs:
                 with:
                     file: Dockerfile
                     platforms: linux/arm64, linux/amd64
-                    context: .
+                    context: ./frontend
                     push: true
                     tags: ${{ steps.docker_meta.outputs.tags }}
                     labels: ${{ steps.docker_meta.outputs.labels }}
