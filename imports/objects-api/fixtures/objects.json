@@ -68,7 +68,7 @@
                             },
                             "defaultValue": [],
                             "multipleFiles": true,
-                            "informatieobjecttype": "http://localhost:8001/catalogi/api/v1/informatieobjecttypen/efc332f2-be3b-4bad-9e3c-49a6219c92ad"
+                            "informatieobjecttype": "https://openzaak-zgw.test.denhaag.nl/catalogi/api/v1/informatieobjecttypen/93c0870d-40d7-4cba-9dfe-d96471f92c9d"
                         },
                         {
                             "key": "bestanden.bankafschriftenAfgelopenMaand",
@@ -83,7 +83,7 @@
                             },
                             "defaultValue": [],
                             "multipleFiles": true,
-                            "informatieobjecttype": "http://localhost:8001/catalogi/api/v1/informatieobjecttypen/efc332f2-be3b-4bad-9e3c-49a6219c92ad"
+                            "informatieobjecttype": "https://openzaak-zgw.test.denhaag.nl/catalogi/api/v1/informatieobjecttypen/5df12b73-7ee3-4bcc-8898-8adf12db9e8b"
                         },
                         {
                             "key": "informatieverzoek.specifiekeBankrekeningNummers",
@@ -112,7 +112,7 @@
                                 "when": "informatieverzoek.opTeVragenBenodigdeInformatie.specifiekeBankafschriftenAfgelopenMaand"
                             },
                             "multipleFiles": true,
-                            "informatieobjecttype": "http://localhost:8001/catalogi/api/v1/informatieobjecttypen/efc332f2-be3b-4bad-9e3c-49a6219c92ad"
+                            "informatieobjecttype": "https://openzaak-zgw.test.denhaag.nl/catalogi/api/v1/informatieobjecttypen/5df12b73-7ee3-4bcc-8898-8adf12db9e8b"
                         },
                         {
                             "key": "informatieverzoek.bankrekeningNummersSpecifiekePeriode",
@@ -142,7 +142,7 @@
                             },
                             "defaultValue": [],
                             "multipleFiles": true,
-                            "informatieobjecttype": "http://localhost:8001/catalogi/api/v1/informatieobjecttypen/efc332f2-be3b-4bad-9e3c-49a6219c92ad"
+                            "informatieobjecttype": "https://openzaak-zgw.test.denhaag.nl/catalogi/api/v1/informatieobjecttypen/5df12b73-7ee3-4bcc-8898-8adf12db9e8b"
                         },
                         {
                             "key": "bestanden.bankafschriftenZakelijkeRekeningen",
@@ -157,7 +157,7 @@
                             },
                             "defaultValue": [],
                             "multipleFiles": true,
-                            "informatieobjecttype": "http://localhost:8001/catalogi/api/v1/informatieobjecttypen/efc332f2-be3b-4bad-9e3c-49a6219c92ad"
+                            "informatieobjecttype": "https://openzaak-zgw.test.denhaag.nl/catalogi/api/v1/informatieobjecttypen/5df12b73-7ee3-4bcc-8898-8adf12db9e8b"
                         },
                         {
                             "key": "bestanden.bankafschriftenZakelijkeRekeningenPartner",
@@ -172,7 +172,7 @@
                             },
                             "defaultValue": [],
                             "multipleFiles": true,
-                            "informatieobjecttype": "http://localhost:8001/catalogi/api/v1/informatieobjecttypen/efc332f2-be3b-4bad-9e3c-49a6219c92ad"
+                            "informatieobjecttype": "https://openzaak-zgw.test.denhaag.nl/catalogi/api/v1/informatieobjecttypen/5df12b73-7ee3-4bcc-8898-8adf12db9e8b"
                         },
                         {
                             "key": "bestanden.laatsteInkomstenSpecificatie",
@@ -187,7 +187,7 @@
                             },
                             "defaultValue": [],
                             "multipleFiles": true,
-                            "informatieobjecttype": "http://localhost:8001/catalogi/api/v1/informatieobjecttypen/efc332f2-be3b-4bad-9e3c-49a6219c92ad"
+                            "informatieobjecttype": "https://openzaak-zgw.test.denhaag.nl/catalogi/api/v1/informatieobjecttypen/9d1b3d54-010e-4970-9fe2-41ebde93861f"
                         },
                         {
                             "key": "bestanden.laatsteInkomstenSpecificatiePartner",
@@ -202,7 +202,7 @@
                             },
                             "defaultValue": [],
                             "multipleFiles": true,
-                            "informatieobjecttype": "http://localhost:8001/catalogi/api/v1/informatieobjecttypen/efc332f2-be3b-4bad-9e3c-49a6219c92ad"
+                            "informatieobjecttype": "https://openzaak-zgw.test.denhaag.nl/catalogi/api/v1/informatieobjecttypen/9d1b3d54-010e-4970-9fe2-41ebde93861f"
                         },
                         {
                             "key": "bestanden.specificatiePensioen",
@@ -217,7 +217,7 @@
                             },
                             "defaultValue": [],
                             "multipleFiles": true,
-                            "informatieobjecttype": "http://localhost:8001/catalogi/api/v1/informatieobjecttypen/efc332f2-be3b-4bad-9e3c-49a6219c92ad"
+                            "informatieobjecttype": "https://openzaak-zgw.test.denhaag.nl/catalogi/api/v1/informatieobjecttypen/2d0522c1-9931-4f33-aba4-5fcf8995f8be"
                         },
                         {
                             "key": "bestanden.belastingaangifte",
@@ -232,7 +232,7 @@
                             },
                             "defaultValue": [],
                             "multipleFiles": true,
-                            "informatieobjecttype": "http://localhost:8001/catalogi/api/v1/informatieobjecttypen/efc332f2-be3b-4bad-9e3c-49a6219c92ad"
+                            "informatieobjecttype": "https://openzaak-zgw.test.denhaag.nl/catalogi/api/v1/informatieobjecttypen/8b95b505-8829-4be2-acf6-2235d31478de"
                         },
                         {
                             "key": "bestanden.belastingaanslag",
@@ -247,7 +247,7 @@
                             },
                             "defaultValue": [],
                             "multipleFiles": true,
-                            "informatieobjecttype": "http://localhost:8001/catalogi/api/v1/informatieobjecttypen/efc332f2-be3b-4bad-9e3c-49a6219c92ad"
+                            "informatieobjecttype": "https://openzaak-zgw.test.denhaag.nl/catalogi/api/v1/informatieobjecttypen/e0dc9e5b-2495-492c-b00b-2e88ed8a0d43"
                         },
                         {
                             "key": "bestanden.jaarrekening",
@@ -262,7 +262,7 @@
                             },
                             "defaultValue": [],
                             "multipleFiles": true,
-                            "informatieobjecttype": "http://localhost:8001/catalogi/api/v1/informatieobjecttypen/efc332f2-be3b-4bad-9e3c-49a6219c92ad"
+                            "informatieobjecttype": "https://openzaak-zgw.test.denhaag.nl/catalogi/api/v1/informatieobjecttypen/59bb046a-3587-4635-bcde-8a9903353063"
                         },
                         {
                             "key": "bestanden.balansrekening",
@@ -277,7 +277,7 @@
                             },
                             "defaultValue": [],
                             "multipleFiles": true,
-                            "informatieobjecttype": "http://localhost:8001/catalogi/api/v1/informatieobjecttypen/efc332f2-be3b-4bad-9e3c-49a6219c92ad"
+                            "informatieobjecttype": "https://openzaak-zgw.test.denhaag.nl/catalogi/api/v1/informatieobjecttypen/b957a652-6277-4300-aeea-c9279ec08c6c"
                         },
                         {
                             "key": "informatieverzoek.opleidingVolgendePersonen",
@@ -307,7 +307,7 @@
                             },
                             "defaultValue": [],
                             "multipleFiles": true,
-                            "informatieobjecttype": "http://localhost:8001/catalogi/api/v1/informatieobjecttypen/efc332f2-be3b-4bad-9e3c-49a6219c92ad"
+                            "informatieobjecttype": "https://openzaak-zgw.test.denhaag.nl/catalogi/api/v1/informatieobjecttypen/29baaef4-8c96-48c3-84a9-f6e6c258f6e7"
                         },
                         {
                             "key": "documenten",
@@ -353,75 +353,10 @@
     },
     {
         "model": "core.object",
-        "pk": 2,
-        "fields": {
-            "uuid": "5b6202f5-6620-4739-9076-5040679607fd",
-            "object_type": 2
-        }
-    },
-    {
-        "model": "core.objectrecord",
-        "pk": 2,
-        "fields": {
-            "index": 1,
-            "object": 2,
-            "version": 1,
-            "data": {
-                "data": {
-                    "informatieverzoek": {
-                        "deadline": "2025-12-31T21:59:59.999Z",
-                        "toelichting": "",
-                        "opleidingVolgendePersonen": null,
-                        "opTeVragenBenodigdeInformatie": {
-                            "partnerID": false,
-                            "jaarrekening": true,
-                            "balansrekening": false,
-                            "specificatiePensioen": false,
-                            "bewijsVanInschrijving": false,
-                            "laatsteInkomstenSpecificatie": false,
-                            "bankafschriftenAfgelopenMaand": false,
-                            "belastingaanslagAfgelopenJaar": false,
-                            "belastingaangifteAfgelopenJaar": true,
-                            "bankafschriftenZakelijkeRekeningen": false,
-                            "laatsteInkomstenSpecificatiePartner": false,
-                            "specifiekeBankafschriftenPerPeriode": false,
-                            "specifiekeBankafschriftenAfgelopenMaand": false,
-                            "bankafschriftenZakelijkeRekeningenPartner": false
-                        },
-                        "specifiekeBankrekeningNummers": null,
-                        "bankrekeningNummersSpecifiekePeriode": null
-                    }
-                },
-                "zaak": "http://localhost:8001/zaken/api/v1/zaken/d7e5f5c8-da39-49d9-902a-be143988d3b8",
-                "title": "Aanleveren informatie",
-                "status": "open",
-                "formulier": {
-                    "type": "url",
-                    "value": "http://localhost:8010/api/v2/objects/c0021527-7af0-48be-b38d-d8ba9ce8e2b6"
-                },
-                "identificatie": {
-                    "type": "bsn",
-                    "value": "999993847"
-                },
-                "verloopdatum": null,
-                "verzonden_data": {},
-                "verwerker_taak_id": "4b1fff03-55d7-4d74-8b0c-08b1b707e201"
-            },
-            "start_at": "2024-04-24",
-            "registration_at": "2024-04-30"
-        },
-        "start_at": "2024-10-16",
-        "end_at": null,
-        "registration_at": "2024-10-16",
-        "correct": null,
-        "geometry": null
-    },
-    {
-        "model": "core.object",
         "pk": 3,
         "fields": {
             "uuid": "4b5f4fba-0746-11ed-b939-0242ac120023",
-            "object_type": 3
+            "object_type": 2
         }
     },
     {
@@ -442,7 +377,7 @@
                 },
                 "koppeling": {
                     "registratie": "zaak",
-                    "value": "d7e5f5c8-da39-49d9-902a-be143988d3b8"
+                    "value": "729a9bdf-ea81-4a8d-b0ec-9b516ba26cc5"
                 },
                 "ogonebetaling": {
                     "bedrag": 147.43,
@@ -463,8 +398,8 @@
         "model": "core.object",
         "pk": 4,
         "fields": {
-            "uuid": "b4a617af-6969-45e8-9afd-d51e170716d5",
-            "object_type": 3
+            "uuid": "3d6609af-134c-4892-8fa8-71cfdc00a8e9",
+            "object_type": 2
         }
     },
     {
@@ -485,7 +420,7 @@
                 },
                 "koppeling": {
                     "registratie": "zaak",
-                    "value": "d7e5f5c8-da39-49d9-902a-be143988d3b8"
+                    "value": "729a9bdf-ea81-4a8d-b0ec-9b516ba26cc5"
                 },
                 "url": {
                     "uri": "https://google.com"
@@ -518,7 +453,7 @@
         "pk": 5,
         "fields": {
             "uuid": "9e021130-8cbd-4c6f-846a-677448e21ce8",
-            "object_type": 4
+            "object_type": 3
         }
     },
     {
@@ -530,9 +465,7 @@
             "version": 1,
             "data": {
                 "geopend": false,
-                "bijlages": [
-                    "https://example.com/documenten/api/v1/enkelvoudiginformatieobjecten/1"
-                ],
+                "bijlages": [],
                 "onderwerp": "Bericht over uw buurt.",
                 "referentie": "ZAAK-2024-0000000001",
                 "berichtType": "notificatie",
@@ -557,7 +490,7 @@
         "pk": 6,
         "fields": {
             "uuid": "cc47910b-4f3f-43a6-93d3-4dfd49ef3c62",
-            "object_type": 4
+            "object_type": 3
         }
     },
     {
@@ -569,9 +502,7 @@
             "version": 1,
             "data": {
                 "geopend": true,
-                "bijlages": [
-                    "https://example.com/documenten/api/v1/enkelvoudiginformatieobjecten/1"
-                ],
+                "bijlages": [],
                 "onderwerp": "Betalingsherinnering",
                 "referentie": "ZAAK-2024-0000000001",
                 "berichtType": "notificatie",
@@ -596,7 +527,7 @@
         "pk": 7,
         "fields": {
             "uuid": "82f1ccd8-b39e-4c54-915d-225d6a4c9876",
-            "object_type": 3
+            "object_type": 2
         }
     },
     {
@@ -617,7 +548,7 @@
                 },
                 "koppeling": {
                     "registratie": "zaak",
-                    "value": "d7e5f5c8-da39-49d9-902a-be143988d3b8"
+                    "value": "729a9bdf-ea81-4a8d-b0ec-9b516ba26cc5"
                 },
                 "url": {
                     "uri": "https://wetten.overheid.nl/"

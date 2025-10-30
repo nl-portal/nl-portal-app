@@ -34,7 +34,6 @@ repositories {
 
 dependencies {
     implementation("nl.nl-portal:core:$backendLibrariesVersion")
-    implementation("nl.nl-portal:case:$backendLibrariesVersion")
     implementation("nl.nl-portal:common-ground-authentication:$backendLibrariesVersion")
     implementation("nl.nl-portal:graphql:$backendLibrariesVersion")
 
@@ -44,6 +43,7 @@ dependencies {
     implementation("nl.nl-portal:openklant:$backendLibrariesVersion")
     implementation("nl.nl-portal:zaken-api:$backendLibrariesVersion")
     implementation("nl.nl-portal:payment-direct:$backendLibrariesVersion")
+    implementation("nl.nl-portal:haalcentraal-hr:$backendLibrariesVersion")
     implementation("nl.nl-portal:haalcentraal2:$backendLibrariesVersion")
 
     implementation("nl.nl-portal:berichten:$backendLibrariesVersion")
@@ -51,6 +51,7 @@ dependencies {
     implementation("nl.nl-portal:taak:$backendLibrariesVersion")
     implementation("nl.nl-portal:besluiten:$backendLibrariesVersion")
     implementation("nl.nl-portal:product:$backendLibrariesVersion")
+    implementation("nl.nl-portal:openproduct:$backendLibrariesVersion")
 
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
@@ -65,17 +66,22 @@ dependencies {
 }
 
 tasks.bootRun {
-    environment.putAll(
+    val developmentEnv =
         mapOf(
             "LOGLEVEL" to "DEBUG",
             "DATABASE_URL" to "jdbc:postgresql://localhost:54321/nl-portal",
-            "DATABASE_USERNAME" to "nlportal",
-            "DATABASE_PASSWORD" to "password",
-            "JWKS_URI" to "http://localhost:8082/auth/realms/nlportal/protocol/openid-connect/certs",
-            "KEYCLOAK_CLIENT_ID" to "nl-portal-m2m",
-            "KEYCLOAK_CLIENT_SECRET" to "ookVRUAxmEWMcosfcGR5nxeoUC4Rgwbc",
-            "KEYCLOAK_TOKEN_EXCHANGE_AUDIENCE" to "nl-portal-token-exchange",
-            "ACTUATOR_RESTART_ACCESS" to "unrestricted"
-        ),
+        )
+
+    environment.putAll(
+        project
+            .file("../imports/backend.env")
+            .takeIf { it.exists() && it.isFile }
+            ?.readLines()
+            ?.filterNot { it.startsWith("#") || it.startsWith("//") || it.isEmpty() }
+            ?.associate { line ->
+                val entry = line.split("=", limit = 2)
+                entry.first() to entry.last()
+            }?.plus(developmentEnv)
+            ?: developmentEnv,
     )
 }

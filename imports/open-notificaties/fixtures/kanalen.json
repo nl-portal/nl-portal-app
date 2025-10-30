@@ -1,0 +1,82 @@
+[
+    {
+        "model": "datamodel.kanaal",
+        "pk": 1,
+        "fields": {
+            "uuid": "1ac2039e-a256-4537-b92f-094c1d52a907",
+            "naam": "zaken",
+            "documentatie_link": "",
+            "filters": "[]"
+        }
+    },
+    {
+        "model": "datamodel.kanaal",
+        "pk": 2,
+        "fields": {
+            "uuid": "3601589c-4277-470c-933c-b64b7e704e8d",
+            "naam": "documenten",
+            "documentatie_link": "",
+            "filters": "[]"
+        }
+    },
+    {
+        "model": "datamodel.kanaal",
+        "pk": 3,
+        "fields": {
+            "uuid": "57b71be7-9d99-4641-a5f9-804d6a4e6a91",
+            "naam": "besluiten",
+            "documentatie_link": "",
+            "filters": "[]"
+        }
+    },
+    {
+        "model": "datamodel.kanaal",
+        "pk": 4,
+        "fields": {
+            "uuid": "f2eb7d3a-cdcd-49e3-930b-e7c632a2a882",
+            "naam": "autorisaties",
+            "documentatie_link": "",
+            "filters": "[]"
+        }
+    },
+    {
+        "model": "datamodel.kanaal",
+        "pk": 5,
+        "fields": {
+            "uuid": "3b541629-edf0-4a37-9633-2e8994656b91",
+            "naam": "zaaktypen",
+            "documentatie_link": "",
+            "filters": "[]"
+        }
+    },
+    {
+        "model": "datamodel.kanaal",
+        "pk": 6,
+        "fields": {
+            "uuid": "69ba31a8-ce02-47e7-bced-004610b8c06f",
+            "naam": "informatieobjecttypen",
+            "documentatie_link": "",
+            "filters": "[]"
+        }
+    },
+    {
+        "model": "datamodel.kanaal",
+        "pk": 7,
+        "fields": {
+            "uuid": "98ad8ee4-36f5-45e0-8080-f3af58011209",
+            "naam": "besluittypen",
+            "documentatie_link": "",
+            "filters": "[]"
+        }
+    },
+    {
+        "model": "datamodel.kanaal",
+        "pk": 8,
+        "fields": {
+            "uuid": "b7c808dc-2292-4dc0-be96-a10ee6feee1c",
+            "naam": "objecten",
+            "documentatie_link": "",
+            "filters": "[]"
+        }
+    }
+]

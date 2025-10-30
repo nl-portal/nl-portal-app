@@ -1,6 +1,6 @@
 <img alt="NL Portal Logo" src=".github/readme/images/nl-portal-logo.svg">
 
-![Version 2.1.0](https://img.shields.io/badge/Version-2.1.0-blue)
+![Version 3.0.0.RC](https://img.shields.io/badge/Version-3.0.0.RC-blue)
 
 This repository contains reference implementations for the NL Portal Backend and Frontend Apps.
 It also contains a Docker Compose file for starting up a pre-configured NL Portal Demo without having to write any code.
@@ -12,26 +12,26 @@ e.g. the `haalcentraal` profile contains services for haalcentraal-brp and haalc
 not compose those if you don't require them. If a service is missing a profile, that means it's a core requirement
 for the app and will be composed by default.
 
-| Service                                | Port  | Profile      |
-|----------------------------------------|-------|--------------|
-| Pre-built NL Portal App Backend        | 8080  | remote       |
-| Pre-built NL Portal App Frontend       | 3000  | remote       |
-| DIY NL Portal App Backend              | 8080  | local        |
-| DIY NL Portal App Frontend             | 3000  | local        |
-| NL Portal Database                     | 54321 | -            |
-| NL Portal Configuration Panel Router   | 3001  | config       |
-| NL Portal Configuration Panel Backend  | 8090  | config       |
-| NL Portal Configuration Panel Frontend | 8091  | config       |
-| NL Portal Configuration Panel Database | 54322 | config       |
-| Keycloak                               | 8082  | -            |
-| Open Zaak                              | 8001  | zgw          |
-| Objecten API                           | 8010  | zgw          |
-| Objecttypen API                        | 8011  | zgw          |
-| Open Notificaties                      | 8012  | zgw          |
-| OpenKlant                              | 8013  | zgw          |
-| OpenKlant 2                            | 8014  | zgw          |
-| Haalcentraal BRP                       | 5010  | haalcentraal |
-| Haalcentraal Bewoning                  | 5011  | haalcentraal |
+| Service                                | Port  | Profile          |
+|----------------------------------------|-------|------------------|
+| Pre-built NL Portal App Backend        | 8080  | remote           |
+| Pre-built NL Portal App Frontend       | 3000  | remote           |
+| DIY NL Portal App Backend              | 8080  | local            |
+| DIY NL Portal App Frontend             | 3000  | local            |
+| NL Portal Database                     | 54321 | -                |
+| NL Portal Configuration Panel Router   | 3001  | config           |
+| NL Portal Configuration Panel Backend  | 8090  | config           |
+| NL Portal Configuration Panel Frontend | 8091  | config           |
+| NL Portal Configuration Panel Database | 54322 | config           |
+| Keycloak                               | 8082  | -                |
+| Open Zaak                              | 8001  | zgw, openzaak    |
+| Objecten API                           | 8010  | zgw, objecten    |
+| Objecttypen API                        | 8011  | zgw, objecten    |
+| Open Notificaties                      | 8012  | zgw, objecten    |
+| OpenKlant 2                            | 8014  | zgw, openklant   |
+| OpenProduct                            | 8015  | zgw, openproduct |
+| Haalcentraal BRP                       | 5010  | haalcentraal     |
+| Haalcentraal Bewoning                  | 5011  | haalcentraal     |
 
 All of the above services are set up to expose their ports via the helper server `localhost`. This service defines the
 external port mapping.
@@ -66,11 +66,12 @@ docker compose --profile remote --profile zgw --profile haalcentraal up -d
 This will pull the latest public release of the NL Portal backend and frontend apps alongside all the
 necessary ZGW components required to demo NL Portal functionality.
 
-The NL Portal application will be accessible at http://localhost:3000 and can be interacted with the following demo
-user:
+The NL Portal application will be accessible at http://localhost:3000 with one of the following users:
 
-* Username: `burger`
-* Password: `burger`
+| username | password | identifier (bsn/kvk) |
+|----------|----------|----------------------|
+| burger   | burger   | 999993847            |
+| bedrijf  | bedrijf  | 14127293             |
 
 **NB! The startup of all the ZGW components can take multiple minutes depending on how powerful your computer is.**
 
@@ -81,36 +82,25 @@ user:
 The following software has to be installed to be able to use this application:
 
 * Docker Desktop
-* JDK 21
-* NodeJS 20
 
 #### Steps
 
 The Docker Compose file also provides an option to build your own app images and run them should you make changes to the
 Backend and/or Frontend app e.g. changing the colors and logo in the Frontend app or customizing features.
 
-Follow these steps after doing your modifications to the sources by running the commands in your terminal or
+Follow these steps after doing your modifications to the sources by running the command in your terminal or
 command-line:
 
-1. Build the backend app
-   ```shell
-   cd backend
-   ./gradlew bootJar
-   ```
-1. Build the frontend app
-   ```shell
-   npm i -g pnpm && pnpm -C frontend i && pnpm -C frontend build
-   ```
-1. Build and compose the app images with docker
    ```shell
    docker compose --profile local --profile zgw --profile haalcentraal up -d --build
    ```
 
-The NL Portal application will be accessible at http://localhost:3000 and can be interacted with the following demo
-user:
+The NL Portal application will be accessible at http://localhost:3000 with one of the following users:
 
-* Username: `burger`
-* Password: `burger`
+| username | password | identifier (bsn/kvk) |
+|----------|----------|----------------------|
+| burger   | burger   | 999993847            |
+| bedrijf  | bedrijf  | 14127293             |
 
 **NB! The startup of all the ZGW components can take multiple minutes depending on how powerful your computer is.**
 

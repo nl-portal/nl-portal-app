@@ -1,0 +1,64 @@
+[
+    {
+        "model": "documenten.enkelvoudiginformatieobjectcanonical",
+        "pk": 1,
+        "fields": {
+            "lock": ""
+        }
+    },
+    {
+        "model": "documenten.enkelvoudiginformatieobject",
+        "pk": 1,
+        "fields": {
+            "identificatie": "DOCUMENT-2025-0000000001",
+            "bronorganisatie": "100000009",
+            "creatiedatum": "2025-10-29",
+            "titel": "text-example.txt",
+            "vertrouwelijkheidaanduiding": "zaakvertrouwelijk",
+            "auteur": "999993847",
+            "status": "definitief",
+            "beschrijving": "",
+            "ontvangstdatum": null,
+            "verzenddatum": null,
+            "indicatie_gebruiksrecht": false,
+            "ondertekening_soort": "",
+            "ondertekening_datum": null,
+            "_informatieobjecttype_base_url": null,
+            "_informatieobjecttype_relative_url": null,
+            "_informatieobjecttype_url": null,
+            "_informatieobjecttype": 1,
+            "informatieobjecttype": "",
+            "canonical": 1,
+            "uuid": "f8746ac4-a231-423d-b1fa-4b4dd351fbe4",
+            "formaat": "",
+            "taal": "eng",
+            "bestandsnaam": "text-example.txt",
+            "bestandsomvang": 71,
+            "inhoud": "uploads/2025/10/b75222f7-5467-49b8-ad21-09875a3aef45.bin",
+            "link": "",
+            "integriteit_algoritme": "",
+            "integriteit_waarde": "",
+            "integriteit_datum": null,
+            "versie": 1,
+            "begin_registratie": "2025-10-29T17:13:18.178Z",
+            "verschijningsvorm": "",
+            "trefwoorden": "[]"
+        }
+    },
+    {
+        "model": "documenten.objectinformatieobject",
+        "pk": 1,
+        "fields": {
+            "uuid": "42c3dfb3-8c2a-4cdc-ae5e-d8f769b8ff45",
+            "informatieobject": 1,
+            "object_type": "zaak",
+            "_object_base_url": null,
+            "_object_relative_url": null,
+            "_object_url": null,
+            "_zaak": 2,
+            "zaak": "",
+            "_besluit": null,
+            "besluit": null
+        }
+    }
+]
