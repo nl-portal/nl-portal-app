@@ -1,7 +1,7 @@
 FROM eclipse-temurin:21-jdk-alpine AS build
 
 COPY . .
-RUN chmod +x /gradlew
+RUN chmod +x ./gradlew
 RUN ./gradlew clean bootJar
 
 FROM eclipse-temurin:21-jre-alpine AS image
