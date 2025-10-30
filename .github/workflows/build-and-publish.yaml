@@ -7,7 +7,7 @@ on:
             - "release/*"
 env:
     GITHUB_REGISTRY: ghcr.io
-    DOCKER_IMAGE_BASE_NAME: nl-portal-app
+    APP_NAME: nl-portal-app
     GITHUB_NAMESPACE: nl-portal
     JAVA_VERSION: "21"
     NODE_VERSION: "22.x"
@@ -74,7 +74,7 @@ jobs:
             -   id: docker_meta
                 uses: docker/metadata-action@v5
                 with:
-                    images: ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_NAMESPACE }}/${{ env.DOCKER_IMAGE_BASE_NAME }}-backend
+                    images: ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_NAMESPACE }}/${{ env.APP_NAME }}-backend
                     tags: |
                         type=raw,value=latest,enable={{is_default_branch}}
                         type=raw,value=${{ needs.prepare-variables.outputs.backend-tag }}
@@ -87,6 +87,7 @@ jobs:
                     platforms: linux/arm64, linux/amd64
                     context: "{{defaultContext}}:backend"
                     push: true
+                    provenance: false
                     tags: ${{ steps.docker_meta.outputs.tags }}
                     labels: ${{ steps.docker_meta.outputs.labels }}
 
@@ -104,8 +105,8 @@ jobs:
             -   name: Verify the images
                 run: |
                     branch=${GITHUB_REF##*/}
-                    cosign verify ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_NAMESPACE }}/${{ env.DOCKER_IMAGE_BASE_NAME }}-backend:${{ needs.prepare-variables.outputs.backend-tag }} \
-                       --certificate-identity https://github.com/${{ env.GITHUB_NAMESPACE }}/${{ env.DOCKER_IMAGE_BASE_NAME }}-backend/.github/workflows/build-and-publish.yaml@refs/heads/${branch} \
+                    cosign verify ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_NAMESPACE }}/${{ env.APP_NAME }}-backend:${{ needs.prepare-variables.outputs.backend-tag }} \
+                       --certificate-identity https://github.com/${{ GITHUB_WORKFLOW_REF }} \
                        --certificate-oidc-issuer https://token.actions.githubusercontent.com | jq
     build-and-publish-fe:
         runs-on: ubuntu-latest
@@ -139,7 +140,7 @@ jobs:
             -   id: docker_meta
                 uses: docker/metadata-action@v5
                 with:
-                    images: ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_NAMESPACE }}/${{ env.DOCKER_IMAGE_BASE_NAME }}-frontend
+                    images: ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_NAMESPACE }}/${{ env.APP_NAME }}-frontend
                     tags: |
                         type=raw,value=latest,enable={{is_default_branch}}
                         type=raw,value=${{ needs.prepare-variables.outputs.frontend-tag }}
@@ -152,6 +153,7 @@ jobs:
                     platforms: linux/arm64, linux/amd64
                     context: "{{defaultContext}}:frontend"
                     push: true
+                    provenance: false
                     tags: ${{ steps.docker_meta.outputs.tags }}
                     labels: ${{ steps.docker_meta.outputs.labels }}
 
@@ -169,6 +171,6 @@ jobs:
             -   name: Verify the images
                 run: |
                     branch=${GITHUB_REF##*/}
-                    cosign verify ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_NAMESPACE }}/${{ env.DOCKER_IMAGE_BASE_NAME }}-frontend:${{ needs.prepare-variables.outputs.frontend-tag }} \
-                       --certificate-identity https://github.com/${{ env.GITHUB_NAMESPACE }}/${{ env.DOCKER_IMAGE_BASE_NAME }}-frontend/.github/workflows/build-and-publish.yaml@refs/heads/${branch} \
+                    cosign verify ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_NAMESPACE }}/${{ env.APP_NAME }}-frontend:${{ needs.prepare-variables.outputs.frontend-tag }} \
+                       --certificate-identity https://github.com/${{ GITHUB_WORKFLOW_REF }} \
                        --certificate-oidc-issuer https://token.actions.githubusercontent.com | jq
