@@ -42,11 +42,8 @@ jobs:
                     ts=$(date +'%Y%m%d%H%M')
                     echo "BACKEND_SNAPSHOT_VERSION=${{ steps.detect-scope.outputs.SCOPE == 'RC' && '${be_version}-${ts}-RC' || '${branch}-${ts}-${sha}-SNAPSHOT' }}" >> "$GITHUB_OUTPUT"
                     echo "FRONTEND_SNAPSHOT_VERSION=${{ steps.detect-scope.outputs.SCOPE == 'RC' && '${fe_version}-${ts}-RC' || '${branch}-${ts}-${sha}-SNAPSHOT' }}" >> "$GITHUB_OUTPUT"
-    publish-be:
+    build-and-publish-be:
         runs-on: ubuntu-latest
-        defaults:
-            run:
-                working-directory: "backend"
         needs:
             - prepare-variables
         if: ${{ needs.prepare-variables.outputs.scope != 'UNKNOWN' }}
@@ -55,9 +52,6 @@ jobs:
             packages: write
             id-token: write
         steps:
-            -   name: Checkout code
-                uses: actions/checkout@v4
-
             -   name: Install Cosign
                 uses: sigstore/cosign-installer@v3.5.0
 
@@ -91,7 +85,7 @@ jobs:
                 with:
                     file: Dockerfile
                     platforms: linux/arm64, linux/amd64
-                    context: ./backend
+                    context: "{{defaultContext}}:backend"
                     push: true
                     tags: ${{ steps.docker_meta.outputs.tags }}
                     labels: ${{ steps.docker_meta.outputs.labels }}
@@ -113,11 +107,8 @@ jobs:
                     cosign verify ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_NAMESPACE }}/${{ env.DOCKER_IMAGE_NAME }}:${{ needs.prepare-variables.outputs.backend-tag }} \
                        --certificate-identity https://github.com/${{ env.GITHUB_NAMESPACE }}/${{ env.DOCKER_IMAGE_NAME }}/.github/workflows/cicd.yaml@refs/heads/${branch} \
                        --certificate-oidc-issuer https://token.actions.githubusercontent.com | jq
-    publish-fe:
+    build-and-publish-fe:
         runs-on: ubuntu-latest
-        defaults:
-            run:
-                working-directory: "frontend"
         needs:
             - prepare-variables
         if: ${{ needs.prepare-variables.outputs.scope != 'UNKNOWN' }}
@@ -126,9 +117,6 @@ jobs:
             packages: write
             id-token: write
         steps:
-            -   name: Checkout code
-                uses: actions/checkout@v4
-
             -   name: Install Cosign
                 uses: sigstore/cosign-installer@v3.5.0
 
@@ -162,7 +150,7 @@ jobs:
                 with:
                     file: Dockerfile
                     platforms: linux/arm64, linux/amd64
-                    context: ./frontend
+                    context: "{{defaultContext}}:frontend"
                     push: true
                     tags: ${{ steps.docker_meta.outputs.tags }}
                     labels: ${{ steps.docker_meta.outputs.labels }}
