@@ -7,7 +7,7 @@ on:
             - "release/*"
 env:
     GITHUB_REGISTRY: ghcr.io
-    DOCKER_IMAGE_NAME: nl-portal-app
+    DOCKER_IMAGE_BASE_NAME: nl-portal-app
     GITHUB_NAMESPACE: nl-portal
     JAVA_VERSION: "21"
     NODE_VERSION: "22.x"
@@ -104,8 +104,8 @@ jobs:
             -   name: Verify the images
                 run: |
                     branch=${GITHUB_REF##*/}
-                    cosign verify ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_NAMESPACE }}/${{ env.DOCKER_IMAGE_NAME }}:${{ needs.prepare-variables.outputs.backend-tag }} \
-                       --certificate-identity https://github.com/${{ env.GITHUB_NAMESPACE }}/${{ env.DOCKER_IMAGE_NAME }}/.github/workflows/cicd.yaml@refs/heads/${branch} \
+                    cosign verify ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_NAMESPACE }}/${{ env.DOCKER_IMAGE_NAME }}-backend:${{ needs.prepare-variables.outputs.backend-tag }} \
+                       --certificate-identity https://github.com/${{ env.GITHUB_NAMESPACE }}/${{ env.DOCKER_IMAGE_NAME }}-backend/.github/workflows/build-and-publish.yaml@refs/heads/${branch} \
                        --certificate-oidc-issuer https://token.actions.githubusercontent.com | jq
     build-and-publish-fe:
         runs-on: ubuntu-latest
@@ -169,6 +169,6 @@ jobs:
             -   name: Verify the images
                 run: |
                     branch=${GITHUB_REF##*/}
-                    cosign verify ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_NAMESPACE }}/${{ env.DOCKER_IMAGE_NAME }}:${{ needs.prepare-variables.outputs.frontend-tag }} \
-                       --certificate-identity https://github.com/${{ env.GITHUB_NAMESPACE }}/${{ env.DOCKER_IMAGE_NAME }}/.github/workflows/cicd.yaml@refs/heads/${branch} \
+                    cosign verify ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_NAMESPACE }}/${{ env.DOCKER_IMAGE_NAME }}-frontend:${{ needs.prepare-variables.outputs.frontend-tag }} \
+                       --certificate-identity https://github.com/${{ env.GITHUB_NAMESPACE }}/${{ env.DOCKER_IMAGE_NAME }}-frontend/.github/workflows/build-and-publish.yaml@refs/heads/${branch} \
                        --certificate-oidc-issuer https://token.actions.githubusercontent.com | jq
