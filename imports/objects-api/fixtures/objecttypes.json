@@ -9,17 +9,17 @@
         }
     },
     {
-        "model": "core.objecttype",
-        "pk": 2,
+        "model": "token.permission",
+        "pk": 1,
         "fields": {
-            "service": 1,
-            "uuid": "3e852115-277a-4570-873a-9a64be3aeb34",
-            "_name": "Taak"
+            "token_auth_id": 1,
+            "object_type_id": 1,
+            "mode": "read_and_write"
         }
     },
     {
         "model": "core.objecttype",
-        "pk": 3,
+        "pk": 2,
         "fields": {
             "service": 1,
             "uuid": "b4a617af-6969-45e8-9afd-d51e170716d5",
@@ -27,12 +27,30 @@
         }
     },
     {
+        "model": "token.permission",
+        "pk": 2,
+        "fields": {
+            "token_auth_id": 1,
+            "object_type_id": 2,
+            "mode": "read_and_write"
+        }
+    },
+    {
         "model": "core.objecttype",
-        "pk": 4,
+        "pk": 3,
         "fields": {
             "service": 1,
             "uuid": "78731088-430f-49fd-9a4c-80ddd42ded28",
             "_name": "Bericht"
+        }
+    },
+    {
+        "model": "token.permission",
+        "pk": 3,
+        "fields": {
+            "token_auth_id": 1,
+            "object_type_id": 3,
+            "mode": "read_and_write"
         }
     }
 ]

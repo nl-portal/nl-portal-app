@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: true
 env:
   javaVersion: "21"
-  nodeVersion: "20.x"
+  nodeVersion: "22.x"
 jobs:
   build-be:
     runs-on: ubuntu-latest

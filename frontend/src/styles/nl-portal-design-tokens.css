@@ -168,4 +168,5 @@
           --denhaag-typography-scale-xl-font-size
   );
   --nl-number-badge-color: var(--rijkshuisstijl-wit);
+  --nl-data-badge-neutral-color: var(--rijkshuisstijl-wit);
 }

@@ -1,0 +1,46 @@
+[
+    {
+        "model": "vng_api_common.jwtsecret",
+        "pk": 1,
+        "fields": {
+            "identifier": "objects-api",
+            "secret": "xxoV*EMTKD@n6bFq6Ab*8BvLiB6XC!E3"
+        }
+    },
+    {
+        "model": "vng_api_common.jwtsecret",
+        "pk": 2,
+        "fields": {
+            "identifier": "openzaak",
+            "secret": "jG2v*vobB2*g6Mna-R3CqeQ2FXReX_cE"
+        }
+    },
+    {
+        "model": "authorizations.applicatie",
+        "pk": 1,
+        "fields": {
+            "uuid": "2054b8ea-5504-478a-825d-3ab9ed789466",
+            "client_ids": "[\"objects-api\"]",
+            "label": "Objects API",
+            "heeft_alle_autorisaties": true
+        }
+    },
+    {
+        "model": "authorizations.applicatie",
+        "pk": 2,
+        "fields": {
+            "uuid": "849b70ab-4d05-4af3-9b6b-32c254cf67dd",
+            "client_ids": "[\"openzaak\"]",
+            "label": "OpenZaak",
+            "heeft_alle_autorisaties": true
+        }
+    },
+    {
+        "model": "authorizations.authorizationsconfig",
+        "pk": 1,
+        "fields": {
+            "component": "zrc",
+            "authorizations_api_service": 1
+        }
+    }
+]

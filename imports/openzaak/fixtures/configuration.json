@@ -1,0 +1,159 @@
+[
+    {
+        "model": "zgw_consumers.service",
+        "pk": 1,
+        "fields": {
+            "label": "Authorization API service",
+            "oas": "",
+            "oas_file": "",
+            "uuid": "1ac3bd35-9e5d-4184-b8b5-a50f750b73d0",
+            "slug": "authorization-api-service",
+            "api_type": "ac",
+            "api_root": "https://autorisaties-api.vng.cloud/api/v1",
+            "api_connection_check_path": "",
+            "client_id": "",
+            "secret": "",
+            "auth_type": "zgw",
+            "header_key": "",
+            "header_value": "",
+            "nlx": "",
+            "user_id": "",
+            "user_representation": "",
+            "client_certificate": null,
+            "server_certificate": null,
+            "timeout": 10
+        }
+    },
+    {
+        "model": "zgw_consumers.service",
+        "pk": 2,
+        "fields": {
+            "label": "VNG Selectielijst",
+            "oas": "https://selectielijst.openzaak.nl/api/v1/schema/openapi.yaml",
+            "oas_file": "",
+            "uuid": "fbe90d4e-0029-4ae3-9c7a-9cb209d811c9",
+            "slug": "",
+            "api_type": "orc",
+            "api_root": "https://selectielijst.openzaak.nl/api/v1/",
+            "api_connection_check_path": "",
+            "client_id": "",
+            "secret": "",
+            "auth_type": "no_auth",
+            "header_key": "",
+            "header_value": "",
+            "nlx": "",
+            "user_id": "",
+            "user_representation": "",
+            "client_certificate": null,
+            "server_certificate": null,
+            "timeout": 10
+        }
+    },
+    {
+        "model": "zgw_consumers.service",
+        "pk": 3,
+        "fields": {
+            "label": "notificaties-api",
+            "oas": "http://localhost:8012/api/v1/schema/openapi.yaml",
+            "oas_file": "",
+            "uuid": "220bdf5e-4c05-4b2f-8e96-8c19162c3456",
+            "slug": "nrc",
+            "api_type": "nrc",
+            "api_root": "http://localhost:8012/notificaties/api/v1/",
+            "api_connection_check_path": "",
+            "client_id": "openzaak",
+            "secret": "jG2v*vobB2*g6Mna-R3CqeQ2FXReX_cE",
+            "auth_type": "zgw",
+            "header_key": "",
+            "header_value": "",
+            "nlx": "",
+            "user_id": "",
+            "user_representation": "",
+            "client_certificate": null,
+            "server_certificate": null,
+            "timeout": 10
+        }
+    },
+    {
+        "model": "notifications_api_common.notificationsconfig",
+        "pk": 1,
+        "fields": {
+            "notifications_api_service": 3,
+            "notification_delivery_max_retries": 5,
+            "notification_delivery_retry_backoff": 3,
+            "notification_delivery_retry_backoff_max": 48
+        }
+    },
+    {
+        "model": "authorizations.applicatie",
+        "pk": 1,
+        "fields": {
+            "uuid": "377e8200-f9e0-4282-8167-e686baa8f08d",
+            "client_ids": "[\"valtimo_client\"]",
+            "label": "Valtimo",
+            "heeft_alle_autorisaties": true
+        }
+    },
+    {
+        "model": "authorizations.applicatie",
+        "pk": 2,
+        "fields": {
+            "uuid": "c921d074-d447-431b-8d18-2d94c42d8cf7",
+            "client_ids": "[\"nl-portal\"]",
+            "label": "NL Portal",
+            "heeft_alle_autorisaties": true
+        }
+    },
+    {
+        "model": "authorizations.applicatie",
+        "pk": 3,
+        "fields": {
+            "uuid": "1765318d-df37-43db-9612-7751bf206bda",
+            "client_ids": "[\"opennotificaties\"]",
+            "label": "Open notificaties",
+            "heeft_alle_autorisaties": true
+        }
+    },
+    {
+        "model": "authorizations.applicatie",
+        "pk": 4,
+        "fields": {
+            "uuid": "fb29f94d-4fbe-4b55-a79a-78c3ec1ae9cf",
+            "client_ids": "[\"openformulieren\"]",
+            "label": "Open Formulieren",
+            "heeft_alle_autorisaties": true
+        }
+    },
+    {
+        "model": "vng_api_common.jwtsecret",
+        "pk": 1,
+        "fields": {
+            "identifier": "valtimo_client",
+            "secret": "e09b8bc5-5831-4618-ab28-41411304309d"
+        }
+    },
+    {
+        "model": "vng_api_common.jwtsecret",
+        "pk": 1,
+        "fields": {
+            "identifier": "nl-portal",
+            "secret": "DGXJs3GKU84LFZWWfdb!nk6gpL6mL9@A"
+        }
+    },
+    {
+        "model": "vng_api_common.jwtsecret",
+        "pk": 3,
+        "fields": {
+            "identifier": "opennotificaties",
+            "secret": "opennotificaties"
+        }
+    },
+    {
+        "model": "vng_api_common.jwtsecret",
+        "pk": 4,
+        "fields": {
+            "identifier": "openformulieren",
+            "secret": "openformulieren"
+        }
+    }
+]
