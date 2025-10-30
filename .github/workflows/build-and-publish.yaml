@@ -106,7 +106,7 @@ jobs:
                 run: |
                     branch=${GITHUB_REF##*/}
                     cosign verify ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_NAMESPACE }}/${{ env.APP_NAME }}-backend:${{ needs.prepare-variables.outputs.backend-tag }} \
-                       --certificate-identity https://github.com/${{ GITHUB_WORKFLOW_REF }} \
+                       --certificate-identity https://github.com/${{ env.GITHUB_WORKFLOW_REF }} \
                        --certificate-oidc-issuer https://token.actions.githubusercontent.com | jq
     build-and-publish-fe:
         runs-on: ubuntu-latest
@@ -172,5 +172,5 @@ jobs:
                 run: |
                     branch=${GITHUB_REF##*/}
                     cosign verify ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_NAMESPACE }}/${{ env.APP_NAME }}-frontend:${{ needs.prepare-variables.outputs.frontend-tag }} \
-                       --certificate-identity https://github.com/${{ GITHUB_WORKFLOW_REF }} \
+                       --certificate-identity https://github.com/${{ env.GITHUB_WORKFLOW_REF }} \
                        --certificate-oidc-issuer https://token.actions.githubusercontent.com | jq
