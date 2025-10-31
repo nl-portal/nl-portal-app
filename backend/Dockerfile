@@ -1,4 +1,4 @@
-FROM eclipse-temurin:21-jdk-alpine AS build
+FROM --platform=$BUILDPLATFORM eclipse-temurin:21-jdk-alpine AS build
 
 COPY . .
 RUN chmod +x ./gradlew && ./gradlew clean bootJar
