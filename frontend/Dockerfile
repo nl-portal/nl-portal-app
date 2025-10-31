@@ -1,10 +1,8 @@
-FROM node:22-alpine AS build
+FROM --platform=$BUILDPLATFORM node:22-alpine AS build
 
 COPY . .
-RUN npm i -g pnpm
 ENV CI=true
-RUN pnpm i
-RUN pnpm build
+RUN npm i -g pnpm && pnpm i && pnpm build
 
 FROM nginx:stable-alpine-slim AS image
 
@@ -16,8 +14,6 @@ COPY --chmod=+x --from=build /entrypoint.sh /docker-entrypoint.d/entrypoint.sh
 
 EXPOSE 8081
 
-LABEL org.opencontainers.image.title="NL Portal App Frontend" \
-      org.opencontainers.image.version="3.0.0-RC" \
-      org.opencontainers.image.description="The frontend image of the NL Portal App."
+LABEL org.opencontainers.image.description="NL Portal App Frontend."
 
 CMD ["nginx", "-g", "daemon off;"]

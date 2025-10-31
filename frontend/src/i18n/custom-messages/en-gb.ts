@@ -2,7 +2,7 @@ import { Messages, DEFAULT_LOCALES } from "@nl-portal/nl-portal-localization";
 
 export const EN_GB_MESSAGES: Messages = {
   [DEFAULT_LOCALES.ENGLISH]: {
-    "app.appName": "MijnOmgeving",
+    "app.appName": "NL Portal App",
     "case.bezwaar-behandelen.title": "Notice of objection",
     "case.bezwaar-behandelen.status.intake-afgerond": "Intake completed",
     "case.bezwaar-behandelen.status.indieningsvereisten-getoetst":
