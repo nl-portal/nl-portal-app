@@ -39,12 +39,15 @@ services:
         container_name: nl-portal-app-database
         image: postgres:15
         network_mode: "service:localhost"
+        profiles:
+            - local
+            - remote
+        volumes:
+            - nl-portal-app-database-data:/var/lib/postgres
         environment:
             POSTGRES_USER: nlportal
             POSTGRES_PASSWORD: password
             POSTGRES_DB: nl-portal
-        volumes:
-            - nl-portal-app-database-data:/var/lib/postgres
 
     nl-portal-app-backend-remote:
         image: ghcr.io/nl-portal/nl-portal-app-backend:latest
@@ -404,6 +407,8 @@ services:
     nl-portal-app-open-notificaties-rabbitmq:
         image: rabbitmq:3.9-management
         container_name: nl-portal-app-open-notificaties-rabbitmq
+        profiles:
+            -   objecten
 
     nl-portal-app-openproduct:
         image: maykinmedia/open-product:1.3.0
