@@ -7,8 +7,8 @@ on:
             - "release/*"
 env:
     GITHUB_REGISTRY: ghcr.io
-    APP_NAME: nl-portal-app
     GITHUB_NAMESPACE: nl-portal
+    APP_NAME: nl-portal-app
     JAVA_VERSION: "21"
     NODE_VERSION: "22.x"
 jobs:
