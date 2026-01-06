@@ -5,9 +5,9 @@ services:
         image: alpine:latest
         command: sleep infinity
         ports:
-#            - "8080:8080" # NL Portal Backend port
-#            - "8000:8000" # NL Portal Backend debug port
-#            - "3000:8081" # NL Portal Frontend port
+            - "8080:8080" # NL Portal Backend port
+            - "8000:8000" # NL Portal Backend debug port
+            - "3000:8081" # NL Portal Frontend port
             - "54321:5432" # NL Portal Database port
             - "8082:8082" # Keycloak port
             - "8001:8001" # OpenZaak
