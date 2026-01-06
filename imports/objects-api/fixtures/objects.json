@@ -467,16 +467,16 @@
                 "geopend": false,
                 "bijlages": [],
                 "onderwerp": "Bericht over uw buurt.",
-                "referentie": "ZAAK-2024-0000000001",
+                "referentie": "ZAAK-2025-0000000706",
                 "berichtType": "notificatie",
                 "berichtTekst": "Er zijn werkzaamheden komende week in uw buurt. U kunt meer over dit lezen op de volgende website: https://example.com",
                 "identificatie": {
                     "type": "bsn",
                     "value": "999993847"
                 },
-                "publicatiedatum": "2024-07-18T00:00:00Z",
+                "publicatiedatum": "2026-03-11T00:00:00Z",
                 "handelingsperspectief": "informatie ontvangen",
-                "einddatumHandelingstermijn": "2024-10-31T00:00:00Z"
+                "einddatumHandelingstermijn": "2026-03-31T00:00:00Z"
             },
             "start_at": "2024-07-18",
             "end_at": null,
@@ -541,14 +541,14 @@
                 "titel": "Lees over de nieuwe wetgeving.",
                 "status": "open",
                 "soort": "url",
-                "verloopdatum": "2025-09-20T18:25:43.524Z",
+                "verloopdatum": "2026-03-31T18:25:43.524Z",
                 "identificatie": {
                     "type": "bsn",
                     "value": "999993847"
                 },
                 "koppeling": {
                     "registratie": "zaak",
-                    "value": "729a9bdf-ea81-4a8d-b0ec-9b516ba26cc5"
+                    "value": "cc7fef18-49ad-44cd-be46-1b0719d5aa84"
                 },
                 "url": {
                     "uri": "https://wetten.overheid.nl/"
