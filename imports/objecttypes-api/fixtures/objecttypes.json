@@ -1698,7 +1698,7 @@
     },
     {
         "model": "core.objectversion",
-        "pk": 13,
+        "pk": 12,
         "fields": {
             "object_type": 6,
             "version": 1,

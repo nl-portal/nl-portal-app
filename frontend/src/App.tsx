@@ -1,5 +1,6 @@
-import "@gemeente-denhaag/design-tokens-components";
+import "@gemeente-denhaag/design-tokens";
 import "@nl-portal/nl-portal-user-interface/index.css";
+import "@utrecht/component-library-css";
 import "./styles/nl-portal-design-tokens.css";
 import {OidcProvider} from "@nl-portal/nl-portal-authentication";
 import {LocalizationProvider} from "@nl-portal/nl-portal-localization";

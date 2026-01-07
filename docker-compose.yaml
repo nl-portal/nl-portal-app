@@ -507,7 +507,7 @@ services:
 
     nl-portal-app-configuration-panel-backend:
         container_name: nl-portal-app-configuration-panel-backend
-        image: ghcr.io/nl-portal/configuration-panel-backend
+        image: ghcr.io/nl-portal/configuration-panel-backend:2.0.0-202512111055-RC
         profiles:
             - config
         depends_on:
@@ -519,9 +519,9 @@ services:
 
     nl-portal-app-configuration-panel-frontend:
         container_name: nl-portal-app-configuration-panel-frontend
+        image: ghcr.io/nl-portal/configuration-panel-frontend:2.0.0-202512111055-RC
         profiles:
             - config
-        image: ghcr.io/nl-portal/configuration-panel-frontend
         depends_on:
             - nl-portal-app-configuration-panel-backend
             - nl-portal-app-keycloak
