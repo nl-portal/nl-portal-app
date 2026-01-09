@@ -50,6 +50,7 @@
 
   --denhaag-page-index-background-color: var(--rijkshuisstijl-grijs-1);
   --denhaag-alert-success-background-color: var(--rijkshuisstijl-grijs-1);
+  --denhaag-alert-info-background-color: var(--rijkshuisstijl-grijs-2);
 
   --utrecht-heading-color: var(--nl-portal-color-primary);
   --utrecht-document-color: #404b4f;
