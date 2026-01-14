@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@apollo/client':
         specifier: 3.13.8
-        version: 3.13.8(@types/react@19.2.2)(graphql@16.10.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+        version: 3.13.8(@types/react@19.2.2)(graphql@16.12.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@gemeente-denhaag/design-tokens-components':
         specifier: 5.1.0
         version: 5.1.0
@@ -18,17 +18,17 @@ importers:
         specifier: 4.0.0
         version: 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@nl-portal/nl-portal-api':
-        specifier: https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-api.tgz
-        version: https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-api.tgz(@nl-portal/nl-portal-authentication@https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-authentication.tgz(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.9.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0))(@types/react@19.2.2)(graphql@16.10.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+        specifier: 3.0.1
+        version: 3.0.1(@nl-portal/nl-portal-authentication@3.0.1(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.12.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0))(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@nl-portal/nl-portal-authentication':
-        specifier: https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-authentication.tgz
-        version: https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-authentication.tgz(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.9.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)
+        specifier: 3.0.1
+        version: 3.0.1(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.12.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)
       '@nl-portal/nl-portal-localization':
-        specifier: https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-localization.tgz
-        version: https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-localization.tgz(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(typescript@5.9.3)
+        specifier: 3.0.1
+        version: 3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(typescript@5.9.3)
       '@nl-portal/nl-portal-user-interface':
-        specifier: https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-user-interface.tgz
-        version: https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-user-interface.tgz(6f4176b397557694a39710f43419e250)
+        specifier: 3.0.1
+        version: 3.0.1(7bc76abde5fd485f7b023518203ffa57)
       react:
         specifier: 19.2.0
         version: 19.2.0
@@ -39,8 +39,8 @@ importers:
         specifier: 7.1.14
         version: 7.1.14(react@19.2.0)(typescript@5.9.3)
       react-router:
-        specifier: 7.9.4
-        version: 7.9.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+        specifier: 7.12.0
+        version: 7.12.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
     devDependencies:
       '@types/jest':
         specifier: 30.0.0
@@ -442,30 +442,28 @@ packages:
       typescript:
         optional: true
 
-  '@formio/bootstrap@3.1.2':
-    resolution: {integrity: sha512-1t0IgfxDr9+bPulLRGmirwj2R2fTTtohy1F2A+9g+7LCMRoKs8U0N4alVSy7qSTrruEsOe1JXiCbSPrD/gyZ9A==}
+  '@formio/bootstrap@3.1.3':
+    resolution: {integrity: sha512-VRtBKJojV5b8RvcM0Vm+i/byjyydJGoDwKW8f3GkahfVejMocxnU43rEYnhGO/P3izDW5MmjzWKDwMA/l9pcqg==}
 
-  '@formio/core@2.5.1':
-    resolution: {integrity: sha512-J1lICbVQPdKtWvjNvO2aGYog3rv0r3lkpZmUjxgnCQFeausiqR+CnivRz2G/Rexkv9y5jV46BuDHFkNS01ssAg==}
+  '@formio/core@2.5.3':
+    resolution: {integrity: sha512-WFpwCP8LpA+ItEdPdQhCZf2ct6hm5ZcfAkRWcPeXAP0x0KBCUTmbQvRqtY0ayIUejQhzqVAAhN66DJwz6zb95Q==}
 
   '@formio/js-interpreter@1.1.0-formio.4':
     resolution: {integrity: sha512-Gm3rRYumQq/yr58Ry21XRbQeWOTNoauK8EPJDcdEMiAG4s+DkLsQciEjwBZkFe8hzqedW4DCmDvh0PJfNAy+gg==}
 
-  '@formio/js@5.2.1':
-    resolution: {integrity: sha512-DdkqAdFV5emc/Lih7JafPWllGRpSAUpINv8i36Gggycsu4aPQyR4avcl1NTey3EZUkqsKHx4u5f6DCIIVjoaEQ==}
+  '@formio/js@5.2.3':
+    resolution: {integrity: sha512-g1TpRxuwrE6vkcDcO3+zBvrpK2/9J/FvjkzooAfxwAFBo6+4JEBHjy3buLLrAct9d4swAALW3VQbw/wbiQGW0Q==}
 
   '@formio/protected-eval@2.0.0':
     resolution: {integrity: sha512-ZyaRNV1mSOzf1hfskAZ3P8jyH9c9eXjEbVjYxdmuScA/WdhJcP0RZbgQBKdjgXpXq7LJ8YNki5U9pKI+NjhWuQ==}
     peerDependencies:
       '@formio/js': '>=5.2.0'
 
-  '@formio/react@6.1.0':
-    resolution: {integrity: sha512-+vs3xRZyModJtTHE1HHK8px7EAInxIezkYIBVvf5nI9jMKy+6F663DHfcQ+W/iU6eyk9x5mxAFBgoSpuhSNs4w==}
+  '@formio/react@6.1.1':
+    resolution: {integrity: sha512-PH4xO/CtSjbFs69ez001q5lpuy8kLs+x8rPGGOmLGEE3UeldDRzT34tuIvSUdAs573b5yzgVwYy1orHbO2XvJA==}
     peerDependencies:
-      '@formio/core': ^2.4.0
-      '@formio/js': ^5.1.1
-      react: ^15.3.0 || ^16.0.0 || ^17.0.0 || ^18.1.0 || ^19.0.0
-      react-dom: ^15.3.0 || ^16.0.0 || ^17.0.0 || ^18.1.0 || ^19.0.0
+      react: '>=17'
+      react-dom: '>=17'
 
   '@formio/text-mask-addons@3.8.0-formio.4':
     resolution: {integrity: sha512-vhkeIyuL+1rtC9S4IW8O3JCwroPtvJrkrcMO4wyELNqMIgQRKbiyBAitZfUP4tY04xdB5lxAinbzdwb+NMdX6w==}
@@ -473,20 +471,20 @@ packages:
   '@formio/vanilla-text-mask@5.1.1-formio.1':
     resolution: {integrity: sha512-rYBlvIPMNUd6sAaduOaiIwI4vfTAjHDRonko2qJn2RP1O//TQ7rcFIPYVYePJZ4OtOpwHiHAvAIh79McphZotQ==}
 
-  '@gemeente-denhaag/action@4.0.0':
-    resolution: {integrity: sha512-SHrEkybNz5wo1vucW2r8oly+rwcYUS8u/jSq3hGhfIon85iNNuRv4/oXig4G9eVryiJnFySOr/Iz+vbvXEyilQ==}
+  '@gemeente-denhaag/action@4.1.3':
+    resolution: {integrity: sha512-W6eEZZMdrHNv7rImx+AYjEZRwwAwa7JYzrQ0+cuU/WJFaJJrkpMS706QO2tJVHywuVp7vtHjz7wCswEEgrTc6A==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/alert@4.0.3':
-    resolution: {integrity: sha512-PpCYktWGwuZCghl9H6N7I8qooE3mUmWhfMjoJmpQCn4a97yc9/fZ1yeR4fqwNBxLthpqUkVNet8+zR/J8vykMw==}
+  '@gemeente-denhaag/alert@4.0.7':
+    resolution: {integrity: sha512-Az2VyaC2laK4s4ZOebXVAHNJTCCImkO8Ir943z8phpRGuZbdRMTWBAy5NgXwOvCxYoFs92RJJ5VAqxi2A3Uvtg==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/breadcrumb@5.0.1':
-    resolution: {integrity: sha512-kARE2gFGHhpXpxbiGPW0TamGAILmC0fAVf30S/O7WyebwstCQEUy12866w8hlKlmXyPaXAp/TunMQG8SeUtflg==}
+  '@gemeente-denhaag/breadcrumb@5.0.4':
+    resolution: {integrity: sha512-aaXXy7T2WK2o68pU2WMEuirHIwNO4PSYv5+scihFdJXeQmMXC/dnZ+WX09AWnJxobeiObk0aDqXNf6qPUBPzyg==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
@@ -494,50 +492,44 @@ packages:
   '@gemeente-denhaag/button-group@2.0.1':
     resolution: {integrity: sha512-Nic8/cT6g9HI9ZnxqelhyP1cxg+w0/8mcAOWkylJhmFNytoEA2dY8zGs+w0ladLuG55Y7BwTWV9c05XDvyJHZw==}
 
-  '@gemeente-denhaag/button-link@3.0.0':
-    resolution: {integrity: sha512-z5uPwfaEzfznCU4/aml1r+CN//mvgqt303O1sr6S+RekQH2wJYn11NvAIecegPM4bLexJcjykelVRobNLPFTMQ==}
+  '@gemeente-denhaag/button-link@3.1.0':
+    resolution: {integrity: sha512-LWCSwUYyG5hYJsDVfSNVVxsx6T7lK4DnWeibJcyVYmGjEesvPNHu/iBAONzfvCf9jabZQVEFDAEX0PSu2bXV1g==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/button@3.0.0':
-    resolution: {integrity: sha512-aEOIaObdzYmB3vtCjZE8UBT2IJ172kFjn/xmKsV3w6I1sUM/cXgDze6y844PFzhVOauawFWF+RFvQtc68CqGXQ==}
+  '@gemeente-denhaag/button@3.0.2':
+    resolution: {integrity: sha512-nybKK0rD3z/MtEC6zF604aNrblxNHsKrVLVntI3lB2Sj4/kjlPXvQdc5cuHUtkb1hGhA6q+d3lZ3fSubpWN1bA==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/button@3.0.1':
-    resolution: {integrity: sha512-fY7APd+iXmk42NXStX2Z+v8i7Qgd5PUKJ2wLyyhqcBpcXFVyq2uwO8jY/gT7Z1oLD57Jq4s3GpiJKVgAhR8Q5g==}
+  '@gemeente-denhaag/card@5.0.6':
+    resolution: {integrity: sha512-ycjRWmwNQn1qgIlvQdAll45q5VCM1sjWhHOji/v9gr9rEdJLGLYTU+IggrCwfYIXayZsEK5svWWGrKpYvxXaGQ==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/card@5.0.1':
-    resolution: {integrity: sha512-xBOKSEdQqxtxfr41vzOxTKqm30Bh26ngUKjSzeiwgDOWTmZP7F230JllQ8s+NYYiPqm7jO07CqBfwea2myihjg==}
+  '@gemeente-denhaag/checkbox@3.1.0':
+    resolution: {integrity: sha512-dv9O//dm0ZXK4ZLHbuIkhGlVEHQKE8wJN92O+jQ/y14D2GFcqOCEkBdtwR6FLHM6KFNGjKe2N7sRdKg6PXF+rQ==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/checkbox@3.0.0':
-    resolution: {integrity: sha512-56cS7VZ+bdXJ7wcM5C5bWgypJQUa1539wJMojCd/IVWhsZMxgAwNeiVg/gNZ+Pl0HD2maP4e5kHPpG1zOuFaRg==}
+  '@gemeente-denhaag/contact-timeline@4.0.11':
+    resolution: {integrity: sha512-83T2N9LAZAIa60Bg50/pQAHLHNXgsE58r+QmfQFoanoW7aj1XhiywEThgaxXkxM+13xn+HmMdJbXgKcSeywUQA==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/contact-timeline@4.0.3':
-    resolution: {integrity: sha512-ruTIg0Q86rjswhLLUWNNmXK2QakOhPiCWmWqsJihWYLDn4XEpgs0seEW7tFnT29kONpg9HLToE7phw4Dl4wHkQ==}
+  '@gemeente-denhaag/data-badge@2.1.0':
+    resolution: {integrity: sha512-UcPoUioMHh7pP3rvQcXhOoGMCVnANkG3JbnwuJ8GFAIbNiT+Q5ROQArBwRmfbTylk5jOOCXM+eM44EoQcNhTvg==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/data-badge@2.0.1':
-    resolution: {integrity: sha512-uv76QEMa+F905yH69ePnjYyWmJNo8uomnnRUTlSl/dAfZgA5uEY1ttR8sT2dMmnCKJ4+MeoVEk9wMp5BjOGyZw==}
-    peerDependencies:
-      react: 18 || 19
-      react-dom: 18 || 19
-
-  '@gemeente-denhaag/descriptionlist@4.0.0':
-    resolution: {integrity: sha512-MXo7wyJW/NMaYn45zUhCxzqF7d6ZpJLAtgCshFh60+3QSOL+MGLFb7mVcNZzxROSgfN2fCw+fJXk3brksO51Ag==}
+  '@gemeente-denhaag/descriptionlist@4.0.2':
+    resolution: {integrity: sha512-PRnPuMnTn63zpYSa5aK+QCxjkRr8i9rUFBP31j/8kXGSifBx10lb6GIlAqPUXW/9IUejBc5ntFkXy6beQdEP9g==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
@@ -545,44 +537,50 @@ packages:
   '@gemeente-denhaag/design-tokens-components@5.1.0':
     resolution: {integrity: sha512-giww3ewSJ6/J4kW3ononfm8hzrH7yR4b5AyZGS6BOA2z4AmlgOvYrqP4wW7UTBDYq+crnp4lI+CWO3vQ/LVJHw==}
 
-  '@gemeente-denhaag/file@2.0.0':
-    resolution: {integrity: sha512-y4zM6cBhxCk38tYV5Hzu/HoMELoGIwccUGWwt6oKDjMAbQF1uG+pfiHAveSb68AqFqWxtGEQF3XCBHXqQWNUPQ==}
+  '@gemeente-denhaag/file-upload@1.0.2':
+    resolution: {integrity: sha512-m39ksSTAZQP1xBay6v5MLtvybb95PppT+oBgwL9MP983dYD4/Las/2hg2Pix5CHzENmkdHLB7uyEPAcb7kpz2A==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/footer@4.1.2':
-    resolution: {integrity: sha512-Uaj1JZYu60OsDHReZgbqosJNPzgADbTdEPKyNSsWGVekQ82yhOC8ChucY5wqQZ+hcDvFRuZRmU1v9yk2Sajn+A==}
+  '@gemeente-denhaag/file@2.3.0':
+    resolution: {integrity: sha512-qkcSafrgLQYy7AqfMdP3BKmkrc0aoXJH1gyDM0oovWSPaDjmYzwS8qSN25DutB39pWH92z43anptaqERZlOa6w==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/form-field-description@3.0.0':
-    resolution: {integrity: sha512-TXW2oz0F7/xBKArW4cpKwN8K/UK0jBYTNPFksP6VTXzGXNl75B4h4GPqjZi6VGbr6pfQXcSoOzOEGyih43v1dA==}
+  '@gemeente-denhaag/footer@4.2.0':
+    resolution: {integrity: sha512-d/0ykUiSrAFNKXHtMWcHEYsilHlayms0MJLmqjdourK7cvJ367iCE5VGPwAF67sAjKxwNT/8RKPTJSLPJzg1IA==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/form-field-error-message@3.0.0':
-    resolution: {integrity: sha512-ys6npZAcNClY8cMKzchWQiEA3QsUDE9TWdyCcxhwJPu8pDfLaYews+jMyUeGJ6rgoTnYKuxLXAqcTqc/JY6WxQ==}
+  '@gemeente-denhaag/form-field-description@3.1.0':
+    resolution: {integrity: sha512-S0uRNvk99cQ0SXKcT2O/63JVmtP2GZnNpzvfYR8DZOlcn1/oSwYwHdx6m6Nq9V+bCpxL4lUl3l2HLEnkXHpVkg==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/form-field@3.0.0':
-    resolution: {integrity: sha512-9C6VggfVvJlRX0/xf5cgvBm0kH0zQexxnYtzIk5DyQV2D7gJqj09/8XP9shw/4rGp5Bw5DGmIYHEXP5A8vdnZg==}
+  '@gemeente-denhaag/form-field-error-message@3.1.0':
+    resolution: {integrity: sha512-6VbJq6gvikn/DLPngcG0zyFEO0W9gGGTivWxWOpIKZ+jur5Tejs6/vFKDk/CnlugbZcGj2A9iYOSdn2B8bUaNQ==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/form-fieldset@3.0.0':
-    resolution: {integrity: sha512-qEkng5up+TXufKegutkn/ghY+bKxs3jlm7yNvat/pTMt4dFkNHpn9A0+Kjo5Kc7obahjgADS7OakgRfzN3r95A==}
+  '@gemeente-denhaag/form-field@3.1.0':
+    resolution: {integrity: sha512-Cng/Md1VmHF2D05e1fGNOVPuC6m8MqAXHiqZ/BEUES5PsRgkU9E6KNXHBH+Oh5nWg3q/kVe/eFVpd1t7jeTwaQ==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/form-label@3.0.0':
-    resolution: {integrity: sha512-is9ZGGBGwBtjowliClP1S13WCT29sdVN0jd4BvrnrrnWmvhyOfidWaW9I9AtPvEi9ZtvzgFzqlTItf8Zwf9mpw==}
+  '@gemeente-denhaag/form-fieldset@3.1.0':
+    resolution: {integrity: sha512-uaWlSSeA+rxXIiwa+P3AbLZJG2VKAyYLKfE656dlU99cn9Kzi7tWvqITNKUbIAAYHxBBQ01jRsE90Ij1pbfwZg==}
+    peerDependencies:
+      react: 18 || 19
+      react-dom: 18 || 19
+
+  '@gemeente-denhaag/form-label@3.1.0':
+    resolution: {integrity: sha512-JMj25kvuY9WUmrlsQmb6BKAV3NPnTE/zaGAjpUtU9CJXwwvT1EuUb5JYrCqb0HF4u+wrRjO1YnDj++OokCokPA==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
@@ -593,20 +591,20 @@ packages:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/header@4.1.1':
-    resolution: {integrity: sha512-3LrQW0beYB9XOH9Yn6GewBmmtlm//vBUtSAsHzMsIl6FDXjp2RKZ76tQtwrbGgT0LWmzgvMQ5hzCe4qxaOJgrA==}
+  '@gemeente-denhaag/header@4.1.4':
+    resolution: {integrity: sha512-Vlk83HXczSmcVIj2QOie2+5H/Db1SYuJlsD00b15vhUYTigLfn/azpyktpsKLcaXRpSqIyuWAsAiChNpkshrkA==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/heading@2.0.1':
-    resolution: {integrity: sha512-r2v3nGhw9LMPASNEfI7RACFT/l89tT8baNWNgUXlLTPdctm14owUVBqeiNiZ4Fa6K9VX+pEhQV6x0dVyzoCFSg==}
+  '@gemeente-denhaag/heading@2.1.0':
+    resolution: {integrity: sha512-gETsTFb83OWZRqQatSPySGbBQraE+EAB7MjxKk0V5YiKdwZ+xwFVjg+kLNSgyG5uNbqbSKzNXWuz8qmI5rBlSQ==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/iconbutton@3.0.0':
-    resolution: {integrity: sha512-l6Qavpu0agFTCw45mJ5Qrgk3R7XSQHpC4aaXJ+lb0Egh56zd/2IxpSggnNt6IPlrZe8gqEmeONGhIaplr+Rp0A==}
+  '@gemeente-denhaag/iconbutton@3.0.1':
+    resolution: {integrity: sha512-w0NXxDUmUbEQSDstJkGD3424Izj3o/+3STXqZfdauvH2N1BrUbjqEFhRO/4lZY5INdYLE2CVIzrXPUS9QaTtfQ==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
@@ -617,56 +615,62 @@ packages:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/language-switcher@3.1.0':
-    resolution: {integrity: sha512-Qk2JFje2eorZ4rTzHBRKxmtNMUOc2qz0Tw0x2InNKjnniWyeimLne4xHnJ2zml2dc3FQoJ6RA9sRlmPRR8cLsA==}
+  '@gemeente-denhaag/icons@4.0.1':
+    resolution: {integrity: sha512-SX+o0S1SvdPDaCXCdha+2dQaOkyiHdYIqLhR80FblBrkxaS45K/zY2vahlI15NdKY8kQ3onEZv26i/6TPh1gyg==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/link-button@3.0.0':
-    resolution: {integrity: sha512-0IjrLQEcA3MlOvMaftcp9X9uUieLEINYaJiixWBd+8uri7EOGDV2263yTaOlVtojkXto2jYaXS0s74W8PRYzjw==}
+  '@gemeente-denhaag/language-switcher@3.1.3':
+    resolution: {integrity: sha512-chj4fxmOckpdr7NHMH8vd/qKzukaG0QUBGIoQmtAl0TUB7urHnqnWl4yQlMu7Aehl2VmnEEjS9KgCB9Zqv7IKA==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/link-list@6.1.0':
-    resolution: {integrity: sha512-bx7UPubPStyYe6jjhcz9f3E+Bf7KC5MHh3+FND5krB1JH22KaJKicGlNdp53BYtQi4yWOxNLW2JPg8HQI/EwKQ==}
+  '@gemeente-denhaag/link-button@3.1.0':
+    resolution: {integrity: sha512-gQt6xgDYvL5bqZfhiZZdqWvKNbIYwi95Ul1SXvWTRj63O2VJiFZQMgrFDI4UH4BG/YxOvFY0mxsR2F0GHSz4vw==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/link@4.0.0':
-    resolution: {integrity: sha512-RYm++8L9V5N+9e4EBTJr2zIgkycRidQlZkAunxMhSLRznUU4QNUohWOdRI6F3hbb7nGy2ic4pCz5I13JxnVqpg==}
+  '@gemeente-denhaag/link-list@6.2.0':
+    resolution: {integrity: sha512-r1skZ3jbAHg2phuv//FikaU7H/oF9J0gVG6wPtjOO/3B9YTvRXTadQhscDHBOv+h6BlETwagFAczHAdgqEbQSg==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/list@3.0.0':
-    resolution: {integrity: sha512-66h6h0m+iIfaU7ehr9z0iBApJ/0mABCe2W/38VSOY1wr14Yi3NaRyobptUN4uhzGSTfEsrbNfsDr2AoTlZcIgA==}
+  '@gemeente-denhaag/link@4.1.0':
+    resolution: {integrity: sha512-mYeUCOmn12ZmhKJBoguf8hFTjR7N6sxROAYHsT1MdrgPRhjjL3n0IccdBWOsNq8wXoJjqR6BPiu4hxdvT379fg==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/menu@4.0.3':
-    resolution: {integrity: sha512-W3EfqhbaGC+8vv4lE1lipq3h0hOaRUgrk/8Sa6Wti2bKtp/5m7XjEP0AQNM5ssJVORiMN+5OFBTivZ2EBkCn8A==}
+  '@gemeente-denhaag/list@3.0.1':
+    resolution: {integrity: sha512-N40uNL3cO5/W/isCngSM2kp5hndZyXgcAUu0sZSzfZP0e3mQaklYQAf7sSiKwdZ9X1cZJs0wb8fAJ+Ue5QlLAA==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/modal@3.0.1':
-    resolution: {integrity: sha512-GuBzf/Ql7XZe77drK38MWeCdALFXE6RtjrszPbCW7k2j5AE0Ar7iAHgaodpweYlZJvBWKLKeFf5exIy5yBbU7w==}
+  '@gemeente-denhaag/menu@4.1.0':
+    resolution: {integrity: sha512-plMHBgHYRaEYXyYc5qTw5kV1nqJmgdl6K7moMENXWeBJrWhlM1f3ztSQsyq1jgs+fq2LnhffdIf+it76i9XluQ==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/number-badge@2.0.1':
-    resolution: {integrity: sha512-pvku+pUumqGIMyQwnEeg2ic2I2aW8t9bUCNv79WL2++fWfk008b1yDZllCVj7oVC4H9Sa3//pxtae75nov/6XQ==}
+  '@gemeente-denhaag/modal@3.0.2':
+    resolution: {integrity: sha512-V6/8vhdvsQ4EhcRvdN9el8dr606w/9bP55TvlBGJcnOnz+d2tD1pidqZP1RHR+VXGdYx7oviPvz0ZgcVql4sVw==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/page-index@3.0.2':
-    resolution: {integrity: sha512-ZCk5H0wno5Sqieics5t4ijghDQsXoFszAjwYQSU3kCtGhYjfa0CHWfChvgkux5H1L00Q6vnyEhpV7MAAyGZ59g==}
+  '@gemeente-denhaag/number-badge@2.1.0':
+    resolution: {integrity: sha512-m1ar7fpQzzmzfUMKgj2wrU1WMrLPmNppgjk3KnffbR6rswh05OlX2RwY00nOrdQwtQzwlRdir3U9CMo21n4gEg==}
+    peerDependencies:
+      react: 18 || 19
+      react-dom: 18 || 19
+
+  '@gemeente-denhaag/page-index@4.0.3':
+    resolution: {integrity: sha512-oylFMWhPBgB8lncwiskEkiS2xkU20VoUIZTKW5/IaHc88yF29ktMzWe6ueNwc33uuH9ml7Jq+f10ceji0K/9Rg==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
@@ -683,20 +687,20 @@ packages:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/paragraph@2.0.1':
-    resolution: {integrity: sha512-Bd4S/rqRmvuH/P0vyKx6WxSucdUi/hz5Z2NkvPNuBmgbcv/zj7Kywn3iETfcifde+/WGN/j+zi/tM6aJg6KhTQ==}
+  '@gemeente-denhaag/paragraph@2.1.0':
+    resolution: {integrity: sha512-sNleGQroezFeWq4aN9fAd4Zvme5adBhJHE8gu+p02j1pD3nlDxsgAx8tTukWA6xxZ6idQTGvEVDz0r9T1Yxx5g==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/process-steps@4.2.0':
-    resolution: {integrity: sha512-CM2bi7YB1SOQObND3pbJRmxeCeSfvlKMUrrcuFJHcdkTy86U4LhssB3MuV/7jfStmBstqEoO4qBteBw4NSVITA==}
+  '@gemeente-denhaag/process-steps@4.2.3':
+    resolution: {integrity: sha512-Q/b4nt3gVp36dilRN22kx3KQeBY4lqY9DXlE7Dg0dFZMKM3DecLjv8HZJ4PmwRQc1wzqJsdVGQr05JE4bE7YUg==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/radio-button@3.0.0':
-    resolution: {integrity: sha512-19d9suXdOXZYnVOBVnenG7DbjPr4bXlCFexPJVVpyzkPbblynJeidyuOX7tpOn17cv8flb24eFXl7NpOPWTMZg==}
+  '@gemeente-denhaag/radio-button@3.1.0':
+    resolution: {integrity: sha512-BMQKcJ7EshjgXCkUr1CbQvpNXqJ4owfD+T7NeGWeaIS/2u16GGoZmD80B7T0l6/DMfceFiEt+ZltkudlEf3T8A==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
@@ -707,80 +711,81 @@ packages:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/select@3.0.0':
-    resolution: {integrity: sha512-dIv4rJiG5zpabpbClBepJy5UGaEWgTuRLRPKKBD9+DKp2TftbIjMu/RTVu4ZkVvdqr0AEBpHuh4TRFwheAYCHQ==}
+  '@gemeente-denhaag/select@3.1.0':
+    resolution: {integrity: sha512-vuDAmn4Y1GqqhmhjUw9AkjNnLL3J57bdCvruS6UfchtbeGzmXm+BlZzFJ4LY8rdkx00igCsZ3hQSsWCwnJk4VA==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/sheet@4.0.0':
-    resolution: {integrity: sha512-+6VcDgMrUn7TM4oXbkvUwlLZ+lOSGGNUVB0Lpadzq1NYB4z+sgmThVy88zXRkeVCJylWk4vmbz9YlNSeb64sig==}
+  '@gemeente-denhaag/sheet@4.0.1':
+    resolution: {integrity: sha512-Keo+tiVl3Dek7uiwMO6u145Fs2ZnxG4XxNI2uv59hUfZ5vihB6XLnVT7xbfC+TGzVmR1b8jiumq/S6Iaoq06Hw==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/side-navigation@4.0.1':
-    resolution: {integrity: sha512-1reEJssD3T5EA2Aa9QAdvSfQtSSkWwrDvUVZUIHUk3vLiO32IRP8yIykyUJFftNspdnsFnQGGW4QKxJJ4vGPrA==}
+  '@gemeente-denhaag/side-navigation@4.0.3':
+    resolution: {integrity: sha512-xJ2KuHClsk0dWFVlUhhAyfw5zzW8j6cwAiry0ocwrFoz/BYnv8p65MGHVjvEBycrHNo/deGnI/+wmiagWi9imQ==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/step-marker@3.0.0':
-    resolution: {integrity: sha512-JWIYoRJv4tXpMf611QYPZqPycb5gZr22GvEdAEBhP2+3I6W+Z1YKP1bzEWDk/vhCm7ouOy0r9Ar81m9R+kCFgQ==}
+  '@gemeente-denhaag/skip-link@1.1.0':
+    resolution: {integrity: sha512-hCuwAL5VhfCZ/itELVDrXRPdZya1vrbmMOUFVW2Ah+OL+UeCJNPxlg2i3xE794cgf8TrKZR5AzN/xAJrvke7SQ==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/stylesprovider@3.0.2':
-    resolution: {integrity: sha512-W4xzDaf3v3/7MTT1nbMmwzMw7LAEwAmU/W517Yfqswwvdj1EDttObtDCyX+r67FgF52GoqM1TlRRKFNS1qw6kw==}
+  '@gemeente-denhaag/step-marker@3.0.1':
+    resolution: {integrity: sha512-UL3HD9lRv1akJSCRhNd/Uf6pH8LBZ1DlbnythF4AC9u9EQ3fM28eIHhjdW9Qp4mCDmBGqFWq2wbooYVGVTK0Iw==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/tab@3.0.0':
-    resolution: {integrity: sha512-vkM7nSa1RTTfOTfGNqU2xkMz7EhCuN1q1prH+/Ed5R7A2b5pu/pE52XnLfRrUs3FVvyJKMLKNSQxwxYhYEue6Q==}
+  '@gemeente-denhaag/stylesprovider@3.2.0':
+    resolution: {integrity: sha512-RGdC8m+rD9mNR1okt3s2goQ9+Bp0hwjrKxXDmIE3vapT7+eBVRdkIzbMY5/6yFBsTOeI5UOV9NwPVBCkimf4EA==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/table@4.0.2':
-    resolution: {integrity: sha512-eq0TBkLllTAXWR2lgV0zFK0PVXWiwGkjVHqH4zyCCMgWHtlycOzNBGTq0yZvpzgqNxQ/NwQX9rg2oqB0FqUCbA==}
+  '@gemeente-denhaag/tab@3.1.0':
+    resolution: {integrity: sha512-SICtkQXv2dalPsJom8yEKxBA7GW0IpuI/GPbQ4Kg7YCQW71Bh1G5HghO+ihjRNnMLfDPwv5PtQnYuSliI6wjUQ==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/text-input@3.0.0':
-    resolution: {integrity: sha512-EFv1PZ/LMO3qmu6CZMDTSizbvaz1pyec7MRU4sBQrH7S0N6KLokgrktj36qZaAb7WyS2SgC5Pl3TCrGI0c7TZQ==}
+  '@gemeente-denhaag/table@4.0.4':
+    resolution: {integrity: sha512-nebZMLHPYIjiklIp7Kv9wuGgtIzPb+Ii7LRfOqvycRXAOziMpLuKdh2aQ2dprWck6XovhkYu5o+P3J7LGELfSg==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/textarea@3.0.0':
-    resolution: {integrity: sha512-4gOBZZI30lkDD84bonIdiXvJOmjV+d319X9eR0svX7S+FCSc6RabZTTd5IghVUMaQdNMk/QwWj+3+08Nw6DVwA==}
+  '@gemeente-denhaag/text-input@3.1.0':
+    resolution: {integrity: sha512-FOQlBk8aOJUnfd/fTaOasXXP5PXM6SPVl/t557ySIhKYnK9HY2hDOhLzi8K5YoFRzngcl4m17IpHhdiOOoAq8w==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/typography@3.0.0':
-    resolution: {integrity: sha512-naYwyzGJoq2O+H9a0b8lj+S15WVC0uKG9Wh03XX6wsfkTXsWIqTV4aFn+NiBvCTJFs+IpiENAAx3h/4Mg4qRNw==}
+  '@gemeente-denhaag/textarea@3.1.0':
+    resolution: {integrity: sha512-dFB830HrAB8mIqx4nLI0TMy4O6z1lyhmXM7FCFrYu0iK0SpG7dV5nhqvIXOn1YRF9606JflNgb9aLTPpEYYdFw==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
   '@gemeente-denhaag/typography@3.0.1':
     resolution: {integrity: sha512-LiMdt1LIsOJA2pjPWfpQF/rXV3K/BFdSiVenKH5QUC4WSnf8x1Teh3Uk1HMEgWEmsx4FlVFMIMkeeSz6ZTfV6A==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/unorderedlist@3.0.2':
-    resolution: {integrity: sha512-hX+9jYZXfLDDlJTgpBoUKrQORjQ9U+GOSbKiOBR3fSjAaZ7wGAG6V86Z1sLCfPr02VLjlq3PHc5rDQJh4rU5tg==}
+  '@gemeente-denhaag/unorderedlist@3.2.0':
+    resolution: {integrity: sha512-lbKoB29sbBPnVFqVfOPI7AQvZ2F3QFEnDLaTa/IL4hg16ziB+OpvDrY0TT3e2B3vzXZuAnkdXpf8c1b/G7+KLA==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/utils@3.0.0':
-    resolution: {integrity: sha512-q+eFSG3pvpmGxzlivIwVfzQUUuCjVfLXFxNhmhFJZFAHsfd6v+3EU63JcIdLR+biS+K3WSDfJSQ/FRRdOpcDtg==}
+  '@gemeente-denhaag/utils@3.0.1':
+    resolution: {integrity: sha512-9chFgxFCZLnQcF8/DGkBQEAxCJ8kFI2ODoH46z4RgQx3q2V5agdZet6Kd7Tme9gBzWLsU8Z6FFYbn+oGMvM33A==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
@@ -858,42 +863,38 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@nl-portal/nl-portal-api@https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-api.tgz':
-    resolution: {tarball: https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-api.tgz}
-    version: 3.0.0-RC-202510271448-1114faa1-SNAPSHOT
+  '@nl-portal/nl-portal-api@3.0.1':
+    resolution: {integrity: sha512-IsC8OrCTgUeJtzOdebfeOmqN/igxV5Sf1k+4zrfaSXEZtvX5oGXOONj5V0/XPstoSs/8RMobQxVWBt/EcId/Kg==}
     peerDependencies:
-      '@nl-portal/nl-portal-authentication': 3.0.0-RC-202510271448-1114faa1-SNAPSHOT
-      react: ^19.1.1
-      react-dom: ^19.1.1
+      '@nl-portal/nl-portal-authentication': workspace:*
+      react: ^19.2.3
+      react-dom: ^19.2.3
 
-  '@nl-portal/nl-portal-authentication@https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-authentication.tgz':
-    resolution: {tarball: https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-authentication.tgz}
-    version: 3.0.0-RC-202510271448-1114faa1-SNAPSHOT
+  '@nl-portal/nl-portal-authentication@3.0.1':
+    resolution: {integrity: sha512-EYYZQ5Twt349wrdYqjpf8QzqUAyUNf6FN4WidvPVVOfSaWEzsewN/wabf3TpD3qwSrxJpm0RUOrQ+mjLY0GjoQ==}
     peerDependencies:
-      react: ^19.1.1
-      react-dom: ^19.1.1
-      react-intl: ^7.1.11
-      react-router: ^7.7.1
+      react: ^19.2.3
+      react-dom: ^19.2.3
+      react-intl: ^7.1.14
+      react-router: ^7.10.1
 
-  '@nl-portal/nl-portal-localization@https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-localization.tgz':
-    resolution: {tarball: https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-localization.tgz}
-    version: 3.0.0-RC-202510271448-1114faa1-SNAPSHOT
+  '@nl-portal/nl-portal-localization@3.0.1':
+    resolution: {integrity: sha512-nEM12BgUGVnSP9QQuXxVBLx6MEiLASsOpVkqRaIBncJ3AleKn55V9vlzKTF5xuhEQ/m73EMj6wW5hu1amL3SXA==}
     peerDependencies:
-      react: ^19.1.1
-      react-dom: ^19.1.1
+      react: ^19.2.3
+      react-dom: ^19.2.3
 
-  '@nl-portal/nl-portal-user-interface@https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-user-interface.tgz':
-    resolution: {tarball: https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-user-interface.tgz}
-    version: 3.0.0-RC-202510271448-1114faa1-SNAPSHOT
+  '@nl-portal/nl-portal-user-interface@3.0.1':
+    resolution: {integrity: sha512-NJPpecnglihmm47qMqX+FkjDt7MVPIj3Iwl62T4zYJ+bA3OD9tvhYd/Zlb7Tr39WiDreyZs+E92dBfOyed82zQ==}
     peerDependencies:
       '@apollo/client': 3.13.8
-      '@nl-portal/nl-portal-api': 3.0.0-RC-202510271448-1114faa1-SNAPSHOT
-      '@nl-portal/nl-portal-authentication': 3.0.0-RC-202510271448-1114faa1-SNAPSHOT
-      '@nl-portal/nl-portal-localization': 3.0.0-RC-202510271448-1114faa1-SNAPSHOT
-      react: ^19.1.1
-      react-dom: ^19.1.1
-      react-intl: ^7.1.11
-      react-router: ^7.7.1
+      '@nl-portal/nl-portal-api': workspace:*
+      '@nl-portal/nl-portal-authentication': workspace:*
+      '@nl-portal/nl-portal-localization': workspace:*
+      react: ^19.2.3
+      react-dom: ^19.2.3
+      react-intl: ^7.1.14
+      react-router: ^7.10.1
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1112,8 +1113,9 @@ packages:
   '@types/trusted-types@2.0.7':
     resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
 
-  '@types/uuid@10.0.0':
-    resolution: {integrity: sha512-7gqG38EyHgyP1S+7+xomFtL+ZNHcKv6DwNaCZmJmo1vgMugyF3TCnXVg4t1uk89mLNwnLtnY3TpOpCOyp1/xHQ==}
+  '@types/uuid@11.0.0':
+    resolution: {integrity: sha512-HVyk8nj2m+jcFRNazzqyVKiZezyhDKrGUA3jlEcg/nZ6Ms+qHwocba1Y/AaVaznJTAM9xpdFSh+ptbNrhOGvZA==}
+    deprecated: This is a stub types definition. uuid provides its own type definitions, so you do not need this installed.
 
   '@types/yargs-parser@21.0.3':
     resolution: {integrity: sha512-I4q9QU9MQv4oEOz4tAHJtNz1cwuLxn2F3xcc2iV5WdqLPpUnj30aUuxt1mAxYTG+oe8CZMV/+6rU4S4gRDzqtQ==}
@@ -1189,55 +1191,94 @@ packages:
   '@utrecht/accordion-css@2.0.0':
     resolution: {integrity: sha512-U+NI6SXu5ULPjD+UDrdjh9f5AY+Hc3h5gIaqisDkogvmEDX7lkdOVxby0PrkBcVkEuiq9AIg9/RT0U3uFc7vwg==}
 
-  '@utrecht/action-group-css@1.1.0':
-    resolution: {integrity: sha512-PSyKud52kqSAxmdTG8P6IkyCs1FgY+jVuCPJVzeFLNjCW6v+hdECq2S2nrf8zqR/e5VlFkwTBZOO2XCKsECZWg==}
+  '@utrecht/accordion-css@3.0.1':
+    resolution: {integrity: sha512-BWqGNjsJKzZ468gNbicMNyNoAwEAdN6msViCGURrW/tIsWRqoIcck3CozGuWdS9u7pakasfi6hhHvPbXcz4CoA==}
+
+  '@utrecht/action-group-css@3.0.1':
+    resolution: {integrity: sha512-IFOWCIMgcr44MuqotyY7wC3KXOMaxvcn8ZoDtCISK+5uG5NjbSsdI9DyegrWBq8M7fGPLnjDMdWCmIVFM2lgCA==}
+
+  '@utrecht/action-group-react@1.1.4':
+    resolution: {integrity: sha512-W+0+x2wJ9058wNDYnK1dCfUKCFfNVsDcezm/MmBgmOW/vUnX/095TVzhPboL6vVdHQTESY4uaCjinmvwI/sx6A==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
 
   '@utrecht/alert-css@2.4.0':
     resolution: {integrity: sha512-2vrm2Y8yNIPu1VNmEGP7BJkxEFaSPobQ+hcPkQs2TJiPybzX+ut7ZCcm3KaxmE6LSVjIOLSbLXe2YW/fP2g/Rw==}
 
+  '@utrecht/alert-css@3.0.1':
+    resolution: {integrity: sha512-0phAO794XRQcljQz2RcxdnXMvP5JmlRx8SeEq6T0R5oiKTUEWryxzfgfqu1wJ/VGxgKv+JVVGsSYS04HlKirig==}
+
   '@utrecht/alert-dialog-css@1.4.2':
     resolution: {integrity: sha512-fnL692KHBh3POeyu9IxOjbZ/9Alb/ppjbt+uQ0ukyfhd8NUS9BYmwJTr9j5LUZdg9Kep/nHMbAN1zSptQ0DICQ==}
+
+  '@utrecht/alert-dialog-css@2.0.1':
+    resolution: {integrity: sha512-bFvApN6WdxSeh2lzg8DyhC2G0n3KXLJRQANgCWanIyXo89AqCe0EK39SRhPJl8g54cMMu1VBOFqqsj0XrfJOKQ==}
 
   '@utrecht/alternate-lang-nav-css@1.3.1':
     resolution: {integrity: sha512-MY0qHM+tt1Q9v6SG+lTzDNh3xNs0eO9lpvzUWbwpR7z0fmRq/65+gYhZwFCiAKaWou+A1Uog082V0fSTslNkKw==}
 
+  '@utrecht/alternate-lang-nav-css@2.0.1':
+    resolution: {integrity: sha512-NpzpeUfZUIq9UIZwHeNGumR56Gw7bzbAE98sAgtQeaIJfGz3veLMAvXfZP+9EtM5srJhlF1hHI+R4fxcqGdOKg==}
+
   '@utrecht/article-css@1.5.1':
     resolution: {integrity: sha512-zCRB9L0BTXCYmwNLI6NGlfds4+heXji4yEo79dF/t2O3xGGbMA1hy1zI20Plf6z36P9gnONaYRruqpnFamQFew==}
+
+  '@utrecht/article-css@2.0.1':
+    resolution: {integrity: sha512-FXJ0KVsCobM4Bo2fEapUZksUtokaUQpJV8qYHt19H+lobCiv9D9FTYYy+F+udX3u/TaSLj56gewxK12gQP1a5Q==}
 
   '@utrecht/backdrop-css@1.4.1':
     resolution: {integrity: sha512-nUUSDod9nYkGlwjvVxHplOjdYnrtqewqXOrO9A7PHLyUm43thQ8XBorhAG0IDtFxHT46JfofMxuCIMZr7PZHFQ==}
 
+  '@utrecht/backdrop-css@2.0.1':
+    resolution: {integrity: sha512-0+EJODNHWM1Vm54UTreT4zMeB41BqhQSBSJycXXtKXZWjnY6K2oRSdwvHhbvw2HOSd42worOPfIOlD24bvc5xA==}
+
   '@utrecht/badge-counter-css@1.4.1':
     resolution: {integrity: sha512-pEyVTH9CrFxNaNfIuFxgGBl5Q3ZecU4jsYJL+2JBXTzJbgy9dI47CvDMQzEkASkBCR4qEPeMB6f5b4XQRBOipQ==}
+
+  '@utrecht/badge-counter-css@2.0.1':
+    resolution: {integrity: sha512-0wfv6eIvQQRPKf98Mu4veFXT2l57MAd0uEGHqD78tCcoG62ugveXvWbQMyae5drzzEUNWdf/2Mn67qLyKVcK/w==}
 
   '@utrecht/badge-list-css@2.2.1':
     resolution: {integrity: sha512-C1HCRQ12CTuuFvmbcUEYsI8SuXe1X7y/oC9OyHznfyIJYkINm9NZ/30WIu99fgd/GkwjFyQoy24J990zteM3PQ==}
 
+  '@utrecht/badge-list-css@3.0.1':
+    resolution: {integrity: sha512-ujhscNHXxliZ/DZHa6xitpDArF+S32b6baP8erRbAo7SiP90aFw+3zQ7Uj0d5IAMXMCOOiTrRp8q9GWTAMRy+Q==}
+
   '@utrecht/badge-status-css@1.4.1':
     resolution: {integrity: sha512-lXb/pi0tlrvz8dyYMyH2Q8FFKVnPd8+K5lQJCEY3oiG23PL/Cr+6YJl0oZx93e01Cc0Y2q6PriaLRPIJxh4T7Q==}
+
+  '@utrecht/badge-status-css@2.0.1':
+    resolution: {integrity: sha512-PRIpMVRokVEdUZ02tmER/a4Nw2SvwyjNGe/APFNiJrVeFeGKPh33OkkJ331XOxDVpXJ3htnvDaqxu6aSjbLc9g==}
 
   '@utrecht/blockquote-css@1.6.1':
     resolution: {integrity: sha512-rebGL4ykw9ck+WuRpQd8vhbVN3QTJhsiico3C3JWbYfG/vvafCDkTI7A6AkuNZvg95V3lMJqn2mkA7fj8s0YWw==}
 
-  '@utrecht/body-css@1.2.1':
-    resolution: {integrity: sha512-YKB/y3Z+OjiDp39HTInrEme8ZOV+fffeHLybWTqCQjiP4JdPyiwUo82p7TYoyGe/isSGOSJQqVByhniadZI8mg==}
+  '@utrecht/blockquote-css@2.0.1':
+    resolution: {integrity: sha512-uiGEhc77nM8OFEsuAR5viABV2NiRGZi3Mve2wUxtvrctPirLV/kQJWn3/pt2NCKSeuFqSnpVvCzgPe46F8PteQ==}
+
+  '@utrecht/body-css@2.0.1':
+    resolution: {integrity: sha512-WQjaF2Ii0eERCnTGYI32Jpjts5ydJpCAQUTtLjVs/jGF2+wHBz7XRDN6SFd8S0xIgp6llMQjHB9rdVp8JxieWA==}
 
   '@utrecht/breadcrumb-nav-css@1.5.0':
     resolution: {integrity: sha512-g1m//HVM4lKSAF83Y83jKbhb19QRK6ZHIYZ4gU3M9hkfLq51/JnM7TPPx3dB/PvSI3GrfXrnAh6SApcDUOvxUQ==}
 
-  '@utrecht/breadcrumb-nav-css@1.5.1':
-    resolution: {integrity: sha512-C6da4Wo4cUSa0oag5riOYs1u4iFKuOJIvjdk93dUN/iW+h3YoWi0PNOiWnY0HbzecH5UxbwSCbqAitH5pmfogg==}
+  '@utrecht/breadcrumb-nav-css@2.1.0':
+    resolution: {integrity: sha512-BOYqFSnrR5rVzU1mb4eDb4BbpuE9TSEPN5FTlJJduYDvsJr5DLDaxADmFp1p05di7GWV1qTaPBMxw0gEuMAbaQ==}
 
   '@utrecht/button-css@2.3.1':
     resolution: {integrity: sha512-gjCVKTzsV/2TOTrYANHFP1f9RqXc/6lY+gC37q9KaEJZ55+37mVKeNubCO1ntFRJeGY+4oCT5ti2rtX4jqDjqg==}
+
+  '@utrecht/button-css@3.0.1':
+    resolution: {integrity: sha512-yHJazkFSA99H4IKCaKLvq9pptZ9oZBeAzx1l01JQwt3x12aoZ21M5pRRaTP6V7otjfjcvz/A4sRRrROZJJ3wZw==}
 
   '@utrecht/button-group-css@1.4.1':
     resolution: {integrity: sha512-RrYY5834h9eMM4y63ghOzfkMb/mb7d62zHUsreC5vZgN+B6Kmx2ZIeS1tN5JV7cSrBQN34sBIrkMVLCUsctHvg==}
     deprecated: Deprecated. Replaced by @utrecht/action-group-css.
 
-  '@utrecht/button-group-css@1.5.0':
-    resolution: {integrity: sha512-8HGQ+CPDoxFM7n+ArsCixFEpw0Uykf4YxLc18L3tE5yw2+pBdrLVieh+wBghg2QtfsQJs5tpLZbw76wyaVENmg==}
-    deprecated: Deprecated. Replaced by @utrecht/action-group-css.
+  '@utrecht/button-group-css@2.0.1':
+    resolution: {integrity: sha512-Zby6G9b1KX6aKECBobzVeVuNcvsknpwUwCVZXN7gzxLzNpJXwPC92XYia0mDIhxUcq8rKCQF+ABzZtxeZKqx9A==}
 
   '@utrecht/button-group-react@1.0.1':
     resolution: {integrity: sha512-gZfKsHwwZxhKytrEKexDs1OOQ6O2c+2jgWmhp5fKb0DhqHluDnQ4xKKKF/BwlmjOyjesKwBwrvVJc+jsd/dIQA==}
@@ -1247,8 +1288,25 @@ packages:
       react: '18'
       react-dom: '18'
 
+  '@utrecht/button-group-react@1.1.3':
+    resolution: {integrity: sha512-eDVLaDEgUlkNIzTa4jSQt9AHNoo+GHah7vv8HywMAqRMwYaAFUkTF71XiqLkARIBQMgp6+SxqgyR+kLFxXSGrQ==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+
   '@utrecht/button-link-css@1.3.1':
     resolution: {integrity: sha512-jatHsTpTO25Jy3BWPNlcgiyZ9S0nRdu9CGz7E+qucgcmzAI99BN+vDGzrhRj+HS/UcgTP3TgTggjzcBx8q+Q2A==}
+
+  '@utrecht/button-link-css@2.0.1':
+    resolution: {integrity: sha512-XHVWxMpBRnvuM6x5ak0wdMqC8ueUFCnLBqPiVr/Dsppa/wDC9ZlLBIGbFfPM22x88xYUVcSIAZcrPc1HjBB1/A==}
+
+  '@utrecht/button-react@2.0.10':
+    resolution: {integrity: sha512-UWrIsT5OG82LQLD8sGhng1P4aJ4KfixjnZFScGJiSySBGczW7TdqMgyjK9/ROKzAxyrMnXUKkq7RBRqT238nrg==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
 
   '@utrecht/button-react@2.0.7':
     resolution: {integrity: sha512-mJ6rO4+86FitY3y5XO/ov+1YQkruIQYWuEVNgO+EShG70vm8pT8cuU7ReauKJq0JUgxKeaNYWdyBWha9Sz64/Q==}
@@ -1260,6 +1318,9 @@ packages:
   '@utrecht/calendar-css@1.4.1':
     resolution: {integrity: sha512-6syL8tX3TbJxWJGOR2xeNrssIHjmoDuif6hz4V4JzV666pxd4akWqTnJ3XSgxt8WXAwglMeJnB/ynSQDGF4wog==}
 
+  '@utrecht/calendar-css@2.0.1':
+    resolution: {integrity: sha512-ilczc5hcha8cYFhH28pyrY21DCOl3gEyeWJNiDkdDgFk4esK9MhJUT7D0d334g6uSARzasI61ZEM6A8Czndfqw==}
+
   '@utrecht/calendar-react@1.0.11':
     resolution: {integrity: sha512-SeiiPEznxzBXhYrjMYg1oXJ+sUt/1JdQ7qVw5EanyChlZ/qMkb+7FVWxIWmEZneLHtB//RA3s68XfzsSE0/puw==}
     peerDependencies:
@@ -1267,8 +1328,18 @@ packages:
       react: '18'
       react-dom: '18'
 
+  '@utrecht/calendar-react@1.0.14':
+    resolution: {integrity: sha512-Aa2KCwiNWUn/DRoxC7KiXuz87xjkloH8NCubh/LgWtr8dmzpoI+Og4OCEoru6Hbq/V12pKZxTb0EL+f+mOa+DQ==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+
   '@utrecht/card-css@0.1.0':
     resolution: {integrity: sha512-0hVZEzoLccDdTiFipWOT6rOwGuuEkCf8BqcdY8OPl4jPcShbAVfPpqIlsu5xgn6q1fPmrpQ75pFzYarEpccYdw==}
+
+  '@utrecht/card-css@1.0.1':
+    resolution: {integrity: sha512-zklTHHTxmQ++/AYSLk5O7NRxNvd6Mzmch6vBcuts2Nj78UeGB2xvjzPlNnr5/FQV65Dm1QpP8bE71K2SANz7eA==}
 
   '@utrecht/card-react@0.0.1':
     resolution: {integrity: sha512-gixswYEwgW0BTk4RecoAV8H0f9w938DphNSCu4e3Z5+ePNt4ZoaG2W3hRuJXTImP+NPXiLkAKRgzbq+qXjxU7Q==}
@@ -1277,8 +1348,25 @@ packages:
       react: '18'
       react-dom: '18'
 
+  '@utrecht/card-react@0.0.4':
+    resolution: {integrity: sha512-+1hsXn6k4ixXmeWZsi1GPRyErlcXzaN0cgLk5L1iQNVWnUBbkvYqbn76jF95MX2Jg4aiv6/zNdC59f10S/+g7Q==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+
   '@utrecht/checkbox-css@1.6.1':
     resolution: {integrity: sha512-P/S3XvYVW+3sgOAub68eZC/Fn8HlJmG9wl5Owky/NyDnRihb811EicdyzEzc8ldpwuxD7n/YNmJLMyj5pRL5NA==}
+
+  '@utrecht/checkbox-css@2.0.1':
+    resolution: {integrity: sha512-0965uYatL/BtMpGxVUAcX5Cmj48LmaQISrn/jsoVpY9idBsuzhgKiN0kldC8pSV66CEp9ADTIbE3JFIwswLYWQ==}
+
+  '@utrecht/checkbox-react@1.0.11':
+    resolution: {integrity: sha512-737zXRk1bDKArItynpB5g5c4Y4e6dBWbpkeT3X8QJHsqwVIg4D8y4Sx7kMhpPgDQqkTqpxAFNRY1PhqUF6pXEA==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
 
   '@utrecht/checkbox-react@1.0.8':
     resolution: {integrity: sha512-Kv1qf3nEOZA+Y0Z5+pKYpDMOBfpL2eXqeAeedj0UTYXX6Tkvq3lUK8eB4CLuSNgBV+ejSUj3CuZoEiOENK4Fdg==}
@@ -1290,17 +1378,39 @@ packages:
   '@utrecht/code-block-css@1.5.1':
     resolution: {integrity: sha512-kE42aOvgcqrVqE6Mbh+qhAwKAMSMDaHrLcgjfwPKNc1wGlDkIgilPnxg4kQtNibBu6Anf6HGLj9vq6cQMCsTOQ==}
 
+  '@utrecht/code-block-css@2.0.1':
+    resolution: {integrity: sha512-isBpsG7lN6qp1LdvBVmwVsTH2NlbzwAitgFzjH6Q60XyKhHB+cjW7irq43AaESKor1m2G1KdhQUZsbhkPjHzMw==}
+
   '@utrecht/code-css@1.5.1':
     resolution: {integrity: sha512-QN9vSjNuVrGWTHDTLMrmctlFifINemRGI6GR4Bz9yoxu8L2VahlH2FkKV00I6xpR0oWa5Ol2bttII5VbA+vXRg==}
+
+  '@utrecht/code-css@2.0.1':
+    resolution: {integrity: sha512-PEWcAYsBSEo/6GSOFQW/Bt7l7nT6yXn+QJoFJUFWtX6xRHuSu91m3ISbzmhozMQJX7mCl6mUXdHt7EVRUqlFKA==}
 
   '@utrecht/color-sample-css@1.4.1':
     resolution: {integrity: sha512-iHLcajGTvg+A+J7uhEVcO8y0mJhdhuKrHFaTDgvCy7zvyhknqKiI5Pil09TEQqtDesX8cL0zt3iXuPQ8RVuK+Q==}
 
+  '@utrecht/color-sample-css@2.0.1':
+    resolution: {integrity: sha512-+ol3GlL8gsybZSsWn8sI1aOChCod5ppgZGRTjzcMP2zX3h3S7e9cKdU28mXfS7CqL6k+TsybIL0shtisH78Xrg==}
+
   '@utrecht/column-layout-css@1.5.1':
     resolution: {integrity: sha512-t1qT2fxdqkVF0/fra32jt0XDe2D1sVbDB9HOFSYcedQ13w20IYaaeogHiM57nZ5QbjHhbFFM5SaSWBw35O3ICg==}
 
+  '@utrecht/column-layout-css@2.0.1':
+    resolution: {integrity: sha512-HqK7QuMyftLSRvV7j+zG8szXbXi73rkWR776DsWQDg/SwebLaasjGuCTOgg7J7YTR0EK2+fj7s61R+utx7CDhg==}
+
   '@utrecht/combobox-css@1.4.1':
     resolution: {integrity: sha512-U3s8srLcTPjkn6pbzOudVsvUBwun4vLdhjQ2jyHGjsA/GDAU2Z2geGuLsYSFSJtsThMQ5QqfDtWj9tyYRKMByw==}
+
+  '@utrecht/combobox-css@2.0.1':
+    resolution: {integrity: sha512-BUpeg4RNO/MezKQLMVdCIGCYlBvq9piKbsLwAROtQtEiGLWJlDqPL39OtCp2vZo1sesDUphVdXaYG9NiOrk8og==}
+
+  '@utrecht/combobox-react@0.0.11':
+    resolution: {integrity: sha512-oA6Si8C7wD7sbU5RqoQBdY5tAYpJa6YwhvFMIchJjLdqmV8oGT+ZV8vWWbjtDiPPnZPWcZyO1U08mOd+fqQgDQ==}
+    peerDependencies:
+      '@babel/runtime': ^7.23.6
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
 
   '@utrecht/combobox-react@0.0.8':
     resolution: {integrity: sha512-JOKu+G2iAW7yCWOA9u19OlM1CL7jkUQRvl3lLuQWdOmZSU0WXC3KJcxi6Q1LCatZa8sSvss4wjFpCDMYTEm8/A==}
@@ -1309,8 +1419,8 @@ packages:
       react: '18'
       react-dom: '18'
 
-  '@utrecht/component-library-css@7.5.1':
-    resolution: {integrity: sha512-Coc1u+NXTTs23jsBr7NoX5CzKBAT9kVnqxszomOCVHLbygpIte66jaJ+uTzCRC726Sci7Wec2A3SjJgeQyMjdQ==}
+  '@utrecht/component-library-css@8.2.1':
+    resolution: {integrity: sha512-4nvNX8Mb0CGNVL+9IIj6tiykfUFUw2FZG++0Ufbgn5iAvYQi+BNALNQPq7o9aX+cG4WCjOZEbeHBSaopZhU4Hg==}
 
   '@utrecht/component-library-react@10.2.2':
     resolution: {integrity: sha512-APBEmrQhmZtk8ES4a+xZ9+rs1dY3DhprL1vAN0qei3SxO0tZT6GPa5rvEiGhh6/8WA0d4zUqcdagzDjUF54V1w==}
@@ -1329,14 +1439,40 @@ packages:
       vega:
         optional: true
 
+  '@utrecht/component-library-react@10.3.10':
+    resolution: {integrity: sha512-hvpTeDR+hgZ5mU+4OnkcoOtOIQWQ/16hN3qSGjSXHpXGDSYTxONzHDj8n/7SwK8YzfQ4k+EWZMosh3tPmVfLvA==}
+    peerDependencies:
+      '@babel/runtime': ^7.23.6
+      date-fns: ^2.30.0
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+      react-vega: ^7.6.0
+      vega: ^5.25.0
+    peerDependenciesMeta:
+      date-fns:
+        optional: true
+      react-vega:
+        optional: true
+      vega:
+        optional: true
+
   '@utrecht/currency-data-css@1.3.1':
     resolution: {integrity: sha512-QXXcRjRxnAab/jXqOWciokv0bCaVxxAOlF6hQC3OW76w4aaVVSXWRE3mBw+7g3AQ7nLGsfloTGwTshenF0g6+w==}
+
+  '@utrecht/currency-data-css@2.0.1':
+    resolution: {integrity: sha512-RjbY93rP5+LsNAlcA6krrzt/lwjtI+gMALqEsw9srHXJQvF3DcJUxlR/fUfS7H6EdMy26OxRJGJ+XQ4wL6P4hA==}
 
   '@utrecht/custom-checkbox-css@1.3.2':
     resolution: {integrity: sha512-DvrmyGnC7y0xTdCqGu4dpP1bdraPNvWYC8uzS8CAzH/w8mBVti4rctP5mTXa7i5nFQN3BWLu8WF8FRpnRTMdJQ==}
 
+  '@utrecht/custom-checkbox-css@2.0.1':
+    resolution: {integrity: sha512-Gt7D6cnCfotYK0P/VeTcGksIhTrCYo3PEx1LxPnj9X99uMNg57O13ZRRaR/7wqPHsdiUKD7B82pQ1FdjAuY7lA==}
+
   '@utrecht/data-badge-css@1.0.1':
     resolution: {integrity: sha512-GGr4d7duJCsiiZVh3S15AoMnCM+7pO8pNOgsfeyItuD0Xv5Uxymd4TJaxahhgLrjt3HlusIJPhEo0NPUQLrHJw==}
+
+  '@utrecht/data-badge-css@2.0.1':
+    resolution: {integrity: sha512-UMisFH+47SvLFKicA+Em9el8ksyfoO2UtNZHODSL6qf+Bb33QQhGHnnBvcuKg1LTtiK1YdjHxVlnk05wCuFSqQ==}
 
   '@utrecht/data-badge-react@1.0.4':
     resolution: {integrity: sha512-AKhXZGt345af8KBQyDmtJN/8C676NiyM64fYGJlV05L9Y/VyOpQi3ozPh+AUs1TA4K2jjI0jQWXi167KqgCb9w==}
@@ -1345,23 +1481,55 @@ packages:
       react: '18'
       react-dom: '18'
 
+  '@utrecht/data-badge-react@1.0.7':
+    resolution: {integrity: sha512-+RLDmI1tWBIloMA2Qt1bROOfXgssfu5H2mKKO5RWwqkFRtGXsvvUyLYv1TFaLYQCRZFzGjXjwVN97zrbIUaPFg==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+
   '@utrecht/data-list-css@1.4.1':
     resolution: {integrity: sha512-MK+is1wSfaiT1mW8GKUottDQUbDymV0wJotlPDnaV97uV45xF2lpXyBWzmDLynESCQtQDHgGTVBPZvHzMVlF9g==}
+
+  '@utrecht/data-list-css@2.0.1':
+    resolution: {integrity: sha512-uxr0P/0VkIhzkOuo3aVgBNiouMB97DNeLztZvOxFeQ8tpcgNOpNaGaVeAi6RfG6jmgJdEc0/RdD3p7Ge5Qt90w==}
 
   '@utrecht/data-placeholder-css@1.4.1':
     resolution: {integrity: sha512-QaeWM63VGXfk5oT4idafkRmh1WwMfixgH+hfd89yW2dgjYnLjdJuJYpqsxBHVaBIsHzmhyC0FCNfGxMlz/qbkQ==}
 
+  '@utrecht/data-placeholder-css@2.0.1':
+    resolution: {integrity: sha512-eM81866Pcnpdi+6B6AvCffJjfrsrmpNIZpGScrS4qTGJwePtsnd76bT6NB1eP3NFkA/Ptnfvs4UjFAO3KAK4Zg==}
+
   '@utrecht/digid-button-css@1.4.1':
     resolution: {integrity: sha512-j/eU6dHgxehFjFAr5/PMqnE2j5ePnk0TcnsZvICK4dGbolbOBZf9APV50UCG/U1VL+FxOlrgUgwrVWxmFYxDlw==}
+
+  '@utrecht/digid-button-css@1.4.2':
+    resolution: {integrity: sha512-lE0/KipLVHaxb7YeZC3YPqSiSaDVyCkzSWmxLjs8k5ghzId8WI4vG8P42716gDBh9tsfdX0kRcVFdh5KerSiyw==}
 
   '@utrecht/document-css@1.5.1':
     resolution: {integrity: sha512-ZXE4qzk0/MCxphcoqjgNooOcMxobR0JzqvpuZllNvtYgMcL1NMLCZ0KIj1dpQsUruLjO+bqGNYsF52McqUBi5g==}
 
+  '@utrecht/document-css@2.0.1':
+    resolution: {integrity: sha512-j4KLusBIGqB6SQocBtGSm5zHfCY4nvwG5gxzh3kOLdPuLGj6scaUxN3AahJi1cO/o2ciOyFxBbDYk0LJVq1Mdg==}
+
   '@utrecht/drawer-css@1.4.1':
     resolution: {integrity: sha512-xVP3QNOOpapJXQVfdnrb+igZqyEDdNK4Wf8hIHNrMHfGqwxelwW9caVl58HV4pSa4KTwtN7Vs7QUwfOq0Bm1NQ==}
 
+  '@utrecht/drawer-css@2.0.1':
+    resolution: {integrity: sha512-4YysV31TmYGK8mLIF0ZLnUsc7j+02TylXJVZrMDQzisasEUbh8FXhHNbGTyZxlmGaFfjMtblCldp/UnsLkFH2Q==}
+
   '@utrecht/emphasis-css@1.5.1':
     resolution: {integrity: sha512-qVwLe1+k23Xwzd26MTwErjh7piIUm3c2siZ7aaEpvC1wZ+PFgf4vs7xNWJXLz89plRJ4/5sivFLUfHY2uVP+Ow==}
+
+  '@utrecht/emphasis-css@2.0.1':
+    resolution: {integrity: sha512-lnFb2l7puRIMKCy/4w9Zvg1Ipi6rSaJMyxyG7q30EH6kUpY/R4NYZYgLTkB5gzvPGBddfywvl20c590sYd9dHQ==}
+
+  '@utrecht/fieldset-react@1.0.10':
+    resolution: {integrity: sha512-+0CG/nZpu9x3YrERR6CpikqhFPmr74jY2hZK1Ocfms711BCBOknqpRYBLDYZwzBT45roKGKQ+okQQHlyyInRLQ==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
 
   '@utrecht/fieldset-react@1.0.7':
     resolution: {integrity: sha512-OilAF6SLn0fC5YbGbFfl6Ea6zfPD2yrE6L6SvtLjT+Gdbxx/e/XOk78+LmcQvY+cT2GlHxLzxM/YchsNBhOTOA==}
@@ -1373,11 +1541,17 @@ packages:
   '@utrecht/figure-css@1.5.1':
     resolution: {integrity: sha512-KzkIIyGo3wAYXFkDeBV+S2m6InKqPLUpVy8EjBPRTB8WexiLfDKpYf1gAVhgbL+236fB30yWLkzukGO/AAUFBw==}
 
+  '@utrecht/figure-css@2.0.1':
+    resolution: {integrity: sha512-+mAPgdcd+0ZrQZR74h4VdDsxqkfs3e1DYDhgfcu9qAmQfb1MfSz8HkHFkZFtkuQYd854UsHeTTVq3UkwZTM04g==}
+
   '@utrecht/focus-ring-css@2.3.1':
     resolution: {integrity: sha512-mmZeNnp2VeYVrnG0uhgkLcX2nVuMW0+oZjJ7lCI1FFODpj3ORmtTi7N5UNjhM3Pyppg5LdDwqMM6jF9clPg5Yg==}
 
-  '@utrecht/form-css@1.5.1':
-    resolution: {integrity: sha512-jRec11YkKtPmbLpW7bjkqHTb9XTCxB4VBxFMurCqpQJ+ISni0CKTBhGTCfZGLhWsNEVLpuIuL0UxhFNyE/ZS+w==}
+  '@utrecht/focus-ring-css@3.0.1':
+    resolution: {integrity: sha512-0dVPsdbc2glPNJe6rYl7DwSXUkohcdR5zLrObk2WY3DzSvHgKZGliHy2PBYg2LoZrPXrTaLEsttivtGt68tjww==}
+
+  '@utrecht/form-css@2.0.1':
+    resolution: {integrity: sha512-Y5dwtumAxu2/GYT79FFOBsc4o7vYkPSNsNLxN6CbT/P8/9sEHjrlalnEMDin3RReSdt9+ldP0nDIxWaNrNN3VQ==}
 
   '@utrecht/form-field-checkbox-react@1.0.10':
     resolution: {integrity: sha512-vmg06zS5F9XgHfTciPNNLvmjfEc50wBy12tHwi6045Qmuy3g7L7CZ0fSPmNfxUf70RUPvgW7HkHRvhURFuC99Q==}
@@ -1386,11 +1560,31 @@ packages:
       react: '18'
       react-dom: '18'
 
+  '@utrecht/form-field-checkbox-react@1.1.3':
+    resolution: {integrity: sha512-HEdP/qFXCZLT7zoNrR+e4mbezNNGePKqbgk4IEWoOkee8bAEKQtKgeOlGL0NDFJRPSB2e/yEoc+uenSdRXwrGQ==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+
   '@utrecht/form-field-css@1.5.1':
     resolution: {integrity: sha512-EILCtMcMk3LgTT5pUjna0vKA5S77Av1+fgqgfApEWU7y0wcC8UcYdD7Ujl3goJShhO02Fo7AYM3befJQgYBtuQ==}
 
+  '@utrecht/form-field-css@2.0.1':
+    resolution: {integrity: sha512-POiAK/I92tjXHwzBnLCA0BChQWPH0aF0BkF0qB8+Ouc+omkOcvMBmQrz2hgEpEa1W7kenXh/YkL7+/uB9fq0qw==}
+
   '@utrecht/form-field-description-css@1.5.1':
     resolution: {integrity: sha512-oaLNNNl0rEKVmK3FvxAaYfAzrzhE3Ahsj2JweDCzkvihyN8lWRT0YZP4DQh04RNU5JuQ1VbNFxRp4SZh0jDPoQ==}
+
+  '@utrecht/form-field-description-css@2.0.1':
+    resolution: {integrity: sha512-M2hYlmEBykGPHSjm46kMkSsuhXTCZgBglQDcW+pWT1KS1rAapqxTDelxjlh2uU7TXLtXWnoeA5C3Gv1nYxUjkA==}
+
+  '@utrecht/form-field-description-react@1.0.10':
+    resolution: {integrity: sha512-tuK+ZdjnqxuWPPpi1O6dehzTmp49dTlE6/SlptILZDISIwS1ud1snwDqWjxAc5ytzdkf1wCJVeIFbAZVm1MMOQ==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
 
   '@utrecht/form-field-description-react@1.0.7':
     resolution: {integrity: sha512-laLmOKJXl0vUF3w1eJT9QENUgGz72mWPwdZOebGZfsH0pKKFLcvlXUcXQ+cMnCJyKcBjEdxeUN8DA75UqbKo5g==}
@@ -1402,12 +1596,29 @@ packages:
   '@utrecht/form-field-error-message-css@1.5.1':
     resolution: {integrity: sha512-YuAaTsvxC4fWzIflFmnE1wvrDxXnDvtPbomifzy7fMUjXAHSE+I8XRfnMoibGZjRzz6NyBtitrwerai2nUTBww==}
 
+  '@utrecht/form-field-error-message-css@2.0.1':
+    resolution: {integrity: sha512-4Oe5aIgMNkKXHcCZ86z+/ClSbaDxZ4atxdqgFPU1mi1L7P07QK2yatUGvjOlV1h4dwXMyl2zcNkxCn62wPhJvw==}
+
+  '@utrecht/form-field-error-message-react@1.0.10':
+    resolution: {integrity: sha512-RJxKw9J1qcoyZ7uGArDQirKcoBTWXoDULXe2W8OzA3ug2hKN4MM1S06HoxSDLIjqvLdjklrPFe3ffBkuIytg9g==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+
   '@utrecht/form-field-error-message-react@1.0.7':
     resolution: {integrity: sha512-SNgHTANBkoYv72VpdGOU9Q2NJHSYNAbqWxaFjKM9sXT4EVTemKwL+vSEuc9YmEECwK10saMRTz8eq59ytzHkbQ==}
     peerDependencies:
       '@babel/runtime': '*'
       react: '18'
       react-dom: '18'
+
+  '@utrecht/form-field-react@1.0.10':
+    resolution: {integrity: sha512-aUSeShyuuuI8A8ahGj8xUbvQ0b4K36nGJsYilGCp9aEK1ywnbqE+89u7Kb75mujKMnw+BsYN+aU8TRWvVgoOPQ==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
 
   '@utrecht/form-field-react@1.0.7':
     resolution: {integrity: sha512-6fBKG5stkxNj2UnyvpK2aSpLYNGeEX5qmqG0Ma8yneVgzGyEOtQqkjGr8bmM0QlIgdGvBwn2E1ePZD99Vyaa4Q==}
@@ -1419,8 +1630,21 @@ packages:
   '@utrecht/form-fieldset-css@1.5.1':
     resolution: {integrity: sha512-ORVxcAXSbPLr0dLuj26XhKY+3/YSdUSjj5r7V8cTYXbh32KJwaoAOrAREFo0Jm1i8vJpwxAwsptb7o9Lmhpw8Q==}
 
+  '@utrecht/form-fieldset-css@2.0.1':
+    resolution: {integrity: sha512-EijyKtu0FK/hGEssXKtV3Q0/Z9eZjChfsAYvtOhUNs5A5bJ0+o7j4jIIO/D9Tj14Phh05hVCXm0YaPq4BJ42KQ==}
+
   '@utrecht/form-label-css@1.6.1':
     resolution: {integrity: sha512-h9d0FpM/VRbeVnr9zd/9Mbr+paKHa2OaJn0eP2ncCBHlLveb3Mww3rl+u6t0vw0lB8mrUAtjDWCLAjKNc8d0Gg==}
+
+  '@utrecht/form-label-css@2.0.1':
+    resolution: {integrity: sha512-ghkVY1auCGoKaaFzAIPGetXjJE1H1ZXPYnW39xZfhIQjKiUh4NW0uvLHj9sZC24YHGwuuiJmtKGJwTER0X45EA==}
+
+  '@utrecht/form-label-react@1.0.10':
+    resolution: {integrity: sha512-oJhcTpVg38jRYEl2fOxvZAJHfaEyeQRTpQCxTZ6Mcv1dr1dhE259TwM03DtRXa+JTJoulxUG7vxTyclmxQwY3Q==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
 
   '@utrecht/form-label-react@1.0.7':
     resolution: {integrity: sha512-rzc5tlLvtRcBFUjZkSqOAdn6C3mHdv3+IITfo/ZXL+HDN6XGzHR+/Rk6ACKfo9hDXad2jJV8bIClWEp9U/yhpg==}
@@ -1432,50 +1656,108 @@ packages:
   '@utrecht/form-toggle-css@1.5.1':
     resolution: {integrity: sha512-WV8sXe/Jt4Ol/0ynjbFkqdMbDQQBY7JBmEHPQJJkoRmfS9SU9EgPbGcZjH2e8++lumXQiKxc1WddWcnJAT77Eg==}
 
+  '@utrecht/form-toggle-css@2.0.1':
+    resolution: {integrity: sha512-VHa8KXKfAo3gr53ZCxYute0GPACDTrM9fdSmtakmS9Iu9s6niJgkkZmhFfNY+X5N75rEQiI+aTmFyA5TM/xh+g==}
+
+  '@utrecht/grid-css@1.0.0':
+    resolution: {integrity: sha512-sTlSirSD3BWjmjiUtIWkmYLDa9D6bjOWCYsddbXIsaiPwAd5Djy54JiBNZ26KJ/ARZLmc2TIrmsHkFi8Ln9Huw==}
+
   '@utrecht/heading-1-css@1.5.1':
     resolution: {integrity: sha512-ihsXPIhPKW9CXlgnPJQxeuF05wQhxPIDEqStGarn89EnBDon9KCMzoiUEA19UiX06XBs8rv3pAduw2qfFX9wnQ==}
+
+  '@utrecht/heading-1-css@2.0.1':
+    resolution: {integrity: sha512-P040ieAAdOi/hjQYfwzywS1Jbi4LgR1we4vpAYMIK63WUtozvs+9GPDvBsRYxQXBcLD4FOkkvkNZbDHnIzTkzQ==}
 
   '@utrecht/heading-2-css@1.5.1':
     resolution: {integrity: sha512-Wf83HNvo61dFvSXC+4z6ey3NafsZ85SVmAf3YTQmUY9qY9aElHTTnv1ag9hgPKSFEAh2mE5Rl+Yb/UT8x5TXYg==}
 
+  '@utrecht/heading-2-css@2.0.1':
+    resolution: {integrity: sha512-JoY5B5O6FNR8r+PmRycYqvePe+K1fSK61UnpgqJ/H4ugre0uS+fi5+Csgl/hiYVfOGX+iqsdCA8e7XoRZMCn+w==}
+
   '@utrecht/heading-3-css@1.5.1':
     resolution: {integrity: sha512-oxVgWdaTLTRp2y1Sxhcu2xwDqaF0SEhjzlsuTylG6TI4r/fbTpenCcAjuDceUEkCmlIUKERpKgdJVuajmbJpRg==}
+
+  '@utrecht/heading-3-css@2.0.1':
+    resolution: {integrity: sha512-V9PjAXE5Lcwt3I48hGzFT/xNwUwAGE4QZkYxrGPyThhxmlDqnzoG/tANWa/2P7CGthsRxe8DuI3YJyrSUlSDqA==}
 
   '@utrecht/heading-4-css@1.5.1':
     resolution: {integrity: sha512-KJNOoZ8cFCz/glrsc9n5FM5vsiHtMQsOe1ekxGzHMmE38aTrdZ5L81bvKeWbzztvbpxXm5DzT+tS5DqvVYJ93g==}
 
+  '@utrecht/heading-4-css@2.0.1':
+    resolution: {integrity: sha512-SYqZNsG6RWf702kPorffcRFFb8igFX4uUSRUEGxLS8WjrHWWtXqX5DOivbpj+kNA9hbTF8WGhYWWLQeToA3hBg==}
+
   '@utrecht/heading-5-css@1.5.1':
     resolution: {integrity: sha512-eN+BKXyoa2UxTKORxOAoeyMZQ1c4thi5+qlaxuPkQg5SDHuq0IZsTXaDWPRaoa05J+85ez0SnoEC0LAJ1f/Bcw==}
+
+  '@utrecht/heading-5-css@2.0.1':
+    resolution: {integrity: sha512-FCAmew2fvvUN8A1Ba/7KzvjlRCSxnjLOtPWfWdwgLaHiMqJpukBYcfiNr+zutrW0rimXTgsjdBLhlaNIVMbx7Q==}
 
   '@utrecht/heading-6-css@1.5.1':
     resolution: {integrity: sha512-4r3Kd+Hej5ugLdiVCKlcN6xdXxzL8X/saW0pfK+3qPqGmhU3TV3r2axJqxLA9Q5NTDabZZuZeDZiqfwKcVsWIA==}
 
+  '@utrecht/heading-6-css@2.0.1':
+    resolution: {integrity: sha512-8D+DMYiWpKgLT5Kx4hqNgKEvutkAQIONfXCwplVAxs20g0BHsg+T2Li4H+LYn+7fP/s8l/uKj92rLl77w/C8ZQ==}
+
   '@utrecht/heading-group-css@1.5.1':
     resolution: {integrity: sha512-INFePIMQevIK1GGlyfPe1bccrtEDg8hSfkIYt6Ts+l4ptb5yILFhPrYT+odW2Pq+F9h9HPJ0c545kZnik4VhWA==}
+
+  '@utrecht/heading-group-css@2.0.1':
+    resolution: {integrity: sha512-MgeMBWVcmLXG4bZRtneSdBvf0cq1PR9mBHSS5ldPKCfJZ0Xdl2bOH9CMah6XABUL5reyvw55JbE0zvJoHyKvmA==}
 
   '@utrecht/html-content-css@1.4.1':
     resolution: {integrity: sha512-PoahtxFSwDqKrMXcyp0yQeIZ+g7J+KVvYtw9POkiorIiRDC+NOWQtNBkP1Pb1vT30WtY+u1yMeEfzs1//dC9Lw==}
 
+  '@utrecht/html-content-css@2.0.1':
+    resolution: {integrity: sha512-uppIl2OU99HB7+FT7j0u65lKaGZdh6j/lN3fMtTME1xuvf9nMF+c4g9oqi5Vu2r8qxTxxWLZYURdovmCvLBGiA==}
+
   '@utrecht/iban-data-css@1.3.1':
     resolution: {integrity: sha512-NbFZUG/ZSmwiJeiHtMVlkZaPxU+Dw/Uc03UZI1Y8NvCoEe7q+ozKhBqY5161pMaGyVCuLgF872DvZxh3bQOtMA==}
+
+  '@utrecht/iban-data-css@2.0.1':
+    resolution: {integrity: sha512-K7kcT1w9JRPLQWWjmj7O0UNDBcTMOv1gAzDWhE7hQwxcbwDrL/e4DAcrrmR7bicH9soParrDTr+wEq4OxNJl8Q==}
 
   '@utrecht/icon-css@2.0.1':
     resolution: {integrity: sha512-zdoeqPlVO7bWq/XgrgMMykAwiHBgyFmLpx/LcvfF39EnRUyUq/ZnViV1vIPsiA4F3Nnwqvr6D+06IuSDYzvmZg==}
 
+  '@utrecht/icon-css@3.0.1':
+    resolution: {integrity: sha512-dZdJ3jH4/ThxOTni743cIYc/zBe7o18j6uHOJxYjydfL/kSivcLrmVwiIJq6T18bbKAKjLceYJ+SiL93Pnt+tw==}
+
   '@utrecht/img-css@1.3.1':
     resolution: {integrity: sha512-d6l6Irm0Hi+S6mUT2CEEuJ9W1lNPZp6YSl3pFO3aZXl8gxVOFpI5eqqQO/61e0k/K7APJB/Hn7C35zRRZLkqgQ==}
+
+  '@utrecht/img-css@2.0.1':
+    resolution: {integrity: sha512-G5D1Nc7SlQeUgKic14s7VdsMcXxSquyS0INNmq79ejf73l6GNXY7E+Gag3JwyOopHUAKqW1u5fKZG00bySPabA==}
 
   '@utrecht/index-char-nav-css@1.4.1':
     resolution: {integrity: sha512-uHMlZweA8YO9JCkPfDMnxQuSXvLq/3orj0SMmH1kltJbUQcN9VsvG3moF6e20Oe57bMgTMXod+QnuvB4RArzBQ==}
 
+  '@utrecht/index-char-nav-css@2.0.1':
+    resolution: {integrity: sha512-/sCn0vamJZaFDYx0hyFgKSVJgAndGtMsDRs287vR5fkJzGjeNoFH+cigYukIpjj/55bvFVjuLdFWT9toGiIkVA==}
+
   '@utrecht/link-button-css@1.4.1':
     resolution: {integrity: sha512-Mj8TTxUIc7ZQm6S2t/wHFhP1+43fWdr9MmLL1pHfZ+0le1Xn7EfMLMldVRLl5oDKbsXjxB5l+wfJoKeyv0cBfg==}
+
+  '@utrecht/link-button-css@2.0.1':
+    resolution: {integrity: sha512-7HxgKyp7IkV0PAZb90ASvr9Iz+BPMw4yqpiN3IiD5HdPzTwQY8CjW7k4/hFZXrh/MMwnRUwcrDLJsbCLSfyKrw==}
 
   '@utrecht/link-css@1.6.1':
     resolution: {integrity: sha512-99cJTMztRvcgDDCM/EGvjtzBQ6k7Fh8/sv6bHS8lQxoCHgm88m0fUfns1RJkrLEFhYVsbdPxqYTn7npZhsAUtA==}
 
+  '@utrecht/link-css@2.0.1':
+    resolution: {integrity: sha512-2mpaFeKybBeL+qIvJ73UC0jtwhn0IBM3vn8BD9OTwYQK6djY0tVwQwpouDWrzPRU169swp8BPllMU19A0xfyZA==}
+
   '@utrecht/link-list-css@2.3.1':
     resolution: {integrity: sha512-KUzAe2dUd1sdoSLXFyqv1DjsjyXi9gJyHONGCEcQAkxpHYA4O569XQQnH4v9KVhGgJNRKmtXgcDJswMW09t5Xg==}
+
+  '@utrecht/link-list-css@3.0.1':
+    resolution: {integrity: sha512-/+pNmHFGadl/zVy0I3G6TVNWB3EuqRLvjsoBL7ue9+wJeye4LqDcweYgdFKm7wFcN4Tci479j21fZ63IK4KlXA==}
+
+  '@utrecht/link-react@1.0.10':
+    resolution: {integrity: sha512-MAD/0bJN6Fxb6tHK5F/2vFD9wmqPw5dC98AgXriq6BnY4g9UPsM5NBgLHt8mMJ5gYF9hZzyxucqQVTetzgKsYQ==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
 
   '@utrecht/link-react@1.0.7':
     resolution: {integrity: sha512-U4mQ1AnrjN7LV2txBrghjgnS73eExdIsmuVUCvwqR/+9XvuG1u6fvQfanUVXVvvyX4TVbSqJHwZ8GeKW9TthSg==}
@@ -1487,11 +1769,20 @@ packages:
   '@utrecht/link-social-css@1.4.1':
     resolution: {integrity: sha512-j+I2mncqYN7ftHXm4+qC8w/JP3Nj/qJNpJ2KknCV5pAY7x4EU1IU3IlgeTiyfRsyN3S+QN8nYsNAwGtu/Re3/Q==}
 
+  '@utrecht/link-social-css@2.0.1':
+    resolution: {integrity: sha512-njEvSkMm9Nvp4Bzxxly/WY8qMC3KFgWFT2K/z72JaTmbVUuqfYmRhw7HgZEPhRCKdFZ5BhI4T83Cbw0uHxLvgg==}
+
   '@utrecht/list-social-css@1.4.1':
     resolution: {integrity: sha512-Obovdz48uLQCm8/NqH2RK+FzIiWLUs3aXV4HKHU1F5DM32kL/j4ZiwjTiPXUGmnsMWlgfQw8ApRJb6nNWuf1EA==}
 
+  '@utrecht/list-social-css@2.0.1':
+    resolution: {integrity: sha512-VQiJRl00582GpBfoDV3UkURUUuo3tvdL0K9k8IXCA6tOuLIntf3n8zMB+fV2UciEPkDt0J/1qlXiyhtYz6hs4g==}
+
   '@utrecht/listbox-css@1.5.2':
     resolution: {integrity: sha512-6zA5AEx0jJx3juZcM1wzw38hl0mychmrpdZd91K4zUWE8fFAAa30wg6xxFNNiC4LiatqgR+ahwch4NfUddHpNA==}
+
+  '@utrecht/listbox-css@2.0.1':
+    resolution: {integrity: sha512-oBn1E2EGeQWkFHFryJx+NPLyiwlUP2qJ8CslQsmYMbiBjo7c9W9lx+e9OZn7ZJ/f5kviimZ9mkbwpJ6EjHPvcw==}
 
   '@utrecht/listbox-react@1.0.10':
     resolution: {integrity: sha512-wFkhA2fpxCCFcjgv7wzjUmbdBL1kieK0wVGjEXM4vL6qWE8VVTI8U23yK6Lka1u6H0NNbYDlm6ZESj70Vk2m8w==}
@@ -1500,41 +1791,87 @@ packages:
       react: '18'
       react-dom: '18'
 
+  '@utrecht/listbox-react@1.0.13':
+    resolution: {integrity: sha512-o/VI/MLMfYjda7z5mlntIKKwEB58a425H7JVNLbq3tOEP10TWvDLjRg9jvDcPRwdFZkYSd/7dGW8KtpiQeVeeA==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+
   '@utrecht/logo-button-css@1.4.1':
     resolution: {integrity: sha512-KXR282BYz7zkTFIidR5qX8UhVWrcptJgN59/eYElPlnxreS7ry49/+vWqy0OVobD2TddTjENH9QZOn1JI6aYqQ==}
+
+  '@utrecht/logo-button-css@1.4.2':
+    resolution: {integrity: sha512-urW6k/UWoHYdaLbr/a3qvIhMzIxCOfZYyWkqg3qmBPyxe42hWACXmjy63lbN2WfRZiV7YZKAtGRyDSQ5t5xM5w==}
 
   '@utrecht/logo-css@1.4.1':
     resolution: {integrity: sha512-6ImqbLcRPhqVUP3toKG9rryoWWQTDKx/LmUgFQIe4OwPaJC/y7YM2pArdMtxiimJ/2hHODG2xfsHmkd+3qxBSQ==}
 
+  '@utrecht/logo-css@2.0.1':
+    resolution: {integrity: sha512-G2WyPM1Y1UnuQTodTcQ5wXGKm7gz4Wnre6O211ra4CAxhRfIXSxTUiW9waVHrkBOz+rxDy0S57gsBabAOiLGxQ==}
+
   '@utrecht/logo-image-css@1.4.1':
     resolution: {integrity: sha512-LIlxXGVZ8/9mWpPZw4Hmjdpe9Ax5KvcKBG0BJiPC1M4Cj8BQ6FPRdcc+iDllbT16OwBcCXqyDpUmlVto5RCpXg==}
+
+  '@utrecht/logo-image-css@1.4.2':
+    resolution: {integrity: sha512-TV2Svy/dkyYF6Xj422JGwueMe6CcyWZ7+RZAXNgG575nrXYxEVy5EPjfeHPQ7LmCw0QZDlA7vRLK09zbL6LLyQ==}
 
   '@utrecht/map-control-button-css@2.2.1':
     resolution: {integrity: sha512-zZyLH123Pmhc86oc5BRwLhaoPQy9vCzdWyfn5n8LIFxDyR+y2s5tMxvFvieiVnYPimjlxuOecmM4IhwHttcSpw==}
 
+  '@utrecht/map-control-button-css@3.0.1':
+    resolution: {integrity: sha512-Y5xC2BjUnMJ6kx2X3Ebf5BTSvhPQiOPt5fGBakLFeugNsPP7+WaFv7FKtyv4FmibxwnhXPTMko6TzcypiE7zqQ==}
+
   '@utrecht/map-marker-css@1.4.1':
     resolution: {integrity: sha512-vOTETT6R2buILbzZ7ViCnuIFqYtoXILE8mGtUwJmFsK0pRTM/KUS3+SfvqSajTAiDZ5kjTzJcWQJBQjyiOTi/Q==}
+
+  '@utrecht/map-marker-css@2.0.1':
+    resolution: {integrity: sha512-/Qlscd5ixjeDB4ITNuvaNHyUyn/SbDuxALqOomFLZ4Q1odG1V05vC5XvlR4QsagHC5U5/CDJXKtAQ1mm3nNE0g==}
 
   '@utrecht/mark-css@1.5.1':
     resolution: {integrity: sha512-hPiiBuL1uM+U0PNlhVm6dZnO2afbyz5tRngxqak38q0vx/mAhomDCRinDA3fTSKSqoJPzRLHYkKg+eOTeeT1ow==}
 
+  '@utrecht/mark-css@2.0.1':
+    resolution: {integrity: sha512-JPRjGmzrSi3dg/rn42RnvGl4w6CI6k+JaPsI/azr0fAqJXi2q/6qSQnTcyYuOvu5GOx3NZaCHPI9WnKgqDhXhw==}
+
   '@utrecht/multiline-data-css@1.3.1':
     resolution: {integrity: sha512-2AJ1Xaet5kqNmMQhZEz98F+gf06SmExcGgy4KllKhvuQbi4snCdv6CUKyQS1my/arT1ehWrgmfmQ9pSAeBhwqA==}
+
+  '@utrecht/multiline-data-css@2.0.1':
+    resolution: {integrity: sha512-4pkVG4Loz/bS697zW2nFemQd91JlRMF3d1ss1WRbWQyXPEhY19R4GvFPhl+Tf7Oq+F2eArV1EYR+nkV9SdiCCQ==}
 
   '@utrecht/nav-bar-css@1.4.1':
     resolution: {integrity: sha512-wKpUeblwDlEzb0dEiH5YoLsysTsrqgcxbb+KmyZ+lcWlK9PNvKIIBhlA9TZUZV+eLsWWH7xr7mSRU1hUMyYryw==}
 
+  '@utrecht/nav-bar-css@2.0.1':
+    resolution: {integrity: sha512-CKyHi8pe4lk1Dg2IxW8TjbFCkMflEsUHNcrKjzokjygaJS4Pls+LP0dGRt7f7q55JGXb1gjsGedEmXtLNIDRDA==}
+
   '@utrecht/nav-list-css@1.3.1':
     resolution: {integrity: sha512-98fkAKiGBL5xH400oHFD6IoQZy3/fdQNFIDxP/HPKz94TJrAeD5smQz6/qWN9QNAj8tT3nuP+5DQSgK3uMqSNw==}
+
+  '@utrecht/nav-list-css@1.3.2':
+    resolution: {integrity: sha512-1VGVeIuLgz4N9aJ0DpTHbwRwxeOQSylIdeJ3Gm8sbL2NVIx4N05heEqi3lZKMulgv35ptCROdH/LBnn0Jd41Mw==}
+
+  '@utrecht/navigation-css@1.1.0':
+    resolution: {integrity: sha512-2dOXz7RyCNgkouRiIsPYZoa6zPI0PrQP905ym8g9gNvUDu5yJ3qUucRyAS04hF+vatfUp0eKIKghDvUNoKbmyw==}
 
   '@utrecht/number-badge-css@2.3.1':
     resolution: {integrity: sha512-19YBkbO8CqHrkjZESyIE4lcbilawirkiU4aDiJ4w411geBibDqoHOrM1+uKAlIaCBEUJp9UnFMX8X34Il2xryQ==}
 
+  '@utrecht/number-badge-css@3.0.1':
+    resolution: {integrity: sha512-t1HwU+bRlerdFicFZa4w5xyZh00ihITUb2kxU11e9Vxb2D32VU1jBOMW8qtKpuiya5mPZJjGF0uc6ZyGPAdXTw==}
+
   '@utrecht/number-data-css@1.4.1':
     resolution: {integrity: sha512-Tgg3bZIYy8aUn3Q/TAfoIZTbbnSHZYPSzbVBFYduaDgV3e7hTeJpPmAl/DWZVh8PJ+ZuudQmcON0+mAuvuBtRA==}
 
+  '@utrecht/number-data-css@2.0.1':
+    resolution: {integrity: sha512-5h83zffqDC73RfAtZgCQMYUABAZYJVqS8TiYeBgaW8cMvPofrCd3opdxCKutO1zhkxKJxTxzaJ6vQ6hOeioLxw==}
+
   '@utrecht/open-forms-container-css@1.0.2':
     resolution: {integrity: sha512-TCgRhMLHP1lVQklNrUGHX5+ryh8bJwlBSeNHWD3RiQRAjvoeO+EbYga7OFX7v3C7y1N3Z15z9MYL08FEcWRD8A==}
+
+  '@utrecht/open-forms-container-css@2.0.1':
+    resolution: {integrity: sha512-dU9rTVEC6x/0V9xL63MoitBgrI5F7EEpj/7lZFhjQVFI2Z5n2ttTS8D0UnD879jnRi52EyFzvGxp31bwoeEyXA==}
 
   '@utrecht/open-forms-container-react@1.0.2':
     resolution: {integrity: sha512-DWrwExl640tTG7D7G35lbbDDOZO5GUtGyusgxpRiGpRcPC1dfFuW+cLkysM9sQYNJ9HCKe9LmQFvye4+kwYZpg==}
@@ -1543,44 +1880,85 @@ packages:
       react: '18'
       react-dom: '18'
 
+  '@utrecht/open-forms-container-react@1.0.5':
+    resolution: {integrity: sha512-a0WN4m7JdPeAY4daGJfJtL9Fz6I7BOTBp2WTKLWsx2YnX0/GuULbSn0PZV6KM90Upbvyv2hUFmTeI5Q/9W8KYA==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+
   '@utrecht/ordered-list-css@1.5.2':
     resolution: {integrity: sha512-REpbulMzUc+E7zLSbPacYrYB9Y0Z2a2vcy5cl8RYgkMm8wzqe2LBj4d56HqKdCdNXjhheC2xZ1/VynBpUtgJyg==}
 
-  '@utrecht/ordered-list-css@2.0.0':
-    resolution: {integrity: sha512-hNGGSb5N0VnBtxQIuBaqNeS2p380rMecbGgH0olWgGGEaYvITbhHgXM3Xg+5O2fDsMCT0BQ2EOyML3DiOcomcQ==}
+  '@utrecht/ordered-list-css@3.0.1':
+    resolution: {integrity: sha512-FTLzofVJlkl4ypJz2QoWTwepXN+yX3Y3exL+69SpiwjAXSkRYkJ1agd0W6BZVH+JQ60u8+uApOKQpgx2Bh3ImQ==}
 
-  '@utrecht/page-body-css@0.1.1':
-    resolution: {integrity: sha512-uJFUi2IFjRCV/O4NmhRUBGk4cM3+p+D+eumkCwn6mLv+20/vQAhZqfb0Fj/TTx7R/kSY0Oa8izualDaPB/iZzQ==}
+  '@utrecht/page-body-css@1.0.1':
+    resolution: {integrity: sha512-0keuwgUACGo52SA7Nvd31STGirZ/A1dkR/at5z8SpEXYdfMyRpPK1odH5MgB19Ig1Nie1Ke5oi+h++HcVg5Ksg==}
 
   '@utrecht/page-content-css@1.4.1':
     resolution: {integrity: sha512-v6jPlYUV1kcMCwmQdvbCppbkeUSWm6DkgwB1pchB03niQDCUR1LS46CBCgAR1uNUE5TOb1SH7w4vmn5/pcgWFw==}
 
+  '@utrecht/page-content-css@2.0.1':
+    resolution: {integrity: sha512-Hgx63BEUbaGJyBQXpa97EN8ng0M9LTX3ddu9IQM+ar/rA2OGIM5oiGbwXUYhLwQp/HnhkFm/gpPGGTtQjpXC6w==}
+
   '@utrecht/page-css@1.4.1':
     resolution: {integrity: sha512-D8OmqtZb9uP+7wKCIUL7O8zLOXwhOXydinNQ5BFmM1E9zkRtao2X1Lq9Juo54R0DNP62CI6lI9DGcL+vSy/I0Q==}
+
+  '@utrecht/page-css@2.0.1':
+    resolution: {integrity: sha512-5c0wLiFvnfpTn8VfjoRHmND0DSw/CYD8ydkgdZNCFkSaXOqVrhcAN3I6jTMSR+Eg9mOu1T9bswRcxIKa8NUJUA==}
 
   '@utrecht/page-footer-css@2.1.1':
     resolution: {integrity: sha512-ib4BqRk5avAdtxAPgMJaljnp15wfCJRv7dQABVQvs8jcB6Y/BGVgNq1srpjWjFmkcdtIELtwPpnB2Y7jcUUqOQ==}
 
+  '@utrecht/page-footer-css@3.0.1':
+    resolution: {integrity: sha512-PEpyT+yIY7PCvzrjWFMMMmf4kIf5zg0tgnYWY/8f6IoJsVS7WZPU3V5bEzPRWaXXJRXk9b7JD6D2FR55GDn3Kw==}
+
   '@utrecht/page-header-css@1.5.1':
     resolution: {integrity: sha512-5hQw6VCXf0tq0LdKhI2BnmMzyTIMvxVS48yguK2trgfzigHAhPCSpmgEeWGiZF6GM9eCNbPThmfEPTgXvyVgkA==}
 
-  '@utrecht/page-layout-css@1.1.1':
-    resolution: {integrity: sha512-pFiRgDmB0F4s23JIJf0akynHVfBt7l4rv9t9gvpTeOxSdx3KTNZsxSNT5PyQwIf5mlEHWidp6yxn3fvQXlMKmw==}
+  '@utrecht/page-header-css@2.0.1':
+    resolution: {integrity: sha512-HxONNJxBNwqEY/qDkx3U0wAVvirc/1l04i9L4dPscjf+Le6UWkJb4pfxXVO8b8yIT+wyj2YY0k8aeBUEIJPKjA==}
+
+  '@utrecht/page-layout-css@2.0.1':
+    resolution: {integrity: sha512-FXLvM6A4Lex+Miz9cuDjFuoC+HeFBu78oMvFU88c4D01Jnso2gKaZHRy3XT8UqKJbE8z0rNzRTwoztOlBVqFIw==}
 
   '@utrecht/pagination-css@1.4.1':
     resolution: {integrity: sha512-MpJWfGVQH4n31ukASPQE0dUY2vwHf7Q5SSojBnxJVhxo5IZ1gkRH30VlTrZ89pAr0oBKmfjVJzFSZIj1O4inHA==}
 
+  '@utrecht/pagination-css@2.0.3':
+    resolution: {integrity: sha512-LXXWZXEgiOacCHljs9jm9Nm2MQW7dmNtq5Ck4PENOA62oT/HVCXbiviWeT+dYLsv8Nwv+JCFYWm4CA1UGY7MOw==}
+
   '@utrecht/paragraph-css@2.3.1':
     resolution: {integrity: sha512-sbOs8y2UZOfNp7CI9S2catbBb/FSQ8PwpyH3WNZ5LDcuF0fZgKoqijunrrpS5FPviTMmkLLCJIwajyZRqEzicA==}
+
+  '@utrecht/paragraph-css@3.0.1':
+    resolution: {integrity: sha512-Go+9gTJTdUuqzFiPvz7dxQohor7ExQ0Pj52wJewx3G2Acl9xbrv0mNyrLe38+v1C+wrJpy1Vg0lkvCF16HQNgw==}
 
   '@utrecht/pre-heading-css@1.4.1':
     resolution: {integrity: sha512-bCW5XmqhjhoVdYWPAN0HEaTlJEOyezt2kX1qgNSVlQZ191uzfrJYr8bOsxM3XrClJTXlMHLZ0DQfC0sHtQwK2Q==}
 
+  '@utrecht/pre-heading-css@2.0.1':
+    resolution: {integrity: sha512-fIbGQv17jrNLgVosvcAMZOn4QR+9v3q0OgozdZ4htLkvRb92oyeHck/uhaOXtJnqWkDeWR9pf1CCwdIn9zxRCg==}
+
   '@utrecht/preserve-data-css@1.3.1':
     resolution: {integrity: sha512-O4TdW3df2AJGHunXB5AzEGDi8u8RsdmSbhyVMO5XeVIjiCVztajiyXnRqfuFX7+OA0EZ5E3NUSjPuXnSEJnkQA==}
 
+  '@utrecht/preserve-data-css@2.0.1':
+    resolution: {integrity: sha512-GDEXsGQhHTNShHVdrQlToKmglB73cXTrr3h2Zu40rF7wo/BV75qWVviH3CEh0gSOy8SLHyMgbwCBk+A0Nnp7AQ==}
+
   '@utrecht/radio-button-css@1.6.1':
     resolution: {integrity: sha512-AQVGKD100iVjBan4mIx/QOBflgZUdZpNVRxrrCE8eXwgzXCSGlg++Veqx9Z+88vH38CEl+evQynVBdssIydVAA==}
+
+  '@utrecht/radio-button-css@2.0.1':
+    resolution: {integrity: sha512-NY+z6f/3ChyrCl5gW1D5SJtsxEqsVbr26VZ7UEwFmPo55eFjn0qON3llklD0hl+2lRA5SMIZwoOARFMXrILSAA==}
+
+  '@utrecht/radio-button-react@1.0.10':
+    resolution: {integrity: sha512-RRWXH8yPX9XS+YThZuW9Fx7DxTccyJbDtvV4Pbb/oC7ckQ/d83E3tdsiF7p3lOppFf/U50HzZHurF+fn1DIVnA==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
 
   '@utrecht/radio-button-react@1.0.7':
     resolution: {integrity: sha512-bvb2s5MOmc+kCX2y/hS7zbVWORwg0+D1PVWzKz8604A5/FYkAYJfKm8xronK8mx5r2OCP9zd2PMnUjh3yb9s0g==}
@@ -1592,47 +1970,90 @@ packages:
   '@utrecht/rich-text-css@1.3.1':
     resolution: {integrity: sha512-3MZO8RNUXdGy4Wd61J8L3y7KW+AvmugzYfmG5lpbjJtwJ9TZRQnCQ26vSY2cUfoRXwscNYK5yqiQklc5syqAHA==}
 
-  '@utrecht/rich-text-css@1.4.0':
-    resolution: {integrity: sha512-F+gWm4tJ/RDS3cTZGJBmPGzyTZQ3oGWOgcgxrS5LDEv0FpJ+om2TtZ7hPoWXxJ7qRjJ26qaUHr6TqugrsBiWnw==}
+  '@utrecht/rich-text-css@2.0.1':
+    resolution: {integrity: sha512-rpRXWSoaKL/DGAvTTjkniqsDiyOTJajie7OpZu+bQO+QkTxDiZqxUs0YLeA0aOE4TuKSLXMt45OxLxwXIvec3g==}
 
-  '@utrecht/root-css@1.2.1':
-    resolution: {integrity: sha512-zgHxu5aeT1XOIJ3yI0EGYqQF7ZsJWG8DyKtt2t12+qMGRW/kxuUQMX9nk9CbE3nnku1TXEEPa3Zt7dV2/p8MQw==}
+  '@utrecht/root-css@2.0.1':
+    resolution: {integrity: sha512-mhEyFaHhWHmwxu3HFR1+HpQDdQfGCfETBRKDP9QsGFwxX1t8FDUmL570+0LH3VqBA7db6gz8/krh8MUzCRp8yw==}
 
   '@utrecht/search-bar-css@2.2.1':
     resolution: {integrity: sha512-25ejBTRmghiBEkDkEhomXkbky1OPYrHeGe8Tu0NMSPJiW4PdmCdXb3hg/2OyyBBMHHglwHNWqC5f91IqfPjEbA==}
 
+  '@utrecht/search-bar-css@3.0.1':
+    resolution: {integrity: sha512-ix/dUg05HIUhUptSvCmxghQ7MhXa2ryYj+PWAk/3aWlxmF/jrxx/l2fiqaroBotTfIJrjxBAVuZn5mVQwW0cfg==}
+
   '@utrecht/select-css@1.8.1':
     resolution: {integrity: sha512-jgniVh7+z64xvXOj92vF12RNyi4GFOQ+Zwce4EgUQIJA8if27iRFyipa6bgCAiBrsRxQLOaVljuvbLEU0Emz5g==}
+
+  '@utrecht/select-css@2.0.1':
+    resolution: {integrity: sha512-Cile0O+ks3lve3l8hRvmkreHemHmV/LAwjnbvT7pY4rbpvDe7FwiC4fxC9Jsm+CTruCnmK253W6XV3jQSyjMxg==}
 
   '@utrecht/separator-css@1.5.1':
     resolution: {integrity: sha512-uzamK3Ry8fv9qDZ10p8kHK65TkuLI8oZkwysLwk21apdP8Lihee0M2Fy3vPMAVg/hGVVYvB740x8mm3ezDL+4g==}
 
+  '@utrecht/separator-css@2.0.1':
+    resolution: {integrity: sha512-TpD/3w8N14XJD3hRKqpgftLFlmNveheNN9KUjBD3MEJF96i9e7S/4+YIasWicCHxrsQpicc28ERJLlGCRow+UA==}
+
   '@utrecht/skip-link-css@1.5.1':
     resolution: {integrity: sha512-dMibzoTNSyNSwhup0GIRe86FJIGdWYY3ax684M0Fx+/qQNJubsziu9qGMTeLp+DVw+wLXZ7XZlhhdDxmnwlqYA==}
+
+  '@utrecht/skip-link-css@2.0.1':
+    resolution: {integrity: sha512-cH2UHLrcSKJHWid1i+VRzsrZMxLAHjmXiU332H5PJDLf5ImjjF0YVaw41+/d0yfWVH5UIEJj+el7naFzyA9/1w==}
 
   '@utrecht/spotlight-section-css@1.6.1':
     resolution: {integrity: sha512-sbaBDiPaozjqz7irQj+McIrGWNAGBFPHlKl3phApCb/ljoccdo//fDdPnlAgp1Hhwz2sSkj77ISdg0NKfwvimA==}
 
+  '@utrecht/spotlight-section-css@2.0.1':
+    resolution: {integrity: sha512-BzymCAj6Im0OAzpHs3iSqX+5lNIVD9EbElC9RCeFASTlp5Yc9iO2hj9CCeQD6yPuVuZBD84vND6p4JeMgeLPJg==}
+
   '@utrecht/subscript-css@1.3.1':
     resolution: {integrity: sha512-dXID0YHJCudknXkItRmhEAsbtev+7ZM1ZuaWCY9Agr9VfkxMU1Yz6gXRvZAIL9s3gdFXFhakXlmcw41gEph3jQ==}
+
+  '@utrecht/subscript-css@2.0.1':
+    resolution: {integrity: sha512-Wg/lQA+vzQXVTEG88nMGzY2wi0WAYv++mBqd2P1mn6O0bgd4L6YxMppuOJs0J+RpMwHj65pUAbn/k6Ykh5i+iw==}
 
   '@utrecht/superscript-css@1.3.1':
     resolution: {integrity: sha512-2eKYNGhcTGlGWyzaSwyqs58K58gwLG1rpSmA2USeH7vNHQNRTXrRSqhOXvnaG0HbGMy5XWhv761SpnkbR09TCQ==}
 
+  '@utrecht/superscript-css@2.0.1':
+    resolution: {integrity: sha512-9drVAc0r2BA+634AT2tsmYAQ415lh5Y0mSEfZVQELQ10PR6acxLQkPwDVpjVUy9LRHPhWHyA+JVesjHPDrv8bQ==}
+
   '@utrecht/surface-css@1.4.1':
     resolution: {integrity: sha512-PH80aFdNFpODzruBBRKq52nGmMnwMiyJDRt+JkOMAR1II+iNI0relXTOm0x6MOmNnqejSYufkh81Xdfcocv2wA==}
+
+  '@utrecht/surface-css@2.0.1':
+    resolution: {integrity: sha512-CVFH5D41ePrS7Lqw7Tlxl4/Wy06yiP7pEjp+ZJkuPuaXLrmHO+S0L78t01xNzoVm8ASUyFjz3VTT3NdvZFDXyw==}
 
   '@utrecht/table-css@1.6.1':
     resolution: {integrity: sha512-IEEB3JX19/FxAOyZHA/88h1GROSYsr3YxDIXsP+ea3sVUSyEcoUP0jgiKjcRV198Ad3p3+T07p79HhIuS+AhLw==}
 
+  '@utrecht/table-css@2.0.1':
+    resolution: {integrity: sha512-gJR0UjbHxnl2Wk+K2CcIYtJkBHEkDIc7MJ18//flLa6nPetfAr90nwc8OBgav++vbyUmueHgnS+lyL+AgrChkA==}
+
   '@utrecht/table-of-contents-css@0.3.1':
     resolution: {integrity: sha512-+H4WklPRgZAyLALEe8PXEvB+0oli26sz0fS/NF91H1nZwIti8+T7b7rDLJ6e9M6hF6IVF9lvjfiSZHByeQDJnQ==}
+
+  '@utrecht/table-of-contents-css@1.0.1':
+    resolution: {integrity: sha512-uic/GVwvUy7IXV7jbIeFGlB3Y7kJFSUvgrv1BGnG6zJvbmn2Faq94SWr/DEaDaWhTta2UOZ0DvUStfTmCzQj5A==}
 
   '@utrecht/textarea-css@2.3.2':
     resolution: {integrity: sha512-//1PLWGMvTqS6exirU0OUO3l9odc7S2Wg1kg4I82v5oeoniUbn2gNgVfvDonPx4l9IywPNhIjlMM/9VfgU8T+Q==}
 
+  '@utrecht/textarea-css@3.0.1':
+    resolution: {integrity: sha512-byy2EpNx6g9ORxTZyeGxWclsvzJxbkmi1uqLSCS7286nw3t7PkwiWSKBPBJ568153nKgBD7FgiZrjR0Oe7TDnA==}
+
   '@utrecht/textbox-css@2.0.0':
     resolution: {integrity: sha512-z4ewJ6WxC3TMTG2jR4I7k73O5NijdjE/ydR1lovzPr4/Wa27l3I7pM0qjymSarKtc5IapfXsFhIpwV/kKbPPSA==}
+
+  '@utrecht/textbox-css@3.0.1':
+    resolution: {integrity: sha512-SP3CFpTd/6CffvSBcpBQ+uKzYusgDB/ri0vmEA/uYfWnRyen1ETQkeCoDJeSUR/D8g24NMdFu7xmOniiwGpRQg==}
+
+  '@utrecht/textbox-react@1.0.12':
+    resolution: {integrity: sha512-ulGmFq6Guq4LSdjX9HtZrMDfoRjHd9Y6PdAl8vk/nne0m9p1XMe9nc+FRaa05gcaDHNxjpVidO7MvOjelIGZKg==}
+    peerDependencies:
+      '@babel/runtime': ^7.23.6
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
 
   '@utrecht/textbox-react@1.0.9':
     resolution: {integrity: sha512-/O0oskpZ9ICuciJLPWjXLOFT9SxqrQsTGr8E+cwByjxY5Kilpud6rRvcBemaWS+JYLKCMARMMQhzBP8sM3IPYg==}
@@ -1641,26 +2062,41 @@ packages:
       react: '18'
       react-dom: '18'
 
-  '@utrecht/tooltip-css@1.0.0':
-    resolution: {integrity: sha512-/VSySBP/JJroiQ/ncGDSHhE8S/DisW/nsq8f1KXkYj/Yx+xkpQP2wItHoEBsv51/+kkebOQ012wc/bXmBJqNcQ==}
+  '@utrecht/tooltip-css@2.0.1':
+    resolution: {integrity: sha512-UK/UWNlTDRbvEMsmu7Hv50uL1ljehn1babeNXxcEscYpiapDa/xZO5W3VSyOPQGkrQnlKzjuFda5Oro6aOO1sA==}
 
   '@utrecht/top-task-link-css@1.4.1':
     resolution: {integrity: sha512-3vQT0x7Eqm9P790qnT7ukt1btMsG+mRZ6Hb+HCTAXXTdKBgeRUHdtkrBXZBF7C8gD7XgoSiotcYQzRLNKluJFA==}
 
+  '@utrecht/top-task-link-css@2.0.1':
+    resolution: {integrity: sha512-SYO6xr4Q1ipaw1xXT1UZMCnjm0MwtKzdgE9NX7ahfBv4wWKiUnLF8yoykYgFTHQIGhIiiV6VW6L6gazFLx3f+w==}
+
   '@utrecht/top-task-nav-css@1.3.1':
     resolution: {integrity: sha512-AIwQwLEA//Fsyb3sNJj2+lQSZxRq/PVb9S8k719lX7LX5tEH6PkZKgsE/QW34I2RMUOZ7MTvpkxbvHObxhYkjw==}
+
+  '@utrecht/top-task-nav-css@1.3.2':
+    resolution: {integrity: sha512-jdSjHfNcnyokuwwHB2cEYMRRMckLP90hdMiM8omUl2aUf1zL0gqBpzca2uKJPgrzv+PaL1R5XuJGcP6NC8vJkQ==}
 
   '@utrecht/unordered-list-css@1.5.1':
     resolution: {integrity: sha512-BvpymaFp0CKdcqApqdj4nKhn/99MJ2i+ilYvPS2cgyYJCEZk8eH4GXiHZBX7YzwzLhV95oURnG3DM6RsZ9Ixmg==}
 
+  '@utrecht/unordered-list-css@2.0.1':
+    resolution: {integrity: sha512-YZXOOkX9wZ4niq1nkcb+rLse1EcvVjRSyaHP5H2kYbWxXNH1oL41WLzg+sfh/v7swm47TYzXyxCKe7s66DWPbw==}
+
   '@utrecht/url-data-css@1.3.1':
     resolution: {integrity: sha512-hns7O3znPXnGaURecDKcrHL9gJDVJI+pQpHNbN5rJmtnAQbHE8YTg8MD8jOeEUEq6w3FUHPHVq5Neo4PEZQ3oA==}
+
+  '@utrecht/url-data-css@2.0.1':
+    resolution: {integrity: sha512-ujZgby3gjgaC4qlo20K/4ksEZ31aQWwfb/Uhheza6HBTabfBPatowifFsfp2gxaQ4jvF+bc6uddBAuBaKnOQKQ==}
 
   '@utrecht/vega-visualization-css@1.4.1':
     resolution: {integrity: sha512-A8hhTx9r3J7RexQ1ruhyXhBcA21DZHDO+fUP7Q2otKB216StukK09qlfM9ZaSmwmpFs7l/4vWFZw2cMbct+Lhg==}
 
-  '@utrecht/youtube-video-css@1.0.0':
-    resolution: {integrity: sha512-zNbXax+t783aHfl47oST5l/jsz18DdQ3nZP6z5wUl5LHyC3IR/29slu4zl2cTps9KdB8BPCpW1xQj+LMQyRhFg==}
+  '@utrecht/vega-visualization-css@1.4.2':
+    resolution: {integrity: sha512-JTTx1DsKIeYZz95+H34HGfocKjDpbVOsFdPK1f/b3U3C5ivdC75fTkzU1+tVp6ijPwKnWPNr6eiIXTY9tHj5Kg==}
+
+  '@utrecht/youtube-video-css@2.0.1':
+    resolution: {integrity: sha512-h4wGXrIDLUevryoUvPsAj8C6dSo23KkN7M0BgQxAhlOy6KB59aUOGBlmY+xhZtsIgL/XrHPctjwlZKw8crd3IA==}
 
   '@vitejs/plugin-react@4.7.0':
     resolution: {integrity: sha512-gUu9hwfWvvEDBBmgtAowQCojwZmJ5mcLn3aufeCsitijs3+f2NsrPtlAWIR6OPiqljl96GVCUbLe0HyqIpVaoA==}
@@ -2162,6 +2598,9 @@ packages:
     resolution: {integrity: sha512-cgwlv/1iFQiFnU96XXgROh8xTeetsnJiDsTc7TYCLFd9+/WNkIqPTxiM/8pSd8VIrhXGTf1Ny1q1hquVqDJB5w==}
     engines: {node: '>= 4'}
 
+  dompurify@3.2.4:
+    resolution: {integrity: sha512-ysFSFEDVduQpyhzAob/kkuJjf5zWkZD8/A9ywSp1byueyuCfHamrCBa14/Oc2iiB0e51B+NpxSl5gmzn+Ms/mg==}
+
   dompurify@3.3.0:
     resolution: {integrity: sha512-r+f6MYR1gGN1eJv0TVQbhA7if/U7P87cdPl3HN5rikqaBSBxLiCb/b9O+2eG0cxz0ghyU+mU1QkbsOwERMYlWQ==}
 
@@ -2578,8 +3017,8 @@ packages:
     peerDependencies:
       graphql: ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
 
-  graphql@16.10.0:
-    resolution: {integrity: sha512-AjqGKbDGUFRKIRCP9tCKiIGHyriz2oHEbPIbEtcSLSs4YjReZOIPQQWek4+6hjw62H9QShXHyaGivGiYVLeYFQ==}
+  graphql@16.12.0:
+    resolution: {integrity: sha512-DKKrynuQRne0PNpEbzuEdHlYOMksHSUI8Zc9Unei5gTsMNA2/vMpoMz/yKba50pejK56qj98qM0SjYxAKi13gQ==}
     engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
 
   has-bigints@1.1.0:
@@ -3096,8 +3535,8 @@ packages:
     resolution: {integrity: sha512-gXah6aZrcUxjWg2zR2MwouP2eHlCBzdV4pygudehaKXSGW4v2AsRQUK+lwwXhii6KFZcunEnmSUoYp5CXibxtA==}
     engines: {node: '>= 0.4'}
 
-  oidc-client-ts@3.3.0:
-    resolution: {integrity: sha512-t13S540ZwFOEZKLYHJwSfITugupW4uYLwuQSSXyKH/wHwZ+7FvgHE7gnNJh1YQIZ1Yd1hKSRjqeXGSUtS0r9JA==}
+  oidc-client-ts@3.4.1:
+    resolution: {integrity: sha512-jNdst/U28Iasukx/L5MP6b274Vr7ftQs6qAhPBCvz6Wt5rPCA+Q/tUmCzfCHHWweWw5szeMy2Gfrm1rITwUKrw==}
     engines: {node: '>=18'}
 
   once@1.4.0:
@@ -3310,8 +3749,8 @@ packages:
     resolution: {integrity: sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==}
     engines: {node: '>=0.10.0'}
 
-  react-router@7.9.4:
-    resolution: {integrity: sha512-SD3G8HKviFHg9xj7dNODUKDFgpG4xqD5nhyd0mYoB5iISepuZAvzSr8ywxgxKJ52yRzf/HWtVHc9AWwoTbljvA==}
+  react-router@7.12.0:
+    resolution: {integrity: sha512-kTPDYPFzDVGIIGNLS5VJykK0HfHLY5MF3b+xj0/tTyNYL1gF1qs7u67Z9jEhQk2sQ98SUaHxlG31g1JtF7IfVw==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       react: '>=18'
@@ -3684,8 +4123,8 @@ packages:
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
 
-  uuid@11.1.0:
-    resolution: {integrity: sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A==}
+  uuid@13.0.0:
+    resolution: {integrity: sha512-XQegIaBTVUjSHliKqcnFqYypAd4S+WCYt5NIeRs6w/UAry7z8Y9j5ZwRRL4kzq9U3sD6v+85er9FvkEaBpji2w==}
     hasBin: true
 
   uuid@9.0.1:
@@ -3874,14 +4313,14 @@ packages:
 
 snapshots:
 
-  '@apollo/client@3.13.8(@types/react@19.2.2)(graphql@16.10.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@apollo/client@3.13.8(@types/react@19.2.2)(graphql@16.12.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@graphql-typed-document-node/core': 3.2.0(graphql@16.10.0)
+      '@graphql-typed-document-node/core': 3.2.0(graphql@16.12.0)
       '@wry/caches': 1.0.1
       '@wry/equality': 0.5.7
       '@wry/trie': 0.5.0
-      graphql: 16.10.0
-      graphql-tag: 2.12.6(graphql@16.10.0)
+      graphql: 16.12.0
+      graphql-tag: 2.12.6(graphql@16.12.0)
       hoist-non-react-statics: 3.3.2
       optimism: 0.18.1
       prop-types: 15.8.1
@@ -3896,14 +4335,14 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react'
 
-  '@apollo/client@3.13.9(@types/react@19.2.2)(graphql@16.10.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@apollo/client@3.13.9(@types/react@19.2.2)(graphql@16.12.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@graphql-typed-document-node/core': 3.2.0(graphql@16.10.0)
+      '@graphql-typed-document-node/core': 3.2.0(graphql@16.12.0)
       '@wry/caches': 1.0.1
       '@wry/equality': 0.5.7
       '@wry/trie': 0.5.0
-      graphql: 16.10.0
-      graphql-tag: 2.12.6(graphql@16.10.0)
+      graphql: 16.12.0
+      graphql-tag: 2.12.6(graphql@16.12.0)
       hoist-non-react-statics: 3.3.2
       optimism: 0.18.1
       prop-types: 15.8.1
@@ -4192,14 +4631,14 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
 
-  '@formio/bootstrap@3.1.2': {}
+  '@formio/bootstrap@3.1.3': {}
 
-  '@formio/core@2.5.1':
+  '@formio/core@2.5.3':
     dependencies:
       browser-cookies: 1.2.0
       core-js: 3.46.0
       dayjs: 1.11.18
-      dompurify: 3.3.0
+      dompurify: 3.2.4
       eventemitter3: 5.0.1
       fast-json-patch: 3.1.1
       fetch-ponyfill: 7.1.0
@@ -4214,10 +4653,10 @@ snapshots:
     dependencies:
       acorn: 8.15.0
 
-  '@formio/js@5.2.1(@popperjs/core@2.11.8)':
+  '@formio/js@5.2.3(@popperjs/core@2.11.8)':
     dependencies:
-      '@formio/bootstrap': 3.1.2
-      '@formio/core': 2.5.1
+      '@formio/bootstrap': 3.1.3
+      '@formio/core': 2.5.3
       '@formio/text-mask-addons': 3.8.0-formio.4
       '@formio/vanilla-text-mask': 5.1.1-formio.1
       abortcontroller-polyfill: 1.7.8
@@ -4255,17 +4694,15 @@ snapshots:
       - '@popperjs/core'
       - encoding
 
-  '@formio/protected-eval@2.0.0(@formio/js@5.2.1(@popperjs/core@2.11.8))':
+  '@formio/protected-eval@2.0.0(@formio/js@5.2.3(@popperjs/core@2.11.8))':
     dependencies:
-      '@formio/js': 5.2.1(@popperjs/core@2.11.8)
+      '@formio/js': 5.2.3(@popperjs/core@2.11.8)
       '@formio/js-interpreter': 1.1.0-formio.4
       lodash: 4.17.21
       vm-browserify: 1.1.2
 
-  '@formio/react@6.1.0(@formio/core@2.5.1)(@formio/js@5.2.1(@popperjs/core@2.11.8))(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@formio/react@6.1.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@formio/core': 2.5.1
-      '@formio/js': 5.2.1(@popperjs/core@2.11.8)
       '@ungap/structured-clone': 1.3.0
       core-js: 3.46.0
       lodash: 4.17.21
@@ -4277,31 +4714,31 @@ snapshots:
 
   '@formio/vanilla-text-mask@5.1.1-formio.1': {}
 
-  '@gemeente-denhaag/action@4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/action@4.1.3(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@gemeente-denhaag/button': 3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/icons': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/link': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/utils': 3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/button': 3.0.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/icons': 4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/link': 4.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/utils': 3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       clsx: 2.1.1
       date-fns: 4.1.0
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@gemeente-denhaag/alert@4.0.3(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/alert@4.0.7(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@gemeente-denhaag/button': 3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/heading': 2.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/iconbutton': 3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/icons': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/button': 3.0.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/heading': 2.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/iconbutton': 3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/icons': 4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       clsx: 2.1.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@gemeente-denhaag/breadcrumb@5.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/breadcrumb@5.0.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@gemeente-denhaag/icons': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/link': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/icons': 4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/link': 4.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@gemeente-denhaag/responsive-content': 2.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       clsx: 2.1.1
       react: 19.2.0
@@ -4309,10 +4746,10 @@ snapshots:
 
   '@gemeente-denhaag/button-group@2.0.1': {}
 
-  '@gemeente-denhaag/button-link@3.0.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/button-link@3.1.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@utrecht/button-link-css': 1.3.1
-      '@utrecht/component-library-react': 10.2.2(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/button-link-css': 2.0.1
+      '@utrecht/component-library-react': 10.3.10(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
     transitivePeerDependencies:
@@ -4321,60 +4758,56 @@ snapshots:
       - react-vega
       - vega
 
-  '@gemeente-denhaag/button@3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/button@3.0.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@gemeente-denhaag/icons': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@utrecht/focus-ring-css': 2.3.1
+      '@gemeente-denhaag/icons': 4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       clsx: 2.1.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@gemeente-denhaag/button@3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/card@5.0.6(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@gemeente-denhaag/icons': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@utrecht/focus-ring-css': 2.3.1
+      '@gemeente-denhaag/icons': 4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/link': 4.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/paragraph': 2.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/utils': 3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       clsx: 2.1.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@gemeente-denhaag/card@5.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/checkbox@3.1.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@gemeente-denhaag/icons': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/link': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/paragraph': 2.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/utils': 3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      clsx: 2.1.1
-      react: 19.2.0
-      react-dom: 19.2.0(react@19.2.0)
-
-  '@gemeente-denhaag/checkbox@3.0.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
-    dependencies:
-      '@utrecht/checkbox-css': 1.6.1
-      '@utrecht/checkbox-react': 1.0.8(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/checkbox-css': 2.0.1
+      '@utrecht/checkbox-react': 1.0.11(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
     transitivePeerDependencies:
       - '@babel/runtime'
 
-  '@gemeente-denhaag/contact-timeline@4.0.3(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/contact-timeline@4.0.11(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@gemeente-denhaag/file': 2.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/icons': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/paragraph': 2.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/process-steps': 4.2.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/step-marker': 3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/utils': 3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/file': 2.3.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/icons': 4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/paragraph': 2.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/process-steps': 4.2.3(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/step-marker': 3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/utils': 3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      clsx: 2.1.1
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
+    transitivePeerDependencies:
+      - '@babel/runtime'
+      - date-fns
+      - react-vega
+      - vega
+
+  '@gemeente-denhaag/data-badge@2.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
       clsx: 2.1.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@gemeente-denhaag/data-badge@2.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
-    dependencies:
-      clsx: 2.1.1
-      react: 19.2.0
-      react-dom: 19.2.0(react@19.2.0)
-
-  '@gemeente-denhaag/descriptionlist@4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/descriptionlist@4.0.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
       clsx: 2.1.1
       react: 19.2.0
@@ -4382,26 +4815,19 @@ snapshots:
 
   '@gemeente-denhaag/design-tokens-components@5.1.0': {}
 
-  '@gemeente-denhaag/file@2.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/file-upload@1.0.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@gemeente-denhaag/icons': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/button': 3.0.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/icons': 4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/paragraph': 2.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       clsx: 2.1.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@gemeente-denhaag/footer@4.1.2(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/file@2.3.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@gemeente-denhaag/button-group': 2.0.1
-      '@gemeente-denhaag/button-link': 3.0.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/heading': 2.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/icons': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/link': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/link-list': 6.1.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/list': 3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/paragraph': 2.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/responsive-content': 2.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@utrecht/link-social-css': 1.4.1
-      '@utrecht/list-social-css': 1.4.1
+      '@gemeente-denhaag/icons': 4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/component-library-react': 10.3.10(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       clsx: 2.1.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
@@ -4411,42 +4837,64 @@ snapshots:
       - react-vega
       - vega
 
-  '@gemeente-denhaag/form-field-description@3.0.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/footer@4.2.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@utrecht/form-field-description-css': 1.5.1
-      '@utrecht/form-field-description-react': 1.0.7(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/button-group': 2.0.1
+      '@gemeente-denhaag/button-link': 3.1.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/heading': 2.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/icons': 4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/link': 4.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/link-list': 6.2.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/list': 3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/paragraph': 2.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/responsive-content': 2.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/link-social-css': 2.0.1
+      '@utrecht/list-social-css': 2.0.1
+      clsx: 2.1.1
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
+    transitivePeerDependencies:
+      - '@babel/runtime'
+      - date-fns
+      - react-vega
+      - vega
+
+  '@gemeente-denhaag/form-field-description@3.1.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@utrecht/form-field-description-css': 2.0.1
+      '@utrecht/form-field-description-react': 1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
     transitivePeerDependencies:
       - '@babel/runtime'
 
-  '@gemeente-denhaag/form-field-error-message@3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/form-field-error-message@3.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@gemeente-denhaag/form-field@3.0.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/form-field@3.1.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@utrecht/form-field-css': 1.5.1
-      '@utrecht/form-field-react': 1.0.7(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      react: 19.2.0
-      react-dom: 19.2.0(react@19.2.0)
-    transitivePeerDependencies:
-      - '@babel/runtime'
-
-  '@gemeente-denhaag/form-fieldset@3.0.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
-    dependencies:
-      '@utrecht/fieldset-react': 1.0.7(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@utrecht/form-fieldset-css': 1.5.1
+      '@utrecht/form-field-css': 2.0.1
+      '@utrecht/form-field-react': 1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
     transitivePeerDependencies:
       - '@babel/runtime'
 
-  '@gemeente-denhaag/form-label@3.0.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/form-fieldset@3.1.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@utrecht/form-label-css': 1.6.1
-      '@utrecht/form-label-react': 1.0.7(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/fieldset-react': 1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/form-fieldset-css': 2.0.1
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
+    transitivePeerDependencies:
+      - '@babel/runtime'
+
+  '@gemeente-denhaag/form-label@3.1.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@utrecht/form-label-css': 2.0.1
+      '@utrecht/form-label-react': 1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
     transitivePeerDependencies:
@@ -4457,21 +4905,21 @@ snapshots:
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@gemeente-denhaag/header@4.1.1(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/header@4.1.4(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@gemeente-denhaag/breadcrumb': 5.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/button': 3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/breadcrumb': 5.0.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/button': 3.0.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@gemeente-denhaag/header-logo': 3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/heading': 2.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/iconbutton': 3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/icons': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/language-switcher': 3.1.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/link': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/link-list': 6.1.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/menu': 4.0.3(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/paragraph': 2.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/heading': 2.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/iconbutton': 3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/icons': 4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/language-switcher': 3.1.3(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/link': 4.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/link-list': 6.2.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/menu': 4.1.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/paragraph': 2.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@gemeente-denhaag/responsive-content': 2.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/sheet': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/sheet': 4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       clsx: 2.1.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
@@ -4481,14 +4929,14 @@ snapshots:
       - react-vega
       - vega
 
-  '@gemeente-denhaag/heading@2.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/heading@2.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@gemeente-denhaag/iconbutton@3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/iconbutton@3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@gemeente-denhaag/icons': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/icons': 4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       clsx: 2.1.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
@@ -4499,11 +4947,17 @@ snapshots:
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@gemeente-denhaag/language-switcher@3.1.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/icons@4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@gemeente-denhaag/icons': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/link': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/link-button': 3.0.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      clsx: 2.1.1
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
+
+  '@gemeente-denhaag/language-switcher@3.1.3(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@gemeente-denhaag/icons': 4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/link': 4.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/link-button': 3.1.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       clsx: 2.1.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
@@ -4513,10 +4967,10 @@ snapshots:
       - react-vega
       - vega
 
-  '@gemeente-denhaag/link-button@3.0.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/link-button@3.1.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@utrecht/component-library-react': 10.2.2(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@utrecht/link-button-css': 1.4.1
+      '@utrecht/component-library-react': 10.3.10(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/link-button-css': 2.0.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
     transitivePeerDependencies:
@@ -4525,12 +4979,12 @@ snapshots:
       - react-vega
       - vega
 
-  '@gemeente-denhaag/link-list@6.1.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/link-list@6.2.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@gemeente-denhaag/icons': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/link': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@utrecht/component-library-react': 10.2.2(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@utrecht/link-list-css': 2.3.1
+      '@gemeente-denhaag/icons': 4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/link': 4.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/component-library-react': 10.3.10(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/link-list-css': 3.0.1
       clsx: 2.1.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
@@ -4540,53 +4994,53 @@ snapshots:
       - react-vega
       - vega
 
-  '@gemeente-denhaag/link@4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/link@4.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@gemeente-denhaag/list@3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/list@3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@gemeente-denhaag/iconbutton': 3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/icons': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/iconbutton': 3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/icons': 4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       clsx: 2.1.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@gemeente-denhaag/menu@4.0.3(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/menu@4.1.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@gemeente-denhaag/button': 3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/icons': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/language-switcher': 3.1.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/number-badge': 2.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/sheet': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@types/uuid': 10.0.0
+      '@gemeente-denhaag/button': 3.0.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/icons': 4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/language-switcher': 3.1.3(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/number-badge': 2.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/sheet': 4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@types/uuid': 11.0.0
       clsx: 2.1.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
-      uuid: 11.1.0
+      uuid: 13.0.0
     transitivePeerDependencies:
       - '@babel/runtime'
       - date-fns
       - react-vega
       - vega
 
-  '@gemeente-denhaag/modal@3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/modal@3.0.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@gemeente-denhaag/button': 3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/button': 3.0.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@gemeente-denhaag/number-badge@2.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/number-badge@2.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@gemeente-denhaag/page-index@3.0.2(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/page-index@4.0.3(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@gemeente-denhaag/link': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/typography': 3.0.1(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/unorderedlist': 3.0.2(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/heading': 2.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/link': 4.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/unorderedlist': 3.2.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       clsx: 2.1.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
@@ -4608,24 +5062,24 @@ snapshots:
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@gemeente-denhaag/paragraph@2.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/paragraph@2.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@gemeente-denhaag/process-steps@4.2.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/process-steps@4.2.3(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@gemeente-denhaag/button': 3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/icons': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/step-marker': 3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/button': 3.0.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/icons': 4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/step-marker': 3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       clsx: 2.1.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@gemeente-denhaag/radio-button@3.0.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/radio-button@3.1.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@utrecht/component-library-react': 10.2.2(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@utrecht/radio-button-css': 1.6.1
+      '@utrecht/component-library-react': 10.3.10(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/radio-button-css': 2.0.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
     transitivePeerDependencies:
@@ -4640,10 +5094,10 @@ snapshots:
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@gemeente-denhaag/select@3.0.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/select@3.1.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@utrecht/component-library-react': 10.2.2(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@utrecht/select-css': 1.8.1
+      '@utrecht/component-library-react': 10.3.10(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/select-css': 2.0.1
       clsx: 2.1.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
@@ -4653,81 +5107,69 @@ snapshots:
       - react-vega
       - vega
 
-  '@gemeente-denhaag/sheet@4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/sheet@4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@gemeente-denhaag/iconbutton': 3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/icons': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/iconbutton': 3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/icons': 4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@gemeente-denhaag/responsive-content': 2.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       clsx: 2.1.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@gemeente-denhaag/side-navigation@4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/side-navigation@4.0.3(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@gemeente-denhaag/number-badge': 2.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/number-badge': 2.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       clsx: 2.1.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@gemeente-denhaag/step-marker@3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/skip-link@1.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@gemeente-denhaag/icons': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
+
+  '@gemeente-denhaag/step-marker@3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@gemeente-denhaag/icons': 4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       clsx: 2.1.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@gemeente-denhaag/stylesprovider@3.0.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/stylesprovider@3.2.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@utrecht/document-css': 1.5.1
+      '@utrecht/document-css': 2.0.1
+      '@utrecht/focus-ring-css': 3.0.1
       clsx: 2.1.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@gemeente-denhaag/tab@3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/tab@3.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
       clsx: 2.1.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
-      uuid: 11.1.0
+      uuid: 13.0.0
 
-  '@gemeente-denhaag/table@4.0.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/table@4.0.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@gemeente-denhaag/link': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/link': 4.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       clsx: 2.1.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@gemeente-denhaag/text-input@3.0.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/text-input@3.1.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@utrecht/textbox-css': 2.0.0
-      '@utrecht/textbox-react': 1.0.9(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/textbox-css': 3.0.1
+      '@utrecht/textbox-react': 1.0.12(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
     transitivePeerDependencies:
       - '@babel/runtime'
 
-  '@gemeente-denhaag/textarea@3.0.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/textarea@3.1.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@utrecht/component-library-react': 10.2.2(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@utrecht/textarea-css': 2.3.2
-      react: 19.2.0
-      react-dom: 19.2.0(react@19.2.0)
-    transitivePeerDependencies:
-      - '@babel/runtime'
-      - date-fns
-      - react-vega
-      - vega
-
-  '@gemeente-denhaag/typography@3.0.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
-    dependencies:
-      '@utrecht/component-library-react': 10.2.2(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@utrecht/heading-1-css': 1.5.1
-      '@utrecht/heading-2-css': 1.5.1
-      '@utrecht/heading-3-css': 1.5.1
-      '@utrecht/heading-4-css': 1.5.1
-      '@utrecht/heading-5-css': 1.5.1
-      '@utrecht/paragraph-css': 2.3.1
-      clsx: 2.1.1
+      '@utrecht/component-library-react': 10.3.10(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/textarea-css': 3.0.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
     transitivePeerDependencies:
@@ -4754,10 +5196,10 @@ snapshots:
       - react-vega
       - vega
 
-  '@gemeente-denhaag/unorderedlist@3.0.2(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/unorderedlist@3.2.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@utrecht/component-library-react': 10.2.2(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@utrecht/unordered-list-css': 1.5.1
+      '@utrecht/component-library-react': 10.3.10(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/unordered-list-css': 2.0.1
       clsx: 2.1.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
@@ -4767,15 +5209,15 @@ snapshots:
       - react-vega
       - vega
 
-  '@gemeente-denhaag/utils@3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@gemeente-denhaag/utils@3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
       date-fns: 4.1.0
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@graphql-typed-document-node/core@3.2.0(graphql@16.10.0)':
+  '@graphql-typed-document-node/core@3.2.0(graphql@16.12.0)':
     dependencies:
-      graphql: 16.10.0
+      graphql: 16.12.0
 
   '@humanfs/core@0.19.1': {}
 
@@ -4849,38 +5291,38 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@nl-portal/nl-portal-api@https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-api.tgz(@nl-portal/nl-portal-authentication@https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-authentication.tgz(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.9.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0))(@types/react@19.2.2)(graphql@16.10.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@nl-portal/nl-portal-api@3.0.1(@nl-portal/nl-portal-authentication@3.0.1(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.12.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0))(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@apollo/client': 3.13.9(@types/react@19.2.2)(graphql@16.10.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@nl-portal/nl-portal-authentication': https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-authentication.tgz(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.9.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)
+      '@apollo/client': 3.13.9(@types/react@19.2.2)(graphql@16.12.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@nl-portal/nl-portal-authentication': 3.0.1(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.12.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)
+      graphql: 16.12.0
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
     transitivePeerDependencies:
       - '@types/react'
-      - graphql
       - graphql-ws
       - subscriptions-transport-ws
 
-  '@nl-portal/nl-portal-authentication@https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-authentication.tgz(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.9.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)':
+  '@nl-portal/nl-portal-authentication@3.0.1(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.12.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@gemeente-denhaag/modal': 3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/typography': 3.0.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/modal': 3.0.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/typography': 3.0.1(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       jwt-decode: 4.0.0
-      oidc-client-ts: 3.3.0
+      oidc-client-ts: 3.4.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
       react-intl: 7.1.14(react@19.2.0)(typescript@5.9.3)
-      react-oidc-context: 3.3.0(oidc-client-ts@3.3.0)(react@19.2.0)
-      react-router: 7.9.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      react-oidc-context: 3.3.0(oidc-client-ts@3.4.1)(react@19.2.0)
+      react-router: 7.12.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
     transitivePeerDependencies:
       - '@babel/runtime'
       - date-fns
       - react-vega
       - vega
 
-  '@nl-portal/nl-portal-localization@https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-localization.tgz(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(typescript@5.9.3)':
+  '@nl-portal/nl-portal-localization@3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(typescript@5.9.3)':
     dependencies:
-      '@gemeente-denhaag/utils': 3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/utils': 3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       deepmerge: 4.3.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
@@ -4888,53 +5330,55 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@nl-portal/nl-portal-user-interface@https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-user-interface.tgz(6f4176b397557694a39710f43419e250)':
+  '@nl-portal/nl-portal-user-interface@3.0.1(7bc76abde5fd485f7b023518203ffa57)':
     dependencies:
-      '@apollo/client': 3.13.8(@types/react@19.2.2)(graphql@16.10.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@formio/js': 5.2.1(@popperjs/core@2.11.8)
-      '@formio/protected-eval': 2.0.0(@formio/js@5.2.1(@popperjs/core@2.11.8))
-      '@formio/react': 6.1.0(@formio/core@2.5.1)(@formio/js@5.2.1(@popperjs/core@2.11.8))(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/action': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/alert': 4.0.3(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/button': 3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@apollo/client': 3.13.8(@types/react@19.2.2)(graphql@16.12.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@formio/js': 5.2.3(@popperjs/core@2.11.8)
+      '@formio/protected-eval': 2.0.0(@formio/js@5.2.3(@popperjs/core@2.11.8))
+      '@formio/react': 6.1.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/action': 4.1.3(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/alert': 4.0.7(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/button': 3.0.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@gemeente-denhaag/button-group': 2.0.1
-      '@gemeente-denhaag/button-link': 3.0.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/card': 5.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/checkbox': 3.0.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/contact-timeline': 4.0.3(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/data-badge': 2.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/descriptionlist': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/file': 2.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/footer': 4.1.2(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/form-field': 3.0.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/form-field-description': 3.0.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/form-field-error-message': 3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/form-fieldset': 3.0.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/form-label': 3.0.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/header': 4.1.1(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/icons': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/link': 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/link-list': 6.1.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/number-badge': 2.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/button-link': 3.1.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/card': 5.0.6(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/checkbox': 3.1.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/contact-timeline': 4.0.11(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/data-badge': 2.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/descriptionlist': 4.0.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/file': 2.3.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/file-upload': 1.0.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/footer': 4.2.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/form-field': 3.1.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/form-field-description': 3.1.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/form-field-error-message': 3.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/form-fieldset': 3.1.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/form-label': 3.1.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/header': 4.1.4(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/icons': 4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/link': 4.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/link-list': 6.2.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/number-badge': 2.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@gemeente-denhaag/page': 2.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/page-index': 3.0.2(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/page-index': 4.0.3(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@gemeente-denhaag/pagination': 3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/process-steps': 4.2.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/radio-button': 3.0.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/process-steps': 4.2.3(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/radio-button': 3.1.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@gemeente-denhaag/responsive-content': 2.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/select': 3.0.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/side-navigation': 4.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/stylesprovider': 3.0.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/tab': 3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/table': 4.0.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/text-input': 3.0.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/textarea': 3.0.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@gemeente-denhaag/typography': 3.0.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@nl-portal/nl-portal-api': https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-api.tgz(@nl-portal/nl-portal-authentication@https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-authentication.tgz(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.9.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0))(@types/react@19.2.2)(graphql@16.10.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@nl-portal/nl-portal-authentication': https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-authentication.tgz(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.9.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)
-      '@nl-portal/nl-portal-localization': https://nl-portal-frontend-snapshots.s3.eu-central-1.amazonaws.com/3.0.0-RC-202510290916-af39d4df-SNAPSHOT/nl-portal-nl-portal-localization.tgz(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(typescript@5.9.3)
-      '@utrecht/component-library-css': 7.5.1
-      '@utrecht/document-css': 1.5.1
+      '@gemeente-denhaag/select': 3.1.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/side-navigation': 4.0.3(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/skip-link': 1.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/stylesprovider': 3.2.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/tab': 3.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/table': 4.0.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/text-input': 3.1.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/textarea': 3.1.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/typography': 3.0.1(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@nl-portal/nl-portal-api': 3.0.1(@nl-portal/nl-portal-authentication@3.0.1(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.12.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0))(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@nl-portal/nl-portal-authentication': 3.0.1(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.12.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)
+      '@nl-portal/nl-portal-localization': 3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(typescript@5.9.3)
+      '@utrecht/component-library-css': 8.2.1
+      '@utrecht/document-css': 2.0.1
       classnames: 2.5.1
       lodash-es: 4.17.21
       pretty-bytes: 7.1.0
@@ -4943,10 +5387,9 @@ snapshots:
       react-helmet-async: 2.0.5(react@19.2.0)
       react-intl: 7.1.14(react@19.2.0)(typescript@5.9.3)
       react-loading-skeleton: 3.5.0(react@19.2.0)
-      react-router: 7.9.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      react-router: 7.12.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
     transitivePeerDependencies:
       - '@babel/runtime'
-      - '@formio/core'
       - '@popperjs/core'
       - date-fns
       - encoding
@@ -5136,7 +5579,9 @@ snapshots:
   '@types/trusted-types@2.0.7':
     optional: true
 
-  '@types/uuid@10.0.0': {}
+  '@types/uuid@11.0.0':
+    dependencies:
+      uuid: 13.0.0
 
   '@types/yargs-parser@21.0.3': {}
 
@@ -5246,37 +5691,67 @@ snapshots:
 
   '@utrecht/accordion-css@2.0.0': {}
 
-  '@utrecht/action-group-css@1.1.0': {}
+  '@utrecht/accordion-css@3.0.1': {}
+
+  '@utrecht/action-group-css@3.0.1': {}
+
+  '@utrecht/action-group-react@1.1.4(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@babel/runtime': 7.28.4
+      '@utrecht/action-group-css': 3.0.1
+      clsx: 2.1.1
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
 
   '@utrecht/alert-css@2.4.0': {}
 
+  '@utrecht/alert-css@3.0.1': {}
+
   '@utrecht/alert-dialog-css@1.4.2': {}
+
+  '@utrecht/alert-dialog-css@2.0.1': {}
 
   '@utrecht/alternate-lang-nav-css@1.3.1': {}
 
+  '@utrecht/alternate-lang-nav-css@2.0.1': {}
+
   '@utrecht/article-css@1.5.1': {}
+
+  '@utrecht/article-css@2.0.1': {}
 
   '@utrecht/backdrop-css@1.4.1': {}
 
+  '@utrecht/backdrop-css@2.0.1': {}
+
   '@utrecht/badge-counter-css@1.4.1': {}
+
+  '@utrecht/badge-counter-css@2.0.1': {}
 
   '@utrecht/badge-list-css@2.2.1': {}
 
+  '@utrecht/badge-list-css@3.0.1': {}
+
   '@utrecht/badge-status-css@1.4.1': {}
+
+  '@utrecht/badge-status-css@2.0.1': {}
 
   '@utrecht/blockquote-css@1.6.1': {}
 
-  '@utrecht/body-css@1.2.1': {}
+  '@utrecht/blockquote-css@2.0.1': {}
+
+  '@utrecht/body-css@2.0.1': {}
 
   '@utrecht/breadcrumb-nav-css@1.5.0': {}
 
-  '@utrecht/breadcrumb-nav-css@1.5.1': {}
+  '@utrecht/breadcrumb-nav-css@2.1.0': {}
 
   '@utrecht/button-css@2.3.1': {}
 
+  '@utrecht/button-css@3.0.1': {}
+
   '@utrecht/button-group-css@1.4.1': {}
 
-  '@utrecht/button-group-css@1.5.0': {}
+  '@utrecht/button-group-css@2.0.1': {}
 
   '@utrecht/button-group-react@1.0.1(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
@@ -5286,7 +5761,25 @@ snapshots:
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
+  '@utrecht/button-group-react@1.1.3(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@babel/runtime': 7.28.4
+      '@utrecht/button-group-css': 2.0.1
+      clsx: 2.1.1
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
+
   '@utrecht/button-link-css@1.3.1': {}
+
+  '@utrecht/button-link-css@2.0.1': {}
+
+  '@utrecht/button-react@2.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@babel/runtime': 7.28.4
+      '@utrecht/button-css': 3.0.1
+      clsx: 2.1.1
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
 
   '@utrecht/button-react@2.0.7(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
@@ -5297,6 +5790,8 @@ snapshots:
       react-dom: 19.2.0(react@19.2.0)
 
   '@utrecht/calendar-css@1.4.1': {}
+
+  '@utrecht/calendar-css@2.0.1': {}
 
   '@utrecht/calendar-react@1.0.11(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
@@ -5309,9 +5804,24 @@ snapshots:
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
+  '@utrecht/calendar-react@1.0.14(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@babel/runtime': 7.28.4
+      '@utrecht/button-react': 2.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/calendar-css': 2.0.1
+      clsx: 2.1.1
+      date-fns: 2.30.0
+      lodash-es: 4.17.21
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
+
   '@utrecht/card-css@0.1.0':
     dependencies:
       '@utrecht/img-css': 1.3.1
+
+  '@utrecht/card-css@1.0.1':
+    dependencies:
+      '@utrecht/img-css': 2.0.1
 
   '@utrecht/card-react@0.0.1(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
@@ -5322,7 +5832,27 @@ snapshots:
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
+  '@utrecht/card-react@0.0.4(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@babel/runtime': 7.28.4
+      '@utrecht/card-css': 1.0.1
+      '@utrecht/link-react': 1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      clsx: 2.1.1
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
+
   '@utrecht/checkbox-css@1.6.1': {}
+
+  '@utrecht/checkbox-css@2.0.1': {}
+
+  '@utrecht/checkbox-react@1.0.11(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@babel/runtime': 7.28.4
+      '@utrecht/checkbox-css': 2.0.1
+      '@utrecht/custom-checkbox-css': 2.0.1
+      clsx: 2.1.1
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
 
   '@utrecht/checkbox-react@1.0.8(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
@@ -5335,13 +5865,31 @@ snapshots:
 
   '@utrecht/code-block-css@1.5.1': {}
 
+  '@utrecht/code-block-css@2.0.1': {}
+
   '@utrecht/code-css@1.5.1': {}
+
+  '@utrecht/code-css@2.0.1': {}
 
   '@utrecht/color-sample-css@1.4.1': {}
 
+  '@utrecht/color-sample-css@2.0.1': {}
+
   '@utrecht/column-layout-css@1.5.1': {}
 
+  '@utrecht/column-layout-css@2.0.1': {}
+
   '@utrecht/combobox-css@1.4.1': {}
+
+  '@utrecht/combobox-css@2.0.1': {}
+
+  '@utrecht/combobox-react@0.0.11(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@babel/runtime': 7.28.4
+      '@utrecht/combobox-css': 2.0.1
+      clsx: 2.1.1
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
 
   '@utrecht/combobox-react@0.0.8(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
@@ -5351,106 +5899,108 @@ snapshots:
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@utrecht/component-library-css@7.5.1':
+  '@utrecht/component-library-css@8.2.1':
     dependencies:
-      '@utrecht/accordion-css': 2.0.0
-      '@utrecht/action-group-css': 1.1.0
-      '@utrecht/alert-css': 2.4.0
-      '@utrecht/alert-dialog-css': 1.4.2
-      '@utrecht/alternate-lang-nav-css': 1.3.1
-      '@utrecht/article-css': 1.5.1
-      '@utrecht/backdrop-css': 1.4.1
-      '@utrecht/badge-counter-css': 1.4.1
-      '@utrecht/badge-list-css': 2.2.1
-      '@utrecht/badge-status-css': 1.4.1
-      '@utrecht/blockquote-css': 1.6.1
-      '@utrecht/body-css': 1.2.1
-      '@utrecht/breadcrumb-nav-css': 1.5.1
-      '@utrecht/button-css': 2.3.1
-      '@utrecht/button-group-css': 1.5.0
-      '@utrecht/button-link-css': 1.3.1
-      '@utrecht/calendar-css': 1.4.1
-      '@utrecht/checkbox-css': 1.6.1
-      '@utrecht/code-block-css': 1.5.1
-      '@utrecht/code-css': 1.5.1
-      '@utrecht/color-sample-css': 1.4.1
-      '@utrecht/column-layout-css': 1.5.1
-      '@utrecht/combobox-css': 1.4.1
-      '@utrecht/currency-data-css': 1.3.1
-      '@utrecht/custom-checkbox-css': 1.3.2
-      '@utrecht/data-badge-css': 1.0.1
-      '@utrecht/data-list-css': 1.4.1
-      '@utrecht/data-placeholder-css': 1.4.1
-      '@utrecht/digid-button-css': 1.4.1
-      '@utrecht/document-css': 1.5.1
-      '@utrecht/drawer-css': 1.4.1
-      '@utrecht/emphasis-css': 1.5.1
-      '@utrecht/figure-css': 1.5.1
-      '@utrecht/form-css': 1.5.1
-      '@utrecht/form-field-css': 1.5.1
-      '@utrecht/form-field-description-css': 1.5.1
-      '@utrecht/form-field-error-message-css': 1.5.1
-      '@utrecht/form-fieldset-css': 1.5.1
-      '@utrecht/form-label-css': 1.6.1
-      '@utrecht/form-toggle-css': 1.5.1
-      '@utrecht/heading-1-css': 1.5.1
-      '@utrecht/heading-2-css': 1.5.1
-      '@utrecht/heading-3-css': 1.5.1
-      '@utrecht/heading-4-css': 1.5.1
-      '@utrecht/heading-5-css': 1.5.1
-      '@utrecht/heading-6-css': 1.5.1
-      '@utrecht/heading-group-css': 1.5.1
-      '@utrecht/html-content-css': 1.4.1
-      '@utrecht/iban-data-css': 1.3.1
-      '@utrecht/icon-css': 2.0.1
-      '@utrecht/img-css': 1.3.1
-      '@utrecht/index-char-nav-css': 1.4.1
-      '@utrecht/link-button-css': 1.4.1
-      '@utrecht/link-css': 1.6.1
-      '@utrecht/link-list-css': 2.3.1
-      '@utrecht/link-social-css': 1.4.1
-      '@utrecht/list-social-css': 1.4.1
-      '@utrecht/listbox-css': 1.5.2
-      '@utrecht/logo-button-css': 1.4.1
-      '@utrecht/logo-css': 1.4.1
-      '@utrecht/logo-image-css': 1.4.1
-      '@utrecht/map-marker-css': 1.4.1
-      '@utrecht/mark-css': 1.5.1
-      '@utrecht/multiline-data-css': 1.3.1
-      '@utrecht/nav-bar-css': 1.4.1
-      '@utrecht/nav-list-css': 1.3.1
-      '@utrecht/number-badge-css': 2.3.1
-      '@utrecht/number-data-css': 1.4.1
-      '@utrecht/ordered-list-css': 2.0.0
-      '@utrecht/page-body-css': 0.1.1
-      '@utrecht/page-content-css': 1.4.1
-      '@utrecht/page-css': 1.4.1
-      '@utrecht/page-footer-css': 2.1.1
-      '@utrecht/page-header-css': 1.5.1
-      '@utrecht/page-layout-css': 1.1.1
-      '@utrecht/pagination-css': 1.4.1
-      '@utrecht/paragraph-css': 2.3.1
-      '@utrecht/pre-heading-css': 1.4.1
-      '@utrecht/preserve-data-css': 1.3.1
-      '@utrecht/radio-button-css': 1.6.1
-      '@utrecht/rich-text-css': 1.4.0
-      '@utrecht/root-css': 1.2.1
-      '@utrecht/search-bar-css': 2.2.1
-      '@utrecht/select-css': 1.8.1
-      '@utrecht/separator-css': 1.5.1
-      '@utrecht/skip-link-css': 1.5.1
-      '@utrecht/spotlight-section-css': 1.6.1
-      '@utrecht/surface-css': 1.4.1
-      '@utrecht/table-css': 1.6.1
-      '@utrecht/table-of-contents-css': 0.3.1
-      '@utrecht/textarea-css': 2.3.2
-      '@utrecht/textbox-css': 2.0.0
-      '@utrecht/tooltip-css': 1.0.0
-      '@utrecht/top-task-link-css': 1.4.1
-      '@utrecht/top-task-nav-css': 1.3.1
-      '@utrecht/unordered-list-css': 1.5.1
-      '@utrecht/url-data-css': 1.3.1
-      '@utrecht/youtube-video-css': 1.0.0
+      '@utrecht/accordion-css': 3.0.1
+      '@utrecht/action-group-css': 3.0.1
+      '@utrecht/alert-css': 3.0.1
+      '@utrecht/alert-dialog-css': 2.0.1
+      '@utrecht/alternate-lang-nav-css': 2.0.1
+      '@utrecht/article-css': 2.0.1
+      '@utrecht/backdrop-css': 2.0.1
+      '@utrecht/badge-counter-css': 2.0.1
+      '@utrecht/badge-list-css': 3.0.1
+      '@utrecht/badge-status-css': 2.0.1
+      '@utrecht/blockquote-css': 2.0.1
+      '@utrecht/body-css': 2.0.1
+      '@utrecht/breadcrumb-nav-css': 2.1.0
+      '@utrecht/button-css': 3.0.1
+      '@utrecht/button-group-css': 2.0.1
+      '@utrecht/button-link-css': 2.0.1
+      '@utrecht/calendar-css': 2.0.1
+      '@utrecht/checkbox-css': 2.0.1
+      '@utrecht/code-block-css': 2.0.1
+      '@utrecht/code-css': 2.0.1
+      '@utrecht/color-sample-css': 2.0.1
+      '@utrecht/column-layout-css': 2.0.1
+      '@utrecht/combobox-css': 2.0.1
+      '@utrecht/currency-data-css': 2.0.1
+      '@utrecht/custom-checkbox-css': 2.0.1
+      '@utrecht/data-badge-css': 2.0.1
+      '@utrecht/data-list-css': 2.0.1
+      '@utrecht/data-placeholder-css': 2.0.1
+      '@utrecht/digid-button-css': 1.4.2
+      '@utrecht/document-css': 2.0.1
+      '@utrecht/drawer-css': 2.0.1
+      '@utrecht/emphasis-css': 2.0.1
+      '@utrecht/figure-css': 2.0.1
+      '@utrecht/form-css': 2.0.1
+      '@utrecht/form-field-css': 2.0.1
+      '@utrecht/form-field-description-css': 2.0.1
+      '@utrecht/form-field-error-message-css': 2.0.1
+      '@utrecht/form-fieldset-css': 2.0.1
+      '@utrecht/form-label-css': 2.0.1
+      '@utrecht/form-toggle-css': 2.0.1
+      '@utrecht/grid-css': 1.0.0
+      '@utrecht/heading-1-css': 2.0.1
+      '@utrecht/heading-2-css': 2.0.1
+      '@utrecht/heading-3-css': 2.0.1
+      '@utrecht/heading-4-css': 2.0.1
+      '@utrecht/heading-5-css': 2.0.1
+      '@utrecht/heading-6-css': 2.0.1
+      '@utrecht/heading-group-css': 2.0.1
+      '@utrecht/html-content-css': 2.0.1
+      '@utrecht/iban-data-css': 2.0.1
+      '@utrecht/icon-css': 3.0.1
+      '@utrecht/img-css': 2.0.1
+      '@utrecht/index-char-nav-css': 2.0.1
+      '@utrecht/link-button-css': 2.0.1
+      '@utrecht/link-css': 2.0.1
+      '@utrecht/link-list-css': 3.0.1
+      '@utrecht/link-social-css': 2.0.1
+      '@utrecht/list-social-css': 2.0.1
+      '@utrecht/listbox-css': 2.0.1
+      '@utrecht/logo-button-css': 1.4.2
+      '@utrecht/logo-css': 2.0.1
+      '@utrecht/logo-image-css': 1.4.2
+      '@utrecht/map-marker-css': 2.0.1
+      '@utrecht/mark-css': 2.0.1
+      '@utrecht/multiline-data-css': 2.0.1
+      '@utrecht/nav-bar-css': 2.0.1
+      '@utrecht/nav-list-css': 1.3.2
+      '@utrecht/navigation-css': 1.1.0
+      '@utrecht/number-badge-css': 3.0.1
+      '@utrecht/number-data-css': 2.0.1
+      '@utrecht/ordered-list-css': 3.0.1
+      '@utrecht/page-body-css': 1.0.1
+      '@utrecht/page-content-css': 2.0.1
+      '@utrecht/page-css': 2.0.1
+      '@utrecht/page-footer-css': 3.0.1
+      '@utrecht/page-header-css': 2.0.1
+      '@utrecht/page-layout-css': 2.0.1
+      '@utrecht/pagination-css': 2.0.3
+      '@utrecht/paragraph-css': 3.0.1
+      '@utrecht/pre-heading-css': 2.0.1
+      '@utrecht/preserve-data-css': 2.0.1
+      '@utrecht/radio-button-css': 2.0.1
+      '@utrecht/rich-text-css': 2.0.1
+      '@utrecht/root-css': 2.0.1
+      '@utrecht/search-bar-css': 3.0.1
+      '@utrecht/select-css': 2.0.1
+      '@utrecht/separator-css': 2.0.1
+      '@utrecht/skip-link-css': 2.0.1
+      '@utrecht/spotlight-section-css': 2.0.1
+      '@utrecht/surface-css': 2.0.1
+      '@utrecht/table-css': 2.0.1
+      '@utrecht/table-of-contents-css': 1.0.1
+      '@utrecht/textarea-css': 3.0.1
+      '@utrecht/textbox-css': 3.0.1
+      '@utrecht/tooltip-css': 2.0.1
+      '@utrecht/top-task-link-css': 2.0.1
+      '@utrecht/top-task-nav-css': 1.3.2
+      '@utrecht/unordered-list-css': 2.0.1
+      '@utrecht/url-data-css': 2.0.1
+      '@utrecht/youtube-video-css': 2.0.1
 
   '@utrecht/component-library-react@10.2.2(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
@@ -5563,11 +6113,129 @@ snapshots:
     optionalDependencies:
       date-fns: 2.30.0
 
+  '@utrecht/component-library-react@10.3.10(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@babel/runtime': 7.28.4
+      '@utrecht/accordion-css': 3.0.1
+      '@utrecht/action-group-react': 1.1.4(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/alert-css': 3.0.1
+      '@utrecht/alert-dialog-css': 2.0.1
+      '@utrecht/alternate-lang-nav-css': 2.0.1
+      '@utrecht/article-css': 2.0.1
+      '@utrecht/backdrop-css': 2.0.1
+      '@utrecht/badge-counter-css': 2.0.1
+      '@utrecht/badge-list-css': 3.0.1
+      '@utrecht/badge-status-css': 2.0.1
+      '@utrecht/blockquote-css': 2.0.1
+      '@utrecht/breadcrumb-nav-css': 2.1.0
+      '@utrecht/button-group-react': 1.1.3(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/button-link-css': 2.0.1
+      '@utrecht/button-react': 2.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/calendar-react': 1.0.14(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/card-css': 1.0.1
+      '@utrecht/card-react': 0.0.4(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/checkbox-react': 1.0.11(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/code-block-css': 2.0.1
+      '@utrecht/code-css': 2.0.1
+      '@utrecht/color-sample-css': 2.0.1
+      '@utrecht/column-layout-css': 2.0.1
+      '@utrecht/combobox-react': 0.0.11(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/currency-data-css': 2.0.1
+      '@utrecht/custom-checkbox-css': 2.0.1
+      '@utrecht/data-badge-css': 2.0.1
+      '@utrecht/data-badge-react': 1.0.7(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/data-list-css': 2.0.1
+      '@utrecht/data-placeholder-css': 2.0.1
+      '@utrecht/digid-button-css': 1.4.2
+      '@utrecht/document-css': 2.0.1
+      '@utrecht/drawer-css': 2.0.1
+      '@utrecht/emphasis-css': 2.0.1
+      '@utrecht/fieldset-react': 1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/figure-css': 2.0.1
+      '@utrecht/focus-ring-css': 3.0.1
+      '@utrecht/form-field-checkbox-react': 1.1.3(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/form-field-description-react': 1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/form-field-error-message-react': 1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/form-field-react': 1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/form-label-react': 1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/form-toggle-css': 2.0.1
+      '@utrecht/heading-1-css': 2.0.1
+      '@utrecht/heading-2-css': 2.0.1
+      '@utrecht/heading-3-css': 2.0.1
+      '@utrecht/heading-4-css': 2.0.1
+      '@utrecht/heading-5-css': 2.0.1
+      '@utrecht/heading-6-css': 2.0.1
+      '@utrecht/heading-group-css': 2.0.1
+      '@utrecht/html-content-css': 2.0.1
+      '@utrecht/iban-data-css': 2.0.1
+      '@utrecht/icon-css': 3.0.1
+      '@utrecht/img-css': 2.0.1
+      '@utrecht/index-char-nav-css': 2.0.1
+      '@utrecht/link-button-css': 2.0.1
+      '@utrecht/link-list-css': 3.0.1
+      '@utrecht/link-react': 1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/link-social-css': 2.0.1
+      '@utrecht/list-social-css': 2.0.1
+      '@utrecht/listbox-react': 1.0.13(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/logo-button-css': 1.4.2
+      '@utrecht/logo-css': 2.0.1
+      '@utrecht/logo-image-css': 1.4.2
+      '@utrecht/map-control-button-css': 3.0.1
+      '@utrecht/map-marker-css': 2.0.1
+      '@utrecht/mark-css': 2.0.1
+      '@utrecht/multiline-data-css': 2.0.1
+      '@utrecht/nav-bar-css': 2.0.1
+      '@utrecht/nav-list-css': 1.3.2
+      '@utrecht/number-badge-css': 3.0.1
+      '@utrecht/number-data-css': 2.0.1
+      '@utrecht/open-forms-container-css': 2.0.1
+      '@utrecht/open-forms-container-react': 1.0.5(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/ordered-list-css': 3.0.1
+      '@utrecht/page-content-css': 2.0.1
+      '@utrecht/page-css': 2.0.1
+      '@utrecht/page-footer-css': 3.0.1
+      '@utrecht/page-header-css': 2.0.1
+      '@utrecht/pagination-css': 2.0.3
+      '@utrecht/paragraph-css': 3.0.1
+      '@utrecht/pre-heading-css': 2.0.1
+      '@utrecht/preserve-data-css': 2.0.1
+      '@utrecht/radio-button-react': 1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/rich-text-css': 2.0.1
+      '@utrecht/search-bar-css': 3.0.1
+      '@utrecht/select-css': 2.0.1
+      '@utrecht/separator-css': 2.0.1
+      '@utrecht/skip-link-css': 2.0.1
+      '@utrecht/spotlight-section-css': 2.0.1
+      '@utrecht/subscript-css': 2.0.1
+      '@utrecht/superscript-css': 2.0.1
+      '@utrecht/surface-css': 2.0.1
+      '@utrecht/table-css': 2.0.1
+      '@utrecht/table-of-contents-css': 1.0.1
+      '@utrecht/textarea-css': 3.0.1
+      '@utrecht/textbox-react': 1.0.12(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/top-task-link-css': 2.0.1
+      '@utrecht/top-task-nav-css': 1.3.2
+      '@utrecht/unordered-list-css': 2.0.1
+      '@utrecht/url-data-css': 2.0.1
+      '@utrecht/vega-visualization-css': 1.4.2
+      clsx: 2.1.1
+      lodash.chunk: 4.2.0
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
+    optionalDependencies:
+      date-fns: 2.30.0
+
   '@utrecht/currency-data-css@1.3.1': {}
+
+  '@utrecht/currency-data-css@2.0.1': {}
 
   '@utrecht/custom-checkbox-css@1.3.2': {}
 
+  '@utrecht/custom-checkbox-css@2.0.1': {}
+
   '@utrecht/data-badge-css@1.0.1': {}
+
+  '@utrecht/data-badge-css@2.0.1': {}
 
   '@utrecht/data-badge-react@1.0.4(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
@@ -5577,17 +6245,45 @@ snapshots:
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
+  '@utrecht/data-badge-react@1.0.7(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@babel/runtime': 7.28.4
+      '@utrecht/data-badge-css': 2.0.1
+      clsx: 2.1.1
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
+
   '@utrecht/data-list-css@1.4.1': {}
+
+  '@utrecht/data-list-css@2.0.1': {}
 
   '@utrecht/data-placeholder-css@1.4.1': {}
 
+  '@utrecht/data-placeholder-css@2.0.1': {}
+
   '@utrecht/digid-button-css@1.4.1': {}
+
+  '@utrecht/digid-button-css@1.4.2': {}
 
   '@utrecht/document-css@1.5.1': {}
 
+  '@utrecht/document-css@2.0.1': {}
+
   '@utrecht/drawer-css@1.4.1': {}
 
+  '@utrecht/drawer-css@2.0.1': {}
+
   '@utrecht/emphasis-css@1.5.1': {}
+
+  '@utrecht/emphasis-css@2.0.1': {}
+
+  '@utrecht/fieldset-react@1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@babel/runtime': 7.28.4
+      '@utrecht/form-fieldset-css': 2.0.1
+      clsx: 2.1.1
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
 
   '@utrecht/fieldset-react@1.0.7(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
@@ -5599,9 +6295,13 @@ snapshots:
 
   '@utrecht/figure-css@1.5.1': {}
 
+  '@utrecht/figure-css@2.0.1': {}
+
   '@utrecht/focus-ring-css@2.3.1': {}
 
-  '@utrecht/form-css@1.5.1': {}
+  '@utrecht/focus-ring-css@3.0.1': {}
+
+  '@utrecht/form-css@2.0.1': {}
 
   '@utrecht/form-field-checkbox-react@1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
@@ -5615,9 +6315,33 @@ snapshots:
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
+  '@utrecht/form-field-checkbox-react@1.1.3(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@babel/runtime': 7.28.4
+      '@utrecht/checkbox-react': 1.0.11(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/form-field-description-react': 1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/form-field-error-message-react': 1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/form-field-react': 1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/form-label-react': 1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      clsx: 2.1.1
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
+
   '@utrecht/form-field-css@1.5.1': {}
 
+  '@utrecht/form-field-css@2.0.1': {}
+
   '@utrecht/form-field-description-css@1.5.1': {}
+
+  '@utrecht/form-field-description-css@2.0.1': {}
+
+  '@utrecht/form-field-description-react@1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@babel/runtime': 7.28.4
+      '@utrecht/form-field-description-css': 2.0.1
+      clsx: 2.1.1
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
 
   '@utrecht/form-field-description-react@1.0.7(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
@@ -5629,10 +6353,28 @@ snapshots:
 
   '@utrecht/form-field-error-message-css@1.5.1': {}
 
+  '@utrecht/form-field-error-message-css@2.0.1': {}
+
+  '@utrecht/form-field-error-message-react@1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@babel/runtime': 7.28.4
+      '@utrecht/form-field-error-message-css': 2.0.1
+      clsx: 2.1.1
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
+
   '@utrecht/form-field-error-message-react@1.0.7(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
       '@babel/runtime': 7.28.4
       '@utrecht/form-field-error-message-css': 1.5.1
+      clsx: 2.1.1
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
+
+  '@utrecht/form-field-react@1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@babel/runtime': 7.28.4
+      '@utrecht/form-field-css': 2.0.1
       clsx: 2.1.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
@@ -5647,7 +6389,19 @@ snapshots:
 
   '@utrecht/form-fieldset-css@1.5.1': {}
 
+  '@utrecht/form-fieldset-css@2.0.1': {}
+
   '@utrecht/form-label-css@1.6.1': {}
+
+  '@utrecht/form-label-css@2.0.1': {}
+
+  '@utrecht/form-label-react@1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@babel/runtime': 7.28.4
+      '@utrecht/form-label-css': 2.0.1
+      clsx: 2.1.1
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
 
   '@utrecht/form-label-react@1.0.7(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
@@ -5659,35 +6413,77 @@ snapshots:
 
   '@utrecht/form-toggle-css@1.5.1': {}
 
+  '@utrecht/form-toggle-css@2.0.1': {}
+
+  '@utrecht/grid-css@1.0.0': {}
+
   '@utrecht/heading-1-css@1.5.1': {}
+
+  '@utrecht/heading-1-css@2.0.1': {}
 
   '@utrecht/heading-2-css@1.5.1': {}
 
+  '@utrecht/heading-2-css@2.0.1': {}
+
   '@utrecht/heading-3-css@1.5.1': {}
+
+  '@utrecht/heading-3-css@2.0.1': {}
 
   '@utrecht/heading-4-css@1.5.1': {}
 
+  '@utrecht/heading-4-css@2.0.1': {}
+
   '@utrecht/heading-5-css@1.5.1': {}
+
+  '@utrecht/heading-5-css@2.0.1': {}
 
   '@utrecht/heading-6-css@1.5.1': {}
 
+  '@utrecht/heading-6-css@2.0.1': {}
+
   '@utrecht/heading-group-css@1.5.1': {}
+
+  '@utrecht/heading-group-css@2.0.1': {}
 
   '@utrecht/html-content-css@1.4.1': {}
 
+  '@utrecht/html-content-css@2.0.1': {}
+
   '@utrecht/iban-data-css@1.3.1': {}
+
+  '@utrecht/iban-data-css@2.0.1': {}
 
   '@utrecht/icon-css@2.0.1': {}
 
+  '@utrecht/icon-css@3.0.1': {}
+
   '@utrecht/img-css@1.3.1': {}
+
+  '@utrecht/img-css@2.0.1': {}
 
   '@utrecht/index-char-nav-css@1.4.1': {}
 
+  '@utrecht/index-char-nav-css@2.0.1': {}
+
   '@utrecht/link-button-css@1.4.1': {}
+
+  '@utrecht/link-button-css@2.0.1': {}
 
   '@utrecht/link-css@1.6.1': {}
 
+  '@utrecht/link-css@2.0.1': {}
+
   '@utrecht/link-list-css@2.3.1': {}
+
+  '@utrecht/link-list-css@3.0.1': {}
+
+  '@utrecht/link-react@1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@babel/runtime': 7.28.4
+      '@utrecht/link-css': 2.0.1
+      clsx: 2.1.1
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
 
   '@utrecht/link-react@1.0.7(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
@@ -5699,9 +6495,15 @@ snapshots:
 
   '@utrecht/link-social-css@1.4.1': {}
 
+  '@utrecht/link-social-css@2.0.1': {}
+
   '@utrecht/list-social-css@1.4.1': {}
 
+  '@utrecht/list-social-css@2.0.1': {}
+
   '@utrecht/listbox-css@1.5.2': {}
+
+  '@utrecht/listbox-css@2.0.1': {}
 
   '@utrecht/listbox-react@1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
@@ -5711,32 +6513,69 @@ snapshots:
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
+  '@utrecht/listbox-react@1.0.13(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@babel/runtime': 7.28.4
+      '@utrecht/listbox-css': 2.0.1
+      clsx: 2.1.1
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
+
   '@utrecht/logo-button-css@1.4.1': {}
+
+  '@utrecht/logo-button-css@1.4.2': {}
 
   '@utrecht/logo-css@1.4.1': {}
 
+  '@utrecht/logo-css@2.0.1': {}
+
   '@utrecht/logo-image-css@1.4.1': {}
+
+  '@utrecht/logo-image-css@1.4.2': {}
 
   '@utrecht/map-control-button-css@2.2.1': {}
 
+  '@utrecht/map-control-button-css@3.0.1': {}
+
   '@utrecht/map-marker-css@1.4.1': {}
+
+  '@utrecht/map-marker-css@2.0.1': {}
 
   '@utrecht/mark-css@1.5.1': {}
 
+  '@utrecht/mark-css@2.0.1': {}
+
   '@utrecht/multiline-data-css@1.3.1': {}
+
+  '@utrecht/multiline-data-css@2.0.1': {}
 
   '@utrecht/nav-bar-css@1.4.1': {}
 
+  '@utrecht/nav-bar-css@2.0.1': {}
+
   '@utrecht/nav-list-css@1.3.1': {}
+
+  '@utrecht/nav-list-css@1.3.2': {}
+
+  '@utrecht/navigation-css@1.1.0': {}
 
   '@utrecht/number-badge-css@2.3.1': {}
 
+  '@utrecht/number-badge-css@3.0.1': {}
+
   '@utrecht/number-data-css@1.4.1': {}
+
+  '@utrecht/number-data-css@2.0.1': {}
 
   '@utrecht/open-forms-container-css@1.0.2':
     dependencies:
       '@utrecht/focus-ring-css': 2.3.1
       '@utrecht/textbox-css': 2.0.0
+
+  '@utrecht/open-forms-container-css@2.0.1':
+    dependencies:
+      '@utrecht/focus-ring-css': 3.0.1
+      '@utrecht/textbox-css': 3.0.1
 
   '@utrecht/open-forms-container-react@1.0.2(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
@@ -5746,31 +6585,65 @@ snapshots:
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
+  '@utrecht/open-forms-container-react@1.0.5(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@babel/runtime': 7.28.4
+      '@utrecht/open-forms-container-css': 2.0.1
+      clsx: 2.1.1
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
+
   '@utrecht/ordered-list-css@1.5.2': {}
 
-  '@utrecht/ordered-list-css@2.0.0': {}
+  '@utrecht/ordered-list-css@3.0.1': {}
 
-  '@utrecht/page-body-css@0.1.1': {}
+  '@utrecht/page-body-css@1.0.1': {}
 
   '@utrecht/page-content-css@1.4.1': {}
 
+  '@utrecht/page-content-css@2.0.1': {}
+
   '@utrecht/page-css@1.4.1': {}
+
+  '@utrecht/page-css@2.0.1': {}
 
   '@utrecht/page-footer-css@2.1.1': {}
 
+  '@utrecht/page-footer-css@3.0.1': {}
+
   '@utrecht/page-header-css@1.5.1': {}
 
-  '@utrecht/page-layout-css@1.1.1': {}
+  '@utrecht/page-header-css@2.0.1': {}
+
+  '@utrecht/page-layout-css@2.0.1': {}
 
   '@utrecht/pagination-css@1.4.1': {}
 
+  '@utrecht/pagination-css@2.0.3': {}
+
   '@utrecht/paragraph-css@2.3.1': {}
+
+  '@utrecht/paragraph-css@3.0.1': {}
 
   '@utrecht/pre-heading-css@1.4.1': {}
 
+  '@utrecht/pre-heading-css@2.0.1': {}
+
   '@utrecht/preserve-data-css@1.3.1': {}
 
+  '@utrecht/preserve-data-css@2.0.1': {}
+
   '@utrecht/radio-button-css@1.6.1': {}
+
+  '@utrecht/radio-button-css@2.0.1': {}
+
+  '@utrecht/radio-button-react@1.0.10(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@babel/runtime': 7.28.4
+      '@utrecht/radio-button-css': 2.0.1
+      clsx: 2.1.1
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
 
   '@utrecht/radio-button-react@1.0.7(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
@@ -5782,33 +6655,65 @@ snapshots:
 
   '@utrecht/rich-text-css@1.3.1': {}
 
-  '@utrecht/rich-text-css@1.4.0': {}
+  '@utrecht/rich-text-css@2.0.1': {}
 
-  '@utrecht/root-css@1.2.1': {}
+  '@utrecht/root-css@2.0.1': {}
 
   '@utrecht/search-bar-css@2.2.1': {}
 
+  '@utrecht/search-bar-css@3.0.1': {}
+
   '@utrecht/select-css@1.8.1': {}
+
+  '@utrecht/select-css@2.0.1': {}
 
   '@utrecht/separator-css@1.5.1': {}
 
+  '@utrecht/separator-css@2.0.1': {}
+
   '@utrecht/skip-link-css@1.5.1': {}
+
+  '@utrecht/skip-link-css@2.0.1': {}
 
   '@utrecht/spotlight-section-css@1.6.1': {}
 
+  '@utrecht/spotlight-section-css@2.0.1': {}
+
   '@utrecht/subscript-css@1.3.1': {}
+
+  '@utrecht/subscript-css@2.0.1': {}
 
   '@utrecht/superscript-css@1.3.1': {}
 
+  '@utrecht/superscript-css@2.0.1': {}
+
   '@utrecht/surface-css@1.4.1': {}
+
+  '@utrecht/surface-css@2.0.1': {}
 
   '@utrecht/table-css@1.6.1': {}
 
+  '@utrecht/table-css@2.0.1': {}
+
   '@utrecht/table-of-contents-css@0.3.1': {}
+
+  '@utrecht/table-of-contents-css@1.0.1': {}
 
   '@utrecht/textarea-css@2.3.2': {}
 
+  '@utrecht/textarea-css@3.0.1': {}
+
   '@utrecht/textbox-css@2.0.0': {}
+
+  '@utrecht/textbox-css@3.0.1': {}
+
+  '@utrecht/textbox-react@1.0.12(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@babel/runtime': 7.28.4
+      '@utrecht/textbox-css': 3.0.1
+      clsx: 2.1.1
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
 
   '@utrecht/textbox-react@1.0.9(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
@@ -5818,19 +6723,29 @@ snapshots:
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@utrecht/tooltip-css@1.0.0': {}
+  '@utrecht/tooltip-css@2.0.1': {}
 
   '@utrecht/top-task-link-css@1.4.1': {}
 
+  '@utrecht/top-task-link-css@2.0.1': {}
+
   '@utrecht/top-task-nav-css@1.3.1': {}
+
+  '@utrecht/top-task-nav-css@1.3.2': {}
 
   '@utrecht/unordered-list-css@1.5.1': {}
 
+  '@utrecht/unordered-list-css@2.0.1': {}
+
   '@utrecht/url-data-css@1.3.1': {}
+
+  '@utrecht/url-data-css@2.0.1': {}
 
   '@utrecht/vega-visualization-css@1.4.1': {}
 
-  '@utrecht/youtube-video-css@1.0.0': {}
+  '@utrecht/vega-visualization-css@1.4.2': {}
+
+  '@utrecht/youtube-video-css@2.0.1': {}
 
   '@vitejs/plugin-react@4.7.0(vite@7.1.11(@types/node@24.9.1))':
     dependencies:
@@ -6370,6 +7285,10 @@ snapshots:
   domhandler@5.0.3:
     dependencies:
       domelementtype: 2.3.0
+
+  dompurify@3.2.4:
+    optionalDependencies:
+      '@types/trusted-types': 2.0.7
 
   dompurify@3.3.0:
     optionalDependencies:
@@ -6952,12 +7871,12 @@ snapshots:
 
   graphemer@1.4.0: {}
 
-  graphql-tag@2.12.6(graphql@16.10.0):
+  graphql-tag@2.12.6(graphql@16.12.0):
     dependencies:
-      graphql: 16.10.0
+      graphql: 16.12.0
       tslib: 2.8.1
 
-  graphql@16.10.0: {}
+  graphql@16.12.0: {}
 
   has-bigints@1.1.0: {}
 
@@ -7462,7 +8381,7 @@ snapshots:
       define-properties: 1.2.1
       es-object-atoms: 1.1.1
 
-  oidc-client-ts@3.3.0:
+  oidc-client-ts@3.4.1:
     dependencies:
       jwt-decode: 4.0.0
 
@@ -7716,14 +8635,14 @@ snapshots:
     dependencies:
       react: 19.2.0
 
-  react-oidc-context@3.3.0(oidc-client-ts@3.3.0)(react@19.2.0):
+  react-oidc-context@3.3.0(oidc-client-ts@3.4.1)(react@19.2.0):
     dependencies:
-      oidc-client-ts: 3.3.0
+      oidc-client-ts: 3.4.1
       react: 19.2.0
 
   react-refresh@0.17.0: {}
 
-  react-router@7.9.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
+  react-router@7.12.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
     dependencies:
       cookie: 1.0.2
       react: 19.2.0
@@ -8181,7 +9100,7 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
-  uuid@11.1.0: {}
+  uuid@13.0.0: {}
 
   uuid@9.0.1: {}
 
