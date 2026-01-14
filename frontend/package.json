@@ -1,6 +1,6 @@
 {
   "name": "nl-portal-app",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "author": "Ritense",
   "packageManager": "pnpm@10.18.0",
   "license": "EUPL-1.2",
@@ -24,14 +24,14 @@
     "@apollo/client": "3.13.8",
     "@gemeente-denhaag/design-tokens-components": "5.1.0",
     "@gemeente-denhaag/icons": "4.0.0",
-    "@nl-portal/nl-portal-api": "3.0.0",
-    "@nl-portal/nl-portal-authentication": "3.0.0",
-    "@nl-portal/nl-portal-localization": "3.0.0",
-    "@nl-portal/nl-portal-user-interface": "3.0.0",
+    "@nl-portal/nl-portal-api": "3.0.1",
+    "@nl-portal/nl-portal-authentication": "3.0.1",
+    "@nl-portal/nl-portal-localization": "3.0.1",
+    "@nl-portal/nl-portal-user-interface": "3.0.1",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "react-intl": "7.1.14",
-    "react-router": "7.9.4"
+    "react-router": "7.12.0"
   },
   "devDependencies": {
     "@types/jest": "30.0.0",

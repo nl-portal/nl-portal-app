@@ -18,17 +18,17 @@ importers:
         specifier: 4.0.0
         version: 4.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@nl-portal/nl-portal-api':
-        specifier: 3.0.0
-        version: 3.0.0(@nl-portal/nl-portal-authentication@3.0.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.9.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0))(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+        specifier: 3.0.1
+        version: 3.0.1(@nl-portal/nl-portal-authentication@3.0.1(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.12.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0))(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@nl-portal/nl-portal-authentication':
-        specifier: 3.0.0
-        version: 3.0.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.9.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)
+        specifier: 3.0.1
+        version: 3.0.1(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.12.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)
       '@nl-portal/nl-portal-localization':
-        specifier: 3.0.0
-        version: 3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(typescript@5.9.3)
+        specifier: 3.0.1
+        version: 3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(typescript@5.9.3)
       '@nl-portal/nl-portal-user-interface':
-        specifier: 3.0.0
-        version: 3.0.0(c9c437b110111b6e9610b12668167287)
+        specifier: 3.0.1
+        version: 3.0.1(7bc76abde5fd485f7b023518203ffa57)
       react:
         specifier: 19.2.0
         version: 19.2.0
@@ -39,8 +39,8 @@ importers:
         specifier: 7.1.14
         version: 7.1.14(react@19.2.0)(typescript@5.9.3)
       react-router:
-        specifier: 7.9.4
-        version: 7.9.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+        specifier: 7.12.0
+        version: 7.12.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
     devDependencies:
       '@types/jest':
         specifier: 30.0.0
@@ -863,29 +863,29 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@nl-portal/nl-portal-api@3.0.0':
-    resolution: {integrity: sha512-MdM56YsezbsOi+8pdO/SrK5aGUQmeQwQSBZsDmQ7zgObUXVkX0i5/ivsoRM80xOlqxrRwvH8heOAwjhDuLDO1w==}
+  '@nl-portal/nl-portal-api@3.0.1':
+    resolution: {integrity: sha512-IsC8OrCTgUeJtzOdebfeOmqN/igxV5Sf1k+4zrfaSXEZtvX5oGXOONj5V0/XPstoSs/8RMobQxVWBt/EcId/Kg==}
     peerDependencies:
       '@nl-portal/nl-portal-authentication': workspace:*
       react: ^19.2.3
       react-dom: ^19.2.3
 
-  '@nl-portal/nl-portal-authentication@3.0.0':
-    resolution: {integrity: sha512-c//uNNl9oykqRitQMmTNy/QOo/GS7CYORkHMbsUUTflehj1K2icJAsE41THgIs/N1b/SMam6ZzxHB7zD1UTReg==}
+  '@nl-portal/nl-portal-authentication@3.0.1':
+    resolution: {integrity: sha512-EYYZQ5Twt349wrdYqjpf8QzqUAyUNf6FN4WidvPVVOfSaWEzsewN/wabf3TpD3qwSrxJpm0RUOrQ+mjLY0GjoQ==}
     peerDependencies:
       react: ^19.2.3
       react-dom: ^19.2.3
       react-intl: ^7.1.14
       react-router: ^7.10.1
 
-  '@nl-portal/nl-portal-localization@3.0.0':
-    resolution: {integrity: sha512-rowJ53f6hohdgtwGvwyzELrHWdRNrlriNLJjBphHEIXd1MgG6zRretxaVyTVGQWUrOFMzzo9yIMsflSCTksdlA==}
+  '@nl-portal/nl-portal-localization@3.0.1':
+    resolution: {integrity: sha512-nEM12BgUGVnSP9QQuXxVBLx6MEiLASsOpVkqRaIBncJ3AleKn55V9vlzKTF5xuhEQ/m73EMj6wW5hu1amL3SXA==}
     peerDependencies:
       react: ^19.2.3
       react-dom: ^19.2.3
 
-  '@nl-portal/nl-portal-user-interface@3.0.0':
-    resolution: {integrity: sha512-O+XKEORuH2Co8OuNi5lFBHaZZnRYUvkON66ks7NQrsOybmn4GfaVhT8mZNrfEkjh527MtJwYUOEa2lZABUdVnQ==}
+  '@nl-portal/nl-portal-user-interface@3.0.1':
+    resolution: {integrity: sha512-NJPpecnglihmm47qMqX+FkjDt7MVPIj3Iwl62T4zYJ+bA3OD9tvhYd/Zlb7Tr39WiDreyZs+E92dBfOyed82zQ==}
     peerDependencies:
       '@apollo/client': 3.13.8
       '@nl-portal/nl-portal-api': workspace:*
@@ -3749,8 +3749,8 @@ packages:
     resolution: {integrity: sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==}
     engines: {node: '>=0.10.0'}
 
-  react-router@7.9.4:
-    resolution: {integrity: sha512-SD3G8HKviFHg9xj7dNODUKDFgpG4xqD5nhyd0mYoB5iISepuZAvzSr8ywxgxKJ52yRzf/HWtVHc9AWwoTbljvA==}
+  react-router@7.12.0:
+    resolution: {integrity: sha512-kTPDYPFzDVGIIGNLS5VJykK0HfHLY5MF3b+xj0/tTyNYL1gF1qs7u67Z9jEhQk2sQ98SUaHxlG31g1JtF7IfVw==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       react: '>=18'
@@ -5291,10 +5291,10 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@nl-portal/nl-portal-api@3.0.0(@nl-portal/nl-portal-authentication@3.0.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.9.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0))(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@nl-portal/nl-portal-api@3.0.1(@nl-portal/nl-portal-authentication@3.0.1(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.12.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0))(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
       '@apollo/client': 3.13.9(@types/react@19.2.2)(graphql@16.12.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@nl-portal/nl-portal-authentication': 3.0.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.9.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)
+      '@nl-portal/nl-portal-authentication': 3.0.1(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.12.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)
       graphql: 16.12.0
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
@@ -5303,7 +5303,7 @@ snapshots:
       - graphql-ws
       - subscriptions-transport-ws
 
-  '@nl-portal/nl-portal-authentication@3.0.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.9.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)':
+  '@nl-portal/nl-portal-authentication@3.0.1(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.12.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)':
     dependencies:
       '@gemeente-denhaag/modal': 3.0.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@gemeente-denhaag/typography': 3.0.1(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
@@ -5313,14 +5313,14 @@ snapshots:
       react-dom: 19.2.0(react@19.2.0)
       react-intl: 7.1.14(react@19.2.0)(typescript@5.9.3)
       react-oidc-context: 3.3.0(oidc-client-ts@3.4.1)(react@19.2.0)
-      react-router: 7.9.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      react-router: 7.12.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
     transitivePeerDependencies:
       - '@babel/runtime'
       - date-fns
       - react-vega
       - vega
 
-  '@nl-portal/nl-portal-localization@3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(typescript@5.9.3)':
+  '@nl-portal/nl-portal-localization@3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(typescript@5.9.3)':
     dependencies:
       '@gemeente-denhaag/utils': 3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       deepmerge: 4.3.1
@@ -5330,7 +5330,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@nl-portal/nl-portal-user-interface@3.0.0(c9c437b110111b6e9610b12668167287)':
+  '@nl-portal/nl-portal-user-interface@3.0.1(7bc76abde5fd485f7b023518203ffa57)':
     dependencies:
       '@apollo/client': 3.13.8(@types/react@19.2.2)(graphql@16.12.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@formio/js': 5.2.3(@popperjs/core@2.11.8)
@@ -5374,9 +5374,9 @@ snapshots:
       '@gemeente-denhaag/text-input': 3.1.0(@babel/runtime@7.28.4)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@gemeente-denhaag/textarea': 3.1.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@gemeente-denhaag/typography': 3.0.1(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@nl-portal/nl-portal-api': 3.0.0(@nl-portal/nl-portal-authentication@3.0.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.9.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0))(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@nl-portal/nl-portal-authentication': 3.0.0(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.9.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)
-      '@nl-portal/nl-portal-localization': 3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(typescript@5.9.3)
+      '@nl-portal/nl-portal-api': 3.0.1(@nl-portal/nl-portal-authentication@3.0.1(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.12.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0))(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@nl-portal/nl-portal-authentication': 3.0.1(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@19.2.0(react@19.2.0))(react-intl@7.1.14(react@19.2.0)(typescript@5.9.3))(react-router@7.12.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)
+      '@nl-portal/nl-portal-localization': 3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(typescript@5.9.3)
       '@utrecht/component-library-css': 8.2.1
       '@utrecht/document-css': 2.0.1
       classnames: 2.5.1
@@ -5387,7 +5387,7 @@ snapshots:
       react-helmet-async: 2.0.5(react@19.2.0)
       react-intl: 7.1.14(react@19.2.0)(typescript@5.9.3)
       react-loading-skeleton: 3.5.0(react@19.2.0)
-      react-router: 7.9.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      react-router: 7.12.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
     transitivePeerDependencies:
       - '@babel/runtime'
       - '@popperjs/core'
@@ -8642,7 +8642,7 @@ snapshots:
 
   react-refresh@0.17.0: {}
 
-  react-router@7.9.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
+  react-router@7.12.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
     dependencies:
       cookie: 1.0.2
       react: 19.2.0
