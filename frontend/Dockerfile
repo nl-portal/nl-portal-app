@@ -2,7 +2,7 @@ FROM --platform=$BUILDPLATFORM node:22-alpine AS build
 
 COPY . .
 ENV CI=true
-RUN npm i -g pnpm && pnpm i && pnpm build
+RUN npm i -g pnpm@10 && pnpm i && pnpm build
 
 FROM nginx:stable-alpine-slim AS image
 
