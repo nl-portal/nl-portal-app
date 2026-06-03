@@ -49,7 +49,6 @@ dependencies {
     implementation("nl.nl-portal:berichten:$backendLibrariesVersion")
     implementation("nl.nl-portal:form:$backendLibrariesVersion")
     implementation("nl.nl-portal:taak:$backendLibrariesVersion")
-    implementation("nl.nl-portal:besluiten:$backendLibrariesVersion")
     implementation("nl.nl-portal:product:$backendLibrariesVersion")
     implementation("nl.nl-portal:openproduct:$backendLibrariesVersion")
 

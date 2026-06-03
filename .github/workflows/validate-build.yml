@@ -40,6 +40,6 @@ jobs:
         with:
           node-version: ${{ env.nodeVersion }}
       - name: Install
-        run: npm install -g pnpm && pnpm install
+        run: npm install -g pnpm@10 && pnpm install
       - name: Build
         run: pnpm build

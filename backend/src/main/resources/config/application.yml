@@ -39,9 +39,11 @@ spring:
         database-platform: org.hibernate.dialect.PostgreSQLDialect
     graphql:
         graphiql:
-            enabled: true
+            enabled: false
         schema:
             locations: classpath*:graphql/**/
+            introspection:
+                enabled: false
 
 graphql:
     packages:
