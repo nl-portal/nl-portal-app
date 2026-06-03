@@ -14,6 +14,8 @@ env:
 jobs:
     prepare-variables:
         runs-on: ubuntu-latest
+        permissions:
+            contents: read
         outputs:
             scope: ${{ steps.detect-scope.outputs.SCOPE }}
             backend-tag: ${{ steps.detect-scope.outputs.SCOPE == 'RELEASE' && steps.get-project-versions.outputs.BACKEND_VERSION || steps.generate-snapshot-rc-version.outputs.BACKEND_SNAPSHOT_VERSION }}
