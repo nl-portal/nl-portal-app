@@ -20,5 +20,10 @@ export const NL_NL_MESSAGES: Messages = {
     "footerLinks.accessibility": "Toegankelijkheidsverklaring",
     "footerLinks.dataProtection": "Verklaring inzake Gegevensbescherming",
     "footerLinks.proclaimer": "Proclaimer",
+    "overview.alertTitle": "Onderhoud",
+    "overview.alertText":
+      "De applicatie ondergaat momenteel onderhoud. Functionaliteit kan beperkt zijn of niet werken zoals verwacht. Probeer het later opnieuw.",
+    "auth.inactive.text":
+      "U bent te lang inactief geweest. U wordt binnenkort automatisch uitgelogd uit de beveiligde omgeving. Als u gegevens heeft ingevuld, dan gaan deze verloren. Klik op 'Ingelogd blijven' om verder te gaan of op 'Uitloggen' om te stoppen.",
   },
 };

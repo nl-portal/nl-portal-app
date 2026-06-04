@@ -6,6 +6,8 @@ export declare global {
     OIDC_CLIENT_ID: string;
     OIDC_REDIRECT_URI: string;
     OIDC_POST_LOGOUT_REDIRECT_URI?: string;
+    OIDC_AUTO_IDLE_SESSION_LOGOUT?: string;
+    OIDC_IDLE_TIMEOUT_MINUTES?: string;
     GRAPHQL_URI: string;
     REST_URI: string;
     SHOW_INHABITANT_AMOUNT: string;
@@ -23,8 +25,12 @@ export declare global {
     OVERVIEW_CURRENT_CASES_PREVIEW_LENGTH: string;
     THEME_CLASS: string;
     MESSAGE_COUNT_POLLING_INTERVAL: number;
+    MESSAGE_COUNT_ENABLE: string;
     CASES_PARTIAL_SEARCH: boolean;
     OPEN_KLANT_VERSION: string;
     USE_THEME_API: string;
+    OPEN_PRODUCTEN: string;
+    SHOW_CASE_RESULT_EXPLANATION: string;
+    USE_LEGACY_OGONE_PAYMENT: string;
   }
 }

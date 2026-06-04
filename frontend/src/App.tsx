@@ -26,6 +26,8 @@ const App = () => {
                               redirectUri={config.OIDC_REDIRECT_URI}
                               postLogoutRedirectUri={config.OIDC_POST_LOGOUT_REDIRECT_URI}
                               authenticationMethods={authenticationMethods}
+                              autoIdleSessionLogout={config.OIDC_AUTO_IDLE_SESSION_LOGOUT !== "false"}
+                              idleTimeoutMinutes={config.OIDC_IDLE_TIMEOUT_MINUTES ? Number(config.OIDC_IDLE_TIMEOUT_MINUTES) : 15}
                 >
                     <ApiProvider
                         graphqlUri={config.GRAPHQL_URI}
