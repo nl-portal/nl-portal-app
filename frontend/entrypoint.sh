@@ -1,8 +1,6 @@
 #!/bin/sh
 echo "[NL Portal] Substituting configuration from env vars"
 
-cd /usr/share/nginx/html/
-envsubst < config.template.js > config.js
-cd -
+envsubst < /usr/share/nginx/html/config.template.js > /tmp/config.js
 
 echo "[NL Portal] Done replacing variables in config.js"

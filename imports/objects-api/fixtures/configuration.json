@@ -37,7 +37,7 @@
         "fields": {
             "label": "Notificaties",
             "api_type": "nrc",
-            "api_root": "http://localhost:8002/api/v1/",
+            "api_root": "http://localhost:8012/api/v1/",
             "client_id": "objects-api",
             "secret": "xxoV*EMTKD@n6bFq6Ab*8BvLiB6XC!E3",
             "auth_type": "zgw",
