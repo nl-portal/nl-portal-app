@@ -19,5 +19,10 @@ export const EN_GB_MESSAGES: Messages = {
     "footerLinks.accessibility": "Accessibility declaration",
     "footerLinks.dataProtection": "Data Protection Declaration",
     "footerLinks.proclaimer": "Proclaimer",
+    "overview.alertTitle": "Maintenance",
+    "overview.alertText":
+      "The application is currently undergoing maintenance. Functionality may be limited or not work as intended. Please check back later.",
+    "auth.inactive.text":
+      "You have been idle for too long. You will soon be automatically logged out of the secure environment. If you have entered any data, it will be lost. Click 'Stay logged in' to continue or 'Log out' to stop.",
   },
 };

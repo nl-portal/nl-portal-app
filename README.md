@@ -148,3 +148,52 @@ docker compose --profile config up -d
 ```
 
 The configuration panel will be accessible at http://localhost:3001 with the user:password `admin:admin`
+
+## Backend Configuration Reference
+
+The backend is configured via `imports/backend.env`. Variables follow Spring Boot relaxed binding:
+`nl-portal.config.zakenapi.properties.url` → `NLPORTAL_CONFIG_ZAKENAPI_PROPERTIES_URL`
+
+### Module Enable Flags
+
+| Module | Variable | Default |
+|--------|----------|---------|
+| Zaken API | `NLPORTAL_CONFIG_ZAKENAPI_ENABLED` | false |
+| Catalogi API | `NLPORTAL_CONFIG_CATALOGIAPI_ENABLED` | false |
+| Besluiten API | `NLPORTAL_CONFIG_BESLUITENAPI_ENABLED` | false |
+| Documenten APIs | `NLPORTAL_CONFIG_DOCUMENTENAPIS_ENABLED` | false |
+| Objecten API | `NLPORTAL_CONFIG_OBJECTENAPI_ENABLED` | false |
+| OpenKlant 2 | `NLPORTAL_CONFIG_OPENKLANT2_ENABLED` | false |
+| HaalCentraal BRP | `NLPORTAL_CONFIG_HAALCENTRAAL2_ENABLED` | false |
+| HaalCentraal HR | `NLPORTAL_CONFIG_HAALCENTRAAL_HR_ENABLED` | false |
+| Berichten | `NLPORTAL_CONFIG_BERICHTEN_ENABLED` | false |
+| Taak | `NLPORTAL_CONFIG_TAAK_ENABLED` | false |
+| Product | `NLPORTAL_CONFIG_PRODUCT_ENABLED` | false |
+| Prefill | `NLPORTAL_CONFIG_PREFILL_ENABLED` | false |
+| DMN | `NLPORTAL_CONFIG_DMN_ENABLED` | false |
+| OpenProduct | `NLPORTAL_CONFIG_OPENPRODUCT_ENABLED` | false |
+| Payment Ogone | `NLPORTAL_CONFIG_PAYMENT_OGONE_ENABLED` | false |
+| Payment Direct | `NLPORTAL_CONFIG_PAYMENT_DIRECT_ENABLED` | false |
+| ClamAV Virus Scan | `NLPORTAL_CONFIG_VIRUSSCAN_CLAMAV_ENABLED` | false |
+
+See `imports/backend.env` for all available options with inline documentation.
+
+## Frontend Configuration Reference
+
+The frontend is configured via `imports/frontend.env`. Variables are injected into `window.*` at runtime.
+
+### Key Settings
+
+| Setting | Variable | Default |
+|---------|----------|---------|
+| GraphQL Endpoint | `GRAPHQL_URI` | - |
+| REST Endpoint | `REST_URI` | - |
+| OIDC URL | `OIDC_URL` | - |
+| OIDC Realm | `OIDC_REALM` | - |
+| OIDC Client ID | `OIDC_CLIENT_ID` | - |
+| Idle Session Logout | `OIDC_AUTO_IDLE_SESSION_LOGOUT` | true |
+| Idle Timeout (minutes) | `OIDC_IDLE_TIMEOUT_MINUTES` | 15 |
+| Message Count Polling | `MESSAGE_COUNT_ENABLE` | true |
+| Polling Interval (ms) | `MESSAGE_COUNT_POLLING_INTERVAL` | 10000 |
+
+See `imports/frontend.env` for all available options with inline documentation.

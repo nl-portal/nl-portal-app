@@ -19,7 +19,13 @@ export const routes = [
     {
         path: paths.overview,
         handle: {label: "breadcrumb.overview"},
-        element: <OverviewPage showIntro/>,
+        element: (
+            <OverviewPage
+                showIntro={config.OVERVIEW_SHOW_INTRO !== "false"}
+                showAlert={config.OVERVIEW_SHOW_MAINTENANCE_ALERT === "true"}
+                fetchCasesLength={config.OVERVIEW_CURRENT_CASES_PREVIEW_LENGTH ? Number(config.OVERVIEW_CURRENT_CASES_PREVIEW_LENGTH) : 4}
+            />
+        ),
     },
     {
         path: paths.cases,
@@ -80,6 +86,13 @@ export const routes = [
                     <AccountPage
                         showInhabitantAmount={config.SHOW_INHABITANT_AMOUNT}
                         addressResearchUrl={config.ADDRESS_RESEARCH_URL}
+                        showNotificationSubSection={config.ACCOUNT_SHOW_NOTIFICATION_SUBSECTION === "true"}
+                        reportChangeOfAddressUrl={config.REPORT_CHANGE_OF_ADDRESS_URL}
+                        changeInUseOfSurnameUrl={config.CHANGE_IN_USE_OF_SURNAME_URL}
+                        changeRegisteredGenderUrl={config.CHANGE_REGISTERED_GENDER_URL}
+                        addressResearchMoreInfoUrl={config.ADDRESS_RESEARCH_MORE_INFO_URL}
+                        requestForChangeBrpInfoUrl={config.REQUEST_FOR_CHANGE_BRP_INFO_URL}
+                        requestConfidentialityOfDataUrl={config.REQUEST_CONFIDENTIALITY_OF_DATA_URL}
                     />
                 ),
             },
