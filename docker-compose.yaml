@@ -111,8 +111,8 @@ services:
             - ALLOWED_HOSTS=localhost,host.docker.internal,172.17.0.1,openzaak,example.com
             - OPENZAAK_SUPERUSER_USERNAME=admin
             - OPENZAAK_SUPERUSER_EMAIL=admin@example.org
-            - CELERY_BROKER_URL=redis://nl-portal-app-redis:6379/0
-            - CELERY_RESULT_BACKEND=redis://nl-portal-app-redis:6379/0
+            - CELERY_BROKER_URL=redis://nl-portal-app-redis:6379/1
+            - CELERY_RESULT_BACKEND=redis://nl-portal-app-redis:6379/1
             - DJANGO_SUPERUSER_PASSWORD=admin
             - SENDFILE_BACKEND=django_sendfile.backends.simple
             - DISABLE_2FA=true
@@ -172,12 +172,12 @@ services:
             - DB_PASSWORD=openklant
             - DB_HOST=nl-portal-app-openklant-2-db
             - ALLOWED_HOSTS=*
-            - CACHE_DEFAULT=nl-portal-app-redis:6379/0
-            - CACHE_AXES=nl-portal-app-redis:6379/0
+            - CACHE_DEFAULT=nl-portal-app-redis:6379/2
+            - CACHE_AXES=nl-portal-app-redis:6379/2
             - SUBPATH=${SUBPATH:-/}
             - SECRET_KEY=${SECRET_KEY:-django-insecure-f8s@b*ds4t84-q_2#c0j0506@!l2q6r5_pq5e!vm^_9c*#^66b}
-            - CELERY_BROKER_URL=redis://nl-portal-app-redis:6379/0
-            - CELERY_RESULT_BACKEND=redis://nl-portal-app-redis:6379/0
+            - CELERY_BROKER_URL=redis://nl-portal-app-redis:6379/3
+            - CELERY_RESULT_BACKEND=redis://nl-portal-app-redis:6379/3
             - DISABLE_2FA=true
             - RUN_SETUP_CONFIG=true
         volumes:
@@ -216,12 +216,12 @@ services:
             - TWO_FACTOR_FORCE_OTP_ADMIN=False
             - TWO_FACTOR_PATCH_ADMIN=False
             - DISABLE_2FA=true
-            - CACHE_AXES=nl-portal-app-redis:6379/0
-            - CACHE_DEFAULT=nl-portal-app-redis:6379/0
+            - CACHE_AXES=nl-portal-app-redis:6379/4
+            - CACHE_DEFAULT=nl-portal-app-redis:6379/4
             - ALLOWED_HOSTS=localhost,host.docker.internal,172.17.0.1
-            - CELERY_BROKER_URL=redis://nl-portal-app-redis:6379/1
+            - CELERY_BROKER_URL=redis://nl-portal-app-redis:6379/5
             - CELERY_RESULT_EXPIRES=3600
-            - CELERY_RESULT_BACKEND=redis://nl-portal-app-redis:6379/1
+            - CELERY_RESULT_BACKEND=redis://nl-portal-app-redis:6379/5
             - CELERY_LOGLEVEL=DEBUG
         depends_on:
             - nl-portal-app-objecten-api-database
@@ -287,8 +287,8 @@ services:
             - DB_HOST=nl-portal-app-objecttypen-api-database
             - DB_USER=objecttypes
             - DB_PASSWORD=objecttypes
-            - CACHE_AXES=nl-portal-app-redis:6379/0
-            - CACHE_DEFAULT=nl-portal-app-redis:6379/0
+            - CACHE_AXES=nl-portal-app-redis:6379/6
+            - CACHE_DEFAULT=nl-portal-app-redis:6379/6
             - ALLOWED_HOSTS=localhost,host.docker.internal,172.17.0.1
             - TWO_FACTOR_FORCE_OTP_ADMIN=False
             - TWO_FACTOR_PATCH_ADMIN=False
@@ -339,8 +339,8 @@ services:
             - DJANGO_SETTINGS_MODULE=nrc.conf.docker
             - SECRET_KEY=${SECRET_KEY:-4wHY2Cp5`4(q%)]cuWxPQJRp5kN?g+`.Xah>%6Fsq6+)R>p_}
             - ALLOWED_HOSTS=*
-            - CACHE_DEFAULT=nl-portal-app-redis:6379/0
-            - CACHE_AXES=nl-portal-app-redis:6379/0
+            - CACHE_DEFAULT=nl-portal-app-redis:6379/7
+            - CACHE_AXES=nl-portal-app-redis:6379/7
             - DB_PORT=5432
             - DB_HOST=nl-portal-app-open-notificaties-database
             - DB_NAME=notifications
@@ -349,7 +349,7 @@ services:
             - RABBITMQ_HOST=open-notificaties-rabbitmq
             - PUBLISH_BROKER_URL=amqp://guest:guest@nl-portal-app-open-notificaties-rabbitmq:5672//
             - CELERY_BROKER_URL=amqp://guest:guest@nl-portal-app-open-notificaties-rabbitmq:5672//
-            - CELERY_RESULT_BACKEND=redis://nl-portal-app-redis:6379/1
+            - CELERY_RESULT_BACKEND=redis://nl-portal-app-redis:6379/8
             - CELERY_LOGLEVEL=DEBUG
             - CELERY_WORKER_CONCURRENCY=${CELERY_WORKER_CONCURRENCY:-4}
             - OPENNOTIFICATIES_SUPERUSER_USERNAME=admin
@@ -431,9 +431,9 @@ services:
             - DB_PASSWORD=openproduct
             - DB_HOST=nl-portal-app-openproduct-database
             - DB_PORT=5432
-            - CACHE_DEFAULT=redis://nl-portal-app-redis:6379/0
-            - CELERY_BROKER_URL=redis://nl-portal-app-redis:6379/1
-            - CELERY_RESULT_BACKEND=redis://nl-portal-app-redis:6379/1
+            - CACHE_DEFAULT=redis://nl-portal-app-redis:6379/9
+            - CELERY_BROKER_URL=redis://nl-portal-app-redis:6379/10
+            - CELERY_RESULT_BACKEND=redis://nl-portal-app-redis:6379/10
             - ALLOWED_HOSTS=*
             - DISABLE_2FA=true
 
