@@ -18,8 +18,14 @@ jobs:
             contents: read
         outputs:
             scope: ${{ steps.detect-scope.outputs.SCOPE }}
-            backend-tag: ${{ steps.detect-scope.outputs.SCOPE == 'RELEASE' && steps.get-project-versions.outputs.BACKEND_VERSION || steps.generate-snapshot-rc-version.outputs.BACKEND_SNAPSHOT_VERSION }}
-            frontend-tag: ${{ steps.detect-scope.outputs.SCOPE == 'RELEASE' && steps.get-project-versions.outputs.FRONTEND_VERSION || steps.generate-snapshot-rc-version.outputs.FRONTEND_SNAPSHOT_VERSION }}
+            backend-tag: ${{ steps.detect-scope.outputs.SCOPE == 'RELEASE' && steps.get-project-versions.outputs.BACKEND_RELEASE_VERSION || steps.generate-snapshot-rc-version.outputs.BACKEND_SNAPSHOT_VERSION }}
+            frontend-tag: ${{ steps.detect-scope.outputs.SCOPE == 'RELEASE' && steps.get-project-versions.outputs.FRONTEND_RELEASE_VERSION || steps.generate-snapshot-rc-version.outputs.FRONTEND_SNAPSHOT_VERSION }}
+            backend-floating-tag: ${{ steps.get-project-versions.outputs.BACKEND_VERSION }}
+            frontend-floating-tag: ${{ steps.get-project-versions.outputs.FRONTEND_VERSION }}
+            backend-major-tag: ${{ steps.get-project-versions.outputs.BACKEND_MAJOR_VERSION }}
+            frontend-major-tag: ${{ steps.get-project-versions.outputs.FRONTEND_MAJOR_VERSION }}
+            backend-minor-tag: ${{ steps.get-project-versions.outputs.BACKEND_MINOR_VERSION }}
+            frontend-minor-tag: ${{ steps.get-project-versions.outputs.FRONTEND_MINOR_VERSION }}
         steps:
             -   name: Detect scope
                 id: detect-scope
@@ -31,8 +37,17 @@ jobs:
             -   name: Get version from project
                 id: get-project-versions
                 run: |
-                    echo "BACKEND_VERSION=$(grep "version" backend/gradle.properties | sed 's/^.*=//' | grep -Po '\d+\.\d+\.\d+')" >> $GITHUB_OUTPUT
-                    echo "FRONTEND_VERSION=$(grep "version" frontend/package.json | grep -Po '\d+\.\d+\.\d+')" >> $GITHUB_OUTPUT
+                    be_version=$(grep "version" backend/gradle.properties | sed 's/^.*=//' | grep -Po '\d+\.\d+\.\d+')
+                    fe_version=$(grep "version" frontend/package.json | grep -Po '\d+\.\d+\.\d+')
+                    revision=$(grep "revision" revision.properties | grep -Po '\d+')
+                    echo "BACKEND_VERSION=${be_version}" >> $GITHUB_OUTPUT
+                    echo "FRONTEND_VERSION=${fe_version}" >> $GITHUB_OUTPUT
+                    echo "BACKEND_RELEASE_VERSION=${be_version}-${revision}" >> $GITHUB_OUTPUT
+                    echo "FRONTEND_RELEASE_VERSION=${fe_version}-${revision}" >> $GITHUB_OUTPUT
+                    echo "BACKEND_MAJOR_VERSION=${be_version%%.*}" >> $GITHUB_OUTPUT
+                    echo "FRONTEND_MAJOR_VERSION=${fe_version%%.*}" >> $GITHUB_OUTPUT
+                    echo "BACKEND_MINOR_VERSION=${be_version%.*}" >> $GITHUB_OUTPUT
+                    echo "FRONTEND_MINOR_VERSION=${fe_version%.*}" >> $GITHUB_OUTPUT
             -   name: Generate SNAPSHOT/RC Tag
                 id: generate-snapshot-rc-version
                 if: ${{ steps.detect-scope.outputs.SCOPE == 'SNAPSHOT' || steps.detect-scope.outputs.SCOPE == 'RC' }}
@@ -78,8 +93,10 @@ jobs:
                 with:
                     images: ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_NAMESPACE }}/${{ env.APP_NAME }}-backend
                     tags: |
-                        type=raw,value=latest,enable={{is_default_branch}}
                         type=raw,value=${{ needs.prepare-variables.outputs.backend-tag }}
+                        type=raw,value=${{ needs.prepare-variables.outputs.backend-floating-tag }},enable=${{ needs.prepare-variables.outputs.scope == 'RELEASE' }}
+                        type=raw,value=${{ needs.prepare-variables.outputs.backend-major-tag }},enable=${{ needs.prepare-variables.outputs.scope == 'RELEASE' }}
+                        type=raw,value=${{ needs.prepare-variables.outputs.backend-minor-tag }},enable=${{ needs.prepare-variables.outputs.scope == 'RELEASE' }}
 
             -   name: Build and push Docker image
                 uses: docker/build-push-action@f9f3042f7e2789586610d6e8b85c8f03e5195baf # v7.2.0
@@ -144,8 +161,10 @@ jobs:
                 with:
                     images: ${{ env.GITHUB_REGISTRY }}/${{ env.GITHUB_NAMESPACE }}/${{ env.APP_NAME }}-frontend
                     tags: |
-                        type=raw,value=latest,enable={{is_default_branch}}
                         type=raw,value=${{ needs.prepare-variables.outputs.frontend-tag }}
+                        type=raw,value=${{ needs.prepare-variables.outputs.frontend-floating-tag }},enable=${{ needs.prepare-variables.outputs.scope == 'RELEASE' }}
+                        type=raw,value=${{ needs.prepare-variables.outputs.frontend-major-tag }},enable=${{ needs.prepare-variables.outputs.scope == 'RELEASE' }}
+                        type=raw,value=${{ needs.prepare-variables.outputs.frontend-minor-tag }},enable=${{ needs.prepare-variables.outputs.scope == 'RELEASE' }}
 
             -   name: Build and push Docker image
                 uses: docker/build-push-action@f9f3042f7e2789586610d6e8b85c8f03e5195baf # v7.2.0
