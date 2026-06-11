@@ -1,6 +1,7 @@
 <img alt="NL Portal Logo" src=".github/readme/images/nl-portal-logo.svg">
 
-![Version 3.0.0](https://img.shields.io/badge/Version-3.0.0-blue)
+![NL Portal BE 3.0.3](https://img.shields.io/badge/NL_Portal_BE-3.0.3-blue)
+![NL Portal FE 3.0.2](https://img.shields.io/badge/NL_Portal_FE-3.0.2-blue)
 
 This repository contains reference implementations for the NL Portal Backend and Frontend Apps.
 It also contains a Docker Compose file for starting up a pre-configured NL Portal Demo without having to write any code.
@@ -197,3 +198,34 @@ The frontend is configured via `imports/frontend.env`. Variables are injected in
 | Polling Interval (ms) | `MESSAGE_COUNT_POLLING_INTERVAL` | 10000 |
 
 See `imports/frontend.env` for all available options with inline documentation.
+
+## Releases and Versioning
+
+A release of this app bundles two independently versioned libraries:
+
+* Backend version: `version` in `backend/gradle.properties`
+* Frontend version: `version` in `frontend/package.json`
+
+Git release tags combine both with an app revision: `{backend}_{frontend}-{revision}`, e.g. `3.0.3_3.0.2-1`.
+
+### Container image tags
+
+On a push to a `release/*` branch, each image is published with four tags:
+
+* `{version}-{revision}` (e.g. `3.0.3-1`) — immutable, points to exactly one build. Use this to pin deployments.
+* `{version}` (e.g. `3.0.3`) — floating, repointed to the latest revision of that version. Use this to automatically receive app-level fixes.
+* `{major}.{minor}` (e.g. `3.0`) — floating, repointed to the latest release of that minor version. Use this to automatically receive patches within a minor.
+* `{major}` (e.g. `3`) — floating, repointed to the latest release of that major version. Use this to automatically receive all fixes and features within a major.
+
+There is no `latest` tag; pin one of the tags above instead.
+
+### The revision number
+
+The revision lives in `revision.properties` at the repository root and identifies app-level changes (e.g. Dockerfile or security fixes) that are released without a library version change. Both images share the same revision.
+
+* **Bump the revision** when re-releasing with unchanged library versions.
+* **Reset the revision to 1** when either library version is upgraded.
+
+### When updating versions
+
+When bumping a library version or the revision, also update the image tags of the `*-remote` services in `docker-compose.yaml` to the latest released version.
