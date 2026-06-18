@@ -50,7 +50,7 @@ services:
             POSTGRES_DB: nl-portal
 
     nl-portal-app-backend-remote:
-        image: ghcr.io/nl-portal/nl-portal-app-backend:3.0.0
+        image: ghcr.io/nl-portal/nl-portal-app-backend:3.0
         profiles:
             - remote
         container_name: nl-portal-app-backend
@@ -58,7 +58,7 @@ services:
         env_file: imports/backend.env
 
     nl-portal-app-frontend-remote:
-        image: ghcr.io/nl-portal/nl-portal-app-frontend:3.0.0
+        image: ghcr.io/nl-portal/nl-portal-app-frontend:3.0
         profiles:
             - remote
         container_name: nl-portal-app-frontend
